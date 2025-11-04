@@ -1,0 +1,260 @@
+2025-11-03 20:21:13.462 [main] INFO  com.yizhaoqi.smartpai.SmartPaiApplication - Starting SmartPaiApplication using Java 17.0.15 with PID 2642 (/Volumes/LQ1000/a/PaiSmart/target/classes started by xustation in /Volumes/LQ1000/a/PaiSmart)
+2025-11-03 20:21:13.463 [main] INFO  com.yizhaoqi.smartpai.SmartPaiApplication - No active profile set, falling back to 1 default profile: "default"
+2025-11-03 20:21:14.472 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port 8081 (http)
+2025-11-03 20:21:14.481 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8081"]
+2025-11-03 20:21:14.481 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2025-11-03 20:21:14.482 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.34]
+2025-11-03 20:21:14.519 [main] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2025-11-03 20:21:14.520 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1036 ms
+2025-11-03 20:21:14.802 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2025-11-03 20:21:14.944 [main] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@3b046e64
+2025-11-03 20:21:14.945 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2025-11-03 20:21:14.998 [main] WARN  org.hibernate.orm.deprecation - HHH90000025: MySQL8Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-11-03 20:21:14.999 [main] WARN  org.hibernate.orm.deprecation - HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
+2025-11-03 20:21:15.799 [main] ERROR i.n.resolver.dns.DnsServerAddressStreamProviders - Unable to load io.netty.resolver.dns.macos.MacOSDnsServerAddressStreamProvider, fallback to system defaults. This may result in incorrect DNS resolutions on MacOS. Check whether you have a dependency on 'io.netty:netty-resolver-dns-native-macos'. Use DEBUG level to see the full stack: java.lang.UnsatisfiedLinkError: failed to load the required native library
+2025-11-03 20:21:16.978 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-11-03 20:21:16.996 [main] INFO  o.s.s.c.a.a.c.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer - Global AuthenticationManager configured with UserDetailsService bean with name customUserDetailsService
+2025-11-03 20:21:17.053 [main] DEBUG o.s.w.s.server.support.WebSocketHandlerMapping - Patterns [/chat/{token}] in 'webSocketHandlerMapping'
+2025-11-03 20:21:17.106 [main] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - 41 mappings in 'requestMappingHandlerMapping'
+2025-11-03 20:21:17.130 [main] DEBUG o.s.web.servlet.handler.SimpleUrlHandlerMapping - Patterns [/webjars/**, /**, /static/**] in 'resourceHandlerMapping'
+2025-11-03 20:21:17.150 [main] INFO  com.yizhaoqi.smartpai.config.SecurityConfig - Security configuration loaded successfully.
+2025-11-03 20:21:17.163 [main] DEBUG o.s.security.web.DefaultSecurityFilterChain - Will secure any request with filters: DisableEncodeUrlFilter, WebAsyncManagerIntegrationFilter, SecurityContextHolderFilter, HeaderWriterFilter, LogoutFilter, JwtAuthenticationFilter, OrgTagAuthorizationFilter, RequestCacheAwareFilter, SecurityContextHolderAwareRequestFilter, AnonymousAuthenticationFilter, SessionManagementFilter, ExceptionTranslationFilter, AuthorizationFilter
+2025-11-03 20:21:17.212 [main] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerAdapter - ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2025-11-03 20:21:17.246 [main] DEBUG o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+2025-11-03 20:21:17.427 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8081"]
+2025-11-03 20:21:17.435 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port 8081 (http) with context path '/'
+2025-11-03 20:21:17.576 [main] INFO  com.yizhaoqi.smartpai.SmartPaiApplication - Started SmartPaiApplication in 4.448 seconds (process running for 4.953)
+2025-11-03 20:21:17.577 [main] INFO  com.yizhaoqi.smartpai.config.AdminUserInitializer - 检查管理员账号是否存在: admin
+2025-11-03 20:21:17.650 [main] INFO  com.yizhaoqi.smartpai.config.AdminUserInitializer - 管理员账号 'admin' 已存在，跳过创建步骤
+2025-11-03 20:21:17.653 [main] INFO  com.yizhaoqi.smartpai.config.OrgTagInitializer - 检查组织标签是否存在: default
+2025-11-03 20:21:17.659 [main] INFO  com.yizhaoqi.smartpai.config.OrgTagInitializer - 组织标签 'default' 已存在，跳过创建步骤
+2025-11-03 20:21:17.659 [main] INFO  com.yizhaoqi.smartpai.config.OrgTagInitializer - 检查组织标签是否存在: admin
+2025-11-03 20:21:17.660 [main] INFO  com.yizhaoqi.smartpai.config.OrgTagInitializer - 组织标签 'admin' 已存在，跳过创建步骤
+2025-11-03 20:21:17.660 [main] INFO  com.yizhaoqi.smartpai.config.OrgTagInitializer - 组织标签初始化完成
+2025-11-03 20:21:18.051 [main] INFO  com.yizhaoqi.smartpai.config.EsIndexInitializer - 索引 'knowledge_base' 已存在
+2025-11-03 20:21:25.242 [http-nio-8081-exec-1] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-11-03 20:21:25.247 [http-nio-8081-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2025-11-03 20:21:25.248 [http-nio-8081-exec-1] DEBUG org.springframework.web.servlet.DispatcherServlet - Detected StandardServletMultipartResolver
+2025-11-03 20:21:25.248 [http-nio-8081-exec-1] DEBUG org.springframework.web.servlet.DispatcherServlet - Detected AcceptHeaderLocaleResolver
+2025-11-03 20:21:25.248 [http-nio-8081-exec-1] DEBUG org.springframework.web.servlet.DispatcherServlet - Detected FixedThemeResolver
+2025-11-03 20:21:25.254 [http-nio-8081-exec-1] DEBUG org.springframework.web.servlet.DispatcherServlet - Detected org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@652c7ba2
+2025-11-03 20:21:25.254 [http-nio-8081-exec-1] DEBUG org.springframework.web.servlet.DispatcherServlet - Detected org.springframework.web.servlet.support.SessionFlashMapManager@345292c1
+2025-11-03 20:21:25.255 [http-nio-8081-exec-1] DEBUG org.springframework.web.servlet.DispatcherServlet - enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+2025-11-03 20:21:25.255 [http-nio-8081-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 7 ms
+2025-11-03 20:21:25.268 [http-nio-8081-exec-1] DEBUG org.springframework.security.web.FilterChainProxy - Securing POST /api/v1/users/login
+2025-11-03 20:21:25.277 [http-nio-8081-exec-1] DEBUG o.s.s.w.a.AnonymousAuthenticationFilter - Set SecurityContextHolder to anonymous SecurityContext
+2025-11-03 20:21:25.278 [http-nio-8081-exec-1] DEBUG o.s.security.web.session.SessionManagementFilter - Request requested invalid session id 3CF50EC045F0BCE188C8B6C21DC7B641
+2025-11-03 20:21:25.283 [http-nio-8081-exec-1] DEBUG org.springframework.security.web.FilterChainProxy - Secured POST /api/v1/users/login
+2025-11-03 20:21:25.285 [http-nio-8081-exec-1] DEBUG org.springframework.web.servlet.DispatcherServlet - POST "/api/v1/users/login", parameters={}
+2025-11-03 20:21:25.286 [http-nio-8081-exec-1] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.yizhaoqi.smartpai.controller.UserController#login(UserRequest)
+2025-11-03 20:21:25.354 [http-nio-8081-exec-1] DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Read "application/json;charset=UTF-8" to [UserRequest[username=admin, password=admin123]]
+2025-11-03 20:21:25.833 [http-nio-8081-exec-1] DEBUG com.yizhaoqi.smartpai.service.TokenCacheService - Token cached: 5f1cce20575f48e89df7cd8c9a3bd660 for user: admin
+2025-11-03 20:21:25.833 [http-nio-8081-exec-1] INFO  com.yizhaoqi.smartpai.utils.JwtUtils - Token generated and cached for user: admin, tokenId: 5f1cce20575f48e89df7cd8c9a3bd660
+2025-11-03 20:21:25.837 [http-nio-8081-exec-1] DEBUG com.yizhaoqi.smartpai.service.TokenCacheService - Refresh token cached: 7de472fbcfb84f43b61abdb659bb5f38 for user: 1
+2025-11-03 20:21:25.837 [http-nio-8081-exec-1] INFO  com.yizhaoqi.smartpai.utils.JwtUtils - Refresh token generated and cached for user: admin, refreshTokenId: 7de472fbcfb84f43b61abdb659bb5f38
+2025-11-03 20:21:25.844 [http-nio-8081-exec-1] DEBUG o.s.w.s.m.m.annotation.HttpEntityMethodProcessor - Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
+2025-11-03 20:21:25.844 [http-nio-8081-exec-1] DEBUG o.s.w.s.m.m.annotation.HttpEntityMethodProcessor - Writing [{message=Login successful, data={token=eyJhbGciOiJIUzI1NiJ9.eyJwcmltYXJ5T3JnIjoiZGVmYXVsdCIsIm9yZ1Rh (truncated)...]
+2025-11-03 20:21:25.852 [http-nio-8081-exec-1] DEBUG org.springframework.web.servlet.DispatcherServlet - Completed 200 OK
+2025-11-03 20:21:25.878 [http-nio-8081-exec-2] DEBUG org.springframework.security.web.FilterChainProxy - Securing GET /api/v1/users/me
+2025-11-03 20:21:25.903 [http-nio-8081-exec-2] DEBUG org.springframework.security.web.FilterChainProxy - Secured GET /api/v1/users/me
+2025-11-03 20:21:25.903 [http-nio-8081-exec-2] DEBUG org.springframework.web.servlet.DispatcherServlet - GET "/api/v1/users/me", parameters={}
+2025-11-03 20:21:25.904 [http-nio-8081-exec-2] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.yizhaoqi.smartpai.controller.UserController#getCurrentUser(String)
+2025-11-03 20:21:25.912 [http-nio-8081-exec-2] DEBUG o.s.w.s.m.m.annotation.HttpEntityMethodProcessor - Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
+2025-11-03 20:21:25.912 [http-nio-8081-exec-2] DEBUG o.s.w.s.m.m.annotation.HttpEntityMethodProcessor - Writing [{message=Get user detail successful, data={id=1, username=admin, role=ADMIN, orgTags=[default, admin (truncated)...]
+2025-11-03 20:21:25.917 [http-nio-8081-exec-2] DEBUG org.springframework.web.servlet.DispatcherServlet - Completed 200 OK
+2025-11-03 20:21:25.945 [http-nio-8081-exec-3] DEBUG org.springframework.security.web.FilterChainProxy - Securing GET /api/v1/users/me
+2025-11-03 20:21:25.953 [http-nio-8081-exec-3] DEBUG org.springframework.security.web.FilterChainProxy - Secured GET /api/v1/users/me
+2025-11-03 20:21:25.953 [http-nio-8081-exec-3] DEBUG org.springframework.web.servlet.DispatcherServlet - GET "/api/v1/users/me", parameters={}
+2025-11-03 20:21:25.953 [http-nio-8081-exec-3] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.yizhaoqi.smartpai.controller.UserController#getCurrentUser(String)
+2025-11-03 20:21:25.958 [http-nio-8081-exec-3] DEBUG o.s.w.s.m.m.annotation.HttpEntityMethodProcessor - Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
+2025-11-03 20:21:25.958 [http-nio-8081-exec-3] DEBUG o.s.w.s.m.m.annotation.HttpEntityMethodProcessor - Writing [{message=Get user detail successful, data={id=1, username=admin, role=ADMIN, orgTags=[default, admin (truncated)...]
+2025-11-03 20:21:25.960 [http-nio-8081-exec-3] DEBUG org.springframework.web.servlet.DispatcherServlet - Completed 200 OK
+2025-11-03 20:21:26.091 [http-nio-8081-exec-4] DEBUG org.springframework.security.web.FilterChainProxy - Securing GET /chat/eyJhbGciOiJIUzI1NiJ9.eyJwcmltYXJ5T3JnIjoiZGVmYXVsdCIsIm9yZ1RhZ3MiOiJkZWZhdWx0LGFkbWluIiwicm9sZSI6IkFETUlOIiwidG9rZW5JZCI6IjVmMWNjZTIwNTc1ZjQ4ZTg5ZGY3Y2Q4YzlhM2JkNjYwIiwidXNlcklkIjoiMSIsInN1YiI6ImFkbWluIiwiZXhwIjoxNzYyMTc2MDg1fQ.Ba638jFR2Ccl0uF9BH2XS32oh1lcy0TRHGCBdbqNKBY
+2025-11-03 20:21:26.091 [http-nio-8081-exec-4] DEBUG o.s.s.w.a.AnonymousAuthenticationFilter - Set SecurityContextHolder to anonymous SecurityContext
+2025-11-03 20:21:26.091 [http-nio-8081-exec-4] DEBUG o.s.security.web.session.SessionManagementFilter - Request requested invalid session id 3CF50EC045F0BCE188C8B6C21DC7B641
+2025-11-03 20:21:26.092 [http-nio-8081-exec-4] DEBUG org.springframework.security.web.FilterChainProxy - Secured GET /chat/eyJhbGciOiJIUzI1NiJ9.eyJwcmltYXJ5T3JnIjoiZGVmYXVsdCIsIm9yZ1RhZ3MiOiJkZWZhdWx0LGFkbWluIiwicm9sZSI6IkFETUlOIiwidG9rZW5JZCI6IjVmMWNjZTIwNTc1ZjQ4ZTg5ZGY3Y2Q4YzlhM2JkNjYwIiwidXNlcklkIjoiMSIsInN1YiI6ImFkbWluIiwiZXhwIjoxNzYyMTc2MDg1fQ.Ba638jFR2Ccl0uF9BH2XS32oh1lcy0TRHGCBdbqNKBY
+2025-11-03 20:21:26.092 [http-nio-8081-exec-4] DEBUG org.springframework.web.servlet.DispatcherServlet - GET "/chat/eyJhbGciOiJIUzI1NiJ9.eyJwcmltYXJ5T3JnIjoiZGVmYXVsdCIsIm9yZ1RhZ3MiOiJkZWZhdWx0LGFkbWluIiwicm9sZSI6IkFETUlOIiwidG9rZW5JZCI6IjVmMWNjZTIwNTc1ZjQ4ZTg5ZGY3Y2Q4YzlhM2JkNjYwIiwidXNlcklkIjoiMSIsInN1YiI6ImFkbWluIiwiZXhwIjoxNzYyMTc2MDg1fQ.Ba638jFR2Ccl0uF9BH2XS32oh1lcy0TRHGCBdbqNKBY", parameters={}
+2025-11-03 20:21:26.093 [http-nio-8081-exec-4] DEBUG o.s.w.s.server.support.WebSocketHandlerMapping - Mapped to org.springframework.web.socket.server.support.WebSocketHttpRequestHandler@2d3b708a
+2025-11-03 20:21:26.095 [http-nio-8081-exec-4] DEBUG o.s.w.s.server.support.WebSocketHttpRequestHandler - GET /chat/eyJhbGciOiJIUzI1NiJ9.eyJwcmltYXJ5T3JnIjoiZGVmYXVsdCIsIm9yZ1RhZ3MiOiJkZWZhdWx0LGFkbWluIiwicm9sZSI6IkFETUlOIiwidG9rZW5JZCI6IjVmMWNjZTIwNTc1ZjQ4ZTg5ZGY3Y2Q4YzlhM2JkNjYwIiwidXNlcklkIjoiMSIsInN1YiI6ImFkbWluIiwiZXhwIjoxNzYyMTc2MDg1fQ.Ba638jFR2Ccl0uF9BH2XS32oh1lcy0TRHGCBdbqNKBY
+2025-11-03 20:21:26.121 [http-nio-8081-exec-5] DEBUG org.springframework.security.web.FilterChainProxy - Securing GET /api/v1/users/conversation?start_date=2025-10-27&end_date=2025-11-04
+2025-11-03 20:21:26.162 [http-nio-8081-exec-4] DEBUG org.springframework.web.servlet.DispatcherServlet - Completed 101 SWITCHING_PROTOCOLS
+2025-11-03 20:21:26.176 [http-nio-8081-exec-5] DEBUG org.springframework.security.web.FilterChainProxy - Secured GET /api/v1/users/conversation?start_date=2025-10-27&end_date=2025-11-04
+2025-11-03 20:21:26.183 [http-nio-8081-exec-5] DEBUG org.springframework.web.servlet.DispatcherServlet - GET "/api/v1/users/conversation?start_date=2025-10-27&end_date=2025-11-04", parameters={masked}
+2025-11-03 20:21:26.185 [http-nio-8081-exec-5] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.yizhaoqi.smartpai.controller.ConversationController#getConversations(String, String, String)
+2025-11-03 20:21:26.214 [http-nio-8081-exec-4] DEBUG o.s.w.s.handler.LoggingWebSocketHandlerDecorator - New StandardWebSocketSession[id=5d277a16-a2af-7a02-8fce-12754d34d96e, uri=ws://localhost:8081/chat/eyJhbGciOiJIUzI1NiJ9.eyJwcmltYXJ5T3JnIjoiZGVmYXVsdCIsIm9yZ1RhZ3MiOiJkZWZhdWx0LGFkbWluIiwicm9sZSI6IkFETUlOIiwidG9rZW5JZCI6IjVmMWNjZTIwNTc1ZjQ4ZTg5ZGY3Y2Q4YzlhM2JkNjYwIiwidXNlcklkIjoiMSIsInN1YiI6ImFkbWluIiwiZXhwIjoxNzYyMTc2MDg1fQ.Ba638jFR2Ccl0uF9BH2XS32oh1lcy0TRHGCBdbqNKBY]
+2025-11-03 20:21:26.216 [http-nio-8081-exec-4] INFO  c.yizhaoqi.smartpai.handler.ChatWebSocketHandler - WebSocket连接已建立，用户ID: admin，会话ID: 5d277a16-a2af-7a02-8fce-12754d34d96e，URI路径: /chat/eyJhbGciOiJIUzI1NiJ9.eyJwcmltYXJ5T3JnIjoiZGVmYXVsdCIsIm9yZ1RhZ3MiOiJkZWZhdWx0LGFkbWluIiwicm9sZSI6IkFETUlOIiwidG9rZW5JZCI6IjVmMWNjZTIwNTc1ZjQ4ZTg5ZGY3Y2Q4YzlhM2JkNjYwIiwidXNlcklkIjoiMSIsInN1YiI6ImFkbWluIiwiZXhwIjoxNzYyMTc2MDg1fQ.Ba638jFR2Ccl0uF9BH2XS32oh1lcy0TRHGCBdbqNKBY
+2025-11-03 20:21:26.275 [http-nio-8081-exec-5] DEBUG o.s.w.s.m.m.annotation.HttpEntityMethodProcessor - Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
+2025-11-03 20:21:26.275 [http-nio-8081-exec-5] DEBUG o.s.w.s.m.m.annotation.HttpEntityMethodProcessor - Writing [{code=200, data=[], message=获取对话历史成功}]
+2025-11-03 20:21:26.277 [http-nio-8081-exec-5] DEBUG org.springframework.web.servlet.DispatcherServlet - Completed 200 OK
+2025-11-03 20:21:45.842 [http-nio-8081-exec-6] INFO  c.yizhaoqi.smartpai.handler.ChatWebSocketHandler - 接收到消息，用户ID: admin，会话ID: 5d277a16-a2af-7a02-8fce-12754d34d96e，消息长度: 4
+2025-11-03 20:21:45.850 [http-nio-8081-exec-6] INFO  com.yizhaoqi.smartpai.service.ChatHandler - 开始处理消息，用户ID: admin, 会话ID: 5d277a16-a2af-7a02-8fce-12754d34d96e
+2025-11-03 20:21:45.854 [http-nio-8081-exec-6] INFO  com.yizhaoqi.smartpai.service.ChatHandler - 获取到用户 admin 的现有会话ID: df066211-2766-4d79-9420-0fcb48a3b6b4
+2025-11-03 20:21:45.855 [http-nio-8081-exec-6] INFO  com.yizhaoqi.smartpai.service.ChatHandler - 会话ID: df066211-2766-4d79-9420-0fcb48a3b6b4, 用户ID: admin
+2025-11-03 20:21:45.857 [http-nio-8081-exec-6] DEBUG com.yizhaoqi.smartpai.service.ChatHandler - 会话 df066211-2766-4d79-9420-0fcb48a3b6b4 没有历史记录
+2025-11-03 20:21:45.858 [http-nio-8081-exec-6] DEBUG com.yizhaoqi.smartpai.service.ChatHandler - 获取到 0 条历史对话
+2025-11-03 20:21:45.858 [http-nio-8081-exec-6] DEBUG com.yizhaoqi.smartpai.service.HybridSearchService - 开始带权限搜索，查询: 天上人间, 用户ID: admin
+2025-11-03 20:21:45.858 [http-nio-8081-exec-6] DEBUG com.yizhaoqi.smartpai.service.HybridSearchService - 获取用户有效组织标签，用户ID: admin
+2025-11-03 20:21:45.859 [http-nio-8081-exec-6] DEBUG com.yizhaoqi.smartpai.service.HybridSearchService - 用户ID不是数字格式，作为用户名查找: admin
+2025-11-03 20:21:45.903 [http-nio-8081-exec-6] DEBUG com.yizhaoqi.smartpai.service.HybridSearchService - 通过用户名找到用户: admin
+2025-11-03 20:21:45.917 [http-nio-8081-exec-6] DEBUG com.yizhaoqi.smartpai.service.HybridSearchService - 用户 admin 的有效组织标签: [DEFAULT]
+2025-11-03 20:21:45.917 [http-nio-8081-exec-6] DEBUG com.yizhaoqi.smartpai.service.HybridSearchService - 用户 admin 的有效组织标签: [DEFAULT]
+2025-11-03 20:21:45.917 [http-nio-8081-exec-6] DEBUG com.yizhaoqi.smartpai.service.HybridSearchService - 获取用户数据库ID，用户ID: admin
+2025-11-03 20:21:45.918 [http-nio-8081-exec-6] DEBUG com.yizhaoqi.smartpai.service.HybridSearchService - 用户ID不是数字格式，作为用户名查找: admin
+2025-11-03 20:21:45.920 [http-nio-8081-exec-6] DEBUG com.yizhaoqi.smartpai.service.HybridSearchService - 通过用户名找到用户: admin, ID: 1
+2025-11-03 20:21:45.920 [http-nio-8081-exec-6] DEBUG com.yizhaoqi.smartpai.service.HybridSearchService - 用户 admin 的数据库ID: 1
+2025-11-03 20:21:45.921 [http-nio-8081-exec-6] INFO  com.yizhaoqi.smartpai.client.EmbeddingClient - 开始生成向量，文本数量: 1
+2025-11-03 20:21:45.977 [http-nio-8081-exec-6] DEBUG o.s.web.reactive.function.client.ExchangeFunctions - [168b654e] HTTP POST https://dashscope.aliyuncs.com/compatible-mode/v1/embeddings
+2025-11-03 20:21:46.337 [reactor-http-nio-2] DEBUG org.springframework.web.HttpLogging - [168b654e] Encoding [{input=[天上人间], encoding_format=float, model=text-embedding-v4, dimension=2048}]
+2025-11-03 20:21:46.557 [reactor-http-nio-2] DEBUG o.s.web.reactive.function.client.ExchangeFunctions - [168b654e] [7d1c10a1-1] Response 200 OK
+2025-11-03 20:21:46.576 [reactor-http-nio-2] DEBUG org.springframework.web.HttpLogging - [168b654e] [7d1c10a1-1] Decoded "{"data":[{"embedding":[-0.04812997579574585,-0.061104144901037216,0.024673746898770332,-0.0253395773 (truncated)..."
+2025-11-03 20:21:46.590 [http-nio-8081-exec-6] INFO  com.yizhaoqi.smartpai.client.EmbeddingClient - 成功生成向量，总数量: 1
+2025-11-03 20:21:46.590 [http-nio-8081-exec-6] DEBUG com.yizhaoqi.smartpai.service.HybridSearchService - 向量生成成功，开始执行混合搜索 KNN
+2025-11-03 20:21:46.892 [http-nio-8081-exec-6] DEBUG com.yizhaoqi.smartpai.service.HybridSearchService - Elasticsearch查询执行完成，命中数量: 0, 最大分数: NaN
+2025-11-03 20:21:46.892 [http-nio-8081-exec-6] DEBUG com.yizhaoqi.smartpai.service.HybridSearchService - 返回搜索结果数量: 0
+2025-11-03 20:21:46.892 [http-nio-8081-exec-6] DEBUG com.yizhaoqi.smartpai.service.ChatHandler - 搜索结果数量: 0
+2025-11-03 20:21:46.892 [http-nio-8081-exec-6] INFO  com.yizhaoqi.smartpai.service.ChatHandler - 调用DeepSeek API生成回复
+2025-11-03 20:21:46.892 [http-nio-8081-exec-6] INFO  com.yizhaoqi.smartpai.client.DeepSeekClient - 构建请求，用户消息：天上人间，上下文长度：0，历史消息数：0
+2025-11-03 20:21:46.894 [http-nio-8081-exec-6] DEBUG o.s.web.reactive.function.client.ExchangeFunctions - [733b9470] HTTP POST https://api.deepseek.com/v1/chat/completions
+2025-11-03 20:21:47.007 [reactor-http-nio-3] DEBUG org.springframework.web.HttpLogging - [733b9470] Encoding [{top_p=0.9, stream=true, max_tokens=2000, temperature=0.3, messages=[{content=你是派聪明知识助手，须遵守：<EOL>1. 仅用简体 (truncated)...]
+2025-11-03 20:21:47.711 [reactor-http-nio-3] DEBUG o.s.web.reactive.function.client.ExchangeFunctions - [733b9470] [5ac3b82e-1] Response 200 OK
+2025-11-03 20:21:47.866 [reactor-http-nio-3] DEBUG com.yizhaoqi.smartpai.service.ChatHandler - 发送响应块到会话 5d277a16-a2af-7a02-8fce-12754d34d96e: {"chunk":"暂无"}
+2025-11-03 20:21:48.087 [reactor-http-nio-3] DEBUG com.yizhaoqi.smartpai.service.ChatHandler - 发送响应块到会话 5d277a16-a2af-7a02-8fce-12754d34d96e: {"chunk":"相关信息"}
+2025-11-03 20:21:48.153 [reactor-http-nio-3] DEBUG com.yizhaoqi.smartpai.service.ChatHandler - 发送响应块到会话 5d277a16-a2af-7a02-8fce-12754d34d96e: {"chunk":"。\n\n"}
+2025-11-03 20:21:48.220 [reactor-http-nio-3] DEBUG com.yizhaoqi.smartpai.service.ChatHandler - 发送响应块到会话 5d277a16-a2af-7a02-8fce-12754d34d96e: {"chunk":"原因"}
+2025-11-03 20:21:48.220 [reactor-http-nio-3] DEBUG com.yizhaoqi.smartpai.service.ChatHandler - 发送响应块到会话 5d277a16-a2af-7a02-8fce-12754d34d96e: {"chunk":"说明"}
+2025-11-03 20:21:48.293 [reactor-http-nio-3] DEBUG com.yizhaoqi.smartpai.service.ChatHandler - 发送响应块到会话 5d277a16-a2af-7a02-8fce-12754d34d96e: {"chunk":"："}
+2025-11-03 20:21:48.294 [reactor-http-nio-3] DEBUG com.yizhaoqi.smartpai.service.ChatHandler - 发送响应块到会话 5d277a16-a2af-7a02-8fce-12754d34d96e: {"chunk":"您"}
+2025-11-03 20:21:48.498 [reactor-http-nio-3] DEBUG com.yizhaoqi.smartpai.service.ChatHandler - 发送响应块到会话 5d277a16-a2af-7a02-8fce-12754d34d96e: {"chunk":"提到的"}
+2025-11-03 20:21:48.499 [reactor-http-nio-3] DEBUG com.yizhaoqi.smartpai.service.ChatHandler - 发送响应块到会话 5d277a16-a2af-7a02-8fce-12754d34d96e: {"chunk":"“"}
+2025-11-03 20:21:48.511 [reactor-http-nio-3] DEBUG com.yizhaoqi.smartpai.service.ChatHandler - 发送响应块到会话 5d277a16-a2af-7a02-8fce-12754d34d96e: {"chunk":"天上"}
+2025-11-03 20:21:48.511 [reactor-http-nio-3] DEBUG com.yizhaoqi.smartpai.service.ChatHandler - 发送响应块到会话 5d277a16-a2af-7a02-8fce-12754d34d96e: {"chunk":"人间"}
+2025-11-03 20:21:48.513 [reactor-http-nio-3] DEBUG com.yizhaoqi.smartpai.service.ChatHandler - 发送响应块到会话 5d277a16-a2af-7a02-8fce-12754d34d96e: {"chunk":"”"}
+2025-11-03 20:21:48.514 [reactor-http-nio-3] DEBUG com.yizhaoqi.smartpai.service.ChatHandler - 发送响应块到会话 5d277a16-a2af-7a02-8fce-12754d34d96e: {"chunk":"可能"}
+2025-11-03 20:21:48.552 [reactor-http-nio-3] DEBUG com.yizhaoqi.smartpai.service.ChatHandler - 发送响应块到会话 5d277a16-a2af-7a02-8fce-12754d34d96e: {"chunk":"指"}
+2025-11-03 20:21:48.553 [reactor-http-nio-3] DEBUG com.yizhaoqi.smartpai.service.ChatHandler - 发送响应块到会话 5d277a16-a2af-7a02-8fce-12754d34d96e: {"chunk":"代"}
+2025-11-03 20:21:48.619 [reactor-http-nio-3] DEBUG com.yizhaoqi.smartpai.service.ChatHandler - 发送响应块到会话 5d277a16-a2af-7a02-8fce-12754d34d96e: {"chunk":"多个"}
+2025-11-03 20:21:48.619 [reactor-http-nio-3] DEBUG com.yizhaoqi.smartpai.service.ChatHandler - 发送响应块到会话 5d277a16-a2af-7a02-8fce-12754d34d96e: {"chunk":"不同"}
+2025-11-03 20:21:48.689 [reactor-http-nio-3] DEBUG com.yizhaoqi.smartpai.service.ChatHandler - 发送响应块到会话 5d277a16-a2af-7a02-8fce-12754d34d96e: {"chunk":"概念"}
+2025-11-03 20:21:48.689 [reactor-http-nio-3] DEBUG com.yizhaoqi.smartpai.service.ChatHandler - 发送响应块到会话 5d277a16-a2af-7a02-8fce-12754d34d96e: {"chunk":"，"}
+2025-11-03 20:21:48.756 [reactor-http-nio-3] DEBUG com.yizhaoqi.smartpai.service.ChatHandler - 发送响应块到会话 5d277a16-a2af-7a02-8fce-12754d34d96e: {"chunk":"包括"}
+2025-11-03 20:21:48.756 [reactor-http-nio-3] DEBUG com.yizhaoqi.smartpai.service.ChatHandler - 发送响应块到会话 5d277a16-a2af-7a02-8fce-12754d34d96e: {"chunk":"但不"}
+2025-11-03 20:21:48.823 [reactor-http-nio-3] DEBUG com.yizhaoqi.smartpai.service.ChatHandler - 发送响应块到会话 5d277a16-a2af-7a02-8fce-12754d34d96e: {"chunk":"限于"}
+2025-11-03 20:21:48.824 [reactor-http-nio-3] DEBUG com.yizhaoqi.smartpai.service.ChatHandler - 发送响应块到会话 5d277a16-a2af-7a02-8fce-12754d34d96e: {"chunk":"文学作品"}
+2025-11-03 20:21:48.889 [reactor-http-nio-3] DEBUG com.yizhaoqi.smartpai.service.ChatHandler - 发送响应块到会话 5d277a16-a2af-7a02-8fce-12754d34d96e: {"chunk":"、"}
+2025-11-03 20:21:48.957 [reactor-http-nio-3] DEBUG com.yizhaoqi.smartpai.service.ChatHandler - 发送响应块到会话 5d277a16-a2af-7a02-8fce-12754d34d96e: {"chunk":"娱乐"}
+2025-11-03 20:21:49.025 [reactor-http-nio-3] DEBUG com.yizhaoqi.smartpai.service.ChatHandler - 发送响应块到会话 5d277a16-a2af-7a02-8fce-12754d34d96e: {"chunk":"场所"}
+2025-11-03 20:21:49.025 [reactor-http-nio-3] DEBUG com.yizhaoqi.smartpai.service.ChatHandler - 发送响应块到会话 5d277a16-a2af-7a02-8fce-12754d34d96e: {"chunk":"或"}
+2025-11-03 20:21:49.090 [reactor-http-nio-3] DEBUG com.yizhaoqi.smartpai.service.ChatHandler - 发送响应块到会话 5d277a16-a2af-7a02-8fce-12754d34d96e: {"chunk":"日常"}
+2025-11-03 20:21:49.158 [reactor-http-nio-3] DEBUG com.yizhaoqi.smartpai.service.ChatHandler - 发送响应块到会话 5d277a16-a2af-7a02-8fce-12754d34d96e: {"chunk":"用语"}
+2025-11-03 20:21:49.159 [reactor-http-nio-3] DEBUG com.yizhaoqi.smartpai.service.ChatHandler - 发送响应块到会话 5d277a16-a2af-7a02-8fce-12754d34d96e: {"chunk":"中的"}
+2025-11-03 20:21:49.226 [reactor-http-nio-3] DEBUG com.yizhaoqi.smartpai.service.ChatHandler - 发送响应块到会话 5d277a16-a2af-7a02-8fce-12754d34d96e: {"chunk":"比喻"}
+2025-11-03 20:21:49.226 [reactor-http-nio-3] DEBUG com.yizhaoqi.smartpai.service.ChatHandler - 发送响应块到会话 5d277a16-a2af-7a02-8fce-12754d34d96e: {"chunk":"。"}
+2025-11-03 20:21:49.292 [reactor-http-nio-3] DEBUG com.yizhaoqi.smartpai.service.ChatHandler - 发送响应块到会话 5d277a16-a2af-7a02-8fce-12754d34d96e: {"chunk":"由于"}
+2025-11-03 20:21:49.293 [reactor-http-nio-3] DEBUG com.yizhaoqi.smartpai.service.ChatHandler - 发送响应块到会话 5d277a16-a2af-7a02-8fce-12754d34d96e: {"chunk":"当前"}
+2025-11-03 20:21:49.360 [reactor-http-nio-3] DEBUG com.yizhaoqi.smartpai.service.ChatHandler - 发送响应块到会话 5d277a16-a2af-7a02-8fce-12754d34d96e: {"chunk":"对话"}
+2025-11-03 20:21:49.361 [reactor-http-nio-3] DEBUG com.yizhaoqi.smartpai.service.ChatHandler - 发送响应块到会话 5d277a16-a2af-7a02-8fce-12754d34d96e: {"chunk":"未"}
+2025-11-03 20:21:49.429 [reactor-http-nio-3] DEBUG com.yizhaoqi.smartpai.service.ChatHandler - 发送响应块到会话 5d277a16-a2af-7a02-8fce-12754d34d96e: {"chunk":"提供"}
+2025-11-03 20:21:49.430 [reactor-http-nio-3] DEBUG com.yizhaoqi.smartpai.service.ChatHandler - 发送响应块到会话 5d277a16-a2af-7a02-8fce-12754d34d96e: {"chunk":"具体"}
+2025-11-03 20:21:49.495 [reactor-http-nio-3] DEBUG com.yizhaoqi.smartpai.service.ChatHandler - 发送响应块到会话 5d277a16-a2af-7a02-8fce-12754d34d96e: {"chunk":"背景"}
+2025-11-03 20:21:49.496 [reactor-http-nio-3] DEBUG com.yizhaoqi.smartpai.service.ChatHandler - 发送响应块到会话 5d277a16-a2af-7a02-8fce-12754d34d96e: {"chunk":"信息"}
+2025-11-03 20:21:49.563 [reactor-http-nio-3] DEBUG com.yizhaoqi.smartpai.service.ChatHandler - 发送响应块到会话 5d277a16-a2af-7a02-8fce-12754d34d96e: {"chunk":"，"}
+2025-11-03 20:21:49.564 [reactor-http-nio-3] DEBUG com.yizhaoqi.smartpai.service.ChatHandler - 发送响应块到会话 5d277a16-a2af-7a02-8fce-12754d34d96e: {"chunk":"且"}
+2025-11-03 20:21:49.640 [reactor-http-nio-3] DEBUG com.yizhaoqi.smartpai.service.ChatHandler - 发送响应块到会话 5d277a16-a2af-7a02-8fce-12754d34d96e: {"chunk":"系统"}
+2025-11-03 20:21:49.697 [reactor-http-nio-3] DEBUG com.yizhaoqi.smartpai.service.ChatHandler - 发送响应块到会话 5d277a16-a2af-7a02-8fce-12754d34d96e: {"chunk":"检索"}
+2025-11-03 20:21:49.764 [reactor-http-nio-3] DEBUG com.yizhaoqi.smartpai.service.ChatHandler - 发送响应块到会话 5d277a16-a2af-7a02-8fce-12754d34d96e: {"chunk":"结果"}
+2025-11-03 20:21:49.764 [reactor-http-nio-3] DEBUG com.yizhaoqi.smartpai.service.ChatHandler - 发送响应块到会话 5d277a16-a2af-7a02-8fce-12754d34d96e: {"chunk":"为空"}
+2025-11-03 20:21:49.830 [reactor-http-nio-3] DEBUG com.yizhaoqi.smartpai.service.ChatHandler - 发送响应块到会话 5d277a16-a2af-7a02-8fce-12754d34d96e: {"chunk":"，"}
+2025-11-03 20:21:49.830 [reactor-http-nio-3] DEBUG com.yizhaoqi.smartpai.service.ChatHandler - 发送响应块到会话 5d277a16-a2af-7a02-8fce-12754d34d96e: {"chunk":"我"}
+2025-11-03 20:21:49.897 [reactor-http-nio-3] DEBUG com.yizhaoqi.smartpai.service.ChatHandler - 发送响应块到会话 5d277a16-a2af-7a02-8fce-12754d34d96e: {"chunk":"无法"}
+2025-11-03 20:21:49.897 [reactor-http-nio-3] DEBUG com.yizhaoqi.smartpai.service.ChatHandler - 发送响应块到会话 5d277a16-a2af-7a02-8fce-12754d34d96e: {"chunk":"确定"}
+2025-11-03 20:21:49.963 [reactor-http-nio-3] DEBUG com.yizhaoqi.smartpai.service.ChatHandler - 发送响应块到会话 5d277a16-a2af-7a02-8fce-12754d34d96e: {"chunk":"您"}
+2025-11-03 20:21:50.034 [reactor-http-nio-3] DEBUG com.yizhaoqi.smartpai.service.ChatHandler - 发送响应块到会话 5d277a16-a2af-7a02-8fce-12754d34d96e: {"chunk":"所指"}
+2025-11-03 20:21:50.034 [reactor-http-nio-3] DEBUG com.yizhaoqi.smartpai.service.ChatHandler - 发送响应块到会话 5d277a16-a2af-7a02-8fce-12754d34d96e: {"chunk":"的确"}
+2025-11-03 20:21:50.099 [reactor-http-nio-3] DEBUG com.yizhaoqi.smartpai.service.ChatHandler - 发送响应块到会话 5d277a16-a2af-7a02-8fce-12754d34d96e: {"chunk":"切"}
+2025-11-03 20:21:50.100 [reactor-http-nio-3] DEBUG com.yizhaoqi.smartpai.service.ChatHandler - 发送响应块到会话 5d277a16-a2af-7a02-8fce-12754d34d96e: {"chunk":"含义"}
+2025-11-03 20:21:50.169 [reactor-http-nio-3] DEBUG com.yizhaoqi.smartpai.service.ChatHandler - 发送响应块到会话 5d277a16-a2af-7a02-8fce-12754d34d96e: {"chunk":"并提供"}
+2025-11-03 20:21:50.235 [reactor-http-nio-3] DEBUG com.yizhaoqi.smartpai.service.ChatHandler - 发送响应块到会话 5d277a16-a2af-7a02-8fce-12754d34d96e: {"chunk":"准确"}
+2025-11-03 20:21:50.303 [reactor-http-nio-3] DEBUG com.yizhaoqi.smartpai.service.ChatHandler - 发送响应块到会话 5d277a16-a2af-7a02-8fce-12754d34d96e: {"chunk":"回答"}
+2025-11-03 20:21:50.371 [reactor-http-nio-3] DEBUG com.yizhaoqi.smartpai.service.ChatHandler - 发送响应块到会话 5d277a16-a2af-7a02-8fce-12754d34d96e: {"chunk":"。"}
+2025-11-03 20:21:50.371 [reactor-http-nio-3] DEBUG com.yizhaoqi.smartpai.service.ChatHandler - 发送响应块到会话 5d277a16-a2af-7a02-8fce-12754d34d96e: {"chunk":"建议"}
+2025-11-03 20:21:50.436 [reactor-http-nio-3] DEBUG com.yizhaoqi.smartpai.service.ChatHandler - 发送响应块到会话 5d277a16-a2af-7a02-8fce-12754d34d96e: {"chunk":"您"}
+2025-11-03 20:21:50.436 [reactor-http-nio-3] DEBUG com.yizhaoqi.smartpai.service.ChatHandler - 发送响应块到会话 5d277a16-a2af-7a02-8fce-12754d34d96e: {"chunk":"补充"}
+2025-11-03 20:21:50.505 [reactor-http-nio-3] DEBUG com.yizhaoqi.smartpai.service.ChatHandler - 发送响应块到会话 5d277a16-a2af-7a02-8fce-12754d34d96e: {"chunk":"更多"}
+2025-11-03 20:21:50.511 [reactor-http-nio-3] DEBUG com.yizhaoqi.smartpai.service.ChatHandler - 发送响应块到会话 5d277a16-a2af-7a02-8fce-12754d34d96e: {"chunk":"具体"}
+2025-11-03 20:21:50.570 [reactor-http-nio-3] DEBUG com.yizhaoqi.smartpai.service.ChatHandler - 发送响应块到会话 5d277a16-a2af-7a02-8fce-12754d34d96e: {"chunk":"信息"}
+2025-11-03 20:21:50.638 [reactor-http-nio-3] DEBUG com.yizhaoqi.smartpai.service.ChatHandler - 发送响应块到会话 5d277a16-a2af-7a02-8fce-12754d34d96e: {"chunk":"或"}
+2025-11-03 20:21:50.638 [reactor-http-nio-3] DEBUG com.yizhaoqi.smartpai.service.ChatHandler - 发送响应块到会话 5d277a16-a2af-7a02-8fce-12754d34d96e: {"chunk":"明确"}
+2025-11-03 20:21:50.704 [reactor-http-nio-3] DEBUG com.yizhaoqi.smartpai.service.ChatHandler - 发送响应块到会话 5d277a16-a2af-7a02-8fce-12754d34d96e: {"chunk":"具体"}
+2025-11-03 20:21:50.770 [reactor-http-nio-3] DEBUG com.yizhaoqi.smartpai.service.ChatHandler - 发送响应块到会话 5d277a16-a2af-7a02-8fce-12754d34d96e: {"chunk":"指向"}
+2025-11-03 20:21:50.837 [reactor-http-nio-3] DEBUG com.yizhaoqi.smartpai.service.ChatHandler - 发送响应块到会话 5d277a16-a2af-7a02-8fce-12754d34d96e: {"chunk":"，"}
+2025-11-03 20:21:50.837 [reactor-http-nio-3] DEBUG com.yizhaoqi.smartpai.service.ChatHandler - 发送响应块到会话 5d277a16-a2af-7a02-8fce-12754d34d96e: {"chunk":"我将"}
+2025-11-03 20:21:50.904 [reactor-http-nio-3] DEBUG com.yizhaoqi.smartpai.service.ChatHandler - 发送响应块到会话 5d277a16-a2af-7a02-8fce-12754d34d96e: {"chunk":"竭"}
+2025-11-03 20:21:50.971 [reactor-http-nio-3] DEBUG com.yizhaoqi.smartpai.service.ChatHandler - 发送响应块到会话 5d277a16-a2af-7a02-8fce-12754d34d96e: {"chunk":"诚"}
+2025-11-03 20:21:50.971 [reactor-http-nio-3] DEBUG com.yizhaoqi.smartpai.service.ChatHandler - 发送响应块到会话 5d277a16-a2af-7a02-8fce-12754d34d96e: {"chunk":"为您"}
+2025-11-03 20:21:51.042 [reactor-http-nio-3] DEBUG com.yizhaoqi.smartpai.service.ChatHandler - 发送响应块到会话 5d277a16-a2af-7a02-8fce-12754d34d96e: {"chunk":"进一步"}
+2025-11-03 20:21:51.042 [reactor-http-nio-3] DEBUG com.yizhaoqi.smartpai.service.ChatHandler - 发送响应块到会话 5d277a16-a2af-7a02-8fce-12754d34d96e: {"chunk":"解答"}
+2025-11-03 20:21:51.109 [reactor-http-nio-3] DEBUG com.yizhaoqi.smartpai.service.ChatHandler - 发送响应块到会话 5d277a16-a2af-7a02-8fce-12754d34d96e: {"chunk":"。"}
+2025-11-03 20:21:51.901 [Thread-10] DEBUG com.yizhaoqi.smartpai.service.ChatHandler - 响应仍在继续，等待完成...
+2025-11-03 20:21:58.906 [Thread-10] INFO  com.yizhaoqi.smartpai.service.ChatHandler - 发送完成通知到会话 5d277a16-a2af-7a02-8fce-12754d34d96e: {"type":"completion","status":"finished","message":"响应已完成","timestamp":1762172518905,"date":"2025-11-03T20:21:58.905428"}
+2025-11-03 20:21:58.907 [Thread-10] INFO  com.yizhaoqi.smartpai.service.ChatHandler - 已发送响应完成通知到会话: 5d277a16-a2af-7a02-8fce-12754d34d96e
+2025-11-03 20:21:58.910 [Thread-10] DEBUG com.yizhaoqi.smartpai.service.ChatHandler - 会话 df066211-2766-4d79-9420-0fcb48a3b6b4 没有历史记录
+2025-11-03 20:21:58.913 [Thread-10] DEBUG com.yizhaoqi.smartpai.service.ChatHandler - 更新会话历史，会话ID: df066211-2766-4d79-9420-0fcb48a3b6b4, 总消息数: 2
+2025-11-03 20:21:58.913 [Thread-10] INFO  com.yizhaoqi.smartpai.service.ChatHandler - 对话存储信息 - Redis键: user:admin:current_conversation, 值: df066211-2766-4d79-9420-0fcb48a3b6b4
+2025-11-03 20:21:58.913 [Thread-10] INFO  com.yizhaoqi.smartpai.service.ChatHandler - 消息处理完成，用户ID: admin
+2025-11-03 20:22:04.930 [SpringApplicationShutdownHook] INFO  o.s.boot.web.embedded.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2025-11-03 20:22:04.937 [tomcat-shutdown] INFO  o.s.boot.web.embedded.tomcat.GracefulShutdown - Graceful shutdown complete
+2025-11-03 20:22:07.047 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2025-11-03 20:22:07.053 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2025-11-03 20:22:07.057 [SpringApplicationShutdownHook] DEBUG o.s.w.s.handler.LoggingWebSocketHandlerDecorator - Transport error in StandardWebSocketSession[id=5d277a16-a2af-7a02-8fce-12754d34d96e, uri=ws://localhost:8081/chat/eyJhbGciOiJIUzI1NiJ9.eyJwcmltYXJ5T3JnIjoiZGVmYXVsdCIsIm9yZ1RhZ3MiOiJkZWZhdWx0LGFkbWluIiwicm9sZSI6IkFETUlOIiwidG9rZW5JZCI6IjVmMWNjZTIwNTc1ZjQ4ZTg5ZGY3Y2Q4YzlhM2JkNjYwIiwidXNlcklkIjoiMSIsInN1YiI6ImFkbWluIiwiZXhwIjoxNzYyMTc2MDg1fQ.Ba638jFR2Ccl0uF9BH2XS32oh1lcy0TRHGCBdbqNKBY]
+java.io.IOException: java.nio.channels.ClosedChannelException
+	at org.apache.tomcat.websocket.WsRemoteEndpointImplBase.sendMessageBlockInternal(WsRemoteEndpointImplBase.java:326)
+	at org.apache.tomcat.websocket.WsRemoteEndpointImplBase.sendMessageBlock(WsRemoteEndpointImplBase.java:266)
+	at org.apache.tomcat.websocket.WsSession.sendCloseMessage(WsSession.java:792)
+	at org.apache.tomcat.websocket.WsSession.doClose(WsSession.java:589)
+	at org.apache.tomcat.websocket.WsSession.doClose(WsSession.java:556)
+	at org.apache.tomcat.websocket.WsSession.close(WsSession.java:544)
+	at org.apache.tomcat.websocket.WsWebSocketContainer.destroy(WsWebSocketContainer.java:1024)
+	at org.apache.tomcat.websocket.server.WsContextListener.contextDestroyed(WsContextListener.java:46)
+	at org.apache.catalina.core.StandardContext.listenerStop(StandardContext.java:4052)
+	at org.apache.catalina.core.StandardContext.stopInternal(StandardContext.java:4662)
+	at org.apache.catalina.util.LifecycleBase.stop(LifecycleBase.java:235)
+	at org.apache.catalina.core.ContainerBase$StopChild.call(ContainerBase.java:1219)
+	at org.apache.catalina.core.ContainerBase$StopChild.call(ContainerBase.java:1208)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at org.apache.tomcat.util.threads.InlineExecutorService.execute(InlineExecutorService.java:75)
+	at java.base/java.util.concurrent.AbstractExecutorService.submit(AbstractExecutorService.java:145)
+	at org.apache.catalina.core.ContainerBase.stopInternal(ContainerBase.java:814)
+	at org.apache.catalina.util.LifecycleBase.stop(LifecycleBase.java:235)
+	at org.apache.catalina.core.ContainerBase$StopChild.call(ContainerBase.java:1219)
+	at org.apache.catalina.core.ContainerBase$StopChild.call(ContainerBase.java:1208)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at org.apache.tomcat.util.threads.InlineExecutorService.execute(InlineExecutorService.java:75)
+	at java.base/java.util.concurrent.AbstractExecutorService.submit(AbstractExecutorService.java:145)
+	at org.apache.catalina.core.ContainerBase.stopInternal(ContainerBase.java:814)
+	at org.apache.catalina.util.LifecycleBase.stop(LifecycleBase.java:235)
+	at org.apache.catalina.core.StandardService.stopInternal(StandardService.java:471)
+	at org.apache.catalina.util.LifecycleBase.stop(LifecycleBase.java:235)
+	at org.apache.catalina.core.StandardServer.stopInternal(StandardServer.java:915)
+	at org.apache.catalina.util.LifecycleBase.stop(LifecycleBase.java:235)
+	at org.apache.catalina.startup.Tomcat.stop(Tomcat.java:447)
+	at org.springframework.boot.web.embedded.tomcat.TomcatWebServer.stopTomcat(TomcatWebServer.java:301)
+	at org.springframework.boot.web.embedded.tomcat.TomcatWebServer.destroy(TomcatWebServer.java:374)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.doClose(ServletWebServerApplicationContext.java:177)
+	at org.springframework.context.support.AbstractApplicationContext.close(AbstractApplicationContext.java:1126)
+	at org.springframework.boot.SpringApplicationShutdownHook.closeAndWait(SpringApplicationShutdownHook.java:147)
+	at java.base/java.lang.Iterable.forEach(Iterable.java:75)
+	at org.springframework.boot.SpringApplicationShutdownHook.run(SpringApplicationShutdownHook.java:116)
+	at java.base/java.lang.Thread.run(Thread.java:842)
+Caused by: java.nio.channels.ClosedChannelException: null
+	at org.apache.tomcat.util.net.NioChannel$1.write(NioChannel.java:273)
+	at org.apache.tomcat.util.net.NioEndpoint$NioSocketWrapper$NioOperationState.run(NioEndpoint.java:1632)
+	at org.apache.tomcat.util.net.SocketWrapperBase$OperationState.start(SocketWrapperBase.java:1051)
+	at org.apache.tomcat.util.net.SocketWrapperBase.vectoredOperation(SocketWrapperBase.java:1440)
+	at org.apache.tomcat.util.net.SocketWrapperBase.write(SocketWrapperBase.java:1366)
+	at org.apache.tomcat.util.net.SocketWrapperBase.write(SocketWrapperBase.java:1337)
+	at org.apache.tomcat.websocket.server.WsRemoteEndpointImplServer.doWrite(WsRemoteEndpointImplServer.java:171)
+	at org.apache.tomcat.websocket.WsRemoteEndpointImplBase.writeMessagePart(WsRemoteEndpointImplBase.java:521)
+	at org.apache.tomcat.websocket.WsRemoteEndpointImplBase.sendMessageBlockInternal(WsRemoteEndpointImplBase.java:313)
+	... 37 common frames omitted
+2025-11-03 20:22:07.059 [SpringApplicationShutdownHook] DEBUG o.s.w.s.handler.LoggingWebSocketHandlerDecorator - StandardWebSocketSession[id=5d277a16-a2af-7a02-8fce-12754d34d96e, uri=ws://localhost:8081/chat/eyJhbGciOiJIUzI1NiJ9.eyJwcmltYXJ5T3JnIjoiZGVmYXVsdCIsIm9yZ1RhZ3MiOiJkZWZhdWx0LGFkbWluIiwicm9sZSI6IkFETUlOIiwidG9rZW5JZCI6IjVmMWNjZTIwNTc1ZjQ4ZTg5ZGY3Y2Q4YzlhM2JkNjYwIiwidXNlcklkIjoiMSIsInN1YiI6ImFkbWluIiwiZXhwIjoxNzYyMTc2MDg1fQ.Ba638jFR2Ccl0uF9BH2XS32oh1lcy0TRHGCBdbqNKBY] closed with CloseStatus[code=1001, reason=The web application is stopping]
+2025-11-03 20:22:07.062 [SpringApplicationShutdownHook] INFO  c.yizhaoqi.smartpai.handler.ChatWebSocketHandler - WebSocket连接已关闭，用户ID: admin，会话ID: 5d277a16-a2af-7a02-8fce-12754d34d96e，状态: CloseStatus[code=1001, reason=The web application is stopping]

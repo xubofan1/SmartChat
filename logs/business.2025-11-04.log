@@ -1,0 +1,548 @@
+2025-11-04 00:13:31.079 [main] INFO  com.yizhaoqi.smartpai.SmartPaiApplication - Starting SmartPaiApplication using Java 17.0.15 with PID 12098 (/Volumes/LQ1000/a/PaiSmart/target/classes started by xustation in /Volumes/LQ1000/a/PaiSmart)
+2025-11-04 00:13:31.080 [main] INFO  com.yizhaoqi.smartpai.SmartPaiApplication - No active profile set, falling back to 1 default profile: "default"
+2025-11-04 00:13:35.570 [main] INFO  com.yizhaoqi.smartpai.config.SecurityConfig - Security configuration loaded successfully.
+2025-11-04 00:13:35.963 [main] INFO  com.yizhaoqi.smartpai.SmartPaiApplication - Started SmartPaiApplication in 5.219 seconds (process running for 5.669)
+2025-11-04 00:13:35.965 [main] INFO  com.yizhaoqi.smartpai.config.AdminUserInitializer - 检查管理员账号是否存在: admin
+2025-11-04 00:13:36.037 [main] INFO  com.yizhaoqi.smartpai.config.AdminUserInitializer - 管理员账号 'admin' 已存在，跳过创建步骤
+2025-11-04 00:13:36.039 [main] INFO  com.yizhaoqi.smartpai.config.OrgTagInitializer - 检查组织标签是否存在: default
+2025-11-04 00:13:36.044 [main] INFO  com.yizhaoqi.smartpai.config.OrgTagInitializer - 组织标签 'default' 已存在，跳过创建步骤
+2025-11-04 00:13:36.044 [main] INFO  com.yizhaoqi.smartpai.config.OrgTagInitializer - 检查组织标签是否存在: admin
+2025-11-04 00:13:36.046 [main] INFO  com.yizhaoqi.smartpai.config.OrgTagInitializer - 组织标签 'admin' 已存在，跳过创建步骤
+2025-11-04 00:13:36.046 [main] INFO  com.yizhaoqi.smartpai.config.OrgTagInitializer - 组织标签初始化完成
+2025-11-04 00:13:36.452 [main] INFO  com.yizhaoqi.smartpai.config.EsIndexInitializer - 索引 'knowledge_base' 已存在
+2025-11-04 00:13:39.395 [http-nio-8081-exec-1] INFO  com.yizhaoqi.smartpai.business - [REQUEST_START] [用户:anonymous] 开始处理请求 [POST] /api/v1/users/login
+2025-11-04 00:13:39.839 [http-nio-8081-exec-1] DEBUG com.yizhaoqi.smartpai.service.TokenCacheService - Token cached: 2991f4769cfd4f58a8fb5c7d478e4913 for user: admin
+2025-11-04 00:13:39.839 [http-nio-8081-exec-1] INFO  com.yizhaoqi.smartpai.utils.JwtUtils - Token generated and cached for user: admin, tokenId: 2991f4769cfd4f58a8fb5c7d478e4913
+2025-11-04 00:13:39.842 [http-nio-8081-exec-1] DEBUG com.yizhaoqi.smartpai.service.TokenCacheService - Refresh token cached: da3327e21d7c48688cae4696968ec2e3 for user: 1
+2025-11-04 00:13:39.842 [http-nio-8081-exec-1] INFO  com.yizhaoqi.smartpai.utils.JwtUtils - Refresh token generated and cached for user: admin, refreshTokenId: da3327e21d7c48688cae4696968ec2e3
+2025-11-04 00:13:39.842 [http-nio-8081-exec-1] INFO  com.yizhaoqi.smartpai.business - [用户操作] [用户:admin] [操作:LOGIN] [资源:token_generation] [结果:SUCCESS]
+2025-11-04 00:13:39.855 [http-nio-8081-exec-1] INFO  com.yizhaoqi.smartpai.business - [API] [POST] /api/v1/users/login [用户:anonymous] [状态:200] [耗时:461ms]
+2025-11-04 00:13:39.931 [http-nio-8081-exec-2] INFO  com.yizhaoqi.smartpai.business - [REQUEST_START] [用户:1] 开始处理请求 [GET] /api/v1/users/me
+2025-11-04 00:13:39.936 [http-nio-8081-exec-2] INFO  com.yizhaoqi.smartpai.business - [用户操作] [用户:admin] [操作:GET_USER_INFO] [资源:user_profile] [结果:SUCCESS]
+2025-11-04 00:13:39.941 [http-nio-8081-exec-2] INFO  com.yizhaoqi.smartpai.business - [API] [GET] /api/v1/users/me [用户:1] [状态:200] [耗时:10ms]
+2025-11-04 00:13:39.969 [http-nio-8081-exec-3] INFO  com.yizhaoqi.smartpai.business - [REQUEST_START] [用户:1] 开始处理请求 [GET] /api/v1/users/me
+2025-11-04 00:13:39.975 [http-nio-8081-exec-3] INFO  com.yizhaoqi.smartpai.business - [用户操作] [用户:admin] [操作:GET_USER_INFO] [资源:user_profile] [结果:SUCCESS]
+2025-11-04 00:13:39.977 [http-nio-8081-exec-3] INFO  com.yizhaoqi.smartpai.business - [API] [GET] /api/v1/users/me [用户:1] [状态:200] [耗时:8ms]
+2025-11-04 00:13:40.157 [http-nio-8081-exec-5] INFO  com.yizhaoqi.smartpai.business - [REQUEST_START] [用户:1] 开始处理请求 [GET] /api/v1/users/conversation
+2025-11-04 00:13:40.161 [http-nio-8081-exec-4] INFO  c.yizhaoqi.smartpai.handler.ChatWebSocketHandler - WebSocket连接已建立，用户ID: admin，会话ID: add1a313-6032-64c6-4d9e-03cc8b4754ae，URI路径: /chat/eyJhbGciOiJIUzI1NiJ9.eyJwcmltYXJ5T3JnIjoiZGVmYXVsdCIsIm9yZ1RhZ3MiOiJkZWZhdWx0LGFkbWluIiwicm9sZSI6IkFETUlOIiwidG9rZW5JZCI6IjI5OTFmNDc2OWNmZDRmNThhOGZiNWM3ZDQ3OGU0OTEzIiwidXNlcklkIjoiMSIsInN1YiI6ImFkbWluIiwiZXhwIjoxNzYyMTkwMDE5fQ.ZPcmaN6jdwXtCEiKo_O0Uaxug58AfxZHKcQmGpe-oLM
+2025-11-04 00:13:40.163 [http-nio-8081-exec-5] INFO  com.yizhaoqi.smartpai.business - [GET_CONVERSATIONS] [用户:admin] 开始查询用户对话历史
+2025-11-04 00:13:40.224 [http-nio-8081-exec-5] INFO  com.yizhaoqi.smartpai.business - [GET_CONVERSATIONS] [用户:admin] 尝试查找Redis键: user:1:current_conversation, 结果: 未找到
+2025-11-04 00:13:40.225 [http-nio-8081-exec-5] INFO  com.yizhaoqi.smartpai.business - [GET_CONVERSATIONS] [用户:admin] 找到对话会话ID: df066211-2766-4d79-9420-0fcb48a3b6b4
+2025-11-04 00:13:40.230 [http-nio-8081-exec-5] INFO  com.yizhaoqi.smartpai.business - [GET_CONVERSATIONS] [用户:admin] 解析起始时间: 2025-10-28 -> 2025-10-28T00:00
+2025-11-04 00:13:40.230 [http-nio-8081-exec-5] INFO  com.yizhaoqi.smartpai.business - [GET_CONVERSATIONS] [用户:admin] 解析结束时间: 2025-11-05 -> 2025-11-05T00:00
+2025-11-04 00:13:40.230 [http-nio-8081-exec-5] INFO  com.yizhaoqi.smartpai.business - [GET_CONVERSATIONS] [用户:admin] 从Redis中获取到 2 条对话记录，过滤后剩余 2 条，会话ID: df066211-2766-4d79-9420-0fcb48a3b6b4
+2025-11-04 00:13:40.230 [http-nio-8081-exec-5] INFO  com.yizhaoqi.smartpai.business - [用户操作] [用户:admin] [操作:GET_CONVERSATIONS] [资源:conversation_history] [结果:SUCCESS]
+2025-11-04 00:13:40.233 [http-nio-8081-exec-5] INFO  com.yizhaoqi.smartpai.business - [API] [GET] /api/v1/users/conversation [用户:1] [状态:200] [耗时:78ms]
+2025-11-04 00:13:43.840 [http-nio-8081-exec-6] INFO  com.yizhaoqi.smartpai.business - [REQUEST_START] [用户:1] 开始处理请求 [GET] /api/v1/users/me
+2025-11-04 00:13:43.843 [http-nio-8081-exec-6] INFO  com.yizhaoqi.smartpai.business - [用户操作] [用户:admin] [操作:GET_USER_INFO] [资源:user_profile] [结果:SUCCESS]
+2025-11-04 00:13:43.845 [http-nio-8081-exec-6] INFO  com.yizhaoqi.smartpai.business - [API] [GET] /api/v1/users/me [用户:1] [状态:200] [耗时:5ms]
+2025-11-04 00:13:44.993 [http-nio-8081-exec-7] INFO  com.yizhaoqi.smartpai.business - [REQUEST_START] [用户:1] 开始处理请求 [GET] /api/v1/users/org-tags
+2025-11-04 00:13:45.013 [http-nio-8081-exec-7] DEBUG com.yizhaoqi.smartpai.service.OrgTagCacheService - Cached organization tags for user: admin
+2025-11-04 00:13:45.014 [http-nio-8081-exec-7] DEBUG com.yizhaoqi.smartpai.service.OrgTagCacheService - Cached primary organization for user: admin
+2025-11-04 00:13:45.022 [http-nio-8081-exec-7] INFO  com.yizhaoqi.smartpai.business - [用户操作] [用户:admin] [操作:GET_ORG_TAGS] [资源:organization_tags] [结果:SUCCESS]
+2025-11-04 00:13:45.024 [http-nio-8081-exec-7] INFO  com.yizhaoqi.smartpai.business - [API] [GET] /api/v1/users/org-tags [用户:1] [状态:200] [耗时:31ms]
+2025-11-04 00:13:48.923 [http-nio-8081-exec-8] INFO  com.yizhaoqi.smartpai.business - [REQUEST_START] [用户:1] 开始处理请求 [GET] /api/v1/users/me
+2025-11-04 00:13:48.928 [http-nio-8081-exec-8] INFO  com.yizhaoqi.smartpai.business - [用户操作] [用户:admin] [操作:GET_USER_INFO] [资源:user_profile] [结果:SUCCESS]
+2025-11-04 00:13:48.931 [http-nio-8081-exec-8] INFO  com.yizhaoqi.smartpai.business - [API] [GET] /api/v1/users/me [用户:1] [状态:200] [耗时:8ms]
+2025-11-04 00:13:49.527 [http-nio-8081-exec-10] INFO  com.yizhaoqi.smartpai.business - [REQUEST_START] [用户:1] 开始处理请求 [GET] /api/v1/admin/org-tags/tree
+2025-11-04 00:13:49.532 [http-nio-8081-exec-9] INFO  com.yizhaoqi.smartpai.business - [REQUEST_START] [用户:1] 开始处理请求 [GET] /api/v1/admin/users/list
+2025-11-04 00:13:49.545 [http-nio-8081-exec-10] INFO  com.yizhaoqi.smartpai.business - [API] [GET] /api/v1/admin/org-tags/tree [用户:1] [状态:200] [耗时:16ms]
+2025-11-04 00:13:49.575 [http-nio-8081-exec-9] INFO  com.yizhaoqi.smartpai.business - [API] [GET] /api/v1/admin/users/list [用户:1] [状态:200] [耗时:43ms]
+2025-11-04 00:13:49.590 [http-nio-8081-exec-1] INFO  com.yizhaoqi.smartpai.business - [REQUEST_START] [用户:1] 开始处理请求 [GET] /api/v1/admin/users/list
+2025-11-04 00:13:49.606 [http-nio-8081-exec-1] INFO  com.yizhaoqi.smartpai.business - [API] [GET] /api/v1/admin/users/list [用户:1] [状态:200] [耗时:16ms]
+2025-11-04 00:14:14.896 [http-nio-8081-exec-2] INFO  com.yizhaoqi.smartpai.business - [REQUEST_START] [用户:1] 开始处理请求 [GET] /api/v1/users/me
+2025-11-04 00:14:14.907 [http-nio-8081-exec-2] INFO  com.yizhaoqi.smartpai.business - [用户操作] [用户:admin] [操作:GET_USER_INFO] [资源:user_profile] [结果:SUCCESS]
+2025-11-04 00:14:14.910 [http-nio-8081-exec-2] INFO  com.yizhaoqi.smartpai.business - [API] [GET] /api/v1/users/me [用户:1] [状态:200] [耗时:14ms]
+2025-11-04 00:14:15.404 [http-nio-8081-exec-3] INFO  c.y.smartpai.config.OrgTagAuthorizationFilter - 处理获取用户文档请求: /api/v1/documents/uploads
+2025-11-04 00:14:15.406 [http-nio-8081-exec-3] INFO  com.yizhaoqi.smartpai.business - [REQUEST_START] [用户:1] 开始处理请求 [GET] /api/v1/documents/uploads
+2025-11-04 00:14:15.407 [http-nio-8081-exec-3] INFO  com.yizhaoqi.smartpai.business - [GET_USER_UPLOADED_FILES] [用户:1] 接收到获取用户上传文件请求
+2025-11-04 00:14:15.407 [http-nio-8081-exec-3] INFO  com.yizhaoqi.smartpai.service.DocumentService - 获取用户上传的文件列表: userId=1
+2025-11-04 00:14:15.427 [http-nio-8081-exec-3] INFO  com.yizhaoqi.smartpai.service.DocumentService - 成功获取用户上传的文件列表: userId=1, fileCount=0
+2025-11-04 00:14:15.428 [http-nio-8081-exec-3] INFO  com.yizhaoqi.smartpai.business - [用户操作] [用户:1] [操作:GET_USER_UPLOADED_FILES] [资源:file_list] [结果:SUCCESS]
+2025-11-04 00:14:15.430 [http-nio-8081-exec-3] INFO  com.yizhaoqi.smartpai.business - [GET_USER_UPLOADED_FILES] [用户:1] 成功获取用户上传文件: fileCount=0
+2025-11-04 00:14:15.432 [http-nio-8081-exec-3] INFO  com.yizhaoqi.smartpai.business - [API] [GET] /api/v1/documents/uploads [用户:1] [状态:200] [耗时:25ms]
+2025-11-04 00:14:21.843 [http-nio-8081-exec-4] INFO  com.yizhaoqi.smartpai.business - [REQUEST_START] [用户:1] 开始处理请求 [GET] /api/v1/admin/org-tags/tree
+2025-11-04 00:14:21.852 [http-nio-8081-exec-4] INFO  com.yizhaoqi.smartpai.business - [API] [GET] /api/v1/admin/org-tags/tree [用户:1] [状态:200] [耗时:9ms]
+2025-11-04 00:14:25.649 [http-nio-8081-exec-5] INFO  com.yizhaoqi.smartpai.business - [REQUEST_START] [用户:1] 开始处理请求 [GET] /api/v1/users/me
+2025-11-04 00:14:25.652 [http-nio-8081-exec-5] INFO  com.yizhaoqi.smartpai.business - [用户操作] [用户:admin] [操作:GET_USER_INFO] [资源:user_profile] [结果:SUCCESS]
+2025-11-04 00:14:25.654 [http-nio-8081-exec-5] INFO  com.yizhaoqi.smartpai.business - [API] [GET] /api/v1/users/me [用户:1] [状态:200] [耗时:6ms]
+2025-11-04 00:14:26.152 [http-nio-8081-exec-6] INFO  com.yizhaoqi.smartpai.business - [REQUEST_START] [用户:1] 开始处理请求 [GET] /api/v1/admin/org-tags/tree
+2025-11-04 00:14:26.164 [http-nio-8081-exec-6] INFO  com.yizhaoqi.smartpai.business - [API] [GET] /api/v1/admin/org-tags/tree [用户:1] [状态:200] [耗时:12ms]
+2025-11-04 00:14:27.159 [http-nio-8081-exec-7] INFO  com.yizhaoqi.smartpai.business - [REQUEST_START] [用户:1] 开始处理请求 [GET] /api/v1/users/me
+2025-11-04 00:14:27.163 [http-nio-8081-exec-7] INFO  com.yizhaoqi.smartpai.business - [用户操作] [用户:admin] [操作:GET_USER_INFO] [资源:user_profile] [结果:SUCCESS]
+2025-11-04 00:14:27.166 [http-nio-8081-exec-7] INFO  com.yizhaoqi.smartpai.business - [API] [GET] /api/v1/users/me [用户:1] [状态:200] [耗时:6ms]
+2025-11-04 00:14:27.577 [http-nio-8081-exec-10] INFO  com.yizhaoqi.smartpai.business - [REQUEST_START] [用户:1] 开始处理请求 [GET] /api/v1/admin/users/list
+2025-11-04 00:14:27.577 [http-nio-8081-exec-8] INFO  com.yizhaoqi.smartpai.business - [REQUEST_START] [用户:1] 开始处理请求 [GET] /api/v1/admin/conversation
+2025-11-04 00:14:27.581 [http-nio-8081-exec-8] INFO  com.yizhaoqi.smartpai.business - [ADMIN_GET_ALL_CONVERSATIONS] [用户:admin] 管理员开始查询对话历史，目标用户ID: 1, 时间范围: 2025-10-28 到 2025-11-05
+2025-11-04 00:14:27.590 [http-nio-8081-exec-10] INFO  com.yizhaoqi.smartpai.business - [API] [GET] /api/v1/admin/users/list [用户:1] [状态:200] [耗时:12ms]
+2025-11-04 00:14:27.594 [http-nio-8081-exec-8] INFO  com.yizhaoqi.smartpai.business - [ADMIN_GET_ALL_CONVERSATIONS] [用户:admin] 找到目标用户: ID=1, 用户名=admin
+2025-11-04 00:14:27.607 [http-nio-8081-exec-8] INFO  com.yizhaoqi.smartpai.business - [ADMIN_GET_ALL_CONVERSATIONS] [用户:admin] 管理员查询完成，共获取到 2 条对话记录
+2025-11-04 00:14:27.608 [http-nio-8081-exec-8] INFO  com.yizhaoqi.smartpai.business - [用户操作] [用户:admin] [操作:ADMIN_GET_ALL_CONVERSATIONS] [资源:conversation_history] [结果:SUCCESS]
+2025-11-04 00:14:27.611 [http-nio-8081-exec-8] INFO  com.yizhaoqi.smartpai.business - [API] [GET] /api/v1/admin/conversation [用户:1] [状态:200] [耗时:34ms]
+2025-11-04 00:14:34.807 [http-nio-8081-exec-9] INFO  com.yizhaoqi.smartpai.business - [REQUEST_START] [用户:1] 开始处理请求 [GET] /api/v1/users/me
+2025-11-04 00:14:34.813 [http-nio-8081-exec-9] INFO  com.yizhaoqi.smartpai.business - [用户操作] [用户:admin] [操作:GET_USER_INFO] [资源:user_profile] [结果:SUCCESS]
+2025-11-04 00:14:34.815 [http-nio-8081-exec-9] INFO  com.yizhaoqi.smartpai.business - [API] [GET] /api/v1/users/me [用户:1] [状态:200] [耗时:7ms]
+2025-11-04 00:14:35.125 [http-nio-8081-exec-1] INFO  com.yizhaoqi.smartpai.business - [REQUEST_START] [用户:1] 开始处理请求 [GET] /api/v1/users/conversation
+2025-11-04 00:14:35.125 [http-nio-8081-exec-1] INFO  com.yizhaoqi.smartpai.business - [GET_CONVERSATIONS] [用户:admin] 开始查询用户对话历史
+2025-11-04 00:14:35.128 [http-nio-8081-exec-1] INFO  com.yizhaoqi.smartpai.business - [GET_CONVERSATIONS] [用户:admin] 尝试查找Redis键: user:1:current_conversation, 结果: 未找到
+2025-11-04 00:14:35.128 [http-nio-8081-exec-1] INFO  com.yizhaoqi.smartpai.business - [GET_CONVERSATIONS] [用户:admin] 找到对话会话ID: df066211-2766-4d79-9420-0fcb48a3b6b4
+2025-11-04 00:14:35.130 [http-nio-8081-exec-1] INFO  com.yizhaoqi.smartpai.business - [GET_CONVERSATIONS] [用户:admin] 解析起始时间: 2025-10-28 -> 2025-10-28T00:00
+2025-11-04 00:14:35.130 [http-nio-8081-exec-1] INFO  com.yizhaoqi.smartpai.business - [GET_CONVERSATIONS] [用户:admin] 解析结束时间: 2025-11-05 -> 2025-11-05T00:00
+2025-11-04 00:14:35.130 [http-nio-8081-exec-1] INFO  com.yizhaoqi.smartpai.business - [GET_CONVERSATIONS] [用户:admin] 从Redis中获取到 2 条对话记录，过滤后剩余 2 条，会话ID: df066211-2766-4d79-9420-0fcb48a3b6b4
+2025-11-04 00:14:35.130 [http-nio-8081-exec-1] INFO  com.yizhaoqi.smartpai.business - [用户操作] [用户:admin] [操作:GET_CONVERSATIONS] [资源:conversation_history] [结果:SUCCESS]
+2025-11-04 00:14:35.131 [http-nio-8081-exec-1] INFO  com.yizhaoqi.smartpai.business - [API] [GET] /api/v1/users/conversation [用户:1] [状态:200] [耗时:6ms]
+2025-11-04 00:14:37.601 [http-nio-8081-exec-2] INFO  com.yizhaoqi.smartpai.business - [REQUEST_START] [用户:1] 开始处理请求 [GET] /api/v1/users/me
+2025-11-04 00:14:37.604 [http-nio-8081-exec-2] INFO  com.yizhaoqi.smartpai.business - [用户操作] [用户:admin] [操作:GET_USER_INFO] [资源:user_profile] [结果:SUCCESS]
+2025-11-04 00:14:37.606 [http-nio-8081-exec-2] INFO  com.yizhaoqi.smartpai.business - [API] [GET] /api/v1/users/me [用户:1] [状态:200] [耗时:4ms]
+2025-11-04 00:14:37.897 [http-nio-8081-exec-3] INFO  com.yizhaoqi.smartpai.business - [REQUEST_START] [用户:1] 开始处理请求 [GET] /api/v1/users/org-tags
+2025-11-04 00:14:37.912 [http-nio-8081-exec-3] INFO  com.yizhaoqi.smartpai.business - [用户操作] [用户:admin] [操作:GET_ORG_TAGS] [资源:organization_tags] [结果:SUCCESS]
+2025-11-04 00:14:37.914 [http-nio-8081-exec-3] INFO  com.yizhaoqi.smartpai.business - [API] [GET] /api/v1/users/org-tags [用户:1] [状态:200] [耗时:16ms]
+2025-11-04 00:14:43.715 [http-nio-8081-exec-4] INFO  com.yizhaoqi.smartpai.business - [REQUEST_START] [用户:1] 开始处理请求 [GET] /api/v1/users/me
+2025-11-04 00:14:43.719 [http-nio-8081-exec-4] INFO  com.yizhaoqi.smartpai.business - [用户操作] [用户:admin] [操作:GET_USER_INFO] [资源:user_profile] [结果:SUCCESS]
+2025-11-04 00:14:43.721 [http-nio-8081-exec-4] INFO  com.yizhaoqi.smartpai.business - [API] [GET] /api/v1/users/me [用户:1] [状态:200] [耗时:6ms]
+2025-11-04 00:14:44.034 [http-nio-8081-exec-5] INFO  com.yizhaoqi.smartpai.business - [REQUEST_START] [用户:1] 开始处理请求 [GET] /api/v1/admin/users/list
+2025-11-04 00:14:44.034 [http-nio-8081-exec-6] INFO  com.yizhaoqi.smartpai.business - [REQUEST_START] [用户:1] 开始处理请求 [GET] /api/v1/admin/org-tags/tree
+2025-11-04 00:14:44.054 [http-nio-8081-exec-6] INFO  com.yizhaoqi.smartpai.business - [API] [GET] /api/v1/admin/org-tags/tree [用户:1] [状态:200] [耗时:20ms]
+2025-11-04 00:14:44.057 [http-nio-8081-exec-5] INFO  com.yizhaoqi.smartpai.business - [API] [GET] /api/v1/admin/users/list [用户:1] [状态:200] [耗时:23ms]
+2025-11-04 00:14:44.071 [http-nio-8081-exec-7] INFO  com.yizhaoqi.smartpai.business - [REQUEST_START] [用户:1] 开始处理请求 [GET] /api/v1/admin/users/list
+2025-11-04 00:14:44.093 [http-nio-8081-exec-7] INFO  com.yizhaoqi.smartpai.business - [API] [GET] /api/v1/admin/users/list [用户:1] [状态:200] [耗时:22ms]
+2025-11-04 00:15:16.437 [http-nio-8081-exec-10] INFO  com.yizhaoqi.smartpai.business - [REQUEST_START] [用户:1] 开始处理请求 [GET] /api/v1/admin/users/list
+2025-11-04 00:15:16.468 [http-nio-8081-exec-10] INFO  com.yizhaoqi.smartpai.business - [API] [GET] /api/v1/admin/users/list [用户:1] [状态:200] [耗时:31ms]
+2025-11-04 00:15:17.983 [http-nio-8081-exec-8] INFO  com.yizhaoqi.smartpai.business - [REQUEST_START] [用户:1] 开始处理请求 [GET] /api/v1/users/me
+2025-11-04 00:15:17.991 [http-nio-8081-exec-8] INFO  com.yizhaoqi.smartpai.business - [用户操作] [用户:admin] [操作:GET_USER_INFO] [资源:user_profile] [结果:SUCCESS]
+2025-11-04 00:15:18.002 [http-nio-8081-exec-8] INFO  com.yizhaoqi.smartpai.business - [API] [GET] /api/v1/users/me [用户:1] [状态:200] [耗时:19ms]
+2025-11-04 00:15:18.261 [http-nio-8081-exec-9] INFO  com.yizhaoqi.smartpai.business - [REQUEST_START] [用户:1] 开始处理请求 [GET] /api/v1/admin/conversation
+2025-11-04 00:15:18.262 [http-nio-8081-exec-1] INFO  com.yizhaoqi.smartpai.business - [REQUEST_START] [用户:1] 开始处理请求 [GET] /api/v1/admin/users/list
+2025-11-04 00:15:18.265 [http-nio-8081-exec-9] INFO  com.yizhaoqi.smartpai.business - [ADMIN_GET_ALL_CONVERSATIONS] [用户:admin] 管理员开始查询对话历史，目标用户ID: 1, 时间范围: 2025-10-28 到 2025-11-05
+2025-11-04 00:15:18.270 [http-nio-8081-exec-9] INFO  com.yizhaoqi.smartpai.business - [ADMIN_GET_ALL_CONVERSATIONS] [用户:admin] 找到目标用户: ID=1, 用户名=admin
+2025-11-04 00:15:18.273 [http-nio-8081-exec-9] INFO  com.yizhaoqi.smartpai.business - [ADMIN_GET_ALL_CONVERSATIONS] [用户:admin] 管理员查询完成，共获取到 2 条对话记录
+2025-11-04 00:15:18.274 [http-nio-8081-exec-9] INFO  com.yizhaoqi.smartpai.business - [用户操作] [用户:admin] [操作:ADMIN_GET_ALL_CONVERSATIONS] [资源:conversation_history] [结果:SUCCESS]
+2025-11-04 00:15:18.276 [http-nio-8081-exec-9] INFO  com.yizhaoqi.smartpai.business - [API] [GET] /api/v1/admin/conversation [用户:1] [状态:200] [耗时:14ms]
+2025-11-04 00:15:18.278 [http-nio-8081-exec-1] INFO  com.yizhaoqi.smartpai.business - [API] [GET] /api/v1/admin/users/list [用户:1] [状态:200] [耗时:17ms]
+2025-11-04 00:15:19.571 [http-nio-8081-exec-2] INFO  com.yizhaoqi.smartpai.business - [REQUEST_START] [用户:1] 开始处理请求 [GET] /api/v1/users/me
+2025-11-04 00:15:19.574 [http-nio-8081-exec-2] INFO  com.yizhaoqi.smartpai.business - [用户操作] [用户:admin] [操作:GET_USER_INFO] [资源:user_profile] [结果:SUCCESS]
+2025-11-04 00:15:19.576 [http-nio-8081-exec-2] INFO  com.yizhaoqi.smartpai.business - [API] [GET] /api/v1/users/me [用户:1] [状态:200] [耗时:5ms]
+2025-11-04 00:15:19.905 [http-nio-8081-exec-3] INFO  com.yizhaoqi.smartpai.business - [REQUEST_START] [用户:1] 开始处理请求 [GET] /api/v1/users/conversation
+2025-11-04 00:15:19.905 [http-nio-8081-exec-3] INFO  com.yizhaoqi.smartpai.business - [GET_CONVERSATIONS] [用户:admin] 开始查询用户对话历史
+2025-11-04 00:15:19.908 [http-nio-8081-exec-3] INFO  com.yizhaoqi.smartpai.business - [GET_CONVERSATIONS] [用户:admin] 尝试查找Redis键: user:1:current_conversation, 结果: 未找到
+2025-11-04 00:15:19.909 [http-nio-8081-exec-3] INFO  com.yizhaoqi.smartpai.business - [GET_CONVERSATIONS] [用户:admin] 找到对话会话ID: df066211-2766-4d79-9420-0fcb48a3b6b4
+2025-11-04 00:15:19.914 [http-nio-8081-exec-3] INFO  com.yizhaoqi.smartpai.business - [GET_CONVERSATIONS] [用户:admin] 解析起始时间: 2025-10-28 -> 2025-10-28T00:00
+2025-11-04 00:15:19.914 [http-nio-8081-exec-3] INFO  com.yizhaoqi.smartpai.business - [GET_CONVERSATIONS] [用户:admin] 解析结束时间: 2025-11-05 -> 2025-11-05T00:00
+2025-11-04 00:15:19.914 [http-nio-8081-exec-3] INFO  com.yizhaoqi.smartpai.business - [GET_CONVERSATIONS] [用户:admin] 从Redis中获取到 2 条对话记录，过滤后剩余 2 条，会话ID: df066211-2766-4d79-9420-0fcb48a3b6b4
+2025-11-04 00:15:19.914 [http-nio-8081-exec-3] INFO  com.yizhaoqi.smartpai.business - [用户操作] [用户:admin] [操作:GET_CONVERSATIONS] [资源:conversation_history] [结果:SUCCESS]
+2025-11-04 00:15:19.916 [http-nio-8081-exec-3] INFO  com.yizhaoqi.smartpai.business - [API] [GET] /api/v1/users/conversation [用户:1] [状态:200] [耗时:11ms]
+2025-11-04 00:15:52.354 [http-nio-8081-exec-4] INFO  c.yizhaoqi.smartpai.handler.ChatWebSocketHandler - 接收到消息，用户ID: admin，会话ID: add1a313-6032-64c6-4d9e-03cc8b4754ae，消息长度: 8
+2025-11-04 00:15:52.361 [http-nio-8081-exec-4] INFO  com.yizhaoqi.smartpai.service.ChatHandler - 开始处理消息，用户ID: admin, 会话ID: add1a313-6032-64c6-4d9e-03cc8b4754ae
+2025-11-04 00:15:52.393 [http-nio-8081-exec-4] INFO  com.yizhaoqi.smartpai.service.ChatHandler - 获取到用户 admin 的现有会话ID: df066211-2766-4d79-9420-0fcb48a3b6b4
+2025-11-04 00:15:52.393 [http-nio-8081-exec-4] INFO  com.yizhaoqi.smartpai.service.ChatHandler - 会话ID: df066211-2766-4d79-9420-0fcb48a3b6b4, 用户ID: admin
+2025-11-04 00:15:52.395 [http-nio-8081-exec-4] DEBUG com.yizhaoqi.smartpai.service.ChatHandler - 读取到会话 df066211-2766-4d79-9420-0fcb48a3b6b4 的 2 条历史记录
+2025-11-04 00:15:52.395 [http-nio-8081-exec-4] DEBUG com.yizhaoqi.smartpai.service.ChatHandler - 获取到 2 条历史对话
+2025-11-04 00:15:52.395 [http-nio-8081-exec-4] DEBUG com.yizhaoqi.smartpai.service.HybridSearchService - 开始带权限搜索，查询: 你为什么叫派聪明, 用户ID: admin
+2025-11-04 00:15:52.395 [http-nio-8081-exec-4] DEBUG com.yizhaoqi.smartpai.service.HybridSearchService - 获取用户有效组织标签，用户ID: admin
+2025-11-04 00:15:52.395 [http-nio-8081-exec-4] DEBUG com.yizhaoqi.smartpai.service.HybridSearchService - 用户ID不是数字格式，作为用户名查找: admin
+2025-11-04 00:15:52.405 [http-nio-8081-exec-4] DEBUG com.yizhaoqi.smartpai.service.HybridSearchService - 通过用户名找到用户: admin
+2025-11-04 00:15:52.417 [http-nio-8081-exec-4] DEBUG com.yizhaoqi.smartpai.service.HybridSearchService - 用户 admin 的有效组织标签: [default, admin, DEFAULT]
+2025-11-04 00:15:52.417 [http-nio-8081-exec-4] DEBUG com.yizhaoqi.smartpai.service.HybridSearchService - 用户 admin 的有效组织标签: [default, admin, DEFAULT]
+2025-11-04 00:15:52.417 [http-nio-8081-exec-4] DEBUG com.yizhaoqi.smartpai.service.HybridSearchService - 获取用户数据库ID，用户ID: admin
+2025-11-04 00:15:52.417 [http-nio-8081-exec-4] DEBUG com.yizhaoqi.smartpai.service.HybridSearchService - 用户ID不是数字格式，作为用户名查找: admin
+2025-11-04 00:15:52.419 [http-nio-8081-exec-4] DEBUG com.yizhaoqi.smartpai.service.HybridSearchService - 通过用户名找到用户: admin, ID: 1
+2025-11-04 00:15:52.419 [http-nio-8081-exec-4] DEBUG com.yizhaoqi.smartpai.service.HybridSearchService - 用户 admin 的数据库ID: 1
+2025-11-04 00:15:52.419 [http-nio-8081-exec-4] INFO  com.yizhaoqi.smartpai.client.EmbeddingClient - 开始生成向量，文本数量: 1
+2025-11-04 00:15:53.024 [http-nio-8081-exec-4] INFO  com.yizhaoqi.smartpai.client.EmbeddingClient - 成功生成向量，总数量: 1
+2025-11-04 00:15:53.024 [http-nio-8081-exec-4] DEBUG com.yizhaoqi.smartpai.service.HybridSearchService - 向量生成成功，开始执行混合搜索 KNN
+2025-11-04 00:15:53.303 [http-nio-8081-exec-4] DEBUG com.yizhaoqi.smartpai.service.HybridSearchService - Elasticsearch查询执行完成，命中数量: 0, 最大分数: NaN
+2025-11-04 00:15:53.303 [http-nio-8081-exec-4] DEBUG com.yizhaoqi.smartpai.service.HybridSearchService - 返回搜索结果数量: 0
+2025-11-04 00:15:53.303 [http-nio-8081-exec-4] DEBUG com.yizhaoqi.smartpai.service.ChatHandler - 搜索结果数量: 0
+2025-11-04 00:15:53.303 [http-nio-8081-exec-4] INFO  com.yizhaoqi.smartpai.service.ChatHandler - 调用DeepSeek API生成回复
+2025-11-04 00:15:53.303 [http-nio-8081-exec-4] INFO  com.yizhaoqi.smartpai.client.DeepSeekClient - 构建请求，用户消息：你为什么叫派聪明，上下文长度：0，历史消息数：2
+2025-11-04 00:15:54.500 [reactor-http-nio-3] DEBUG com.yizhaoqi.smartpai.service.ChatHandler - 发送响应块到会话 add1a313-6032-64c6-4d9e-03cc8b4754ae: {"chunk":"**"}
+2025-11-04 00:15:54.767 [reactor-http-nio-3] DEBUG com.yizhaoqi.smartpai.service.ChatHandler - 发送响应块到会话 add1a313-6032-64c6-4d9e-03cc8b4754ae: {"chunk":"结论"}
+2025-11-04 00:15:54.828 [reactor-http-nio-3] DEBUG com.yizhaoqi.smartpai.service.ChatHandler - 发送响应块到会话 add1a313-6032-64c6-4d9e-03cc8b4754ae: {"chunk":"："}
+2025-11-04 00:15:54.830 [reactor-http-nio-3] DEBUG com.yizhaoqi.smartpai.service.ChatHandler - 发送响应块到会话 add1a313-6032-64c6-4d9e-03cc8b4754ae: {"chunk":"**"}
+2025-11-04 00:15:54.886 [reactor-http-nio-3] DEBUG com.yizhaoqi.smartpai.service.ChatHandler - 发送响应块到会话 add1a313-6032-64c6-4d9e-03cc8b4754ae: {"chunk":"  \n"}
+2025-11-04 00:15:54.887 [reactor-http-nio-3] DEBUG com.yizhaoqi.smartpai.service.ChatHandler - 发送响应块到会话 add1a313-6032-64c6-4d9e-03cc8b4754ae: {"chunk":"我的"}
+2025-11-04 00:15:54.943 [reactor-http-nio-3] DEBUG com.yizhaoqi.smartpai.service.ChatHandler - 发送响应块到会话 add1a313-6032-64c6-4d9e-03cc8b4754ae: {"chunk":"名称"}
+2025-11-04 00:15:55.003 [reactor-http-nio-3] DEBUG com.yizhaoqi.smartpai.service.ChatHandler - 发送响应块到会话 add1a313-6032-64c6-4d9e-03cc8b4754ae: {"chunk":"“"}
+2025-11-04 00:15:55.003 [reactor-http-nio-3] DEBUG com.yizhaoqi.smartpai.service.ChatHandler - 发送响应块到会话 add1a313-6032-64c6-4d9e-03cc8b4754ae: {"chunk":"派"}
+2025-11-04 00:15:55.062 [reactor-http-nio-3] DEBUG com.yizhaoqi.smartpai.service.ChatHandler - 发送响应块到会话 add1a313-6032-64c6-4d9e-03cc8b4754ae: {"chunk":"聪明"}
+2025-11-04 00:15:55.063 [reactor-http-nio-3] DEBUG com.yizhaoqi.smartpai.service.ChatHandler - 发送响应块到会话 add1a313-6032-64c6-4d9e-03cc8b4754ae: {"chunk":"”"}
+2025-11-04 00:15:55.123 [reactor-http-nio-3] DEBUG com.yizhaoqi.smartpai.service.ChatHandler - 发送响应块到会话 add1a313-6032-64c6-4d9e-03cc8b4754ae: {"chunk":"由"}
+2025-11-04 00:15:55.123 [reactor-http-nio-3] DEBUG com.yizhaoqi.smartpai.service.ChatHandler - 发送响应块到会话 add1a313-6032-64c6-4d9e-03cc8b4754ae: {"chunk":"开发"}
+2025-11-04 00:15:55.181 [reactor-http-nio-3] DEBUG com.yizhaoqi.smartpai.service.ChatHandler - 发送响应块到会话 add1a313-6032-64c6-4d9e-03cc8b4754ae: {"chunk":"团队"}
+2025-11-04 00:15:55.182 [reactor-http-nio-3] DEBUG com.yizhaoqi.smartpai.service.ChatHandler - 发送响应块到会话 add1a313-6032-64c6-4d9e-03cc8b4754ae: {"chunk":"命名"}
+2025-11-04 00:15:55.245 [reactor-http-nio-3] DEBUG com.yizhaoqi.smartpai.service.ChatHandler - 发送响应块到会话 add1a313-6032-64c6-4d9e-03cc8b4754ae: {"chunk":"，"}
+2025-11-04 00:15:55.245 [reactor-http-nio-3] DEBUG com.yizhaoqi.smartpai.service.ChatHandler - 发送响应块到会话 add1a313-6032-64c6-4d9e-03cc8b4754ae: {"chunk":"旨在"}
+2025-11-04 00:15:55.300 [reactor-http-nio-3] DEBUG com.yizhaoqi.smartpai.service.ChatHandler - 发送响应块到会话 add1a313-6032-64c6-4d9e-03cc8b4754ae: {"chunk":"体现"}
+2025-11-04 00:15:55.360 [reactor-http-nio-3] DEBUG com.yizhaoqi.smartpai.service.ChatHandler - 发送响应块到会话 add1a313-6032-64c6-4d9e-03cc8b4754ae: {"chunk":"智能"}
+2025-11-04 00:15:55.421 [reactor-http-nio-3] DEBUG com.yizhaoqi.smartpai.service.ChatHandler - 发送响应块到会话 add1a313-6032-64c6-4d9e-03cc8b4754ae: {"chunk":"、"}
+2025-11-04 00:15:55.479 [reactor-http-nio-3] DEBUG com.yizhaoqi.smartpai.service.ChatHandler - 发送响应块到会话 add1a313-6032-64c6-4d9e-03cc8b4754ae: {"chunk":"友好"}
+2025-11-04 00:15:55.480 [reactor-http-nio-3] DEBUG com.yizhaoqi.smartpai.service.ChatHandler - 发送响应块到会话 add1a313-6032-64c6-4d9e-03cc8b4754ae: {"chunk":"与"}
+2025-11-04 00:15:55.538 [reactor-http-nio-3] DEBUG com.yizhaoqi.smartpai.service.ChatHandler - 发送响应块到会话 add1a313-6032-64c6-4d9e-03cc8b4754ae: {"chunk":"实用"}
+2025-11-04 00:15:55.598 [reactor-http-nio-3] DEBUG com.yizhaoqi.smartpai.service.ChatHandler - 发送响应块到会话 add1a313-6032-64c6-4d9e-03cc8b4754ae: {"chunk":"特性"}
+2025-11-04 00:15:55.658 [reactor-http-nio-3] DEBUG com.yizhaoqi.smartpai.service.ChatHandler - 发送响应块到会话 add1a313-6032-64c6-4d9e-03cc8b4754ae: {"chunk":"。\n\n"}
+2025-11-04 00:15:55.658 [reactor-http-nio-3] DEBUG com.yizhaoqi.smartpai.service.ChatHandler - 发送响应块到会话 add1a313-6032-64c6-4d9e-03cc8b4754ae: {"chunk":"**"}
+2025-11-04 00:15:55.718 [reactor-http-nio-3] DEBUG com.yizhaoqi.smartpai.service.ChatHandler - 发送响应块到会话 add1a313-6032-64c6-4d9e-03cc8b4754ae: {"chunk":"论"}
+2025-11-04 00:15:55.718 [reactor-http-nio-3] DEBUG com.yizhaoqi.smartpai.service.ChatHandler - 发送响应块到会话 add1a313-6032-64c6-4d9e-03cc8b4754ae: {"chunk":"据"}
+2025-11-04 00:15:55.776 [reactor-http-nio-3] DEBUG com.yizhaoqi.smartpai.service.ChatHandler - 发送响应块到会话 add1a313-6032-64c6-4d9e-03cc8b4754ae: {"chunk":"："}
+2025-11-04 00:15:55.836 [reactor-http-nio-3] DEBUG com.yizhaoqi.smartpai.service.ChatHandler - 发送响应块到会话 add1a313-6032-64c6-4d9e-03cc8b4754ae: {"chunk":"**"}
+2025-11-04 00:15:55.837 [reactor-http-nio-3] DEBUG com.yizhaoqi.smartpai.service.ChatHandler - 发送响应块到会话 add1a313-6032-64c6-4d9e-03cc8b4754ae: {"chunk":"  \n"}
+2025-11-04 00:15:55.896 [reactor-http-nio-3] DEBUG com.yizhaoqi.smartpai.service.ChatHandler - 发送响应块到会话 add1a313-6032-64c6-4d9e-03cc8b4754ae: {"chunk":"1"}
+2025-11-04 00:15:55.896 [reactor-http-nio-3] DEBUG com.yizhaoqi.smartpai.service.ChatHandler - 发送响应块到会话 add1a313-6032-64c6-4d9e-03cc8b4754ae: {"chunk":"."}
+2025-11-04 00:15:55.956 [reactor-http-nio-3] DEBUG com.yizhaoqi.smartpai.service.ChatHandler - 发送响应块到会话 add1a313-6032-64c6-4d9e-03cc8b4754ae: {"chunk":" **"}
+2025-11-04 00:15:55.956 [reactor-http-nio-3] DEBUG com.yizhaoqi.smartpai.service.ChatHandler - 发送响应块到会话 add1a313-6032-64c6-4d9e-03cc8b4754ae: {"chunk":"“"}
+2025-11-04 00:15:56.014 [reactor-http-nio-3] DEBUG com.yizhaoqi.smartpai.service.ChatHandler - 发送响应块到会话 add1a313-6032-64c6-4d9e-03cc8b4754ae: {"chunk":"派"}
+2025-11-04 00:15:56.015 [reactor-http-nio-3] DEBUG com.yizhaoqi.smartpai.service.ChatHandler - 发送响应块到会话 add1a313-6032-64c6-4d9e-03cc8b4754ae: {"chunk":"”"}
+2025-11-04 00:15:56.074 [reactor-http-nio-3] DEBUG com.yizhaoqi.smartpai.service.ChatHandler - 发送响应块到会话 add1a313-6032-64c6-4d9e-03cc8b4754ae: {"chunk":"的"}
+2025-11-04 00:15:56.075 [reactor-http-nio-3] DEBUG com.yizhaoqi.smartpai.service.ChatHandler - 发送响应块到会话 add1a313-6032-64c6-4d9e-03cc8b4754ae: {"chunk":"象征"}
+2025-11-04 00:15:56.133 [reactor-http-nio-3] DEBUG com.yizhaoqi.smartpai.service.ChatHandler - 发送响应块到会话 add1a313-6032-64c6-4d9e-03cc8b4754ae: {"chunk":"意义"}
+2025-11-04 00:15:56.134 [reactor-http-nio-3] DEBUG com.yizhaoqi.smartpai.service.ChatHandler - 发送响应块到会话 add1a313-6032-64c6-4d9e-03cc8b4754ae: {"chunk":"**"}
+2025-11-04 00:15:56.193 [reactor-http-nio-3] DEBUG com.yizhaoqi.smartpai.service.ChatHandler - 发送响应块到会话 add1a313-6032-64c6-4d9e-03cc8b4754ae: {"chunk":"："}
+2025-11-04 00:15:56.193 [reactor-http-nio-3] DEBUG com.yizhaoqi.smartpai.service.ChatHandler - 发送响应块到会话 add1a313-6032-64c6-4d9e-03cc8b4754ae: {"chunk":"  \n"}
+2025-11-04 00:15:56.252 [reactor-http-nio-3] DEBUG com.yizhaoqi.smartpai.service.ChatHandler - 发送响应块到会话 add1a313-6032-64c6-4d9e-03cc8b4754ae: {"chunk":"  "}
+2025-11-04 00:15:56.252 [reactor-http-nio-3] DEBUG com.yizhaoqi.smartpai.service.ChatHandler - 发送响应块到会话 add1a313-6032-64c6-4d9e-03cc8b4754ae: {"chunk":" -"}
+2025-11-04 00:15:56.311 [reactor-http-nio-3] DEBUG com.yizhaoqi.smartpai.service.ChatHandler - 发送响应块到会话 add1a313-6032-64c6-4d9e-03cc8b4754ae: {"chunk":" "}
+2025-11-04 00:15:56.311 [reactor-http-nio-3] DEBUG com.yizhaoqi.smartpai.service.ChatHandler - 发送响应块到会话 add1a313-6032-64c6-4d9e-03cc8b4754ae: {"chunk":"数学"}
+2025-11-04 00:15:56.371 [reactor-http-nio-3] DEBUG com.yizhaoqi.smartpai.service.ChatHandler - 发送响应块到会话 add1a313-6032-64c6-4d9e-03cc8b4754ae: {"chunk":"符号"}
+2025-11-04 00:15:56.430 [reactor-http-nio-3] DEBUG com.yizhaoqi.smartpai.service.ChatHandler - 发送响应块到会话 add1a313-6032-64c6-4d9e-03cc8b4754ae: {"chunk":"“"}
+2025-11-04 00:15:56.431 [reactor-http-nio-3] DEBUG com.yizhaoqi.smartpai.service.ChatHandler - 发送响应块到会话 add1a313-6032-64c6-4d9e-03cc8b4754ae: {"chunk":"π"}
+2025-11-04 00:15:56.491 [reactor-http-nio-3] DEBUG com.yizhaoqi.smartpai.service.ChatHandler - 发送响应块到会话 add1a313-6032-64c6-4d9e-03cc8b4754ae: {"chunk":"”"}
+2025-11-04 00:15:56.491 [reactor-http-nio-3] DEBUG com.yizhaoqi.smartpai.service.ChatHandler - 发送响应块到会话 add1a313-6032-64c6-4d9e-03cc8b4754ae: {"chunk":"代表"}
+2025-11-04 00:15:56.564 [reactor-http-nio-3] DEBUG com.yizhaoqi.smartpai.service.ChatHandler - 发送响应块到会话 add1a313-6032-64c6-4d9e-03cc8b4754ae: {"chunk":"无限"}
+2025-11-04 00:15:56.565 [reactor-http-nio-3] DEBUG com.yizhaoqi.smartpai.service.ChatHandler - 发送响应块到会话 add1a313-6032-64c6-4d9e-03cc8b4754ae: {"chunk":"不"}
+2025-11-04 00:15:56.614 [reactor-http-nio-3] DEBUG com.yizhaoqi.smartpai.service.ChatHandler - 发送响应块到会话 add1a313-6032-64c6-4d9e-03cc8b4754ae: {"chunk":"循环"}
+2025-11-04 00:15:56.615 [reactor-http-nio-3] DEBUG com.yizhaoqi.smartpai.service.ChatHandler - 发送响应块到会话 add1a313-6032-64c6-4d9e-03cc8b4754ae: {"chunk":"小数"}
+2025-11-04 00:15:56.669 [reactor-http-nio-3] DEBUG com.yizhaoqi.smartpai.service.ChatHandler - 发送响应块到会话 add1a313-6032-64c6-4d9e-03cc8b4754ae: {"chunk":"，"}
+2025-11-04 00:15:56.669 [reactor-http-nio-3] DEBUG com.yizhaoqi.smartpai.service.ChatHandler - 发送响应块到会话 add1a313-6032-64c6-4d9e-03cc8b4754ae: {"chunk":"寓意"}
+2025-11-04 00:15:56.728 [reactor-http-nio-3] DEBUG com.yizhaoqi.smartpai.service.ChatHandler - 发送响应块到会话 add1a313-6032-64c6-4d9e-03cc8b4754ae: {"chunk":"知识的"}
+2025-11-04 00:15:56.787 [reactor-http-nio-3] DEBUG com.yizhaoqi.smartpai.service.ChatHandler - 发送响应块到会话 add1a313-6032-64c6-4d9e-03cc8b4754ae: {"chunk":"广"}
+2025-11-04 00:15:56.847 [reactor-http-nio-3] DEBUG com.yizhaoqi.smartpai.service.ChatHandler - 发送响应块到会话 add1a313-6032-64c6-4d9e-03cc8b4754ae: {"chunk":"博"}
+2025-11-04 00:15:56.906 [reactor-http-nio-3] DEBUG com.yizhaoqi.smartpai.service.ChatHandler - 发送响应块到会话 add1a313-6032-64c6-4d9e-03cc8b4754ae: {"chunk":"与"}
+2025-11-04 00:15:56.906 [reactor-http-nio-3] DEBUG com.yizhaoqi.smartpai.service.ChatHandler - 发送响应块到会话 add1a313-6032-64c6-4d9e-03cc8b4754ae: {"chunk":"探索"}
+2025-11-04 00:15:56.966 [reactor-http-nio-3] DEBUG com.yizhaoqi.smartpai.service.ChatHandler - 发送响应块到会话 add1a313-6032-64c6-4d9e-03cc8b4754ae: {"chunk":"的"}
+2025-11-04 00:15:56.966 [reactor-http-nio-3] DEBUG com.yizhaoqi.smartpai.service.ChatHandler - 发送响应块到会话 add1a313-6032-64c6-4d9e-03cc8b4754ae: {"chunk":"无限"}
+2025-11-04 00:15:57.027 [reactor-http-nio-3] DEBUG com.yizhaoqi.smartpai.service.ChatHandler - 发送响应块到会话 add1a313-6032-64c6-4d9e-03cc8b4754ae: {"chunk":"性"}
+2025-11-04 00:15:57.027 [reactor-http-nio-3] DEBUG com.yizhaoqi.smartpai.service.ChatHandler - 发送响应块到会话 add1a313-6032-64c6-4d9e-03cc8b4754ae: {"chunk":"；"}
+2025-11-04 00:15:57.087 [reactor-http-nio-3] DEBUG com.yizhaoqi.smartpai.service.ChatHandler - 发送响应块到会话 add1a313-6032-64c6-4d9e-03cc8b4754ae: {"chunk":"  \n"}
+2025-11-04 00:15:57.087 [reactor-http-nio-3] DEBUG com.yizhaoqi.smartpai.service.ChatHandler - 发送响应块到会话 add1a313-6032-64c6-4d9e-03cc8b4754ae: {"chunk":"  "}
+2025-11-04 00:15:57.145 [reactor-http-nio-3] DEBUG com.yizhaoqi.smartpai.service.ChatHandler - 发送响应块到会话 add1a313-6032-64c6-4d9e-03cc8b4754ae: {"chunk":" -"}
+2025-11-04 00:15:57.146 [reactor-http-nio-3] DEBUG com.yizhaoqi.smartpai.service.ChatHandler - 发送响应块到会话 add1a313-6032-64c6-4d9e-03cc8b4754ae: {"chunk":" “"}
+2025-11-04 00:15:57.205 [reactor-http-nio-3] DEBUG com.yizhaoqi.smartpai.service.ChatHandler - 发送响应块到会话 add1a313-6032-64c6-4d9e-03cc8b4754ae: {"chunk":"派"}
+2025-11-04 00:15:57.205 [reactor-http-nio-3] DEBUG com.yizhaoqi.smartpai.service.ChatHandler - 发送响应块到会话 add1a313-6032-64c6-4d9e-03cc8b4754ae: {"chunk":"”"}
+2025-11-04 00:15:57.264 [reactor-http-nio-3] DEBUG com.yizhaoqi.smartpai.service.ChatHandler - 发送响应块到会话 add1a313-6032-64c6-4d9e-03cc8b4754ae: {"chunk":"在"}
+2025-11-04 00:15:57.264 [reactor-http-nio-3] DEBUG com.yizhaoqi.smartpai.service.ChatHandler - 发送响应块到会话 add1a313-6032-64c6-4d9e-03cc8b4754ae: {"chunk":"中文"}
+2025-11-04 00:15:57.326 [reactor-http-nio-3] DEBUG com.yizhaoqi.smartpai.service.ChatHandler - 发送响应块到会话 add1a313-6032-64c6-4d9e-03cc8b4754ae: {"chunk":"语境"}
+2025-11-04 00:15:57.384 [reactor-http-nio-3] DEBUG com.yizhaoqi.smartpai.service.ChatHandler - 发送响应块到会话 add1a313-6032-64c6-4d9e-03cc8b4754ae: {"chunk":"中"}
+2025-11-04 00:15:57.384 [reactor-http-nio-3] DEBUG com.yizhaoqi.smartpai.service.ChatHandler - 发送响应块到会话 add1a313-6032-64c6-4d9e-03cc8b4754ae: {"chunk":"可"}
+2025-11-04 00:15:57.444 [reactor-http-nio-3] DEBUG com.yizhaoqi.smartpai.service.ChatHandler - 发送响应块到会话 add1a313-6032-64c6-4d9e-03cc8b4754ae: {"chunk":"引申"}
+2025-11-04 00:15:57.503 [reactor-http-nio-3] DEBUG com.yizhaoqi.smartpai.service.ChatHandler - 发送响应块到会话 add1a313-6032-64c6-4d9e-03cc8b4754ae: {"chunk":"为"}
+2025-11-04 00:15:57.504 [reactor-http-nio-3] DEBUG com.yizhaoqi.smartpai.service.ChatHandler - 发送响应块到会话 add1a313-6032-64c6-4d9e-03cc8b4754ae: {"chunk":"“"}
+2025-11-04 00:15:57.564 [reactor-http-nio-3] DEBUG com.yizhaoqi.smartpai.service.ChatHandler - 发送响应块到会话 add1a313-6032-64c6-4d9e-03cc8b4754ae: {"chunk":"派"}
+2025-11-04 00:15:57.564 [reactor-http-nio-3] DEBUG com.yizhaoqi.smartpai.service.ChatHandler - 发送响应块到会话 add1a313-6032-64c6-4d9e-03cc8b4754ae: {"chunk":"送"}
+2025-11-04 00:15:57.622 [reactor-http-nio-3] DEBUG com.yizhaoqi.smartpai.service.ChatHandler - 发送响应块到会话 add1a313-6032-64c6-4d9e-03cc8b4754ae: {"chunk":"”，"}
+2025-11-04 00:15:57.682 [reactor-http-nio-3] DEBUG com.yizhaoqi.smartpai.service.ChatHandler - 发送响应块到会话 add1a313-6032-64c6-4d9e-03cc8b4754ae: {"chunk":"暗示"}
+2025-11-04 00:15:57.682 [reactor-http-nio-3] DEBUG com.yizhaoqi.smartpai.service.ChatHandler - 发送响应块到会话 add1a313-6032-64c6-4d9e-03cc8b4754ae: {"chunk":"为用户"}
+2025-11-04 00:15:57.740 [reactor-http-nio-3] DEBUG com.yizhaoqi.smartpai.service.ChatHandler - 发送响应块到会话 add1a313-6032-64c6-4d9e-03cc8b4754ae: {"chunk":"提供"}
+2025-11-04 00:15:57.740 [reactor-http-nio-3] DEBUG com.yizhaoqi.smartpai.service.ChatHandler - 发送响应块到会话 add1a313-6032-64c6-4d9e-03cc8b4754ae: {"chunk":"知识与"}
+2025-11-04 00:15:57.803 [reactor-http-nio-3] DEBUG com.yizhaoqi.smartpai.service.ChatHandler - 发送响应块到会话 add1a313-6032-64c6-4d9e-03cc8b4754ae: {"chunk":"服务"}
+2025-11-04 00:15:57.862 [reactor-http-nio-3] DEBUG com.yizhaoqi.smartpai.service.ChatHandler - 发送响应块到会话 add1a313-6032-64c6-4d9e-03cc8b4754ae: {"chunk":"的能力"}
+2025-11-04 00:15:57.921 [reactor-http-nio-3] DEBUG com.yizhaoqi.smartpai.service.ChatHandler - 发送响应块到会话 add1a313-6032-64c6-4d9e-03cc8b4754ae: {"chunk":"。"}
+2025-11-04 00:15:57.981 [reactor-http-nio-3] DEBUG com.yizhaoqi.smartpai.service.ChatHandler - 发送响应块到会话 add1a313-6032-64c6-4d9e-03cc8b4754ae: {"chunk":"  \n\n"}
+2025-11-04 00:15:57.981 [reactor-http-nio-3] DEBUG com.yizhaoqi.smartpai.service.ChatHandler - 发送响应块到会话 add1a313-6032-64c6-4d9e-03cc8b4754ae: {"chunk":"2"}
+2025-11-04 00:15:58.040 [reactor-http-nio-3] DEBUG com.yizhaoqi.smartpai.service.ChatHandler - 发送响应块到会话 add1a313-6032-64c6-4d9e-03cc8b4754ae: {"chunk":"."}
+2025-11-04 00:15:58.040 [reactor-http-nio-3] DEBUG com.yizhaoqi.smartpai.service.ChatHandler - 发送响应块到会话 add1a313-6032-64c6-4d9e-03cc8b4754ae: {"chunk":" **"}
+2025-11-04 00:15:58.100 [reactor-http-nio-3] DEBUG com.yizhaoqi.smartpai.service.ChatHandler - 发送响应块到会话 add1a313-6032-64c6-4d9e-03cc8b4754ae: {"chunk":"“"}
+2025-11-04 00:15:58.100 [reactor-http-nio-3] DEBUG com.yizhaoqi.smartpai.service.ChatHandler - 发送响应块到会话 add1a313-6032-64c6-4d9e-03cc8b4754ae: {"chunk":"聪明"}
+2025-11-04 00:15:58.159 [reactor-http-nio-3] DEBUG com.yizhaoqi.smartpai.service.ChatHandler - 发送响应块到会话 add1a313-6032-64c6-4d9e-03cc8b4754ae: {"chunk":"”"}
+2025-11-04 00:15:58.159 [reactor-http-nio-3] DEBUG com.yizhaoqi.smartpai.service.ChatHandler - 发送响应块到会话 add1a313-6032-64c6-4d9e-03cc8b4754ae: {"chunk":"的"}
+2025-11-04 00:15:58.218 [reactor-http-nio-3] DEBUG com.yizhaoqi.smartpai.service.ChatHandler - 发送响应块到会话 add1a313-6032-64c6-4d9e-03cc8b4754ae: {"chunk":"定位"}
+2025-11-04 00:15:58.219 [reactor-http-nio-3] DEBUG com.yizhaoqi.smartpai.service.ChatHandler - 发送响应块到会话 add1a313-6032-64c6-4d9e-03cc8b4754ae: {"chunk":"**"}
+2025-11-04 00:15:58.278 [reactor-http-nio-3] DEBUG com.yizhaoqi.smartpai.service.ChatHandler - 发送响应块到会话 add1a313-6032-64c6-4d9e-03cc8b4754ae: {"chunk":"："}
+2025-11-04 00:15:58.278 [reactor-http-nio-3] DEBUG com.yizhaoqi.smartpai.service.ChatHandler - 发送响应块到会话 add1a313-6032-64c6-4d9e-03cc8b4754ae: {"chunk":"  \n"}
+2025-11-04 00:15:58.313 [Thread-10] DEBUG com.yizhaoqi.smartpai.service.ChatHandler - 响应仍在继续，等待完成...
+2025-11-04 00:15:58.338 [reactor-http-nio-3] DEBUG com.yizhaoqi.smartpai.service.ChatHandler - 发送响应块到会话 add1a313-6032-64c6-4d9e-03cc8b4754ae: {"chunk":"  "}
+2025-11-04 00:15:58.338 [reactor-http-nio-3] DEBUG com.yizhaoqi.smartpai.service.ChatHandler - 发送响应块到会话 add1a313-6032-64c6-4d9e-03cc8b4754ae: {"chunk":" -"}
+2025-11-04 00:15:58.398 [reactor-http-nio-3] DEBUG com.yizhaoqi.smartpai.service.ChatHandler - 发送响应块到会话 add1a313-6032-64c6-4d9e-03cc8b4754ae: {"chunk":" "}
+2025-11-04 00:15:58.398 [reactor-http-nio-3] DEBUG com.yizhaoqi.smartpai.service.ChatHandler - 发送响应块到会话 add1a313-6032-64c6-4d9e-03cc8b4754ae: {"chunk":"直接"}
+2025-11-04 00:15:58.457 [reactor-http-nio-3] DEBUG com.yizhaoqi.smartpai.service.ChatHandler - 发送响应块到会话 add1a313-6032-64c6-4d9e-03cc8b4754ae: {"chunk":"点"}
+2025-11-04 00:15:58.515 [reactor-http-nio-3] DEBUG com.yizhaoqi.smartpai.service.ChatHandler - 发送响应块到会话 add1a313-6032-64c6-4d9e-03cc8b4754ae: {"chunk":"明"}
+2025-11-04 00:15:58.516 [reactor-http-nio-3] DEBUG com.yizhaoqi.smartpai.service.ChatHandler - 发送响应块到会话 add1a313-6032-64c6-4d9e-03cc8b4754ae: {"chunk":"核心"}
+2025-11-04 00:15:58.576 [reactor-http-nio-3] DEBUG com.yizhaoqi.smartpai.service.ChatHandler - 发送响应块到会话 add1a313-6032-64c6-4d9e-03cc8b4754ae: {"chunk":"功能"}
+2025-11-04 00:15:58.577 [reactor-http-nio-3] DEBUG com.yizhaoqi.smartpai.service.ChatHandler - 发送响应块到会话 add1a313-6032-64c6-4d9e-03cc8b4754ae: {"chunk":"，"}
+2025-11-04 00:15:58.636 [reactor-http-nio-3] DEBUG com.yizhaoqi.smartpai.service.ChatHandler - 发送响应块到会话 add1a313-6032-64c6-4d9e-03cc8b4754ae: {"chunk":"即"}
+2025-11-04 00:15:58.636 [reactor-http-nio-3] DEBUG com.yizhaoqi.smartpai.service.ChatHandler - 发送响应块到会话 add1a313-6032-64c6-4d9e-03cc8b4754ae: {"chunk":"通过"}
+2025-11-04 00:15:58.695 [reactor-http-nio-3] DEBUG com.yizhaoqi.smartpai.service.ChatHandler - 发送响应块到会话 add1a313-6032-64c6-4d9e-03cc8b4754ae: {"chunk":"人工智能"}
+2025-11-04 00:15:58.755 [reactor-http-nio-3] DEBUG com.yizhaoqi.smartpai.service.ChatHandler - 发送响应块到会话 add1a313-6032-64c6-4d9e-03cc8b4754ae: {"chunk":"技术"}
+2025-11-04 00:15:58.755 [reactor-http-nio-3] DEBUG com.yizhaoqi.smartpai.service.ChatHandler - 发送响应块到会话 add1a313-6032-64c6-4d9e-03cc8b4754ae: {"chunk":"实现"}
+2025-11-04 00:15:58.813 [reactor-http-nio-3] DEBUG com.yizhaoqi.smartpai.service.ChatHandler - 发送响应块到会话 add1a313-6032-64c6-4d9e-03cc8b4754ae: {"chunk":"高效"}
+2025-11-04 00:15:58.815 [reactor-http-nio-3] DEBUG com.yizhaoqi.smartpai.service.ChatHandler - 发送响应块到会话 add1a313-6032-64c6-4d9e-03cc8b4754ae: {"chunk":"问题"}
+2025-11-04 00:15:58.872 [reactor-http-nio-3] DEBUG com.yizhaoqi.smartpai.service.ChatHandler - 发送响应块到会话 add1a313-6032-64c6-4d9e-03cc8b4754ae: {"chunk":"解答"}
+2025-11-04 00:15:58.932 [reactor-http-nio-3] DEBUG com.yizhaoqi.smartpai.service.ChatHandler - 发送响应块到会话 add1a313-6032-64c6-4d9e-03cc8b4754ae: {"chunk":"与"}
+2025-11-04 00:15:58.932 [reactor-http-nio-3] DEBUG com.yizhaoqi.smartpai.service.ChatHandler - 发送响应块到会话 add1a313-6032-64c6-4d9e-03cc8b4754ae: {"chunk":"决策"}
+2025-11-04 00:15:58.992 [reactor-http-nio-3] DEBUG com.yizhaoqi.smartpai.service.ChatHandler - 发送响应块到会话 add1a313-6032-64c6-4d9e-03cc8b4754ae: {"chunk":"支持"}
+2025-11-04 00:15:58.992 [reactor-http-nio-3] DEBUG com.yizhaoqi.smartpai.service.ChatHandler - 发送响应块到会话 add1a313-6032-64c6-4d9e-03cc8b4754ae: {"chunk":"；"}
+2025-11-04 00:15:59.051 [reactor-http-nio-3] DEBUG com.yizhaoqi.smartpai.service.ChatHandler - 发送响应块到会话 add1a313-6032-64c6-4d9e-03cc8b4754ae: {"chunk":"  \n"}
+2025-11-04 00:15:59.052 [reactor-http-nio-3] DEBUG com.yizhaoqi.smartpai.service.ChatHandler - 发送响应块到会话 add1a313-6032-64c6-4d9e-03cc8b4754ae: {"chunk":"  "}
+2025-11-04 00:15:59.111 [reactor-http-nio-3] DEBUG com.yizhaoqi.smartpai.service.ChatHandler - 发送响应块到会话 add1a313-6032-64c6-4d9e-03cc8b4754ae: {"chunk":" -"}
+2025-11-04 00:15:59.111 [reactor-http-nio-3] DEBUG com.yizhaoqi.smartpai.service.ChatHandler - 发送响应块到会话 add1a313-6032-64c6-4d9e-03cc8b4754ae: {"chunk":" "}
+2025-11-04 00:15:59.170 [reactor-http-nio-3] DEBUG com.yizhaoqi.smartpai.service.ChatHandler - 发送响应块到会话 add1a313-6032-64c6-4d9e-03cc8b4754ae: {"chunk":"传递"}
+2025-11-04 00:15:59.170 [reactor-http-nio-3] DEBUG com.yizhaoqi.smartpai.service.ChatHandler - 发送响应块到会话 add1a313-6032-64c6-4d9e-03cc8b4754ae: {"chunk":"亲切"}
+2025-11-04 00:15:59.230 [reactor-http-nio-3] DEBUG com.yizhaoqi.smartpai.service.ChatHandler - 发送响应块到会话 add1a313-6032-64c6-4d9e-03cc8b4754ae: {"chunk":"感"}
+2025-11-04 00:15:59.290 [reactor-http-nio-3] DEBUG com.yizhaoqi.smartpai.service.ChatHandler - 发送响应块到会话 add1a313-6032-64c6-4d9e-03cc8b4754ae: {"chunk":"，"}
+2025-11-04 00:15:59.290 [reactor-http-nio-3] DEBUG com.yizhaoqi.smartpai.service.ChatHandler - 发送响应块到会话 add1a313-6032-64c6-4d9e-03cc8b4754ae: {"chunk":"降低"}
+2025-11-04 00:15:59.349 [reactor-http-nio-3] DEBUG com.yizhaoqi.smartpai.service.ChatHandler - 发送响应块到会话 add1a313-6032-64c6-4d9e-03cc8b4754ae: {"chunk":"用户"}
+2025-11-04 00:15:59.349 [reactor-http-nio-3] DEBUG com.yizhaoqi.smartpai.service.ChatHandler - 发送响应块到会话 add1a313-6032-64c6-4d9e-03cc8b4754ae: {"chunk":"对"}
+2025-11-04 00:15:59.408 [reactor-http-nio-3] DEBUG com.yizhaoqi.smartpai.service.ChatHandler - 发送响应块到会话 add1a313-6032-64c6-4d9e-03cc8b4754ae: {"chunk":"技术"}
+2025-11-04 00:15:59.408 [reactor-http-nio-3] DEBUG com.yizhaoqi.smartpai.service.ChatHandler - 发送响应块到会话 add1a313-6032-64c6-4d9e-03cc8b4754ae: {"chunk":"产品的"}
+2025-11-04 00:15:59.467 [reactor-http-nio-3] DEBUG com.yizhaoqi.smartpai.service.ChatHandler - 发送响应块到会话 add1a313-6032-64c6-4d9e-03cc8b4754ae: {"chunk":"距离"}
+2025-11-04 00:15:59.526 [reactor-http-nio-3] DEBUG com.yizhaoqi.smartpai.service.ChatHandler - 发送响应块到会话 add1a313-6032-64c6-4d9e-03cc8b4754ae: {"chunk":"感"}
+2025-11-04 00:15:59.527 [reactor-http-nio-3] DEBUG com.yizhaoqi.smartpai.service.ChatHandler - 发送响应块到会话 add1a313-6032-64c6-4d9e-03cc8b4754ae: {"chunk":"。"}
+2025-11-04 00:15:59.588 [reactor-http-nio-3] DEBUG com.yizhaoqi.smartpai.service.ChatHandler - 发送响应块到会话 add1a313-6032-64c6-4d9e-03cc8b4754ae: {"chunk":"  \n\n"}
+2025-11-04 00:15:59.588 [reactor-http-nio-3] DEBUG com.yizhaoqi.smartpai.service.ChatHandler - 发送响应块到会话 add1a313-6032-64c6-4d9e-03cc8b4754ae: {"chunk":"3"}
+2025-11-04 00:15:59.647 [reactor-http-nio-3] DEBUG com.yizhaoqi.smartpai.service.ChatHandler - 发送响应块到会话 add1a313-6032-64c6-4d9e-03cc8b4754ae: {"chunk":"."}
+2025-11-04 00:15:59.647 [reactor-http-nio-3] DEBUG com.yizhaoqi.smartpai.service.ChatHandler - 发送响应块到会话 add1a313-6032-64c6-4d9e-03cc8b4754ae: {"chunk":" **"}
+2025-11-04 00:15:59.708 [reactor-http-nio-3] DEBUG com.yizhaoqi.smartpai.service.ChatHandler - 发送响应块到会话 add1a313-6032-64c6-4d9e-03cc8b4754ae: {"chunk":"品牌"}
+2025-11-04 00:15:59.767 [reactor-http-nio-3] DEBUG com.yizhaoqi.smartpai.service.ChatHandler - 发送响应块到会话 add1a313-6032-64c6-4d9e-03cc8b4754ae: {"chunk":"意图"}
+2025-11-04 00:15:59.829 [reactor-http-nio-3] DEBUG com.yizhaoqi.smartpai.service.ChatHandler - 发送响应块到会话 add1a313-6032-64c6-4d9e-03cc8b4754ae: {"chunk":"**"}
+2025-11-04 00:15:59.829 [reactor-http-nio-3] DEBUG com.yizhaoqi.smartpai.service.ChatHandler - 发送响应块到会话 add1a313-6032-64c6-4d9e-03cc8b4754ae: {"chunk":"："}
+2025-11-04 00:15:59.888 [reactor-http-nio-3] DEBUG com.yizhaoqi.smartpai.service.ChatHandler - 发送响应块到会话 add1a313-6032-64c6-4d9e-03cc8b4754ae: {"chunk":"  \n"}
+2025-11-04 00:15:59.888 [reactor-http-nio-3] DEBUG com.yizhaoqi.smartpai.service.ChatHandler - 发送响应块到会话 add1a313-6032-64c6-4d9e-03cc8b4754ae: {"chunk":"   "}
+2025-11-04 00:15:59.948 [reactor-http-nio-3] DEBUG com.yizhaoqi.smartpai.service.ChatHandler - 发送响应块到会话 add1a313-6032-64c6-4d9e-03cc8b4754ae: {"chunk":"名称"}
+2025-11-04 00:15:59.948 [reactor-http-nio-3] DEBUG com.yizhaoqi.smartpai.service.ChatHandler - 发送响应块到会话 add1a313-6032-64c6-4d9e-03cc8b4754ae: {"chunk":"整体"}
+2025-11-04 00:16:00.008 [reactor-http-nio-3] DEBUG com.yizhaoqi.smartpai.service.ChatHandler - 发送响应块到会话 add1a313-6032-64c6-4d9e-03cc8b4754ae: {"chunk":"设计"}
+2025-11-04 00:16:00.008 [reactor-http-nio-3] DEBUG com.yizhaoqi.smartpai.service.ChatHandler - 发送响应块到会话 add1a313-6032-64c6-4d9e-03cc8b4754ae: {"chunk":"兼顾"}
+2025-11-04 00:16:00.068 [reactor-http-nio-3] DEBUG com.yizhaoqi.smartpai.service.ChatHandler - 发送响应块到会话 add1a313-6032-64c6-4d9e-03cc8b4754ae: {"chunk":"专业"}
+2025-11-04 00:16:00.128 [reactor-http-nio-3] DEBUG com.yizhaoqi.smartpai.service.ChatHandler - 发送响应块到会话 add1a313-6032-64c6-4d9e-03cc8b4754ae: {"chunk":"性与"}
+2025-11-04 00:16:00.129 [reactor-http-nio-3] DEBUG com.yizhaoqi.smartpai.service.ChatHandler - 发送响应块到会话 add1a313-6032-64c6-4d9e-03cc8b4754ae: {"chunk":"亲和"}
+2025-11-04 00:16:00.188 [reactor-http-nio-3] DEBUG com.yizhaoqi.smartpai.service.ChatHandler - 发送响应块到会话 add1a313-6032-64c6-4d9e-03cc8b4754ae: {"chunk":"力"}
+2025-11-04 00:16:00.189 [reactor-http-nio-3] DEBUG com.yizhaoqi.smartpai.service.ChatHandler - 发送响应块到会话 add1a313-6032-64c6-4d9e-03cc8b4754ae: {"chunk":"，"}
+2025-11-04 00:16:00.247 [reactor-http-nio-3] DEBUG com.yizhaoqi.smartpai.service.ChatHandler - 发送响应块到会话 add1a313-6032-64c6-4d9e-03cc8b4754ae: {"chunk":"符合"}
+2025-11-04 00:16:00.248 [reactor-http-nio-3] DEBUG com.yizhaoqi.smartpai.service.ChatHandler - 发送响应块到会话 add1a313-6032-64c6-4d9e-03cc8b4754ae: {"chunk":"团队"}
+2025-11-04 00:16:00.307 [reactor-http-nio-3] DEBUG com.yizhaoqi.smartpai.service.ChatHandler - 发送响应块到会话 add1a313-6032-64c6-4d9e-03cc8b4754ae: {"chunk":"对"}
+2025-11-04 00:16:00.307 [reactor-http-nio-3] DEBUG com.yizhaoqi.smartpai.service.ChatHandler - 发送响应块到会话 add1a313-6032-64c6-4d9e-03cc8b4754ae: {"chunk":"“"}
+2025-11-04 00:16:00.366 [reactor-http-nio-3] DEBUG com.yizhaoqi.smartpai.service.ChatHandler - 发送响应块到会话 add1a313-6032-64c6-4d9e-03cc8b4754ae: {"chunk":"知识"}
+2025-11-04 00:16:00.425 [reactor-http-nio-3] DEBUG com.yizhaoqi.smartpai.service.ChatHandler - 发送响应块到会话 add1a313-6032-64c6-4d9e-03cc8b4754ae: {"chunk":"传递"}
+2025-11-04 00:16:00.485 [reactor-http-nio-3] DEBUG com.yizhaoqi.smartpai.service.ChatHandler - 发送响应块到会话 add1a313-6032-64c6-4d9e-03cc8b4754ae: {"chunk":"者"}
+2025-11-04 00:16:00.485 [reactor-http-nio-3] DEBUG com.yizhaoqi.smartpai.service.ChatHandler - 发送响应块到会话 add1a313-6032-64c6-4d9e-03cc8b4754ae: {"chunk":"”"}
+2025-11-04 00:16:00.545 [reactor-http-nio-3] DEBUG com.yizhaoqi.smartpai.service.ChatHandler - 发送响应块到会话 add1a313-6032-64c6-4d9e-03cc8b4754ae: {"chunk":"的"}
+2025-11-04 00:16:00.546 [reactor-http-nio-3] DEBUG com.yizhaoqi.smartpai.service.ChatHandler - 发送响应块到会话 add1a313-6032-64c6-4d9e-03cc8b4754ae: {"chunk":"定位"}
+2025-11-04 00:16:00.607 [reactor-http-nio-3] DEBUG com.yizhaoqi.smartpai.service.ChatHandler - 发送响应块到会话 add1a313-6032-64c6-4d9e-03cc8b4754ae: {"chunk":"，"}
+2025-11-04 00:16:00.607 [reactor-http-nio-3] DEBUG com.yizhaoqi.smartpai.service.ChatHandler - 发送响应块到会话 add1a313-6032-64c6-4d9e-03cc8b4754ae: {"chunk":"旨在"}
+2025-11-04 00:16:00.667 [reactor-http-nio-3] DEBUG com.yizhaoqi.smartpai.service.ChatHandler - 发送响应块到会话 add1a313-6032-64c6-4d9e-03cc8b4754ae: {"chunk":"成为"}
+2025-11-04 00:16:00.728 [reactor-http-nio-3] DEBUG com.yizhaoqi.smartpai.service.ChatHandler - 发送响应块到会话 add1a313-6032-64c6-4d9e-03cc8b4754ae: {"chunk":"用户"}
+2025-11-04 00:16:00.728 [reactor-http-nio-3] DEBUG com.yizhaoqi.smartpai.service.ChatHandler - 发送响应块到会话 add1a313-6032-64c6-4d9e-03cc8b4754ae: {"chunk":"身边"}
+2025-11-04 00:16:00.787 [reactor-http-nio-3] DEBUG com.yizhaoqi.smartpai.service.ChatHandler - 发送响应块到会话 add1a313-6032-64c6-4d9e-03cc8b4754ae: {"chunk":"触"}
+2025-11-04 00:16:00.846 [reactor-http-nio-3] DEBUG com.yizhaoqi.smartpai.service.ChatHandler - 发送响应块到会话 add1a313-6032-64c6-4d9e-03cc8b4754ae: {"chunk":"手"}
+2025-11-04 00:16:00.847 [reactor-http-nio-3] DEBUG com.yizhaoqi.smartpai.service.ChatHandler - 发送响应块到会话 add1a313-6032-64c6-4d9e-03cc8b4754ae: {"chunk":"可"}
+2025-11-04 00:16:00.908 [reactor-http-nio-3] DEBUG com.yizhaoqi.smartpai.service.ChatHandler - 发送响应块到会话 add1a313-6032-64c6-4d9e-03cc8b4754ae: {"chunk":"及的"}
+2025-11-04 00:16:00.908 [reactor-http-nio-3] DEBUG com.yizhaoqi.smartpai.service.ChatHandler - 发送响应块到会话 add1a313-6032-64c6-4d9e-03cc8b4754ae: {"chunk":"智能"}
+2025-11-04 00:16:00.970 [reactor-http-nio-3] DEBUG com.yizhaoqi.smartpai.service.ChatHandler - 发送响应块到会话 add1a313-6032-64c6-4d9e-03cc8b4754ae: {"chunk":"助手"}
+2025-11-04 00:16:00.973 [reactor-http-nio-3] DEBUG com.yizhaoqi.smartpai.service.ChatHandler - 发送响应块到会话 add1a313-6032-64c6-4d9e-03cc8b4754ae: {"chunk":"。"}
+2025-11-04 00:16:01.027 [reactor-http-nio-3] DEBUG com.yizhaoqi.smartpai.service.ChatHandler - 发送响应块到会话 add1a313-6032-64c6-4d9e-03cc8b4754ae: {"chunk":"  \n\n"}
+2025-11-04 00:16:01.086 [reactor-http-nio-3] DEBUG com.yizhaoqi.smartpai.service.ChatHandler - 发送响应块到会话 add1a313-6032-64c6-4d9e-03cc8b4754ae: {"chunk":"（"}
+2025-11-04 00:16:01.087 [reactor-http-nio-3] DEBUG com.yizhaoqi.smartpai.service.ChatHandler - 发送响应块到会话 add1a313-6032-64c6-4d9e-03cc8b4754ae: {"chunk":"注"}
+2025-11-04 00:16:01.146 [reactor-http-nio-3] DEBUG com.yizhaoqi.smartpai.service.ChatHandler - 发送响应块到会话 add1a313-6032-64c6-4d9e-03cc8b4754ae: {"chunk":"："}
+2025-11-04 00:16:01.147 [reactor-http-nio-3] DEBUG com.yizhaoqi.smartpai.service.ChatHandler - 发送响应块到会话 add1a313-6032-64c6-4d9e-03cc8b4754ae: {"chunk":"若无"}
+2025-11-04 00:16:01.206 [reactor-http-nio-3] DEBUG com.yizhaoqi.smartpai.service.ChatHandler - 发送响应块到会话 add1a313-6032-64c6-4d9e-03cc8b4754ae: {"chunk":"具体"}
+2025-11-04 00:16:01.206 [reactor-http-nio-3] DEBUG com.yizhaoqi.smartpai.service.ChatHandler - 发送响应块到会话 add1a313-6032-64c6-4d9e-03cc8b4754ae: {"chunk":"公开"}
+2025-11-04 00:16:01.265 [reactor-http-nio-3] DEBUG com.yizhaoqi.smartpai.service.ChatHandler - 发送响应块到会话 add1a313-6032-64c6-4d9e-03cc8b4754ae: {"chunk":"命名"}
+2025-11-04 00:16:01.324 [reactor-http-nio-3] DEBUG com.yizhaoqi.smartpai.service.ChatHandler - 发送响应块到会话 add1a313-6032-64c6-4d9e-03cc8b4754ae: {"chunk":"文档"}
+2025-11-04 00:16:01.325 [reactor-http-nio-3] DEBUG com.yizhaoqi.smartpai.service.ChatHandler - 发送响应块到会话 add1a313-6032-64c6-4d9e-03cc8b4754ae: {"chunk":"，"}
+2025-11-04 00:16:01.385 [reactor-http-nio-3] DEBUG com.yizhaoqi.smartpai.service.ChatHandler - 发送响应块到会话 add1a313-6032-64c6-4d9e-03cc8b4754ae: {"chunk":"此"}
+2025-11-04 00:16:01.447 [reactor-http-nio-3] DEBUG com.yizhaoqi.smartpai.service.ChatHandler - 发送响应块到会话 add1a313-6032-64c6-4d9e-03cc8b4754ae: {"chunk":"分析"}
+2025-11-04 00:16:01.447 [reactor-http-nio-3] DEBUG com.yizhaoqi.smartpai.service.ChatHandler - 发送响应块到会话 add1a313-6032-64c6-4d9e-03cc8b4754ae: {"chunk":"基于"}
+2025-11-04 00:16:01.505 [reactor-http-nio-3] DEBUG com.yizhaoqi.smartpai.service.ChatHandler - 发送响应块到会话 add1a313-6032-64c6-4d9e-03cc8b4754ae: {"chunk":"通用"}
+2025-11-04 00:16:01.566 [reactor-http-nio-3] DEBUG com.yizhaoqi.smartpai.service.ChatHandler - 发送响应块到会话 add1a313-6032-64c6-4d9e-03cc8b4754ae: {"chunk":"产品"}
+2025-11-04 00:16:01.652 [reactor-http-nio-3] DEBUG com.yizhaoqi.smartpai.service.ChatHandler - 发送响应块到会话 add1a313-6032-64c6-4d9e-03cc8b4754ae: {"chunk":"命名"}
+2025-11-04 00:16:01.653 [reactor-http-nio-3] DEBUG com.yizhaoqi.smartpai.service.ChatHandler - 发送响应块到会话 add1a313-6032-64c6-4d9e-03cc8b4754ae: {"chunk":"逻辑"}
+2025-11-04 00:16:01.684 [reactor-http-nio-3] DEBUG com.yizhaoqi.smartpai.service.ChatHandler - 发送响应块到会话 add1a313-6032-64c6-4d9e-03cc8b4754ae: {"chunk":"与"}
+2025-11-04 00:16:01.685 [reactor-http-nio-3] DEBUG com.yizhaoqi.smartpai.service.ChatHandler - 发送响应块到会话 add1a313-6032-64c6-4d9e-03cc8b4754ae: {"chunk":"语言"}
+2025-11-04 00:16:01.743 [reactor-http-nio-3] DEBUG com.yizhaoqi.smartpai.service.ChatHandler - 发送响应块到会话 add1a313-6032-64c6-4d9e-03cc8b4754ae: {"chunk":"文化"}
+2025-11-04 00:16:01.809 [reactor-http-nio-3] DEBUG com.yizhaoqi.smartpai.service.ChatHandler - 发送响应块到会话 add1a313-6032-64c6-4d9e-03cc8b4754ae: {"chunk":"背景"}
+2025-11-04 00:16:01.870 [reactor-http-nio-3] DEBUG com.yizhaoqi.smartpai.service.ChatHandler - 发送响应块到会话 add1a313-6032-64c6-4d9e-03cc8b4754ae: {"chunk":"。）"}
+2025-11-04 00:16:05.323 [Thread-10] INFO  com.yizhaoqi.smartpai.service.ChatHandler - 发送完成通知到会话 add1a313-6032-64c6-4d9e-03cc8b4754ae: {"date":"2025-11-04T00:16:05.323269","timestamp":1762186565323,"message":"响应已完成","status":"finished","type":"completion"}
+2025-11-04 00:16:05.324 [Thread-10] INFO  com.yizhaoqi.smartpai.service.ChatHandler - 已发送响应完成通知到会话: add1a313-6032-64c6-4d9e-03cc8b4754ae
+2025-11-04 00:16:05.330 [Thread-10] DEBUG com.yizhaoqi.smartpai.service.ChatHandler - 读取到会话 df066211-2766-4d79-9420-0fcb48a3b6b4 的 2 条历史记录
+2025-11-04 00:16:05.334 [Thread-10] DEBUG com.yizhaoqi.smartpai.service.ChatHandler - 更新会话历史，会话ID: df066211-2766-4d79-9420-0fcb48a3b6b4, 总消息数: 4
+2025-11-04 00:16:05.334 [Thread-10] INFO  com.yizhaoqi.smartpai.service.ChatHandler - 对话存储信息 - Redis键: user:admin:current_conversation, 值: df066211-2766-4d79-9420-0fcb48a3b6b4
+2025-11-04 00:16:05.334 [Thread-10] INFO  com.yizhaoqi.smartpai.service.ChatHandler - 消息处理完成，用户ID: admin
+2025-11-04 00:16:27.772 [http-nio-8081-exec-6] INFO  com.yizhaoqi.smartpai.business - [REQUEST_START] [用户:1] 开始处理请求 [GET] /api/v1/users/me
+2025-11-04 00:16:27.796 [http-nio-8081-exec-6] INFO  com.yizhaoqi.smartpai.business - [用户操作] [用户:admin] [操作:GET_USER_INFO] [资源:user_profile] [结果:SUCCESS]
+2025-11-04 00:16:27.803 [http-nio-8081-exec-6] INFO  com.yizhaoqi.smartpai.business - [API] [GET] /api/v1/users/me [用户:1] [状态:200] [耗时:57ms]
+2025-11-04 00:16:27.938 [http-nio-8081-exec-5] INFO  com.yizhaoqi.smartpai.business - [REQUEST_START] [用户:1] 开始处理请求 [GET] /api/v1/users/org-tags
+2025-11-04 00:16:27.956 [http-nio-8081-exec-5] INFO  com.yizhaoqi.smartpai.business - [用户操作] [用户:admin] [操作:GET_ORG_TAGS] [资源:organization_tags] [结果:SUCCESS]
+2025-11-04 00:16:27.957 [http-nio-8081-exec-5] INFO  com.yizhaoqi.smartpai.business - [API] [GET] /api/v1/users/org-tags [用户:1] [状态:200] [耗时:20ms]
+2025-11-04 00:16:47.296 [http-nio-8081-exec-7] INFO  com.yizhaoqi.smartpai.business - [REQUEST_START] [用户:1] 开始处理请求 [GET] /api/v1/users/me
+2025-11-04 00:16:47.300 [http-nio-8081-exec-7] INFO  com.yizhaoqi.smartpai.business - [用户操作] [用户:admin] [操作:GET_USER_INFO] [资源:user_profile] [结果:SUCCESS]
+2025-11-04 00:16:47.303 [http-nio-8081-exec-7] INFO  com.yizhaoqi.smartpai.business - [API] [GET] /api/v1/users/me [用户:1] [状态:200] [耗时:7ms]
+2025-11-04 00:16:47.617 [http-nio-8081-exec-10] INFO  com.yizhaoqi.smartpai.business - [REQUEST_START] [用户:1] 开始处理请求 [GET] /api/v1/admin/users/list
+2025-11-04 00:16:47.622 [http-nio-8081-exec-8] INFO  com.yizhaoqi.smartpai.business - [REQUEST_START] [用户:1] 开始处理请求 [GET] /api/v1/admin/org-tags/tree
+2025-11-04 00:16:47.634 [http-nio-8081-exec-10] INFO  com.yizhaoqi.smartpai.business - [API] [GET] /api/v1/admin/users/list [用户:1] [状态:200] [耗时:18ms]
+2025-11-04 00:16:47.634 [http-nio-8081-exec-8] INFO  com.yizhaoqi.smartpai.business - [API] [GET] /api/v1/admin/org-tags/tree [用户:1] [状态:200] [耗时:12ms]
+2025-11-04 00:16:47.645 [http-nio-8081-exec-9] INFO  com.yizhaoqi.smartpai.business - [REQUEST_START] [用户:1] 开始处理请求 [GET] /api/v1/admin/users/list
+2025-11-04 00:16:47.673 [http-nio-8081-exec-9] INFO  com.yizhaoqi.smartpai.business - [API] [GET] /api/v1/admin/users/list [用户:1] [状态:200] [耗时:25ms]
+2025-11-04 00:16:57.586 [http-nio-8081-exec-1] INFO  com.yizhaoqi.smartpai.business - [REQUEST_START] [用户:1] 开始处理请求 [GET] /api/v1/users/me
+2025-11-04 00:16:57.588 [http-nio-8081-exec-1] INFO  com.yizhaoqi.smartpai.business - [用户操作] [用户:admin] [操作:GET_USER_INFO] [资源:user_profile] [结果:SUCCESS]
+2025-11-04 00:16:57.591 [http-nio-8081-exec-1] INFO  com.yizhaoqi.smartpai.business - [API] [GET] /api/v1/users/me [用户:1] [状态:200] [耗时:5ms]
+2025-11-04 00:16:57.876 [http-nio-8081-exec-2] INFO  com.yizhaoqi.smartpai.business - [REQUEST_START] [用户:1] 开始处理请求 [GET] /api/v1/users/org-tags
+2025-11-04 00:16:57.883 [http-nio-8081-exec-2] INFO  com.yizhaoqi.smartpai.business - [用户操作] [用户:admin] [操作:GET_ORG_TAGS] [资源:organization_tags] [结果:SUCCESS]
+2025-11-04 00:16:57.884 [http-nio-8081-exec-2] INFO  com.yizhaoqi.smartpai.business - [API] [GET] /api/v1/users/org-tags [用户:1] [状态:200] [耗时:8ms]
+2025-11-04 00:17:44.447 [http-nio-8081-exec-3] INFO  com.yizhaoqi.smartpai.business - [REQUEST_START] [用户:1] 开始处理请求 [GET] /api/v1/users/me
+2025-11-04 00:17:44.453 [http-nio-8081-exec-3] INFO  com.yizhaoqi.smartpai.business - [用户操作] [用户:admin] [操作:GET_USER_INFO] [资源:user_profile] [结果:SUCCESS]
+2025-11-04 00:17:44.456 [http-nio-8081-exec-3] INFO  com.yizhaoqi.smartpai.business - [API] [GET] /api/v1/users/me [用户:1] [状态:200] [耗时:11ms]
+2025-11-04 00:17:44.716 [http-nio-8081-exec-4] INFO  com.yizhaoqi.smartpai.business - [REQUEST_START] [用户:1] 开始处理请求 [GET] /api/v1/admin/users/list
+2025-11-04 00:17:44.716 [http-nio-8081-exec-6] INFO  com.yizhaoqi.smartpai.business - [REQUEST_START] [用户:1] 开始处理请求 [GET] /api/v1/admin/org-tags/tree
+2025-11-04 00:17:44.735 [http-nio-8081-exec-6] INFO  com.yizhaoqi.smartpai.business - [API] [GET] /api/v1/admin/org-tags/tree [用户:1] [状态:200] [耗时:20ms]
+2025-11-04 00:17:44.736 [http-nio-8081-exec-4] INFO  com.yizhaoqi.smartpai.business - [API] [GET] /api/v1/admin/users/list [用户:1] [状态:200] [耗时:20ms]
+2025-11-04 00:17:44.747 [http-nio-8081-exec-5] INFO  com.yizhaoqi.smartpai.business - [REQUEST_START] [用户:1] 开始处理请求 [GET] /api/v1/admin/users/list
+2025-11-04 00:17:44.760 [http-nio-8081-exec-5] INFO  com.yizhaoqi.smartpai.business - [API] [GET] /api/v1/admin/users/list [用户:1] [状态:200] [耗时:13ms]
+2025-11-04 00:17:50.200 [http-nio-8081-exec-7] INFO  com.yizhaoqi.smartpai.business - [REQUEST_START] [用户:1] 开始处理请求 [GET] /api/v1/users/me
+2025-11-04 00:17:50.207 [http-nio-8081-exec-7] INFO  com.yizhaoqi.smartpai.business - [用户操作] [用户:admin] [操作:GET_USER_INFO] [资源:user_profile] [结果:SUCCESS]
+2025-11-04 00:17:50.210 [http-nio-8081-exec-7] INFO  com.yizhaoqi.smartpai.business - [API] [GET] /api/v1/users/me [用户:1] [状态:200] [耗时:10ms]
+2025-11-04 00:17:50.507 [http-nio-8081-exec-10] INFO  com.yizhaoqi.smartpai.business - [REQUEST_START] [用户:1] 开始处理请求 [GET] /api/v1/users/org-tags
+2025-11-04 00:17:50.516 [http-nio-8081-exec-10] INFO  com.yizhaoqi.smartpai.business - [用户操作] [用户:admin] [操作:GET_ORG_TAGS] [资源:organization_tags] [结果:SUCCESS]
+2025-11-04 00:17:50.518 [http-nio-8081-exec-10] INFO  com.yizhaoqi.smartpai.business - [API] [GET] /api/v1/users/org-tags [用户:1] [状态:200] [耗时:11ms]
+2025-11-04 00:17:55.446 [http-nio-8081-exec-8] INFO  com.yizhaoqi.smartpai.business - [REQUEST_START] [用户:1] 开始处理请求 [GET] /api/v1/users/me
+2025-11-04 00:17:55.449 [http-nio-8081-exec-8] INFO  com.yizhaoqi.smartpai.business - [用户操作] [用户:admin] [操作:GET_USER_INFO] [资源:user_profile] [结果:SUCCESS]
+2025-11-04 00:17:55.451 [http-nio-8081-exec-8] INFO  com.yizhaoqi.smartpai.business - [API] [GET] /api/v1/users/me [用户:1] [状态:200] [耗时:4ms]
+2025-11-04 00:17:55.757 [http-nio-8081-exec-1] INFO  com.yizhaoqi.smartpai.business - [REQUEST_START] [用户:1] 开始处理请求 [GET] /api/v1/admin/org-tags/tree
+2025-11-04 00:17:55.757 [http-nio-8081-exec-9] INFO  com.yizhaoqi.smartpai.business - [REQUEST_START] [用户:1] 开始处理请求 [GET] /api/v1/admin/users/list
+2025-11-04 00:17:55.766 [http-nio-8081-exec-1] INFO  com.yizhaoqi.smartpai.business - [API] [GET] /api/v1/admin/org-tags/tree [用户:1] [状态:200] [耗时:9ms]
+2025-11-04 00:17:55.768 [http-nio-8081-exec-9] INFO  com.yizhaoqi.smartpai.business - [API] [GET] /api/v1/admin/users/list [用户:1] [状态:200] [耗时:11ms]
+2025-11-04 00:17:55.777 [http-nio-8081-exec-2] INFO  com.yizhaoqi.smartpai.business - [REQUEST_START] [用户:1] 开始处理请求 [GET] /api/v1/admin/users/list
+2025-11-04 00:17:55.787 [http-nio-8081-exec-2] INFO  com.yizhaoqi.smartpai.business - [API] [GET] /api/v1/admin/users/list [用户:1] [状态:200] [耗时:10ms]
+2025-11-04 00:22:39.584 [http-nio-8081-exec-3] INFO  com.yizhaoqi.smartpai.business - [REQUEST_START] [用户:1] 开始处理请求 [GET] /api/v1/users/me
+2025-11-04 00:22:39.590 [http-nio-8081-exec-3] INFO  com.yizhaoqi.smartpai.business - [用户操作] [用户:admin] [操作:GET_USER_INFO] [资源:user_profile] [结果:SUCCESS]
+2025-11-04 00:22:39.597 [http-nio-8081-exec-3] INFO  com.yizhaoqi.smartpai.business - [API] [GET] /api/v1/users/me [用户:1] [状态:200] [耗时:13ms]
+2025-11-04 00:22:39.793 [http-nio-8081-exec-6] INFO  com.yizhaoqi.smartpai.business - [REQUEST_START] [用户:1] 开始处理请求 [GET] /api/v1/users/org-tags
+2025-11-04 00:22:39.799 [http-nio-8081-exec-6] INFO  com.yizhaoqi.smartpai.business - [用户操作] [用户:admin] [操作:GET_ORG_TAGS] [资源:organization_tags] [结果:SUCCESS]
+2025-11-04 00:22:39.801 [http-nio-8081-exec-6] INFO  com.yizhaoqi.smartpai.business - [API] [GET] /api/v1/users/org-tags [用户:1] [状态:200] [耗时:8ms]
+2025-11-04 00:23:00.204 [http-nio-8081-exec-4] INFO  com.yizhaoqi.smartpai.business - [REQUEST_START] [用户:1] 开始处理请求 [GET] /api/v1/users/me
+2025-11-04 00:23:00.207 [http-nio-8081-exec-4] INFO  com.yizhaoqi.smartpai.business - [用户操作] [用户:admin] [操作:GET_USER_INFO] [资源:user_profile] [结果:SUCCESS]
+2025-11-04 00:23:00.209 [http-nio-8081-exec-4] INFO  com.yizhaoqi.smartpai.business - [API] [GET] /api/v1/users/me [用户:1] [状态:200] [耗时:6ms]
+2025-11-04 00:23:00.465 [http-nio-8081-exec-5] INFO  com.yizhaoqi.smartpai.business - [REQUEST_START] [用户:1] 开始处理请求 [GET] /api/v1/admin/users/list
+2025-11-04 00:23:00.465 [http-nio-8081-exec-7] INFO  com.yizhaoqi.smartpai.business - [REQUEST_START] [用户:1] 开始处理请求 [GET] /api/v1/admin/org-tags/tree
+2025-11-04 00:23:00.477 [http-nio-8081-exec-7] INFO  com.yizhaoqi.smartpai.business - [API] [GET] /api/v1/admin/org-tags/tree [用户:1] [状态:200] [耗时:12ms]
+2025-11-04 00:23:00.481 [http-nio-8081-exec-5] INFO  com.yizhaoqi.smartpai.business - [API] [GET] /api/v1/admin/users/list [用户:1] [状态:200] [耗时:17ms]
+2025-11-04 00:23:00.497 [http-nio-8081-exec-10] INFO  com.yizhaoqi.smartpai.business - [REQUEST_START] [用户:1] 开始处理请求 [GET] /api/v1/admin/users/list
+2025-11-04 00:23:00.533 [http-nio-8081-exec-10] INFO  com.yizhaoqi.smartpai.business - [API] [GET] /api/v1/admin/users/list [用户:1] [状态:200] [耗时:38ms]
+2025-11-04 00:23:24.385 [http-nio-8081-exec-8] INFO  com.yizhaoqi.smartpai.business - [REQUEST_START] [用户:1] 开始处理请求 [GET] /api/v1/admin/org-tags/tree
+2025-11-04 00:23:24.397 [http-nio-8081-exec-8] INFO  com.yizhaoqi.smartpai.business - [API] [GET] /api/v1/admin/org-tags/tree [用户:1] [状态:200] [耗时:13ms]
+2025-11-04 00:23:33.798 [http-nio-8081-exec-1] INFO  com.yizhaoqi.smartpai.business - [REQUEST_START] [用户:1] 开始处理请求 [PUT] /api/v1/admin/users/1/org-tags
+2025-11-04 00:23:33.838 [http-nio-8081-exec-1] DEBUG com.yizhaoqi.smartpai.service.OrgTagCacheService - Deleted organization tags cache for user: admin
+2025-11-04 00:23:33.839 [http-nio-8081-exec-1] DEBUG com.yizhaoqi.smartpai.service.OrgTagCacheService - Cached organization tags for user: admin
+2025-11-04 00:23:33.839 [http-nio-8081-exec-1] DEBUG com.yizhaoqi.smartpai.service.OrgTagCacheService - Deleted effective organization tags cache for user: admin
+2025-11-04 00:23:33.840 [http-nio-8081-exec-1] DEBUG com.yizhaoqi.smartpai.service.OrgTagCacheService - Cached primary organization for user: admin
+2025-11-04 00:23:33.893 [http-nio-8081-exec-1] INFO  com.yizhaoqi.smartpai.business - [API] [PUT] /api/v1/admin/users/1/org-tags [用户:1] [状态:200] [耗时:96ms]
+2025-11-04 00:23:33.923 [http-nio-8081-exec-9] INFO  com.yizhaoqi.smartpai.business - [REQUEST_START] [用户:1] 开始处理请求 [GET] /api/v1/admin/users/list
+2025-11-04 00:23:33.935 [http-nio-8081-exec-9] INFO  com.yizhaoqi.smartpai.business - [API] [GET] /api/v1/admin/users/list [用户:1] [状态:200] [耗时:13ms]
+2025-11-04 00:24:41.915 [http-nio-8081-exec-2] INFO  com.yizhaoqi.smartpai.business - [REQUEST_START] [用户:1] 开始处理请求 [GET] /api/v1/admin/org-tags/tree
+2025-11-04 00:24:41.925 [http-nio-8081-exec-2] INFO  com.yizhaoqi.smartpai.business - [API] [GET] /api/v1/admin/org-tags/tree [用户:1] [状态:200] [耗时:10ms]
+2025-11-04 00:24:45.847 [http-nio-8081-exec-3] INFO  com.yizhaoqi.smartpai.business - [REQUEST_START] [用户:1] 开始处理请求 [PUT] /api/v1/admin/users/1/org-tags
+2025-11-04 00:24:45.860 [http-nio-8081-exec-3] DEBUG com.yizhaoqi.smartpai.service.OrgTagCacheService - Deleted organization tags cache for user: admin
+2025-11-04 00:24:45.861 [http-nio-8081-exec-3] DEBUG com.yizhaoqi.smartpai.service.OrgTagCacheService - Cached organization tags for user: admin
+2025-11-04 00:24:45.861 [http-nio-8081-exec-3] DEBUG com.yizhaoqi.smartpai.service.OrgTagCacheService - Deleted effective organization tags cache for user: admin
+2025-11-04 00:24:45.862 [http-nio-8081-exec-3] DEBUG com.yizhaoqi.smartpai.service.OrgTagCacheService - Cached primary organization for user: admin
+2025-11-04 00:24:45.884 [http-nio-8081-exec-3] INFO  com.yizhaoqi.smartpai.business - [API] [PUT] /api/v1/admin/users/1/org-tags [用户:1] [状态:200] [耗时:27ms]
+2025-11-04 00:24:45.912 [http-nio-8081-exec-6] INFO  com.yizhaoqi.smartpai.business - [REQUEST_START] [用户:1] 开始处理请求 [GET] /api/v1/admin/users/list
+2025-11-04 00:24:45.922 [http-nio-8081-exec-6] INFO  com.yizhaoqi.smartpai.business - [API] [GET] /api/v1/admin/users/list [用户:1] [状态:200] [耗时:12ms]
+2025-11-04 00:25:00.173 [http-nio-8081-exec-4] INFO  com.yizhaoqi.smartpai.business - [REQUEST_START] [用户:1] 开始处理请求 [GET] /api/v1/admin/org-tags/tree
+2025-11-04 00:25:00.180 [http-nio-8081-exec-4] INFO  com.yizhaoqi.smartpai.business - [API] [GET] /api/v1/admin/org-tags/tree [用户:1] [状态:200] [耗时:7ms]
+2025-11-04 00:25:09.723 [http-nio-8081-exec-7] INFO  com.yizhaoqi.smartpai.business - [REQUEST_START] [用户:1] 开始处理请求 [PUT] /api/v1/admin/users/1/org-tags
+2025-11-04 00:25:09.731 [http-nio-8081-exec-7] DEBUG com.yizhaoqi.smartpai.service.OrgTagCacheService - Deleted organization tags cache for user: admin
+2025-11-04 00:25:09.732 [http-nio-8081-exec-7] DEBUG com.yizhaoqi.smartpai.service.OrgTagCacheService - Cached organization tags for user: admin
+2025-11-04 00:25:09.732 [http-nio-8081-exec-7] DEBUG com.yizhaoqi.smartpai.service.OrgTagCacheService - Deleted effective organization tags cache for user: admin
+2025-11-04 00:25:09.733 [http-nio-8081-exec-7] DEBUG com.yizhaoqi.smartpai.service.OrgTagCacheService - Cached primary organization for user: admin
+2025-11-04 00:25:09.735 [http-nio-8081-exec-7] INFO  com.yizhaoqi.smartpai.business - [API] [PUT] /api/v1/admin/users/1/org-tags [用户:1] [状态:200] [耗时:12ms]
+2025-11-04 00:25:09.791 [http-nio-8081-exec-5] INFO  com.yizhaoqi.smartpai.business - [REQUEST_START] [用户:1] 开始处理请求 [GET] /api/v1/admin/users/list
+2025-11-04 00:25:09.800 [http-nio-8081-exec-5] INFO  com.yizhaoqi.smartpai.business - [API] [GET] /api/v1/admin/users/list [用户:1] [状态:200] [耗时:9ms]
+2025-11-04 00:25:46.080 [http-nio-8081-exec-10] INFO  com.yizhaoqi.smartpai.business - [REQUEST_START] [用户:1] 开始处理请求 [GET] /api/v1/users/me
+2025-11-04 00:25:46.084 [http-nio-8081-exec-10] INFO  com.yizhaoqi.smartpai.business - [用户操作] [用户:admin] [操作:GET_USER_INFO] [资源:user_profile] [结果:SUCCESS]
+2025-11-04 00:25:46.086 [http-nio-8081-exec-10] INFO  com.yizhaoqi.smartpai.business - [API] [GET] /api/v1/users/me [用户:1] [状态:200] [耗时:17ms]
+2025-11-04 00:25:46.353 [http-nio-8081-exec-8] INFO  com.yizhaoqi.smartpai.business - [REQUEST_START] [用户:1] 开始处理请求 [GET] /api/v1/admin/org-tags/tree
+2025-11-04 00:25:46.360 [http-nio-8081-exec-8] INFO  com.yizhaoqi.smartpai.business - [API] [GET] /api/v1/admin/org-tags/tree [用户:1] [状态:200] [耗时:6ms]
+2025-11-04 00:26:37.678 [http-nio-8081-exec-1] INFO  com.yizhaoqi.smartpai.business - [REQUEST_START] [用户:1] 开始处理请求 [GET] /api/v1/users/me
+2025-11-04 00:26:37.683 [http-nio-8081-exec-1] INFO  com.yizhaoqi.smartpai.business - [用户操作] [用户:admin] [操作:GET_USER_INFO] [资源:user_profile] [结果:SUCCESS]
+2025-11-04 00:26:37.712 [http-nio-8081-exec-1] INFO  com.yizhaoqi.smartpai.business - [API] [GET] /api/v1/users/me [用户:1] [状态:200] [耗时:31ms]
+2025-11-04 00:26:37.904 [http-nio-8081-exec-9] INFO  com.yizhaoqi.smartpai.business - [REQUEST_START] [用户:1] 开始处理请求 [GET] /api/v1/users/org-tags
+2025-11-04 00:26:37.910 [http-nio-8081-exec-9] INFO  com.yizhaoqi.smartpai.business - [用户操作] [用户:admin] [操作:GET_ORG_TAGS] [资源:organization_tags] [结果:SUCCESS]
+2025-11-04 00:26:37.911 [http-nio-8081-exec-9] INFO  com.yizhaoqi.smartpai.business - [API] [GET] /api/v1/users/org-tags [用户:1] [状态:200] [耗时:8ms]
+2025-11-04 00:26:43.275 [http-nio-8081-exec-2] INFO  com.yizhaoqi.smartpai.business - [REQUEST_START] [用户:1] 开始处理请求 [PUT] /api/v1/users/primary-org
+2025-11-04 00:26:43.299 [http-nio-8081-exec-2] DEBUG com.yizhaoqi.smartpai.service.OrgTagCacheService - Cached primary organization for user: admin
+2025-11-04 00:26:43.299 [http-nio-8081-exec-2] INFO  com.yizhaoqi.smartpai.business - [用户操作] [用户:admin] [操作:SET_PRIMARY_ORG] [资源:admin] [结果:SUCCESS]
+2025-11-04 00:26:43.301 [http-nio-8081-exec-2] INFO  com.yizhaoqi.smartpai.business - [API] [PUT] /api/v1/users/primary-org [用户:1] [状态:200] [耗时:27ms]
+2025-11-04 00:26:43.321 [http-nio-8081-exec-3] INFO  com.yizhaoqi.smartpai.business - [REQUEST_START] [用户:1] 开始处理请求 [GET] /api/v1/users/org-tags
+2025-11-04 00:26:43.336 [http-nio-8081-exec-3] INFO  com.yizhaoqi.smartpai.business - [用户操作] [用户:admin] [操作:GET_ORG_TAGS] [资源:organization_tags] [结果:SUCCESS]
+2025-11-04 00:26:43.341 [http-nio-8081-exec-3] INFO  com.yizhaoqi.smartpai.business - [API] [GET] /api/v1/users/org-tags [用户:1] [状态:200] [耗时:18ms]
+2025-11-04 00:27:12.292 [http-nio-8081-exec-6] INFO  com.yizhaoqi.smartpai.business - [REQUEST_START] [用户:1] 开始处理请求 [PUT] /api/v1/users/primary-org
+2025-11-04 00:27:12.300 [http-nio-8081-exec-6] DEBUG com.yizhaoqi.smartpai.service.OrgTagCacheService - Cached primary organization for user: admin
+2025-11-04 00:27:12.300 [http-nio-8081-exec-6] INFO  com.yizhaoqi.smartpai.business - [用户操作] [用户:admin] [操作:SET_PRIMARY_ORG] [资源:default] [结果:SUCCESS]
+2025-11-04 00:27:12.301 [http-nio-8081-exec-6] INFO  com.yizhaoqi.smartpai.business - [API] [PUT] /api/v1/users/primary-org [用户:1] [状态:200] [耗时:9ms]
+2025-11-04 00:27:12.321 [http-nio-8081-exec-4] INFO  com.yizhaoqi.smartpai.business - [REQUEST_START] [用户:1] 开始处理请求 [GET] /api/v1/users/org-tags
+2025-11-04 00:27:12.331 [http-nio-8081-exec-4] INFO  com.yizhaoqi.smartpai.business - [用户操作] [用户:admin] [操作:GET_ORG_TAGS] [资源:organization_tags] [结果:SUCCESS]
+2025-11-04 00:27:12.332 [http-nio-8081-exec-4] INFO  com.yizhaoqi.smartpai.business - [API] [GET] /api/v1/users/org-tags [用户:1] [状态:200] [耗时:13ms]
+2025-11-04 00:30:18.544 [http-nio-8081-exec-7] INFO  com.yizhaoqi.smartpai.business - [REQUEST_START] [用户:1] 开始处理请求 [PUT] /api/v1/users/primary-org
+2025-11-04 00:30:18.574 [http-nio-8081-exec-7] DEBUG com.yizhaoqi.smartpai.service.OrgTagCacheService - Cached primary organization for user: admin
+2025-11-04 00:30:18.574 [http-nio-8081-exec-7] INFO  com.yizhaoqi.smartpai.business - [用户操作] [用户:admin] [操作:SET_PRIMARY_ORG] [资源:admin] [结果:SUCCESS]
+2025-11-04 00:30:18.577 [http-nio-8081-exec-7] INFO  com.yizhaoqi.smartpai.business - [API] [PUT] /api/v1/users/primary-org [用户:1] [状态:200] [耗时:33ms]
+2025-11-04 00:30:18.636 [http-nio-8081-exec-5] INFO  com.yizhaoqi.smartpai.business - [REQUEST_START] [用户:1] 开始处理请求 [GET] /api/v1/users/org-tags
+2025-11-04 00:30:18.642 [http-nio-8081-exec-5] INFO  com.yizhaoqi.smartpai.business - [用户操作] [用户:admin] [操作:GET_ORG_TAGS] [资源:organization_tags] [结果:SUCCESS]
+2025-11-04 00:30:18.643 [http-nio-8081-exec-5] INFO  com.yizhaoqi.smartpai.business - [API] [GET] /api/v1/users/org-tags [用户:1] [状态:200] [耗时:7ms]
+2025-11-04 00:45:45.964 [http-nio-8081-exec-10] INFO  com.yizhaoqi.smartpai.business - [REQUEST_START] [用户:1] 开始处理请求 [POST] /api/v1/users/logout
+2025-11-04 00:45:45.971 [http-nio-8081-exec-10] DEBUG com.yizhaoqi.smartpai.service.TokenCacheService - Token blacklisted: 2991f4769cfd4f58a8fb5c7d478e4913
+2025-11-04 00:45:45.975 [http-nio-8081-exec-10] DEBUG com.yizhaoqi.smartpai.service.TokenCacheService - Token removed from cache: 2991f4769cfd4f58a8fb5c7d478e4913
+2025-11-04 00:45:45.975 [http-nio-8081-exec-10] INFO  com.yizhaoqi.smartpai.utils.JwtUtils - Token invalidated: 2991f4769cfd4f58a8fb5c7d478e4913
+2025-11-04 00:45:45.975 [http-nio-8081-exec-10] INFO  com.yizhaoqi.smartpai.business - [用户操作] [用户:admin] [操作:LOGOUT] [资源:token_invalidation] [结果:SUCCESS]
+2025-11-04 00:45:45.984 [http-nio-8081-exec-10] INFO  com.yizhaoqi.smartpai.business - [API] [POST] /api/v1/users/logout [用户:1] [状态:200] [耗时:19ms]
+2025-11-04 00:46:02.937 [http-nio-8081-exec-8] INFO  com.yizhaoqi.smartpai.business - [REQUEST_START] [用户:anonymous] 开始处理请求 [POST] /api/v1/users/login
+2025-11-04 00:46:03.057 [http-nio-8081-exec-8] DEBUG com.yizhaoqi.smartpai.service.TokenCacheService - Token cached: 80aa90fbd3824c98bc9488f6902a7c02 for user: admin
+2025-11-04 00:46:03.057 [http-nio-8081-exec-8] INFO  com.yizhaoqi.smartpai.utils.JwtUtils - Token generated and cached for user: admin, tokenId: 80aa90fbd3824c98bc9488f6902a7c02
+2025-11-04 00:46:03.059 [http-nio-8081-exec-8] DEBUG com.yizhaoqi.smartpai.service.TokenCacheService - Refresh token cached: 8ff84ba7b8e24f94aaeebfe262a401a0 for user: 1
+2025-11-04 00:46:03.059 [http-nio-8081-exec-8] INFO  com.yizhaoqi.smartpai.utils.JwtUtils - Refresh token generated and cached for user: admin, refreshTokenId: 8ff84ba7b8e24f94aaeebfe262a401a0
+2025-11-04 00:46:03.059 [http-nio-8081-exec-8] INFO  com.yizhaoqi.smartpai.business - [用户操作] [用户:admin] [操作:LOGIN] [资源:token_generation] [结果:SUCCESS]
+2025-11-04 00:46:03.062 [http-nio-8081-exec-8] INFO  com.yizhaoqi.smartpai.business - [API] [POST] /api/v1/users/login [用户:anonymous] [状态:200] [耗时:125ms]
+2025-11-04 00:46:03.089 [http-nio-8081-exec-1] INFO  com.yizhaoqi.smartpai.business - [REQUEST_START] [用户:1] 开始处理请求 [GET] /api/v1/users/me
+2025-11-04 00:46:03.090 [http-nio-8081-exec-1] INFO  com.yizhaoqi.smartpai.business - [用户操作] [用户:admin] [操作:GET_USER_INFO] [资源:user_profile] [结果:SUCCESS]
+2025-11-04 00:46:03.091 [http-nio-8081-exec-1] INFO  com.yizhaoqi.smartpai.business - [API] [GET] /api/v1/users/me [用户:1] [状态:200] [耗时:3ms]
+2025-11-04 00:46:03.111 [http-nio-8081-exec-9] INFO  com.yizhaoqi.smartpai.business - [REQUEST_START] [用户:1] 开始处理请求 [GET] /api/v1/users/me
+2025-11-04 00:46:03.118 [http-nio-8081-exec-9] INFO  com.yizhaoqi.smartpai.business - [用户操作] [用户:admin] [操作:GET_USER_INFO] [资源:user_profile] [结果:SUCCESS]
+2025-11-04 00:46:03.126 [http-nio-8081-exec-9] INFO  com.yizhaoqi.smartpai.business - [API] [GET] /api/v1/users/me [用户:1] [状态:200] [耗时:13ms]
+2025-11-04 00:46:03.157 [http-nio-8081-exec-2] INFO  com.yizhaoqi.smartpai.business - [REQUEST_START] [用户:1] 开始处理请求 [GET] /api/v1/users/org-tags
+2025-11-04 00:46:03.192 [http-nio-8081-exec-2] INFO  com.yizhaoqi.smartpai.business - [用户操作] [用户:admin] [操作:GET_ORG_TAGS] [资源:organization_tags] [结果:SUCCESS]
+2025-11-04 00:46:03.193 [http-nio-8081-exec-2] INFO  com.yizhaoqi.smartpai.business - [API] [GET] /api/v1/users/org-tags [用户:1] [状态:200] [耗时:35ms]
+2025-11-04 00:51:28.808 [SpringApplicationShutdownHook] INFO  c.yizhaoqi.smartpai.handler.ChatWebSocketHandler - WebSocket连接已关闭，用户ID: admin，会话ID: add1a313-6032-64c6-4d9e-03cc8b4754ae，状态: CloseStatus[code=1001, reason=The web application is stopping]
+2025-11-04 12:07:17.982 [main] INFO  com.yizhaoqi.smartpai.SmartPaiApplication - Starting SmartPaiApplication using Java 17.0.15 with PID 40811 (/Volumes/LQ1000/a/PaiSmart/target/classes started by xustation in /Volumes/LQ1000/a/PaiSmart)
+2025-11-04 12:07:17.989 [main] INFO  com.yizhaoqi.smartpai.SmartPaiApplication - No active profile set, falling back to 1 default profile: "default"
+2025-11-04 12:07:21.247 [main] INFO  com.yizhaoqi.smartpai.config.SecurityConfig - Security configuration loaded successfully.
+2025-11-04 12:07:21.627 [main] INFO  com.yizhaoqi.smartpai.SmartPaiApplication - Started SmartPaiApplication in 3.913 seconds (process running for 4.399)
+2025-11-04 12:07:21.628 [main] INFO  com.yizhaoqi.smartpai.config.AdminUserInitializer - 检查管理员账号是否存在: admin
+2025-11-04 12:07:21.694 [main] INFO  com.yizhaoqi.smartpai.config.AdminUserInitializer - 管理员账号 'admin' 已存在，跳过创建步骤
+2025-11-04 12:07:21.696 [main] INFO  com.yizhaoqi.smartpai.config.OrgTagInitializer - 检查组织标签是否存在: default
+2025-11-04 12:07:21.702 [main] INFO  com.yizhaoqi.smartpai.config.OrgTagInitializer - 组织标签 'default' 已存在，跳过创建步骤
+2025-11-04 12:07:21.702 [main] INFO  com.yizhaoqi.smartpai.config.OrgTagInitializer - 检查组织标签是否存在: admin
+2025-11-04 12:07:21.703 [main] INFO  com.yizhaoqi.smartpai.config.OrgTagInitializer - 组织标签 'admin' 已存在，跳过创建步骤
+2025-11-04 12:07:21.703 [main] INFO  com.yizhaoqi.smartpai.config.OrgTagInitializer - 组织标签初始化完成
+2025-11-04 12:07:22.130 [main] INFO  com.yizhaoqi.smartpai.config.EsIndexInitializer - 索引 'knowledge_base' 已存在
+2025-11-04 12:07:27.427 [http-nio-8081-exec-1] INFO  com.yizhaoqi.smartpai.business - [REQUEST_START] [用户:anonymous] 开始处理请求 [POST] /api/v1/users/login
+2025-11-04 12:07:27.874 [http-nio-8081-exec-1] DEBUG com.yizhaoqi.smartpai.service.TokenCacheService - Token cached: 4e10d05ba54d429f9c77f8db357623a2 for user: admin
+2025-11-04 12:07:27.874 [http-nio-8081-exec-1] INFO  com.yizhaoqi.smartpai.utils.JwtUtils - Token generated and cached for user: admin, tokenId: 4e10d05ba54d429f9c77f8db357623a2
+2025-11-04 12:07:27.878 [http-nio-8081-exec-1] DEBUG com.yizhaoqi.smartpai.service.TokenCacheService - Refresh token cached: 46a3f4aee86842ab8c42228cef7c9ff3 for user: 1
+2025-11-04 12:07:27.879 [http-nio-8081-exec-1] INFO  com.yizhaoqi.smartpai.utils.JwtUtils - Refresh token generated and cached for user: admin, refreshTokenId: 46a3f4aee86842ab8c42228cef7c9ff3
+2025-11-04 12:07:27.879 [http-nio-8081-exec-1] INFO  com.yizhaoqi.smartpai.business - [用户操作] [用户:admin] [操作:LOGIN] [资源:token_generation] [结果:SUCCESS]
+2025-11-04 12:07:27.895 [http-nio-8081-exec-1] INFO  com.yizhaoqi.smartpai.business - [API] [POST] /api/v1/users/login [用户:anonymous] [状态:200] [耗时:468ms]
+2025-11-04 12:07:27.956 [http-nio-8081-exec-2] INFO  com.yizhaoqi.smartpai.business - [REQUEST_START] [用户:1] 开始处理请求 [GET] /api/v1/users/me
+2025-11-04 12:07:27.963 [http-nio-8081-exec-2] INFO  com.yizhaoqi.smartpai.business - [用户操作] [用户:admin] [操作:GET_USER_INFO] [资源:user_profile] [结果:SUCCESS]
+2025-11-04 12:07:27.968 [http-nio-8081-exec-2] INFO  com.yizhaoqi.smartpai.business - [API] [GET] /api/v1/users/me [用户:1] [状态:200] [耗时:11ms]
+2025-11-04 12:07:28.001 [http-nio-8081-exec-3] INFO  com.yizhaoqi.smartpai.business - [REQUEST_START] [用户:1] 开始处理请求 [GET] /api/v1/users/me
+2025-11-04 12:07:28.005 [http-nio-8081-exec-3] INFO  com.yizhaoqi.smartpai.business - [用户操作] [用户:admin] [操作:GET_USER_INFO] [资源:user_profile] [结果:SUCCESS]
+2025-11-04 12:07:28.007 [http-nio-8081-exec-3] INFO  com.yizhaoqi.smartpai.business - [API] [GET] /api/v1/users/me [用户:1] [状态:200] [耗时:7ms]
+2025-11-04 12:07:28.287 [http-nio-8081-exec-5] INFO  com.yizhaoqi.smartpai.business - [REQUEST_START] [用户:1] 开始处理请求 [GET] /api/v1/users/conversation
+2025-11-04 12:07:28.290 [http-nio-8081-exec-5] INFO  com.yizhaoqi.smartpai.business - [GET_CONVERSATIONS] [用户:admin] 开始查询用户对话历史
+2025-11-04 12:07:28.291 [http-nio-8081-exec-4] INFO  c.yizhaoqi.smartpai.handler.ChatWebSocketHandler - WebSocket连接已建立，用户ID: admin，会话ID: 5eec0fa5-10a1-1907-7e55-cb3e938f8e72，URI路径: /chat/eyJhbGciOiJIUzI1NiJ9.eyJwcmltYXJ5T3JnIjoiYWRtaW4iLCJvcmdUYWdzIjoiZGVmYXVsdCxhZG1pbiIsInJvbGUiOiJBRE1JTiIsInRva2VuSWQiOiI0ZTEwZDA1YmE1NGQ0MjlmOWM3N2Y4ZGIzNTc2MjNhMiIsInVzZXJJZCI6IjEiLCJzdWIiOiJhZG1pbiIsImV4cCI6MTc2MjIzMjg0N30.tVgqywIqhYgFJaVfuFP66VfHWJCjWlv8v03CbOgA39E
+2025-11-04 12:07:28.311 [http-nio-8081-exec-5] INFO  com.yizhaoqi.smartpai.business - [GET_CONVERSATIONS] [用户:admin] 尝试查找Redis键: user:1:current_conversation, 结果: 未找到
+2025-11-04 12:07:28.312 [http-nio-8081-exec-5] INFO  com.yizhaoqi.smartpai.business - [GET_CONVERSATIONS] [用户:admin] 找到对话会话ID: df066211-2766-4d79-9420-0fcb48a3b6b4
+2025-11-04 12:07:28.356 [http-nio-8081-exec-5] INFO  com.yizhaoqi.smartpai.business - [GET_CONVERSATIONS] [用户:admin] 解析起始时间: 2025-10-28 -> 2025-10-28T00:00
+2025-11-04 12:07:28.357 [http-nio-8081-exec-5] INFO  com.yizhaoqi.smartpai.business - [GET_CONVERSATIONS] [用户:admin] 解析结束时间: 2025-11-05 -> 2025-11-05T00:00
+2025-11-04 12:07:28.359 [http-nio-8081-exec-5] INFO  com.yizhaoqi.smartpai.business - [GET_CONVERSATIONS] [用户:admin] 从Redis中获取到 4 条对话记录，过滤后剩余 4 条，会话ID: df066211-2766-4d79-9420-0fcb48a3b6b4
+2025-11-04 12:07:28.361 [http-nio-8081-exec-5] INFO  com.yizhaoqi.smartpai.business - [用户操作] [用户:admin] [操作:GET_CONVERSATIONS] [资源:conversation_history] [结果:SUCCESS]
+2025-11-04 12:07:28.364 [http-nio-8081-exec-5] INFO  com.yizhaoqi.smartpai.business - [API] [GET] /api/v1/users/conversation [用户:1] [状态:200] [耗时:77ms]
+2025-11-04 12:14:22.068 [SpringApplicationShutdownHook] INFO  c.yizhaoqi.smartpai.handler.ChatWebSocketHandler - WebSocket连接已关闭，用户ID: admin，会话ID: 5eec0fa5-10a1-1907-7e55-cb3e938f8e72，状态: CloseStatus[code=1001, reason=The web application is stopping]

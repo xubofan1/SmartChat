@@ -1,0 +1,1099 @@
+2025-11-04 00:13:31.079 [main] INFO  com.yizhaoqi.smartpai.SmartPaiApplication - Starting SmartPaiApplication using Java 17.0.15 with PID 12098 (/Volumes/LQ1000/a/PaiSmart/target/classes started by xustation in /Volumes/LQ1000/a/PaiSmart)
+2025-11-04 00:13:31.080 [main] INFO  com.yizhaoqi.smartpai.SmartPaiApplication - No active profile set, falling back to 1 default profile: "default"
+2025-11-04 00:13:32.800 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port 8081 (http)
+2025-11-04 00:13:32.809 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8081"]
+2025-11-04 00:13:32.810 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2025-11-04 00:13:32.810 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.34]
+2025-11-04 00:13:32.848 [main] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2025-11-04 00:13:32.848 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1747 ms
+2025-11-04 00:13:33.149 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2025-11-04 00:13:33.280 [main] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@2573b149
+2025-11-04 00:13:33.281 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2025-11-04 00:13:33.316 [main] WARN  org.hibernate.orm.deprecation - HHH90000025: MySQL8Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-11-04 00:13:33.317 [main] WARN  org.hibernate.orm.deprecation - HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
+2025-11-04 00:13:34.214 [main] ERROR i.n.resolver.dns.DnsServerAddressStreamProviders - Unable to load io.netty.resolver.dns.macos.MacOSDnsServerAddressStreamProvider, fallback to system defaults. This may result in incorrect DNS resolutions on MacOS. Check whether you have a dependency on 'io.netty:netty-resolver-dns-native-macos'. Use DEBUG level to see the full stack: java.lang.UnsatisfiedLinkError: failed to load the required native library
+2025-11-04 00:13:35.413 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-11-04 00:13:35.431 [main] INFO  o.s.s.c.a.a.c.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer - Global AuthenticationManager configured with UserDetailsService bean with name customUserDetailsService
+2025-11-04 00:13:35.476 [main] DEBUG o.s.w.s.server.support.WebSocketHandlerMapping - Patterns [/chat/{token}] in 'webSocketHandlerMapping'
+2025-11-04 00:13:35.527 [main] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - 41 mappings in 'requestMappingHandlerMapping'
+2025-11-04 00:13:35.549 [main] DEBUG o.s.web.servlet.handler.SimpleUrlHandlerMapping - Patterns [/webjars/**, /**, /static/**] in 'resourceHandlerMapping'
+2025-11-04 00:13:35.570 [main] INFO  com.yizhaoqi.smartpai.config.SecurityConfig - Security configuration loaded successfully.
+2025-11-04 00:13:35.582 [main] DEBUG o.s.security.web.DefaultSecurityFilterChain - Will secure any request with filters: DisableEncodeUrlFilter, WebAsyncManagerIntegrationFilter, SecurityContextHolderFilter, HeaderWriterFilter, LogoutFilter, JwtAuthenticationFilter, OrgTagAuthorizationFilter, RequestCacheAwareFilter, SecurityContextHolderAwareRequestFilter, AnonymousAuthenticationFilter, SessionManagementFilter, ExceptionTranslationFilter, AuthorizationFilter
+2025-11-04 00:13:35.626 [main] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerAdapter - ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2025-11-04 00:13:35.656 [main] DEBUG o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+2025-11-04 00:13:35.824 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8081"]
+2025-11-04 00:13:35.831 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port 8081 (http) with context path '/'
+2025-11-04 00:13:35.963 [main] INFO  com.yizhaoqi.smartpai.SmartPaiApplication - Started SmartPaiApplication in 5.219 seconds (process running for 5.669)
+2025-11-04 00:13:35.965 [main] INFO  com.yizhaoqi.smartpai.config.AdminUserInitializer - 检查管理员账号是否存在: admin
+2025-11-04 00:13:36.037 [main] INFO  com.yizhaoqi.smartpai.config.AdminUserInitializer - 管理员账号 'admin' 已存在，跳过创建步骤
+2025-11-04 00:13:36.039 [main] INFO  com.yizhaoqi.smartpai.config.OrgTagInitializer - 检查组织标签是否存在: default
+2025-11-04 00:13:36.044 [main] INFO  com.yizhaoqi.smartpai.config.OrgTagInitializer - 组织标签 'default' 已存在，跳过创建步骤
+2025-11-04 00:13:36.044 [main] INFO  com.yizhaoqi.smartpai.config.OrgTagInitializer - 检查组织标签是否存在: admin
+2025-11-04 00:13:36.046 [main] INFO  com.yizhaoqi.smartpai.config.OrgTagInitializer - 组织标签 'admin' 已存在，跳过创建步骤
+2025-11-04 00:13:36.046 [main] INFO  com.yizhaoqi.smartpai.config.OrgTagInitializer - 组织标签初始化完成
+2025-11-04 00:13:36.452 [main] INFO  com.yizhaoqi.smartpai.config.EsIndexInitializer - 索引 'knowledge_base' 已存在
+2025-11-04 00:13:39.371 [http-nio-8081-exec-1] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-11-04 00:13:39.374 [http-nio-8081-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2025-11-04 00:13:39.374 [http-nio-8081-exec-1] DEBUG org.springframework.web.servlet.DispatcherServlet - Detected StandardServletMultipartResolver
+2025-11-04 00:13:39.374 [http-nio-8081-exec-1] DEBUG org.springframework.web.servlet.DispatcherServlet - Detected AcceptHeaderLocaleResolver
+2025-11-04 00:13:39.375 [http-nio-8081-exec-1] DEBUG org.springframework.web.servlet.DispatcherServlet - Detected FixedThemeResolver
+2025-11-04 00:13:39.376 [http-nio-8081-exec-1] DEBUG org.springframework.web.servlet.DispatcherServlet - Detected org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@49f5758f
+2025-11-04 00:13:39.376 [http-nio-8081-exec-1] DEBUG org.springframework.web.servlet.DispatcherServlet - Detected org.springframework.web.servlet.support.SessionFlashMapManager@7a3a8ee0
+2025-11-04 00:13:39.376 [http-nio-8081-exec-1] DEBUG org.springframework.web.servlet.DispatcherServlet - enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+2025-11-04 00:13:39.376 [http-nio-8081-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 2 ms
+2025-11-04 00:13:39.387 [http-nio-8081-exec-1] DEBUG org.springframework.security.web.FilterChainProxy - Securing POST /api/v1/users/login
+2025-11-04 00:13:39.391 [http-nio-8081-exec-1] DEBUG o.s.s.w.a.AnonymousAuthenticationFilter - Set SecurityContextHolder to anonymous SecurityContext
+2025-11-04 00:13:39.391 [http-nio-8081-exec-1] DEBUG o.s.security.web.session.SessionManagementFilter - Request requested invalid session id 3CF50EC045F0BCE188C8B6C21DC7B641
+2025-11-04 00:13:39.392 [http-nio-8081-exec-1] DEBUG org.springframework.security.web.FilterChainProxy - Secured POST /api/v1/users/login
+2025-11-04 00:13:39.393 [http-nio-8081-exec-1] DEBUG org.springframework.web.servlet.DispatcherServlet - POST "/api/v1/users/login", parameters={}
+2025-11-04 00:13:39.394 [http-nio-8081-exec-1] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.yizhaoqi.smartpai.controller.UserController#login(UserRequest)
+2025-11-04 00:13:39.457 [http-nio-8081-exec-1] DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Read "application/json;charset=UTF-8" to [UserRequest[username=admin, password=admin123]]
+2025-11-04 00:13:39.839 [http-nio-8081-exec-1] DEBUG com.yizhaoqi.smartpai.service.TokenCacheService - Token cached: 2991f4769cfd4f58a8fb5c7d478e4913 for user: admin
+2025-11-04 00:13:39.839 [http-nio-8081-exec-1] INFO  com.yizhaoqi.smartpai.utils.JwtUtils - Token generated and cached for user: admin, tokenId: 2991f4769cfd4f58a8fb5c7d478e4913
+2025-11-04 00:13:39.842 [http-nio-8081-exec-1] DEBUG com.yizhaoqi.smartpai.service.TokenCacheService - Refresh token cached: da3327e21d7c48688cae4696968ec2e3 for user: 1
+2025-11-04 00:13:39.842 [http-nio-8081-exec-1] INFO  com.yizhaoqi.smartpai.utils.JwtUtils - Refresh token generated and cached for user: admin, refreshTokenId: da3327e21d7c48688cae4696968ec2e3
+2025-11-04 00:13:39.849 [http-nio-8081-exec-1] DEBUG o.s.w.s.m.m.annotation.HttpEntityMethodProcessor - Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
+2025-11-04 00:13:39.849 [http-nio-8081-exec-1] DEBUG o.s.w.s.m.m.annotation.HttpEntityMethodProcessor - Writing [{code=200, data={refreshToken=eyJhbGciOiJIUzI1NiJ9.eyJyZWZyZXNoVG9rZW5JZCI6ImRhMzMyN2UyMWQ3YzQ4Njg4Y (truncated)...]
+2025-11-04 00:13:39.855 [http-nio-8081-exec-1] DEBUG org.springframework.web.servlet.DispatcherServlet - Completed 200 OK
+2025-11-04 00:13:39.891 [http-nio-8081-exec-2] DEBUG org.springframework.security.web.FilterChainProxy - Securing GET /api/v1/users/me
+2025-11-04 00:13:39.929 [http-nio-8081-exec-2] DEBUG org.springframework.security.web.FilterChainProxy - Secured GET /api/v1/users/me
+2025-11-04 00:13:39.929 [http-nio-8081-exec-2] DEBUG org.springframework.web.servlet.DispatcherServlet - GET "/api/v1/users/me", parameters={}
+2025-11-04 00:13:39.929 [http-nio-8081-exec-2] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.yizhaoqi.smartpai.controller.UserController#getCurrentUser(String)
+2025-11-04 00:13:39.937 [http-nio-8081-exec-2] DEBUG o.s.w.s.m.m.annotation.HttpEntityMethodProcessor - Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
+2025-11-04 00:13:39.937 [http-nio-8081-exec-2] DEBUG o.s.w.s.m.m.annotation.HttpEntityMethodProcessor - Writing [{code=200, data={id=1, username=admin, role=ADMIN, orgTags=[default, admin], primaryOrg=default, cre (truncated)...]
+2025-11-04 00:13:39.941 [http-nio-8081-exec-2] DEBUG org.springframework.web.servlet.DispatcherServlet - Completed 200 OK
+2025-11-04 00:13:39.960 [http-nio-8081-exec-3] DEBUG org.springframework.security.web.FilterChainProxy - Securing GET /api/v1/users/me
+2025-11-04 00:13:39.967 [http-nio-8081-exec-3] DEBUG org.springframework.security.web.FilterChainProxy - Secured GET /api/v1/users/me
+2025-11-04 00:13:39.967 [http-nio-8081-exec-3] DEBUG org.springframework.web.servlet.DispatcherServlet - GET "/api/v1/users/me", parameters={}
+2025-11-04 00:13:39.967 [http-nio-8081-exec-3] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.yizhaoqi.smartpai.controller.UserController#getCurrentUser(String)
+2025-11-04 00:13:39.976 [http-nio-8081-exec-3] DEBUG o.s.w.s.m.m.annotation.HttpEntityMethodProcessor - Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
+2025-11-04 00:13:39.976 [http-nio-8081-exec-3] DEBUG o.s.w.s.m.m.annotation.HttpEntityMethodProcessor - Writing [{code=200, data={id=1, username=admin, role=ADMIN, orgTags=[default, admin], primaryOrg=default, cre (truncated)...]
+2025-11-04 00:13:39.977 [http-nio-8081-exec-3] DEBUG org.springframework.web.servlet.DispatcherServlet - Completed 200 OK
+2025-11-04 00:13:40.080 [http-nio-8081-exec-4] DEBUG org.springframework.security.web.FilterChainProxy - Securing GET /chat/eyJhbGciOiJIUzI1NiJ9.eyJwcmltYXJ5T3JnIjoiZGVmYXVsdCIsIm9yZ1RhZ3MiOiJkZWZhdWx0LGFkbWluIiwicm9sZSI6IkFETUlOIiwidG9rZW5JZCI6IjI5OTFmNDc2OWNmZDRmNThhOGZiNWM3ZDQ3OGU0OTEzIiwidXNlcklkIjoiMSIsInN1YiI6ImFkbWluIiwiZXhwIjoxNzYyMTkwMDE5fQ.ZPcmaN6jdwXtCEiKo_O0Uaxug58AfxZHKcQmGpe-oLM
+2025-11-04 00:13:40.080 [http-nio-8081-exec-4] DEBUG o.s.s.w.a.AnonymousAuthenticationFilter - Set SecurityContextHolder to anonymous SecurityContext
+2025-11-04 00:13:40.080 [http-nio-8081-exec-4] DEBUG o.s.security.web.session.SessionManagementFilter - Request requested invalid session id 3CF50EC045F0BCE188C8B6C21DC7B641
+2025-11-04 00:13:40.081 [http-nio-8081-exec-4] DEBUG org.springframework.security.web.FilterChainProxy - Secured GET /chat/eyJhbGciOiJIUzI1NiJ9.eyJwcmltYXJ5T3JnIjoiZGVmYXVsdCIsIm9yZ1RhZ3MiOiJkZWZhdWx0LGFkbWluIiwicm9sZSI6IkFETUlOIiwidG9rZW5JZCI6IjI5OTFmNDc2OWNmZDRmNThhOGZiNWM3ZDQ3OGU0OTEzIiwidXNlcklkIjoiMSIsInN1YiI6ImFkbWluIiwiZXhwIjoxNzYyMTkwMDE5fQ.ZPcmaN6jdwXtCEiKo_O0Uaxug58AfxZHKcQmGpe-oLM
+2025-11-04 00:13:40.081 [http-nio-8081-exec-4] DEBUG org.springframework.web.servlet.DispatcherServlet - GET "/chat/eyJhbGciOiJIUzI1NiJ9.eyJwcmltYXJ5T3JnIjoiZGVmYXVsdCIsIm9yZ1RhZ3MiOiJkZWZhdWx0LGFkbWluIiwicm9sZSI6IkFETUlOIiwidG9rZW5JZCI6IjI5OTFmNDc2OWNmZDRmNThhOGZiNWM3ZDQ3OGU0OTEzIiwidXNlcklkIjoiMSIsInN1YiI6ImFkbWluIiwiZXhwIjoxNzYyMTkwMDE5fQ.ZPcmaN6jdwXtCEiKo_O0Uaxug58AfxZHKcQmGpe-oLM", parameters={}
+2025-11-04 00:13:40.081 [http-nio-8081-exec-4] DEBUG o.s.w.s.server.support.WebSocketHandlerMapping - Mapped to org.springframework.web.socket.server.support.WebSocketHttpRequestHandler@24e95bd4
+2025-11-04 00:13:40.082 [http-nio-8081-exec-4] DEBUG o.s.w.s.server.support.WebSocketHttpRequestHandler - GET /chat/eyJhbGciOiJIUzI1NiJ9.eyJwcmltYXJ5T3JnIjoiZGVmYXVsdCIsIm9yZ1RhZ3MiOiJkZWZhdWx0LGFkbWluIiwicm9sZSI6IkFETUlOIiwidG9rZW5JZCI6IjI5OTFmNDc2OWNmZDRmNThhOGZiNWM3ZDQ3OGU0OTEzIiwidXNlcklkIjoiMSIsInN1YiI6ImFkbWluIiwiZXhwIjoxNzYyMTkwMDE5fQ.ZPcmaN6jdwXtCEiKo_O0Uaxug58AfxZHKcQmGpe-oLM
+2025-11-04 00:13:40.109 [http-nio-8081-exec-5] DEBUG org.springframework.security.web.FilterChainProxy - Securing GET /api/v1/users/conversation?start_date=2025-10-28&end_date=2025-11-05
+2025-11-04 00:13:40.113 [http-nio-8081-exec-4] DEBUG org.springframework.web.servlet.DispatcherServlet - Completed 101 SWITCHING_PROTOCOLS
+2025-11-04 00:13:40.153 [http-nio-8081-exec-5] DEBUG org.springframework.security.web.FilterChainProxy - Secured GET /api/v1/users/conversation?start_date=2025-10-28&end_date=2025-11-05
+2025-11-04 00:13:40.154 [http-nio-8081-exec-5] DEBUG org.springframework.web.servlet.DispatcherServlet - GET "/api/v1/users/conversation?start_date=2025-10-28&end_date=2025-11-05", parameters={masked}
+2025-11-04 00:13:40.154 [http-nio-8081-exec-5] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.yizhaoqi.smartpai.controller.ConversationController#getConversations(String, String, String)
+2025-11-04 00:13:40.157 [http-nio-8081-exec-4] DEBUG o.s.w.s.handler.LoggingWebSocketHandlerDecorator - New StandardWebSocketSession[id=add1a313-6032-64c6-4d9e-03cc8b4754ae, uri=ws://localhost:8081/chat/eyJhbGciOiJIUzI1NiJ9.eyJwcmltYXJ5T3JnIjoiZGVmYXVsdCIsIm9yZ1RhZ3MiOiJkZWZhdWx0LGFkbWluIiwicm9sZSI6IkFETUlOIiwidG9rZW5JZCI6IjI5OTFmNDc2OWNmZDRmNThhOGZiNWM3ZDQ3OGU0OTEzIiwidXNlcklkIjoiMSIsInN1YiI6ImFkbWluIiwiZXhwIjoxNzYyMTkwMDE5fQ.ZPcmaN6jdwXtCEiKo_O0Uaxug58AfxZHKcQmGpe-oLM]
+2025-11-04 00:13:40.161 [http-nio-8081-exec-4] INFO  c.yizhaoqi.smartpai.handler.ChatWebSocketHandler - WebSocket连接已建立，用户ID: admin，会话ID: add1a313-6032-64c6-4d9e-03cc8b4754ae，URI路径: /chat/eyJhbGciOiJIUzI1NiJ9.eyJwcmltYXJ5T3JnIjoiZGVmYXVsdCIsIm9yZ1RhZ3MiOiJkZWZhdWx0LGFkbWluIiwicm9sZSI6IkFETUlOIiwidG9rZW5JZCI6IjI5OTFmNDc2OWNmZDRmNThhOGZiNWM3ZDQ3OGU0OTEzIiwidXNlcklkIjoiMSIsInN1YiI6ImFkbWluIiwiZXhwIjoxNzYyMTkwMDE5fQ.ZPcmaN6jdwXtCEiKo_O0Uaxug58AfxZHKcQmGpe-oLM
+2025-11-04 00:13:40.231 [http-nio-8081-exec-5] DEBUG o.s.w.s.m.m.annotation.HttpEntityMethodProcessor - Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
+2025-11-04 00:13:40.231 [http-nio-8081-exec-5] DEBUG o.s.w.s.m.m.annotation.HttpEntityMethodProcessor - Writing [{code=200, data=[{role=user, content=天上人间, timestamp=2025-11-03T20:21:58}, {role=assistant, content= (truncated)...]
+2025-11-04 00:13:40.233 [http-nio-8081-exec-5] DEBUG org.springframework.web.servlet.DispatcherServlet - Completed 200 OK
+2025-11-04 00:13:43.830 [http-nio-8081-exec-6] DEBUG org.springframework.security.web.FilterChainProxy - Securing GET /api/v1/users/me
+2025-11-04 00:13:43.838 [http-nio-8081-exec-6] DEBUG org.springframework.security.web.FilterChainProxy - Secured GET /api/v1/users/me
+2025-11-04 00:13:43.838 [http-nio-8081-exec-6] DEBUG org.springframework.web.servlet.DispatcherServlet - GET "/api/v1/users/me", parameters={}
+2025-11-04 00:13:43.839 [http-nio-8081-exec-6] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.yizhaoqi.smartpai.controller.UserController#getCurrentUser(String)
+2025-11-04 00:13:43.843 [http-nio-8081-exec-6] DEBUG o.s.w.s.m.m.annotation.HttpEntityMethodProcessor - Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
+2025-11-04 00:13:43.844 [http-nio-8081-exec-6] DEBUG o.s.w.s.m.m.annotation.HttpEntityMethodProcessor - Writing [{code=200, data={id=1, username=admin, role=ADMIN, orgTags=[default, admin], primaryOrg=default, cre (truncated)...]
+2025-11-04 00:13:43.845 [http-nio-8081-exec-6] DEBUG org.springframework.web.servlet.DispatcherServlet - Completed 200 OK
+2025-11-04 00:13:44.962 [http-nio-8081-exec-7] DEBUG org.springframework.security.web.FilterChainProxy - Securing GET /api/v1/users/org-tags
+2025-11-04 00:13:44.992 [http-nio-8081-exec-7] DEBUG org.springframework.security.web.FilterChainProxy - Secured GET /api/v1/users/org-tags
+2025-11-04 00:13:44.992 [http-nio-8081-exec-7] DEBUG org.springframework.web.servlet.DispatcherServlet - GET "/api/v1/users/org-tags", parameters={}
+2025-11-04 00:13:44.992 [http-nio-8081-exec-7] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.yizhaoqi.smartpai.controller.UserController#getUserOrgTags(String)
+2025-11-04 00:13:45.013 [http-nio-8081-exec-7] DEBUG com.yizhaoqi.smartpai.service.OrgTagCacheService - Cached organization tags for user: admin
+2025-11-04 00:13:45.014 [http-nio-8081-exec-7] DEBUG com.yizhaoqi.smartpai.service.OrgTagCacheService - Cached primary organization for user: admin
+2025-11-04 00:13:45.023 [http-nio-8081-exec-7] DEBUG o.s.w.s.m.m.annotation.HttpEntityMethodProcessor - Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
+2025-11-04 00:13:45.023 [http-nio-8081-exec-7] DEBUG o.s.w.s.m.m.annotation.HttpEntityMethodProcessor - Writing [{code=200, data={primaryOrg=default, orgTags=[default, admin], orgTagDetails=[{tagId=default, name=默 (truncated)...]
+2025-11-04 00:13:45.025 [http-nio-8081-exec-7] DEBUG org.springframework.web.servlet.DispatcherServlet - Completed 200 OK
+2025-11-04 00:13:48.907 [http-nio-8081-exec-8] DEBUG org.springframework.security.web.FilterChainProxy - Securing GET /api/v1/users/me
+2025-11-04 00:13:48.921 [http-nio-8081-exec-8] DEBUG org.springframework.security.web.FilterChainProxy - Secured GET /api/v1/users/me
+2025-11-04 00:13:48.922 [http-nio-8081-exec-8] DEBUG org.springframework.web.servlet.DispatcherServlet - GET "/api/v1/users/me", parameters={}
+2025-11-04 00:13:48.922 [http-nio-8081-exec-8] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.yizhaoqi.smartpai.controller.UserController#getCurrentUser(String)
+2025-11-04 00:13:48.929 [http-nio-8081-exec-8] DEBUG o.s.w.s.m.m.annotation.HttpEntityMethodProcessor - Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
+2025-11-04 00:13:48.929 [http-nio-8081-exec-8] DEBUG o.s.w.s.m.m.annotation.HttpEntityMethodProcessor - Writing [{code=200, data={id=1, username=admin, role=ADMIN, orgTags=[default, admin], primaryOrg=default, cre (truncated)...]
+2025-11-04 00:13:48.931 [http-nio-8081-exec-8] DEBUG org.springframework.web.servlet.DispatcherServlet - Completed 200 OK
+2025-11-04 00:13:49.516 [http-nio-8081-exec-9] DEBUG org.springframework.security.web.FilterChainProxy - Securing GET /api/v1/admin/users/list?page=1&size=20
+2025-11-04 00:13:49.516 [http-nio-8081-exec-10] DEBUG org.springframework.security.web.FilterChainProxy - Securing GET /api/v1/admin/org-tags/tree
+2025-11-04 00:13:49.526 [http-nio-8081-exec-10] DEBUG org.springframework.security.web.FilterChainProxy - Secured GET /api/v1/admin/org-tags/tree
+2025-11-04 00:13:49.526 [http-nio-8081-exec-10] DEBUG org.springframework.web.servlet.DispatcherServlet - GET "/api/v1/admin/org-tags/tree", parameters={}
+2025-11-04 00:13:49.526 [http-nio-8081-exec-10] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.yizhaoqi.smartpai.controller.AdminController#getOrganizationTagTree(String)
+2025-11-04 00:13:49.530 [http-nio-8081-exec-9] DEBUG org.springframework.security.web.FilterChainProxy - Secured GET /api/v1/admin/users/list?page=1&size=20
+2025-11-04 00:13:49.530 [http-nio-8081-exec-9] DEBUG org.springframework.web.servlet.DispatcherServlet - GET "/api/v1/admin/users/list?page=1&size=20", parameters={masked}
+2025-11-04 00:13:49.531 [http-nio-8081-exec-9] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.yizhaoqi.smartpai.controller.AdminController#getUserList(String, String, String, Integer, int, int)
+2025-11-04 00:13:49.541 [http-nio-8081-exec-10] DEBUG o.s.w.s.m.m.annotation.HttpEntityMethodProcessor - Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
+2025-11-04 00:13:49.541 [http-nio-8081-exec-10] DEBUG o.s.w.s.m.m.annotation.HttpEntityMethodProcessor - Writing [{code=200, data=[{tagId=admin, parentTag=null, name=管理员组织, description=管理员专用组织标签，具有管理权限}, {tagId=def (truncated)...]
+2025-11-04 00:13:49.545 [http-nio-8081-exec-10] DEBUG org.springframework.web.servlet.DispatcherServlet - Completed 200 OK
+2025-11-04 00:13:49.574 [http-nio-8081-exec-9] DEBUG o.s.w.s.m.m.annotation.HttpEntityMethodProcessor - Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
+2025-11-04 00:13:49.574 [http-nio-8081-exec-9] DEBUG o.s.w.s.m.m.annotation.HttpEntityMethodProcessor - Writing [{code=200, data={number=1, size=20, totalPages=1, content=[{primaryOrg=default, createdAt=2025-11-02 (truncated)...]
+2025-11-04 00:13:49.575 [http-nio-8081-exec-9] DEBUG org.springframework.web.servlet.DispatcherServlet - Completed 200 OK
+2025-11-04 00:13:49.580 [http-nio-8081-exec-1] DEBUG org.springframework.security.web.FilterChainProxy - Securing GET /api/v1/admin/users/list?page=1&size=20
+2025-11-04 00:13:49.589 [http-nio-8081-exec-1] DEBUG org.springframework.security.web.FilterChainProxy - Secured GET /api/v1/admin/users/list?page=1&size=20
+2025-11-04 00:13:49.589 [http-nio-8081-exec-1] DEBUG org.springframework.web.servlet.DispatcherServlet - GET "/api/v1/admin/users/list?page=1&size=20", parameters={masked}
+2025-11-04 00:13:49.589 [http-nio-8081-exec-1] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.yizhaoqi.smartpai.controller.AdminController#getUserList(String, String, String, Integer, int, int)
+2025-11-04 00:13:49.604 [http-nio-8081-exec-1] DEBUG o.s.w.s.m.m.annotation.HttpEntityMethodProcessor - Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
+2025-11-04 00:13:49.604 [http-nio-8081-exec-1] DEBUG o.s.w.s.m.m.annotation.HttpEntityMethodProcessor - Writing [{code=200, data={number=1, size=20, totalPages=1, content=[{primaryOrg=default, createdAt=2025-11-02 (truncated)...]
+2025-11-04 00:13:49.606 [http-nio-8081-exec-1] DEBUG org.springframework.web.servlet.DispatcherServlet - Completed 200 OK
+2025-11-04 00:14:14.847 [http-nio-8081-exec-2] DEBUG org.springframework.security.web.FilterChainProxy - Securing GET /api/v1/users/me
+2025-11-04 00:14:14.893 [http-nio-8081-exec-2] DEBUG org.springframework.security.web.FilterChainProxy - Secured GET /api/v1/users/me
+2025-11-04 00:14:14.893 [http-nio-8081-exec-2] DEBUG org.springframework.web.servlet.DispatcherServlet - GET "/api/v1/users/me", parameters={}
+2025-11-04 00:14:14.894 [http-nio-8081-exec-2] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.yizhaoqi.smartpai.controller.UserController#getCurrentUser(String)
+2025-11-04 00:14:14.908 [http-nio-8081-exec-2] DEBUG o.s.w.s.m.m.annotation.HttpEntityMethodProcessor - Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
+2025-11-04 00:14:14.908 [http-nio-8081-exec-2] DEBUG o.s.w.s.m.m.annotation.HttpEntityMethodProcessor - Writing [{code=200, data={id=1, username=admin, role=ADMIN, orgTags=[default, admin], primaryOrg=default, cre (truncated)...]
+2025-11-04 00:14:14.910 [http-nio-8081-exec-2] DEBUG org.springframework.web.servlet.DispatcherServlet - Completed 200 OK
+2025-11-04 00:14:15.396 [http-nio-8081-exec-3] DEBUG org.springframework.security.web.FilterChainProxy - Securing GET /api/v1/documents/uploads
+2025-11-04 00:14:15.404 [http-nio-8081-exec-3] INFO  c.y.smartpai.config.OrgTagAuthorizationFilter - 处理获取用户文档请求: /api/v1/documents/uploads
+2025-11-04 00:14:15.405 [http-nio-8081-exec-3] DEBUG org.springframework.security.web.FilterChainProxy - Secured GET /api/v1/documents/uploads
+2025-11-04 00:14:15.406 [http-nio-8081-exec-3] DEBUG org.springframework.web.servlet.DispatcherServlet - GET "/api/v1/documents/uploads", parameters={}
+2025-11-04 00:14:15.406 [http-nio-8081-exec-3] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.yizhaoqi.smartpai.controller.DocumentController#getUserUploadedFiles(String)
+2025-11-04 00:14:15.407 [http-nio-8081-exec-3] INFO  com.yizhaoqi.smartpai.service.DocumentService - 获取用户上传的文件列表: userId=1
+2025-11-04 00:14:15.427 [http-nio-8081-exec-3] INFO  com.yizhaoqi.smartpai.service.DocumentService - 成功获取用户上传的文件列表: userId=1, fileCount=0
+2025-11-04 00:14:15.430 [http-nio-8081-exec-3] DEBUG o.s.w.s.m.m.annotation.HttpEntityMethodProcessor - Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
+2025-11-04 00:14:15.431 [http-nio-8081-exec-3] DEBUG o.s.w.s.m.m.annotation.HttpEntityMethodProcessor - Writing [{code=200, data=[], message=获取用户上传文件列表成功}]
+2025-11-04 00:14:15.432 [http-nio-8081-exec-3] DEBUG org.springframework.web.servlet.DispatcherServlet - Completed 200 OK
+2025-11-04 00:14:21.832 [http-nio-8081-exec-4] DEBUG org.springframework.security.web.FilterChainProxy - Securing GET /api/v1/admin/org-tags/tree
+2025-11-04 00:14:21.842 [http-nio-8081-exec-4] DEBUG org.springframework.security.web.FilterChainProxy - Secured GET /api/v1/admin/org-tags/tree
+2025-11-04 00:14:21.842 [http-nio-8081-exec-4] DEBUG org.springframework.web.servlet.DispatcherServlet - GET "/api/v1/admin/org-tags/tree", parameters={}
+2025-11-04 00:14:21.842 [http-nio-8081-exec-4] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.yizhaoqi.smartpai.controller.AdminController#getOrganizationTagTree(String)
+2025-11-04 00:14:21.850 [http-nio-8081-exec-4] DEBUG o.s.w.s.m.m.annotation.HttpEntityMethodProcessor - Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
+2025-11-04 00:14:21.851 [http-nio-8081-exec-4] DEBUG o.s.w.s.m.m.annotation.HttpEntityMethodProcessor - Writing [{code=200, data=[{tagId=admin, parentTag=null, name=管理员组织, description=管理员专用组织标签，具有管理权限}, {tagId=def (truncated)...]
+2025-11-04 00:14:21.852 [http-nio-8081-exec-4] DEBUG org.springframework.web.servlet.DispatcherServlet - Completed 200 OK
+2025-11-04 00:14:25.637 [http-nio-8081-exec-5] DEBUG org.springframework.security.web.FilterChainProxy - Securing GET /api/v1/users/me
+2025-11-04 00:14:25.646 [http-nio-8081-exec-5] DEBUG org.springframework.security.web.FilterChainProxy - Secured GET /api/v1/users/me
+2025-11-04 00:14:25.647 [http-nio-8081-exec-5] DEBUG org.springframework.web.servlet.DispatcherServlet - GET "/api/v1/users/me", parameters={}
+2025-11-04 00:14:25.647 [http-nio-8081-exec-5] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.yizhaoqi.smartpai.controller.UserController#getCurrentUser(String)
+2025-11-04 00:14:25.652 [http-nio-8081-exec-5] DEBUG o.s.w.s.m.m.annotation.HttpEntityMethodProcessor - Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
+2025-11-04 00:14:25.653 [http-nio-8081-exec-5] DEBUG o.s.w.s.m.m.annotation.HttpEntityMethodProcessor - Writing [{code=200, data={id=1, username=admin, role=ADMIN, orgTags=[default, admin], primaryOrg=default, cre (truncated)...]
+2025-11-04 00:14:25.654 [http-nio-8081-exec-5] DEBUG org.springframework.web.servlet.DispatcherServlet - Completed 200 OK
+2025-11-04 00:14:26.144 [http-nio-8081-exec-6] DEBUG org.springframework.security.web.FilterChainProxy - Securing GET /api/v1/admin/org-tags/tree
+2025-11-04 00:14:26.151 [http-nio-8081-exec-6] DEBUG org.springframework.security.web.FilterChainProxy - Secured GET /api/v1/admin/org-tags/tree
+2025-11-04 00:14:26.151 [http-nio-8081-exec-6] DEBUG org.springframework.web.servlet.DispatcherServlet - GET "/api/v1/admin/org-tags/tree", parameters={}
+2025-11-04 00:14:26.151 [http-nio-8081-exec-6] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.yizhaoqi.smartpai.controller.AdminController#getOrganizationTagTree(String)
+2025-11-04 00:14:26.163 [http-nio-8081-exec-6] DEBUG o.s.w.s.m.m.annotation.HttpEntityMethodProcessor - Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
+2025-11-04 00:14:26.163 [http-nio-8081-exec-6] DEBUG o.s.w.s.m.m.annotation.HttpEntityMethodProcessor - Writing [{code=200, data=[{tagId=admin, parentTag=null, name=管理员组织, description=管理员专用组织标签，具有管理权限}, {tagId=def (truncated)...]
+2025-11-04 00:14:26.164 [http-nio-8081-exec-6] DEBUG org.springframework.web.servlet.DispatcherServlet - Completed 200 OK
+2025-11-04 00:14:27.144 [http-nio-8081-exec-7] DEBUG org.springframework.security.web.FilterChainProxy - Securing GET /api/v1/users/me
+2025-11-04 00:14:27.158 [http-nio-8081-exec-7] DEBUG org.springframework.security.web.FilterChainProxy - Secured GET /api/v1/users/me
+2025-11-04 00:14:27.158 [http-nio-8081-exec-7] DEBUG org.springframework.web.servlet.DispatcherServlet - GET "/api/v1/users/me", parameters={}
+2025-11-04 00:14:27.158 [http-nio-8081-exec-7] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.yizhaoqi.smartpai.controller.UserController#getCurrentUser(String)
+2025-11-04 00:14:27.164 [http-nio-8081-exec-7] DEBUG o.s.w.s.m.m.annotation.HttpEntityMethodProcessor - Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
+2025-11-04 00:14:27.164 [http-nio-8081-exec-7] DEBUG o.s.w.s.m.m.annotation.HttpEntityMethodProcessor - Writing [{code=200, data={id=1, username=admin, role=ADMIN, orgTags=[default, admin], primaryOrg=default, cre (truncated)...]
+2025-11-04 00:14:27.166 [http-nio-8081-exec-7] DEBUG org.springframework.web.servlet.DispatcherServlet - Completed 200 OK
+2025-11-04 00:14:27.568 [http-nio-8081-exec-8] DEBUG org.springframework.security.web.FilterChainProxy - Securing GET /api/v1/admin/conversation?userid=1&start_date=2025-10-28&end_date=2025-11-05
+2025-11-04 00:14:27.569 [http-nio-8081-exec-10] DEBUG org.springframework.security.web.FilterChainProxy - Securing GET /api/v1/admin/users/list?page=1&size=999&orgTag=default
+2025-11-04 00:14:27.575 [http-nio-8081-exec-10] DEBUG org.springframework.security.web.FilterChainProxy - Secured GET /api/v1/admin/users/list?page=1&size=999&orgTag=default
+2025-11-04 00:14:27.576 [http-nio-8081-exec-10] DEBUG org.springframework.web.servlet.DispatcherServlet - GET "/api/v1/admin/users/list?page=1&size=999&orgTag=default", parameters={masked}
+2025-11-04 00:14:27.576 [http-nio-8081-exec-8] DEBUG org.springframework.security.web.FilterChainProxy - Secured GET /api/v1/admin/conversation?userid=1&start_date=2025-10-28&end_date=2025-11-05
+2025-11-04 00:14:27.576 [http-nio-8081-exec-10] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.yizhaoqi.smartpai.controller.AdminController#getUserList(String, String, String, Integer, int, int)
+2025-11-04 00:14:27.576 [http-nio-8081-exec-8] DEBUG org.springframework.web.servlet.DispatcherServlet - GET "/api/v1/admin/conversation?userid=1&start_date=2025-10-28&end_date=2025-11-05", parameters={masked}
+2025-11-04 00:14:27.576 [http-nio-8081-exec-8] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.yizhaoqi.smartpai.controller.AdminController#getAllConversations(String, String, String, String)
+2025-11-04 00:14:27.588 [http-nio-8081-exec-10] DEBUG o.s.w.s.m.m.annotation.HttpEntityMethodProcessor - Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
+2025-11-04 00:14:27.588 [http-nio-8081-exec-10] DEBUG o.s.w.s.m.m.annotation.HttpEntityMethodProcessor - Writing [{code=200, data={number=1, size=999, totalPages=1, content=[{primaryOrg=default, createdAt=2025-11-0 (truncated)...]
+2025-11-04 00:14:27.590 [http-nio-8081-exec-10] DEBUG org.springframework.web.servlet.DispatcherServlet - Completed 200 OK
+2025-11-04 00:14:27.609 [http-nio-8081-exec-8] DEBUG o.s.w.s.m.m.annotation.HttpEntityMethodProcessor - Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
+2025-11-04 00:14:27.609 [http-nio-8081-exec-8] DEBUG o.s.w.s.m.m.annotation.HttpEntityMethodProcessor - Writing [{code=200, data=[{role=user, content=天上人间, timestamp=2025-11-03T20:21:58, username=admin}, {role=ass (truncated)...]
+2025-11-04 00:14:27.611 [http-nio-8081-exec-8] DEBUG org.springframework.web.servlet.DispatcherServlet - Completed 200 OK
+2025-11-04 00:14:34.790 [http-nio-8081-exec-9] DEBUG org.springframework.security.web.FilterChainProxy - Securing GET /api/v1/users/me
+2025-11-04 00:14:34.806 [http-nio-8081-exec-9] DEBUG org.springframework.security.web.FilterChainProxy - Secured GET /api/v1/users/me
+2025-11-04 00:14:34.807 [http-nio-8081-exec-9] DEBUG org.springframework.web.servlet.DispatcherServlet - GET "/api/v1/users/me", parameters={}
+2025-11-04 00:14:34.807 [http-nio-8081-exec-9] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.yizhaoqi.smartpai.controller.UserController#getCurrentUser(String)
+2025-11-04 00:14:34.814 [http-nio-8081-exec-9] DEBUG o.s.w.s.m.m.annotation.HttpEntityMethodProcessor - Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
+2025-11-04 00:14:34.814 [http-nio-8081-exec-9] DEBUG o.s.w.s.m.m.annotation.HttpEntityMethodProcessor - Writing [{code=200, data={id=1, username=admin, role=ADMIN, orgTags=[default, admin], primaryOrg=default, cre (truncated)...]
+2025-11-04 00:14:34.815 [http-nio-8081-exec-9] DEBUG org.springframework.web.servlet.DispatcherServlet - Completed 200 OK
+2025-11-04 00:14:35.116 [http-nio-8081-exec-1] DEBUG org.springframework.security.web.FilterChainProxy - Securing GET /api/v1/users/conversation?start_date=2025-10-28&end_date=2025-11-05
+2025-11-04 00:14:35.124 [http-nio-8081-exec-1] DEBUG org.springframework.security.web.FilterChainProxy - Secured GET /api/v1/users/conversation?start_date=2025-10-28&end_date=2025-11-05
+2025-11-04 00:14:35.124 [http-nio-8081-exec-1] DEBUG org.springframework.web.servlet.DispatcherServlet - GET "/api/v1/users/conversation?start_date=2025-10-28&end_date=2025-11-05", parameters={masked}
+2025-11-04 00:14:35.124 [http-nio-8081-exec-1] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.yizhaoqi.smartpai.controller.ConversationController#getConversations(String, String, String)
+2025-11-04 00:14:35.130 [http-nio-8081-exec-1] DEBUG o.s.w.s.m.m.annotation.HttpEntityMethodProcessor - Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
+2025-11-04 00:14:35.130 [http-nio-8081-exec-1] DEBUG o.s.w.s.m.m.annotation.HttpEntityMethodProcessor - Writing [{code=200, data=[{role=user, content=天上人间, timestamp=2025-11-03T20:21:58}, {role=assistant, content= (truncated)...]
+2025-11-04 00:14:35.131 [http-nio-8081-exec-1] DEBUG org.springframework.web.servlet.DispatcherServlet - Completed 200 OK
+2025-11-04 00:14:37.591 [http-nio-8081-exec-2] DEBUG org.springframework.security.web.FilterChainProxy - Securing GET /api/v1/users/me
+2025-11-04 00:14:37.600 [http-nio-8081-exec-2] DEBUG org.springframework.security.web.FilterChainProxy - Secured GET /api/v1/users/me
+2025-11-04 00:14:37.600 [http-nio-8081-exec-2] DEBUG org.springframework.web.servlet.DispatcherServlet - GET "/api/v1/users/me", parameters={}
+2025-11-04 00:14:37.601 [http-nio-8081-exec-2] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.yizhaoqi.smartpai.controller.UserController#getCurrentUser(String)
+2025-11-04 00:14:37.605 [http-nio-8081-exec-2] DEBUG o.s.w.s.m.m.annotation.HttpEntityMethodProcessor - Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
+2025-11-04 00:14:37.605 [http-nio-8081-exec-2] DEBUG o.s.w.s.m.m.annotation.HttpEntityMethodProcessor - Writing [{code=200, data={id=1, username=admin, role=ADMIN, orgTags=[default, admin], primaryOrg=default, cre (truncated)...]
+2025-11-04 00:14:37.606 [http-nio-8081-exec-2] DEBUG org.springframework.web.servlet.DispatcherServlet - Completed 200 OK
+2025-11-04 00:14:37.891 [http-nio-8081-exec-3] DEBUG org.springframework.security.web.FilterChainProxy - Securing GET /api/v1/users/org-tags
+2025-11-04 00:14:37.896 [http-nio-8081-exec-3] DEBUG org.springframework.security.web.FilterChainProxy - Secured GET /api/v1/users/org-tags
+2025-11-04 00:14:37.897 [http-nio-8081-exec-3] DEBUG org.springframework.web.servlet.DispatcherServlet - GET "/api/v1/users/org-tags", parameters={}
+2025-11-04 00:14:37.897 [http-nio-8081-exec-3] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.yizhaoqi.smartpai.controller.UserController#getUserOrgTags(String)
+2025-11-04 00:14:37.913 [http-nio-8081-exec-3] DEBUG o.s.w.s.m.m.annotation.HttpEntityMethodProcessor - Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
+2025-11-04 00:14:37.913 [http-nio-8081-exec-3] DEBUG o.s.w.s.m.m.annotation.HttpEntityMethodProcessor - Writing [{code=200, data={primaryOrg=default, orgTags=[default, admin], orgTagDetails=[{tagId=default, name=默 (truncated)...]
+2025-11-04 00:14:37.914 [http-nio-8081-exec-3] DEBUG org.springframework.web.servlet.DispatcherServlet - Completed 200 OK
+2025-11-04 00:14:43.702 [http-nio-8081-exec-4] DEBUG org.springframework.security.web.FilterChainProxy - Securing GET /api/v1/users/me
+2025-11-04 00:14:43.714 [http-nio-8081-exec-4] DEBUG org.springframework.security.web.FilterChainProxy - Secured GET /api/v1/users/me
+2025-11-04 00:14:43.714 [http-nio-8081-exec-4] DEBUG org.springframework.web.servlet.DispatcherServlet - GET "/api/v1/users/me", parameters={}
+2025-11-04 00:14:43.714 [http-nio-8081-exec-4] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.yizhaoqi.smartpai.controller.UserController#getCurrentUser(String)
+2025-11-04 00:14:43.719 [http-nio-8081-exec-4] DEBUG o.s.w.s.m.m.annotation.HttpEntityMethodProcessor - Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
+2025-11-04 00:14:43.719 [http-nio-8081-exec-4] DEBUG o.s.w.s.m.m.annotation.HttpEntityMethodProcessor - Writing [{code=200, data={id=1, username=admin, role=ADMIN, orgTags=[default, admin], primaryOrg=default, cre (truncated)...]
+2025-11-04 00:14:43.721 [http-nio-8081-exec-4] DEBUG org.springframework.web.servlet.DispatcherServlet - Completed 200 OK
+2025-11-04 00:14:44.026 [http-nio-8081-exec-5] DEBUG org.springframework.security.web.FilterChainProxy - Securing GET /api/v1/admin/users/list?page=1&size=20
+2025-11-04 00:14:44.027 [http-nio-8081-exec-6] DEBUG org.springframework.security.web.FilterChainProxy - Securing GET /api/v1/admin/org-tags/tree
+2025-11-04 00:14:44.033 [http-nio-8081-exec-6] DEBUG org.springframework.security.web.FilterChainProxy - Secured GET /api/v1/admin/org-tags/tree
+2025-11-04 00:14:44.033 [http-nio-8081-exec-5] DEBUG org.springframework.security.web.FilterChainProxy - Secured GET /api/v1/admin/users/list?page=1&size=20
+2025-11-04 00:14:44.033 [http-nio-8081-exec-6] DEBUG org.springframework.web.servlet.DispatcherServlet - GET "/api/v1/admin/org-tags/tree", parameters={}
+2025-11-04 00:14:44.033 [http-nio-8081-exec-5] DEBUG org.springframework.web.servlet.DispatcherServlet - GET "/api/v1/admin/users/list?page=1&size=20", parameters={masked}
+2025-11-04 00:14:44.033 [http-nio-8081-exec-6] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.yizhaoqi.smartpai.controller.AdminController#getOrganizationTagTree(String)
+2025-11-04 00:14:44.033 [http-nio-8081-exec-5] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.yizhaoqi.smartpai.controller.AdminController#getUserList(String, String, String, Integer, int, int)
+2025-11-04 00:14:44.051 [http-nio-8081-exec-6] DEBUG o.s.w.s.m.m.annotation.HttpEntityMethodProcessor - Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
+2025-11-04 00:14:44.052 [http-nio-8081-exec-6] DEBUG o.s.w.s.m.m.annotation.HttpEntityMethodProcessor - Writing [{code=200, data=[{tagId=admin, parentTag=null, name=管理员组织, description=管理员专用组织标签，具有管理权限}, {tagId=def (truncated)...]
+2025-11-04 00:14:44.054 [http-nio-8081-exec-6] DEBUG org.springframework.web.servlet.DispatcherServlet - Completed 200 OK
+2025-11-04 00:14:44.056 [http-nio-8081-exec-5] DEBUG o.s.w.s.m.m.annotation.HttpEntityMethodProcessor - Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
+2025-11-04 00:14:44.056 [http-nio-8081-exec-5] DEBUG o.s.w.s.m.m.annotation.HttpEntityMethodProcessor - Writing [{code=200, data={number=1, size=20, totalPages=1, content=[{primaryOrg=default, createdAt=2025-11-02 (truncated)...]
+2025-11-04 00:14:44.057 [http-nio-8081-exec-5] DEBUG org.springframework.web.servlet.DispatcherServlet - Completed 200 OK
+2025-11-04 00:14:44.063 [http-nio-8081-exec-7] DEBUG org.springframework.security.web.FilterChainProxy - Securing GET /api/v1/admin/users/list?page=1&size=20
+2025-11-04 00:14:44.070 [http-nio-8081-exec-7] DEBUG org.springframework.security.web.FilterChainProxy - Secured GET /api/v1/admin/users/list?page=1&size=20
+2025-11-04 00:14:44.070 [http-nio-8081-exec-7] DEBUG org.springframework.web.servlet.DispatcherServlet - GET "/api/v1/admin/users/list?page=1&size=20", parameters={masked}
+2025-11-04 00:14:44.070 [http-nio-8081-exec-7] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.yizhaoqi.smartpai.controller.AdminController#getUserList(String, String, String, Integer, int, int)
+2025-11-04 00:14:44.091 [http-nio-8081-exec-7] DEBUG o.s.w.s.m.m.annotation.HttpEntityMethodProcessor - Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
+2025-11-04 00:14:44.092 [http-nio-8081-exec-7] DEBUG o.s.w.s.m.m.annotation.HttpEntityMethodProcessor - Writing [{code=200, data={number=1, size=20, totalPages=1, content=[{primaryOrg=default, createdAt=2025-11-02 (truncated)...]
+2025-11-04 00:14:44.093 [http-nio-8081-exec-7] DEBUG org.springframework.web.servlet.DispatcherServlet - Completed 200 OK
+2025-11-04 00:15:16.379 [http-nio-8081-exec-10] DEBUG org.springframework.security.web.FilterChainProxy - Securing GET /api/v1/admin/users/list?page=1&size=20
+2025-11-04 00:15:16.436 [http-nio-8081-exec-10] DEBUG org.springframework.security.web.FilterChainProxy - Secured GET /api/v1/admin/users/list?page=1&size=20
+2025-11-04 00:15:16.436 [http-nio-8081-exec-10] DEBUG org.springframework.web.servlet.DispatcherServlet - GET "/api/v1/admin/users/list?page=1&size=20", parameters={masked}
+2025-11-04 00:15:16.436 [http-nio-8081-exec-10] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.yizhaoqi.smartpai.controller.AdminController#getUserList(String, String, String, Integer, int, int)
+2025-11-04 00:15:16.466 [http-nio-8081-exec-10] DEBUG o.s.w.s.m.m.annotation.HttpEntityMethodProcessor - Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
+2025-11-04 00:15:16.466 [http-nio-8081-exec-10] DEBUG o.s.w.s.m.m.annotation.HttpEntityMethodProcessor - Writing [{code=200, data={number=1, size=20, totalPages=1, content=[{primaryOrg=default, createdAt=2025-11-02 (truncated)...]
+2025-11-04 00:15:16.468 [http-nio-8081-exec-10] DEBUG org.springframework.web.servlet.DispatcherServlet - Completed 200 OK
+2025-11-04 00:15:17.961 [http-nio-8081-exec-8] DEBUG org.springframework.security.web.FilterChainProxy - Securing GET /api/v1/users/me
+2025-11-04 00:15:17.978 [http-nio-8081-exec-8] DEBUG org.springframework.security.web.FilterChainProxy - Secured GET /api/v1/users/me
+2025-11-04 00:15:17.978 [http-nio-8081-exec-8] DEBUG org.springframework.web.servlet.DispatcherServlet - GET "/api/v1/users/me", parameters={}
+2025-11-04 00:15:17.978 [http-nio-8081-exec-8] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.yizhaoqi.smartpai.controller.UserController#getCurrentUser(String)
+2025-11-04 00:15:17.997 [http-nio-8081-exec-8] DEBUG o.s.w.s.m.m.annotation.HttpEntityMethodProcessor - Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
+2025-11-04 00:15:17.997 [http-nio-8081-exec-8] DEBUG o.s.w.s.m.m.annotation.HttpEntityMethodProcessor - Writing [{code=200, data={id=1, username=admin, role=ADMIN, orgTags=[default, admin], primaryOrg=default, cre (truncated)...]
+2025-11-04 00:15:18.002 [http-nio-8081-exec-8] DEBUG org.springframework.web.servlet.DispatcherServlet - Completed 200 OK
+2025-11-04 00:15:18.244 [http-nio-8081-exec-9] DEBUG org.springframework.security.web.FilterChainProxy - Securing GET /api/v1/admin/conversation?userid=1&start_date=2025-10-28&end_date=2025-11-05
+2025-11-04 00:15:18.246 [http-nio-8081-exec-1] DEBUG org.springframework.security.web.FilterChainProxy - Securing GET /api/v1/admin/users/list?page=1&size=999&orgTag=default
+2025-11-04 00:15:18.259 [http-nio-8081-exec-9] DEBUG org.springframework.security.web.FilterChainProxy - Secured GET /api/v1/admin/conversation?userid=1&start_date=2025-10-28&end_date=2025-11-05
+2025-11-04 00:15:18.260 [http-nio-8081-exec-9] DEBUG org.springframework.web.servlet.DispatcherServlet - GET "/api/v1/admin/conversation?userid=1&start_date=2025-10-28&end_date=2025-11-05", parameters={masked}
+2025-11-04 00:15:18.260 [http-nio-8081-exec-9] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.yizhaoqi.smartpai.controller.AdminController#getAllConversations(String, String, String, String)
+2025-11-04 00:15:18.260 [http-nio-8081-exec-1] DEBUG org.springframework.security.web.FilterChainProxy - Secured GET /api/v1/admin/users/list?page=1&size=999&orgTag=default
+2025-11-04 00:15:18.261 [http-nio-8081-exec-1] DEBUG org.springframework.web.servlet.DispatcherServlet - GET "/api/v1/admin/users/list?page=1&size=999&orgTag=default", parameters={masked}
+2025-11-04 00:15:18.261 [http-nio-8081-exec-1] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.yizhaoqi.smartpai.controller.AdminController#getUserList(String, String, String, Integer, int, int)
+2025-11-04 00:15:18.274 [http-nio-8081-exec-9] DEBUG o.s.w.s.m.m.annotation.HttpEntityMethodProcessor - Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
+2025-11-04 00:15:18.274 [http-nio-8081-exec-9] DEBUG o.s.w.s.m.m.annotation.HttpEntityMethodProcessor - Writing [{code=200, data=[{role=user, content=天上人间, timestamp=2025-11-03T20:21:58, username=admin}, {role=ass (truncated)...]
+2025-11-04 00:15:18.276 [http-nio-8081-exec-9] DEBUG org.springframework.web.servlet.DispatcherServlet - Completed 200 OK
+2025-11-04 00:15:18.277 [http-nio-8081-exec-1] DEBUG o.s.w.s.m.m.annotation.HttpEntityMethodProcessor - Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
+2025-11-04 00:15:18.277 [http-nio-8081-exec-1] DEBUG o.s.w.s.m.m.annotation.HttpEntityMethodProcessor - Writing [{code=200, data={number=1, size=999, totalPages=1, content=[{primaryOrg=default, createdAt=2025-11-0 (truncated)...]
+2025-11-04 00:15:18.278 [http-nio-8081-exec-1] DEBUG org.springframework.web.servlet.DispatcherServlet - Completed 200 OK
+2025-11-04 00:15:19.559 [http-nio-8081-exec-2] DEBUG org.springframework.security.web.FilterChainProxy - Securing GET /api/v1/users/me
+2025-11-04 00:15:19.569 [http-nio-8081-exec-2] DEBUG org.springframework.security.web.FilterChainProxy - Secured GET /api/v1/users/me
+2025-11-04 00:15:19.570 [http-nio-8081-exec-2] DEBUG org.springframework.web.servlet.DispatcherServlet - GET "/api/v1/users/me", parameters={}
+2025-11-04 00:15:19.570 [http-nio-8081-exec-2] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.yizhaoqi.smartpai.controller.UserController#getCurrentUser(String)
+2025-11-04 00:15:19.574 [http-nio-8081-exec-2] DEBUG o.s.w.s.m.m.annotation.HttpEntityMethodProcessor - Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
+2025-11-04 00:15:19.574 [http-nio-8081-exec-2] DEBUG o.s.w.s.m.m.annotation.HttpEntityMethodProcessor - Writing [{code=200, data={id=1, username=admin, role=ADMIN, orgTags=[default, admin], primaryOrg=default, cre (truncated)...]
+2025-11-04 00:15:19.576 [http-nio-8081-exec-2] DEBUG org.springframework.web.servlet.DispatcherServlet - Completed 200 OK
+2025-11-04 00:15:19.877 [http-nio-8081-exec-3] DEBUG org.springframework.security.web.FilterChainProxy - Securing GET /api/v1/users/conversation?start_date=2025-10-28&end_date=2025-11-05
+2025-11-04 00:15:19.904 [http-nio-8081-exec-3] DEBUG org.springframework.security.web.FilterChainProxy - Secured GET /api/v1/users/conversation?start_date=2025-10-28&end_date=2025-11-05
+2025-11-04 00:15:19.904 [http-nio-8081-exec-3] DEBUG org.springframework.web.servlet.DispatcherServlet - GET "/api/v1/users/conversation?start_date=2025-10-28&end_date=2025-11-05", parameters={masked}
+2025-11-04 00:15:19.904 [http-nio-8081-exec-3] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.yizhaoqi.smartpai.controller.ConversationController#getConversations(String, String, String)
+2025-11-04 00:15:19.914 [http-nio-8081-exec-3] DEBUG o.s.w.s.m.m.annotation.HttpEntityMethodProcessor - Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
+2025-11-04 00:15:19.914 [http-nio-8081-exec-3] DEBUG o.s.w.s.m.m.annotation.HttpEntityMethodProcessor - Writing [{code=200, data=[{role=user, content=天上人间, timestamp=2025-11-03T20:21:58}, {role=assistant, content= (truncated)...]
+2025-11-04 00:15:19.916 [http-nio-8081-exec-3] DEBUG org.springframework.web.servlet.DispatcherServlet - Completed 200 OK
+2025-11-04 00:15:52.354 [http-nio-8081-exec-4] INFO  c.yizhaoqi.smartpai.handler.ChatWebSocketHandler - 接收到消息，用户ID: admin，会话ID: add1a313-6032-64c6-4d9e-03cc8b4754ae，消息长度: 8
+2025-11-04 00:15:52.361 [http-nio-8081-exec-4] INFO  com.yizhaoqi.smartpai.service.ChatHandler - 开始处理消息，用户ID: admin, 会话ID: add1a313-6032-64c6-4d9e-03cc8b4754ae
+2025-11-04 00:15:52.393 [http-nio-8081-exec-4] INFO  com.yizhaoqi.smartpai.service.ChatHandler - 获取到用户 admin 的现有会话ID: df066211-2766-4d79-9420-0fcb48a3b6b4
+2025-11-04 00:15:52.393 [http-nio-8081-exec-4] INFO  com.yizhaoqi.smartpai.service.ChatHandler - 会话ID: df066211-2766-4d79-9420-0fcb48a3b6b4, 用户ID: admin
+2025-11-04 00:15:52.395 [http-nio-8081-exec-4] DEBUG com.yizhaoqi.smartpai.service.ChatHandler - 读取到会话 df066211-2766-4d79-9420-0fcb48a3b6b4 的 2 条历史记录
+2025-11-04 00:15:52.395 [http-nio-8081-exec-4] DEBUG com.yizhaoqi.smartpai.service.ChatHandler - 获取到 2 条历史对话
+2025-11-04 00:15:52.395 [http-nio-8081-exec-4] DEBUG com.yizhaoqi.smartpai.service.HybridSearchService - 开始带权限搜索，查询: 你为什么叫派聪明, 用户ID: admin
+2025-11-04 00:15:52.395 [http-nio-8081-exec-4] DEBUG com.yizhaoqi.smartpai.service.HybridSearchService - 获取用户有效组织标签，用户ID: admin
+2025-11-04 00:15:52.395 [http-nio-8081-exec-4] DEBUG com.yizhaoqi.smartpai.service.HybridSearchService - 用户ID不是数字格式，作为用户名查找: admin
+2025-11-04 00:15:52.405 [http-nio-8081-exec-4] DEBUG com.yizhaoqi.smartpai.service.HybridSearchService - 通过用户名找到用户: admin
+2025-11-04 00:15:52.417 [http-nio-8081-exec-4] DEBUG com.yizhaoqi.smartpai.service.HybridSearchService - 用户 admin 的有效组织标签: [default, admin, DEFAULT]
+2025-11-04 00:15:52.417 [http-nio-8081-exec-4] DEBUG com.yizhaoqi.smartpai.service.HybridSearchService - 用户 admin 的有效组织标签: [default, admin, DEFAULT]
+2025-11-04 00:15:52.417 [http-nio-8081-exec-4] DEBUG com.yizhaoqi.smartpai.service.HybridSearchService - 获取用户数据库ID，用户ID: admin
+2025-11-04 00:15:52.417 [http-nio-8081-exec-4] DEBUG com.yizhaoqi.smartpai.service.HybridSearchService - 用户ID不是数字格式，作为用户名查找: admin
+2025-11-04 00:15:52.419 [http-nio-8081-exec-4] DEBUG com.yizhaoqi.smartpai.service.HybridSearchService - 通过用户名找到用户: admin, ID: 1
+2025-11-04 00:15:52.419 [http-nio-8081-exec-4] DEBUG com.yizhaoqi.smartpai.service.HybridSearchService - 用户 admin 的数据库ID: 1
+2025-11-04 00:15:52.419 [http-nio-8081-exec-4] INFO  com.yizhaoqi.smartpai.client.EmbeddingClient - 开始生成向量，文本数量: 1
+2025-11-04 00:15:52.463 [http-nio-8081-exec-4] DEBUG o.s.web.reactive.function.client.ExchangeFunctions - [236bca67] HTTP POST https://dashscope.aliyuncs.com/compatible-mode/v1/embeddings
+2025-11-04 00:15:52.748 [reactor-http-nio-2] DEBUG org.springframework.web.HttpLogging - [236bca67] Encoding [{input=[你为什么叫派聪明], encoding_format=float, model=text-embedding-v4, dimension=2048}]
+2025-11-04 00:15:52.996 [reactor-http-nio-2] DEBUG o.s.web.reactive.function.client.ExchangeFunctions - [236bca67] [68c1300d-1] Response 200 OK
+2025-11-04 00:15:53.013 [reactor-http-nio-2] DEBUG org.springframework.web.HttpLogging - [236bca67] [68c1300d-1] Decoded "{"data":[{"embedding":[0.005061179865151644,-0.06107044965028763,0.019235847517848015,-0.03766459599 (truncated)..."
+2025-11-04 00:15:53.024 [http-nio-8081-exec-4] INFO  com.yizhaoqi.smartpai.client.EmbeddingClient - 成功生成向量，总数量: 1
+2025-11-04 00:15:53.024 [http-nio-8081-exec-4] DEBUG com.yizhaoqi.smartpai.service.HybridSearchService - 向量生成成功，开始执行混合搜索 KNN
+2025-11-04 00:15:53.303 [http-nio-8081-exec-4] DEBUG com.yizhaoqi.smartpai.service.HybridSearchService - Elasticsearch查询执行完成，命中数量: 0, 最大分数: NaN
+2025-11-04 00:15:53.303 [http-nio-8081-exec-4] DEBUG com.yizhaoqi.smartpai.service.HybridSearchService - 返回搜索结果数量: 0
+2025-11-04 00:15:53.303 [http-nio-8081-exec-4] DEBUG com.yizhaoqi.smartpai.service.ChatHandler - 搜索结果数量: 0
+2025-11-04 00:15:53.303 [http-nio-8081-exec-4] INFO  com.yizhaoqi.smartpai.service.ChatHandler - 调用DeepSeek API生成回复
+2025-11-04 00:15:53.303 [http-nio-8081-exec-4] INFO  com.yizhaoqi.smartpai.client.DeepSeekClient - 构建请求，用户消息：你为什么叫派聪明，上下文长度：0，历史消息数：2
+2025-11-04 00:15:53.304 [http-nio-8081-exec-4] DEBUG o.s.web.reactive.function.client.ExchangeFunctions - [5da27eef] HTTP POST https://api.deepseek.com/v1/chat/completions
+2025-11-04 00:15:53.488 [reactor-http-nio-3] DEBUG org.springframework.web.HttpLogging - [5da27eef] Encoding [{top_p=0.9, stream=true, max_tokens=2000, temperature=0.3, messages=[{role=system, content=你是派聪明知识助手 (truncated)...]
+2025-11-04 00:15:54.238 [reactor-http-nio-3] DEBUG o.s.web.reactive.function.client.ExchangeFunctions - [5da27eef] [ea42b04d-1] Response 200 OK
+2025-11-04 00:15:54.500 [reactor-http-nio-3] DEBUG com.yizhaoqi.smartpai.service.ChatHandler - 发送响应块到会话 add1a313-6032-64c6-4d9e-03cc8b4754ae: {"chunk":"**"}
+2025-11-04 00:15:54.767 [reactor-http-nio-3] DEBUG com.yizhaoqi.smartpai.service.ChatHandler - 发送响应块到会话 add1a313-6032-64c6-4d9e-03cc8b4754ae: {"chunk":"结论"}
+2025-11-04 00:15:54.828 [reactor-http-nio-3] DEBUG com.yizhaoqi.smartpai.service.ChatHandler - 发送响应块到会话 add1a313-6032-64c6-4d9e-03cc8b4754ae: {"chunk":"："}
+2025-11-04 00:15:54.830 [reactor-http-nio-3] DEBUG com.yizhaoqi.smartpai.service.ChatHandler - 发送响应块到会话 add1a313-6032-64c6-4d9e-03cc8b4754ae: {"chunk":"**"}
+2025-11-04 00:15:54.886 [reactor-http-nio-3] DEBUG com.yizhaoqi.smartpai.service.ChatHandler - 发送响应块到会话 add1a313-6032-64c6-4d9e-03cc8b4754ae: {"chunk":"  \n"}
+2025-11-04 00:15:54.887 [reactor-http-nio-3] DEBUG com.yizhaoqi.smartpai.service.ChatHandler - 发送响应块到会话 add1a313-6032-64c6-4d9e-03cc8b4754ae: {"chunk":"我的"}
+2025-11-04 00:15:54.943 [reactor-http-nio-3] DEBUG com.yizhaoqi.smartpai.service.ChatHandler - 发送响应块到会话 add1a313-6032-64c6-4d9e-03cc8b4754ae: {"chunk":"名称"}
+2025-11-04 00:15:55.003 [reactor-http-nio-3] DEBUG com.yizhaoqi.smartpai.service.ChatHandler - 发送响应块到会话 add1a313-6032-64c6-4d9e-03cc8b4754ae: {"chunk":"“"}
+2025-11-04 00:15:55.003 [reactor-http-nio-3] DEBUG com.yizhaoqi.smartpai.service.ChatHandler - 发送响应块到会话 add1a313-6032-64c6-4d9e-03cc8b4754ae: {"chunk":"派"}
+2025-11-04 00:15:55.062 [reactor-http-nio-3] DEBUG com.yizhaoqi.smartpai.service.ChatHandler - 发送响应块到会话 add1a313-6032-64c6-4d9e-03cc8b4754ae: {"chunk":"聪明"}
+2025-11-04 00:15:55.063 [reactor-http-nio-3] DEBUG com.yizhaoqi.smartpai.service.ChatHandler - 发送响应块到会话 add1a313-6032-64c6-4d9e-03cc8b4754ae: {"chunk":"”"}
+2025-11-04 00:15:55.123 [reactor-http-nio-3] DEBUG com.yizhaoqi.smartpai.service.ChatHandler - 发送响应块到会话 add1a313-6032-64c6-4d9e-03cc8b4754ae: {"chunk":"由"}
+2025-11-04 00:15:55.123 [reactor-http-nio-3] DEBUG com.yizhaoqi.smartpai.service.ChatHandler - 发送响应块到会话 add1a313-6032-64c6-4d9e-03cc8b4754ae: {"chunk":"开发"}
+2025-11-04 00:15:55.181 [reactor-http-nio-3] DEBUG com.yizhaoqi.smartpai.service.ChatHandler - 发送响应块到会话 add1a313-6032-64c6-4d9e-03cc8b4754ae: {"chunk":"团队"}
+2025-11-04 00:15:55.182 [reactor-http-nio-3] DEBUG com.yizhaoqi.smartpai.service.ChatHandler - 发送响应块到会话 add1a313-6032-64c6-4d9e-03cc8b4754ae: {"chunk":"命名"}
+2025-11-04 00:15:55.245 [reactor-http-nio-3] DEBUG com.yizhaoqi.smartpai.service.ChatHandler - 发送响应块到会话 add1a313-6032-64c6-4d9e-03cc8b4754ae: {"chunk":"，"}
+2025-11-04 00:15:55.245 [reactor-http-nio-3] DEBUG com.yizhaoqi.smartpai.service.ChatHandler - 发送响应块到会话 add1a313-6032-64c6-4d9e-03cc8b4754ae: {"chunk":"旨在"}
+2025-11-04 00:15:55.300 [reactor-http-nio-3] DEBUG com.yizhaoqi.smartpai.service.ChatHandler - 发送响应块到会话 add1a313-6032-64c6-4d9e-03cc8b4754ae: {"chunk":"体现"}
+2025-11-04 00:15:55.360 [reactor-http-nio-3] DEBUG com.yizhaoqi.smartpai.service.ChatHandler - 发送响应块到会话 add1a313-6032-64c6-4d9e-03cc8b4754ae: {"chunk":"智能"}
+2025-11-04 00:15:55.421 [reactor-http-nio-3] DEBUG com.yizhaoqi.smartpai.service.ChatHandler - 发送响应块到会话 add1a313-6032-64c6-4d9e-03cc8b4754ae: {"chunk":"、"}
+2025-11-04 00:15:55.479 [reactor-http-nio-3] DEBUG com.yizhaoqi.smartpai.service.ChatHandler - 发送响应块到会话 add1a313-6032-64c6-4d9e-03cc8b4754ae: {"chunk":"友好"}
+2025-11-04 00:15:55.480 [reactor-http-nio-3] DEBUG com.yizhaoqi.smartpai.service.ChatHandler - 发送响应块到会话 add1a313-6032-64c6-4d9e-03cc8b4754ae: {"chunk":"与"}
+2025-11-04 00:15:55.538 [reactor-http-nio-3] DEBUG com.yizhaoqi.smartpai.service.ChatHandler - 发送响应块到会话 add1a313-6032-64c6-4d9e-03cc8b4754ae: {"chunk":"实用"}
+2025-11-04 00:15:55.598 [reactor-http-nio-3] DEBUG com.yizhaoqi.smartpai.service.ChatHandler - 发送响应块到会话 add1a313-6032-64c6-4d9e-03cc8b4754ae: {"chunk":"特性"}
+2025-11-04 00:15:55.658 [reactor-http-nio-3] DEBUG com.yizhaoqi.smartpai.service.ChatHandler - 发送响应块到会话 add1a313-6032-64c6-4d9e-03cc8b4754ae: {"chunk":"。\n\n"}
+2025-11-04 00:15:55.658 [reactor-http-nio-3] DEBUG com.yizhaoqi.smartpai.service.ChatHandler - 发送响应块到会话 add1a313-6032-64c6-4d9e-03cc8b4754ae: {"chunk":"**"}
+2025-11-04 00:15:55.718 [reactor-http-nio-3] DEBUG com.yizhaoqi.smartpai.service.ChatHandler - 发送响应块到会话 add1a313-6032-64c6-4d9e-03cc8b4754ae: {"chunk":"论"}
+2025-11-04 00:15:55.718 [reactor-http-nio-3] DEBUG com.yizhaoqi.smartpai.service.ChatHandler - 发送响应块到会话 add1a313-6032-64c6-4d9e-03cc8b4754ae: {"chunk":"据"}
+2025-11-04 00:15:55.776 [reactor-http-nio-3] DEBUG com.yizhaoqi.smartpai.service.ChatHandler - 发送响应块到会话 add1a313-6032-64c6-4d9e-03cc8b4754ae: {"chunk":"："}
+2025-11-04 00:15:55.836 [reactor-http-nio-3] DEBUG com.yizhaoqi.smartpai.service.ChatHandler - 发送响应块到会话 add1a313-6032-64c6-4d9e-03cc8b4754ae: {"chunk":"**"}
+2025-11-04 00:15:55.837 [reactor-http-nio-3] DEBUG com.yizhaoqi.smartpai.service.ChatHandler - 发送响应块到会话 add1a313-6032-64c6-4d9e-03cc8b4754ae: {"chunk":"  \n"}
+2025-11-04 00:15:55.896 [reactor-http-nio-3] DEBUG com.yizhaoqi.smartpai.service.ChatHandler - 发送响应块到会话 add1a313-6032-64c6-4d9e-03cc8b4754ae: {"chunk":"1"}
+2025-11-04 00:15:55.896 [reactor-http-nio-3] DEBUG com.yizhaoqi.smartpai.service.ChatHandler - 发送响应块到会话 add1a313-6032-64c6-4d9e-03cc8b4754ae: {"chunk":"."}
+2025-11-04 00:15:55.956 [reactor-http-nio-3] DEBUG com.yizhaoqi.smartpai.service.ChatHandler - 发送响应块到会话 add1a313-6032-64c6-4d9e-03cc8b4754ae: {"chunk":" **"}
+2025-11-04 00:15:55.956 [reactor-http-nio-3] DEBUG com.yizhaoqi.smartpai.service.ChatHandler - 发送响应块到会话 add1a313-6032-64c6-4d9e-03cc8b4754ae: {"chunk":"“"}
+2025-11-04 00:15:56.014 [reactor-http-nio-3] DEBUG com.yizhaoqi.smartpai.service.ChatHandler - 发送响应块到会话 add1a313-6032-64c6-4d9e-03cc8b4754ae: {"chunk":"派"}
+2025-11-04 00:15:56.015 [reactor-http-nio-3] DEBUG com.yizhaoqi.smartpai.service.ChatHandler - 发送响应块到会话 add1a313-6032-64c6-4d9e-03cc8b4754ae: {"chunk":"”"}
+2025-11-04 00:15:56.074 [reactor-http-nio-3] DEBUG com.yizhaoqi.smartpai.service.ChatHandler - 发送响应块到会话 add1a313-6032-64c6-4d9e-03cc8b4754ae: {"chunk":"的"}
+2025-11-04 00:15:56.075 [reactor-http-nio-3] DEBUG com.yizhaoqi.smartpai.service.ChatHandler - 发送响应块到会话 add1a313-6032-64c6-4d9e-03cc8b4754ae: {"chunk":"象征"}
+2025-11-04 00:15:56.133 [reactor-http-nio-3] DEBUG com.yizhaoqi.smartpai.service.ChatHandler - 发送响应块到会话 add1a313-6032-64c6-4d9e-03cc8b4754ae: {"chunk":"意义"}
+2025-11-04 00:15:56.134 [reactor-http-nio-3] DEBUG com.yizhaoqi.smartpai.service.ChatHandler - 发送响应块到会话 add1a313-6032-64c6-4d9e-03cc8b4754ae: {"chunk":"**"}
+2025-11-04 00:15:56.193 [reactor-http-nio-3] DEBUG com.yizhaoqi.smartpai.service.ChatHandler - 发送响应块到会话 add1a313-6032-64c6-4d9e-03cc8b4754ae: {"chunk":"："}
+2025-11-04 00:15:56.193 [reactor-http-nio-3] DEBUG com.yizhaoqi.smartpai.service.ChatHandler - 发送响应块到会话 add1a313-6032-64c6-4d9e-03cc8b4754ae: {"chunk":"  \n"}
+2025-11-04 00:15:56.252 [reactor-http-nio-3] DEBUG com.yizhaoqi.smartpai.service.ChatHandler - 发送响应块到会话 add1a313-6032-64c6-4d9e-03cc8b4754ae: {"chunk":"  "}
+2025-11-04 00:15:56.252 [reactor-http-nio-3] DEBUG com.yizhaoqi.smartpai.service.ChatHandler - 发送响应块到会话 add1a313-6032-64c6-4d9e-03cc8b4754ae: {"chunk":" -"}
+2025-11-04 00:15:56.311 [reactor-http-nio-3] DEBUG com.yizhaoqi.smartpai.service.ChatHandler - 发送响应块到会话 add1a313-6032-64c6-4d9e-03cc8b4754ae: {"chunk":" "}
+2025-11-04 00:15:56.311 [reactor-http-nio-3] DEBUG com.yizhaoqi.smartpai.service.ChatHandler - 发送响应块到会话 add1a313-6032-64c6-4d9e-03cc8b4754ae: {"chunk":"数学"}
+2025-11-04 00:15:56.371 [reactor-http-nio-3] DEBUG com.yizhaoqi.smartpai.service.ChatHandler - 发送响应块到会话 add1a313-6032-64c6-4d9e-03cc8b4754ae: {"chunk":"符号"}
+2025-11-04 00:15:56.430 [reactor-http-nio-3] DEBUG com.yizhaoqi.smartpai.service.ChatHandler - 发送响应块到会话 add1a313-6032-64c6-4d9e-03cc8b4754ae: {"chunk":"“"}
+2025-11-04 00:15:56.431 [reactor-http-nio-3] DEBUG com.yizhaoqi.smartpai.service.ChatHandler - 发送响应块到会话 add1a313-6032-64c6-4d9e-03cc8b4754ae: {"chunk":"π"}
+2025-11-04 00:15:56.491 [reactor-http-nio-3] DEBUG com.yizhaoqi.smartpai.service.ChatHandler - 发送响应块到会话 add1a313-6032-64c6-4d9e-03cc8b4754ae: {"chunk":"”"}
+2025-11-04 00:15:56.491 [reactor-http-nio-3] DEBUG com.yizhaoqi.smartpai.service.ChatHandler - 发送响应块到会话 add1a313-6032-64c6-4d9e-03cc8b4754ae: {"chunk":"代表"}
+2025-11-04 00:15:56.564 [reactor-http-nio-3] DEBUG com.yizhaoqi.smartpai.service.ChatHandler - 发送响应块到会话 add1a313-6032-64c6-4d9e-03cc8b4754ae: {"chunk":"无限"}
+2025-11-04 00:15:56.565 [reactor-http-nio-3] DEBUG com.yizhaoqi.smartpai.service.ChatHandler - 发送响应块到会话 add1a313-6032-64c6-4d9e-03cc8b4754ae: {"chunk":"不"}
+2025-11-04 00:15:56.614 [reactor-http-nio-3] DEBUG com.yizhaoqi.smartpai.service.ChatHandler - 发送响应块到会话 add1a313-6032-64c6-4d9e-03cc8b4754ae: {"chunk":"循环"}
+2025-11-04 00:15:56.615 [reactor-http-nio-3] DEBUG com.yizhaoqi.smartpai.service.ChatHandler - 发送响应块到会话 add1a313-6032-64c6-4d9e-03cc8b4754ae: {"chunk":"小数"}
+2025-11-04 00:15:56.669 [reactor-http-nio-3] DEBUG com.yizhaoqi.smartpai.service.ChatHandler - 发送响应块到会话 add1a313-6032-64c6-4d9e-03cc8b4754ae: {"chunk":"，"}
+2025-11-04 00:15:56.669 [reactor-http-nio-3] DEBUG com.yizhaoqi.smartpai.service.ChatHandler - 发送响应块到会话 add1a313-6032-64c6-4d9e-03cc8b4754ae: {"chunk":"寓意"}
+2025-11-04 00:15:56.728 [reactor-http-nio-3] DEBUG com.yizhaoqi.smartpai.service.ChatHandler - 发送响应块到会话 add1a313-6032-64c6-4d9e-03cc8b4754ae: {"chunk":"知识的"}
+2025-11-04 00:15:56.787 [reactor-http-nio-3] DEBUG com.yizhaoqi.smartpai.service.ChatHandler - 发送响应块到会话 add1a313-6032-64c6-4d9e-03cc8b4754ae: {"chunk":"广"}
+2025-11-04 00:15:56.847 [reactor-http-nio-3] DEBUG com.yizhaoqi.smartpai.service.ChatHandler - 发送响应块到会话 add1a313-6032-64c6-4d9e-03cc8b4754ae: {"chunk":"博"}
+2025-11-04 00:15:56.906 [reactor-http-nio-3] DEBUG com.yizhaoqi.smartpai.service.ChatHandler - 发送响应块到会话 add1a313-6032-64c6-4d9e-03cc8b4754ae: {"chunk":"与"}
+2025-11-04 00:15:56.906 [reactor-http-nio-3] DEBUG com.yizhaoqi.smartpai.service.ChatHandler - 发送响应块到会话 add1a313-6032-64c6-4d9e-03cc8b4754ae: {"chunk":"探索"}
+2025-11-04 00:15:56.966 [reactor-http-nio-3] DEBUG com.yizhaoqi.smartpai.service.ChatHandler - 发送响应块到会话 add1a313-6032-64c6-4d9e-03cc8b4754ae: {"chunk":"的"}
+2025-11-04 00:15:56.966 [reactor-http-nio-3] DEBUG com.yizhaoqi.smartpai.service.ChatHandler - 发送响应块到会话 add1a313-6032-64c6-4d9e-03cc8b4754ae: {"chunk":"无限"}
+2025-11-04 00:15:57.027 [reactor-http-nio-3] DEBUG com.yizhaoqi.smartpai.service.ChatHandler - 发送响应块到会话 add1a313-6032-64c6-4d9e-03cc8b4754ae: {"chunk":"性"}
+2025-11-04 00:15:57.027 [reactor-http-nio-3] DEBUG com.yizhaoqi.smartpai.service.ChatHandler - 发送响应块到会话 add1a313-6032-64c6-4d9e-03cc8b4754ae: {"chunk":"；"}
+2025-11-04 00:15:57.087 [reactor-http-nio-3] DEBUG com.yizhaoqi.smartpai.service.ChatHandler - 发送响应块到会话 add1a313-6032-64c6-4d9e-03cc8b4754ae: {"chunk":"  \n"}
+2025-11-04 00:15:57.087 [reactor-http-nio-3] DEBUG com.yizhaoqi.smartpai.service.ChatHandler - 发送响应块到会话 add1a313-6032-64c6-4d9e-03cc8b4754ae: {"chunk":"  "}
+2025-11-04 00:15:57.145 [reactor-http-nio-3] DEBUG com.yizhaoqi.smartpai.service.ChatHandler - 发送响应块到会话 add1a313-6032-64c6-4d9e-03cc8b4754ae: {"chunk":" -"}
+2025-11-04 00:15:57.146 [reactor-http-nio-3] DEBUG com.yizhaoqi.smartpai.service.ChatHandler - 发送响应块到会话 add1a313-6032-64c6-4d9e-03cc8b4754ae: {"chunk":" “"}
+2025-11-04 00:15:57.205 [reactor-http-nio-3] DEBUG com.yizhaoqi.smartpai.service.ChatHandler - 发送响应块到会话 add1a313-6032-64c6-4d9e-03cc8b4754ae: {"chunk":"派"}
+2025-11-04 00:15:57.205 [reactor-http-nio-3] DEBUG com.yizhaoqi.smartpai.service.ChatHandler - 发送响应块到会话 add1a313-6032-64c6-4d9e-03cc8b4754ae: {"chunk":"”"}
+2025-11-04 00:15:57.264 [reactor-http-nio-3] DEBUG com.yizhaoqi.smartpai.service.ChatHandler - 发送响应块到会话 add1a313-6032-64c6-4d9e-03cc8b4754ae: {"chunk":"在"}
+2025-11-04 00:15:57.264 [reactor-http-nio-3] DEBUG com.yizhaoqi.smartpai.service.ChatHandler - 发送响应块到会话 add1a313-6032-64c6-4d9e-03cc8b4754ae: {"chunk":"中文"}
+2025-11-04 00:15:57.326 [reactor-http-nio-3] DEBUG com.yizhaoqi.smartpai.service.ChatHandler - 发送响应块到会话 add1a313-6032-64c6-4d9e-03cc8b4754ae: {"chunk":"语境"}
+2025-11-04 00:15:57.384 [reactor-http-nio-3] DEBUG com.yizhaoqi.smartpai.service.ChatHandler - 发送响应块到会话 add1a313-6032-64c6-4d9e-03cc8b4754ae: {"chunk":"中"}
+2025-11-04 00:15:57.384 [reactor-http-nio-3] DEBUG com.yizhaoqi.smartpai.service.ChatHandler - 发送响应块到会话 add1a313-6032-64c6-4d9e-03cc8b4754ae: {"chunk":"可"}
+2025-11-04 00:15:57.444 [reactor-http-nio-3] DEBUG com.yizhaoqi.smartpai.service.ChatHandler - 发送响应块到会话 add1a313-6032-64c6-4d9e-03cc8b4754ae: {"chunk":"引申"}
+2025-11-04 00:15:57.503 [reactor-http-nio-3] DEBUG com.yizhaoqi.smartpai.service.ChatHandler - 发送响应块到会话 add1a313-6032-64c6-4d9e-03cc8b4754ae: {"chunk":"为"}
+2025-11-04 00:15:57.504 [reactor-http-nio-3] DEBUG com.yizhaoqi.smartpai.service.ChatHandler - 发送响应块到会话 add1a313-6032-64c6-4d9e-03cc8b4754ae: {"chunk":"“"}
+2025-11-04 00:15:57.564 [reactor-http-nio-3] DEBUG com.yizhaoqi.smartpai.service.ChatHandler - 发送响应块到会话 add1a313-6032-64c6-4d9e-03cc8b4754ae: {"chunk":"派"}
+2025-11-04 00:15:57.564 [reactor-http-nio-3] DEBUG com.yizhaoqi.smartpai.service.ChatHandler - 发送响应块到会话 add1a313-6032-64c6-4d9e-03cc8b4754ae: {"chunk":"送"}
+2025-11-04 00:15:57.622 [reactor-http-nio-3] DEBUG com.yizhaoqi.smartpai.service.ChatHandler - 发送响应块到会话 add1a313-6032-64c6-4d9e-03cc8b4754ae: {"chunk":"”，"}
+2025-11-04 00:15:57.682 [reactor-http-nio-3] DEBUG com.yizhaoqi.smartpai.service.ChatHandler - 发送响应块到会话 add1a313-6032-64c6-4d9e-03cc8b4754ae: {"chunk":"暗示"}
+2025-11-04 00:15:57.682 [reactor-http-nio-3] DEBUG com.yizhaoqi.smartpai.service.ChatHandler - 发送响应块到会话 add1a313-6032-64c6-4d9e-03cc8b4754ae: {"chunk":"为用户"}
+2025-11-04 00:15:57.740 [reactor-http-nio-3] DEBUG com.yizhaoqi.smartpai.service.ChatHandler - 发送响应块到会话 add1a313-6032-64c6-4d9e-03cc8b4754ae: {"chunk":"提供"}
+2025-11-04 00:15:57.740 [reactor-http-nio-3] DEBUG com.yizhaoqi.smartpai.service.ChatHandler - 发送响应块到会话 add1a313-6032-64c6-4d9e-03cc8b4754ae: {"chunk":"知识与"}
+2025-11-04 00:15:57.803 [reactor-http-nio-3] DEBUG com.yizhaoqi.smartpai.service.ChatHandler - 发送响应块到会话 add1a313-6032-64c6-4d9e-03cc8b4754ae: {"chunk":"服务"}
+2025-11-04 00:15:57.862 [reactor-http-nio-3] DEBUG com.yizhaoqi.smartpai.service.ChatHandler - 发送响应块到会话 add1a313-6032-64c6-4d9e-03cc8b4754ae: {"chunk":"的能力"}
+2025-11-04 00:15:57.921 [reactor-http-nio-3] DEBUG com.yizhaoqi.smartpai.service.ChatHandler - 发送响应块到会话 add1a313-6032-64c6-4d9e-03cc8b4754ae: {"chunk":"。"}
+2025-11-04 00:15:57.981 [reactor-http-nio-3] DEBUG com.yizhaoqi.smartpai.service.ChatHandler - 发送响应块到会话 add1a313-6032-64c6-4d9e-03cc8b4754ae: {"chunk":"  \n\n"}
+2025-11-04 00:15:57.981 [reactor-http-nio-3] DEBUG com.yizhaoqi.smartpai.service.ChatHandler - 发送响应块到会话 add1a313-6032-64c6-4d9e-03cc8b4754ae: {"chunk":"2"}
+2025-11-04 00:15:58.040 [reactor-http-nio-3] DEBUG com.yizhaoqi.smartpai.service.ChatHandler - 发送响应块到会话 add1a313-6032-64c6-4d9e-03cc8b4754ae: {"chunk":"."}
+2025-11-04 00:15:58.040 [reactor-http-nio-3] DEBUG com.yizhaoqi.smartpai.service.ChatHandler - 发送响应块到会话 add1a313-6032-64c6-4d9e-03cc8b4754ae: {"chunk":" **"}
+2025-11-04 00:15:58.100 [reactor-http-nio-3] DEBUG com.yizhaoqi.smartpai.service.ChatHandler - 发送响应块到会话 add1a313-6032-64c6-4d9e-03cc8b4754ae: {"chunk":"“"}
+2025-11-04 00:15:58.100 [reactor-http-nio-3] DEBUG com.yizhaoqi.smartpai.service.ChatHandler - 发送响应块到会话 add1a313-6032-64c6-4d9e-03cc8b4754ae: {"chunk":"聪明"}
+2025-11-04 00:15:58.159 [reactor-http-nio-3] DEBUG com.yizhaoqi.smartpai.service.ChatHandler - 发送响应块到会话 add1a313-6032-64c6-4d9e-03cc8b4754ae: {"chunk":"”"}
+2025-11-04 00:15:58.159 [reactor-http-nio-3] DEBUG com.yizhaoqi.smartpai.service.ChatHandler - 发送响应块到会话 add1a313-6032-64c6-4d9e-03cc8b4754ae: {"chunk":"的"}
+2025-11-04 00:15:58.218 [reactor-http-nio-3] DEBUG com.yizhaoqi.smartpai.service.ChatHandler - 发送响应块到会话 add1a313-6032-64c6-4d9e-03cc8b4754ae: {"chunk":"定位"}
+2025-11-04 00:15:58.219 [reactor-http-nio-3] DEBUG com.yizhaoqi.smartpai.service.ChatHandler - 发送响应块到会话 add1a313-6032-64c6-4d9e-03cc8b4754ae: {"chunk":"**"}
+2025-11-04 00:15:58.278 [reactor-http-nio-3] DEBUG com.yizhaoqi.smartpai.service.ChatHandler - 发送响应块到会话 add1a313-6032-64c6-4d9e-03cc8b4754ae: {"chunk":"："}
+2025-11-04 00:15:58.278 [reactor-http-nio-3] DEBUG com.yizhaoqi.smartpai.service.ChatHandler - 发送响应块到会话 add1a313-6032-64c6-4d9e-03cc8b4754ae: {"chunk":"  \n"}
+2025-11-04 00:15:58.313 [Thread-10] DEBUG com.yizhaoqi.smartpai.service.ChatHandler - 响应仍在继续，等待完成...
+2025-11-04 00:15:58.338 [reactor-http-nio-3] DEBUG com.yizhaoqi.smartpai.service.ChatHandler - 发送响应块到会话 add1a313-6032-64c6-4d9e-03cc8b4754ae: {"chunk":"  "}
+2025-11-04 00:15:58.338 [reactor-http-nio-3] DEBUG com.yizhaoqi.smartpai.service.ChatHandler - 发送响应块到会话 add1a313-6032-64c6-4d9e-03cc8b4754ae: {"chunk":" -"}
+2025-11-04 00:15:58.398 [reactor-http-nio-3] DEBUG com.yizhaoqi.smartpai.service.ChatHandler - 发送响应块到会话 add1a313-6032-64c6-4d9e-03cc8b4754ae: {"chunk":" "}
+2025-11-04 00:15:58.398 [reactor-http-nio-3] DEBUG com.yizhaoqi.smartpai.service.ChatHandler - 发送响应块到会话 add1a313-6032-64c6-4d9e-03cc8b4754ae: {"chunk":"直接"}
+2025-11-04 00:15:58.457 [reactor-http-nio-3] DEBUG com.yizhaoqi.smartpai.service.ChatHandler - 发送响应块到会话 add1a313-6032-64c6-4d9e-03cc8b4754ae: {"chunk":"点"}
+2025-11-04 00:15:58.515 [reactor-http-nio-3] DEBUG com.yizhaoqi.smartpai.service.ChatHandler - 发送响应块到会话 add1a313-6032-64c6-4d9e-03cc8b4754ae: {"chunk":"明"}
+2025-11-04 00:15:58.516 [reactor-http-nio-3] DEBUG com.yizhaoqi.smartpai.service.ChatHandler - 发送响应块到会话 add1a313-6032-64c6-4d9e-03cc8b4754ae: {"chunk":"核心"}
+2025-11-04 00:15:58.576 [reactor-http-nio-3] DEBUG com.yizhaoqi.smartpai.service.ChatHandler - 发送响应块到会话 add1a313-6032-64c6-4d9e-03cc8b4754ae: {"chunk":"功能"}
+2025-11-04 00:15:58.577 [reactor-http-nio-3] DEBUG com.yizhaoqi.smartpai.service.ChatHandler - 发送响应块到会话 add1a313-6032-64c6-4d9e-03cc8b4754ae: {"chunk":"，"}
+2025-11-04 00:15:58.636 [reactor-http-nio-3] DEBUG com.yizhaoqi.smartpai.service.ChatHandler - 发送响应块到会话 add1a313-6032-64c6-4d9e-03cc8b4754ae: {"chunk":"即"}
+2025-11-04 00:15:58.636 [reactor-http-nio-3] DEBUG com.yizhaoqi.smartpai.service.ChatHandler - 发送响应块到会话 add1a313-6032-64c6-4d9e-03cc8b4754ae: {"chunk":"通过"}
+2025-11-04 00:15:58.695 [reactor-http-nio-3] DEBUG com.yizhaoqi.smartpai.service.ChatHandler - 发送响应块到会话 add1a313-6032-64c6-4d9e-03cc8b4754ae: {"chunk":"人工智能"}
+2025-11-04 00:15:58.755 [reactor-http-nio-3] DEBUG com.yizhaoqi.smartpai.service.ChatHandler - 发送响应块到会话 add1a313-6032-64c6-4d9e-03cc8b4754ae: {"chunk":"技术"}
+2025-11-04 00:15:58.755 [reactor-http-nio-3] DEBUG com.yizhaoqi.smartpai.service.ChatHandler - 发送响应块到会话 add1a313-6032-64c6-4d9e-03cc8b4754ae: {"chunk":"实现"}
+2025-11-04 00:15:58.813 [reactor-http-nio-3] DEBUG com.yizhaoqi.smartpai.service.ChatHandler - 发送响应块到会话 add1a313-6032-64c6-4d9e-03cc8b4754ae: {"chunk":"高效"}
+2025-11-04 00:15:58.815 [reactor-http-nio-3] DEBUG com.yizhaoqi.smartpai.service.ChatHandler - 发送响应块到会话 add1a313-6032-64c6-4d9e-03cc8b4754ae: {"chunk":"问题"}
+2025-11-04 00:15:58.872 [reactor-http-nio-3] DEBUG com.yizhaoqi.smartpai.service.ChatHandler - 发送响应块到会话 add1a313-6032-64c6-4d9e-03cc8b4754ae: {"chunk":"解答"}
+2025-11-04 00:15:58.932 [reactor-http-nio-3] DEBUG com.yizhaoqi.smartpai.service.ChatHandler - 发送响应块到会话 add1a313-6032-64c6-4d9e-03cc8b4754ae: {"chunk":"与"}
+2025-11-04 00:15:58.932 [reactor-http-nio-3] DEBUG com.yizhaoqi.smartpai.service.ChatHandler - 发送响应块到会话 add1a313-6032-64c6-4d9e-03cc8b4754ae: {"chunk":"决策"}
+2025-11-04 00:15:58.992 [reactor-http-nio-3] DEBUG com.yizhaoqi.smartpai.service.ChatHandler - 发送响应块到会话 add1a313-6032-64c6-4d9e-03cc8b4754ae: {"chunk":"支持"}
+2025-11-04 00:15:58.992 [reactor-http-nio-3] DEBUG com.yizhaoqi.smartpai.service.ChatHandler - 发送响应块到会话 add1a313-6032-64c6-4d9e-03cc8b4754ae: {"chunk":"；"}
+2025-11-04 00:15:59.051 [reactor-http-nio-3] DEBUG com.yizhaoqi.smartpai.service.ChatHandler - 发送响应块到会话 add1a313-6032-64c6-4d9e-03cc8b4754ae: {"chunk":"  \n"}
+2025-11-04 00:15:59.052 [reactor-http-nio-3] DEBUG com.yizhaoqi.smartpai.service.ChatHandler - 发送响应块到会话 add1a313-6032-64c6-4d9e-03cc8b4754ae: {"chunk":"  "}
+2025-11-04 00:15:59.111 [reactor-http-nio-3] DEBUG com.yizhaoqi.smartpai.service.ChatHandler - 发送响应块到会话 add1a313-6032-64c6-4d9e-03cc8b4754ae: {"chunk":" -"}
+2025-11-04 00:15:59.111 [reactor-http-nio-3] DEBUG com.yizhaoqi.smartpai.service.ChatHandler - 发送响应块到会话 add1a313-6032-64c6-4d9e-03cc8b4754ae: {"chunk":" "}
+2025-11-04 00:15:59.170 [reactor-http-nio-3] DEBUG com.yizhaoqi.smartpai.service.ChatHandler - 发送响应块到会话 add1a313-6032-64c6-4d9e-03cc8b4754ae: {"chunk":"传递"}
+2025-11-04 00:15:59.170 [reactor-http-nio-3] DEBUG com.yizhaoqi.smartpai.service.ChatHandler - 发送响应块到会话 add1a313-6032-64c6-4d9e-03cc8b4754ae: {"chunk":"亲切"}
+2025-11-04 00:15:59.230 [reactor-http-nio-3] DEBUG com.yizhaoqi.smartpai.service.ChatHandler - 发送响应块到会话 add1a313-6032-64c6-4d9e-03cc8b4754ae: {"chunk":"感"}
+2025-11-04 00:15:59.290 [reactor-http-nio-3] DEBUG com.yizhaoqi.smartpai.service.ChatHandler - 发送响应块到会话 add1a313-6032-64c6-4d9e-03cc8b4754ae: {"chunk":"，"}
+2025-11-04 00:15:59.290 [reactor-http-nio-3] DEBUG com.yizhaoqi.smartpai.service.ChatHandler - 发送响应块到会话 add1a313-6032-64c6-4d9e-03cc8b4754ae: {"chunk":"降低"}
+2025-11-04 00:15:59.349 [reactor-http-nio-3] DEBUG com.yizhaoqi.smartpai.service.ChatHandler - 发送响应块到会话 add1a313-6032-64c6-4d9e-03cc8b4754ae: {"chunk":"用户"}
+2025-11-04 00:15:59.349 [reactor-http-nio-3] DEBUG com.yizhaoqi.smartpai.service.ChatHandler - 发送响应块到会话 add1a313-6032-64c6-4d9e-03cc8b4754ae: {"chunk":"对"}
+2025-11-04 00:15:59.408 [reactor-http-nio-3] DEBUG com.yizhaoqi.smartpai.service.ChatHandler - 发送响应块到会话 add1a313-6032-64c6-4d9e-03cc8b4754ae: {"chunk":"技术"}
+2025-11-04 00:15:59.408 [reactor-http-nio-3] DEBUG com.yizhaoqi.smartpai.service.ChatHandler - 发送响应块到会话 add1a313-6032-64c6-4d9e-03cc8b4754ae: {"chunk":"产品的"}
+2025-11-04 00:15:59.467 [reactor-http-nio-3] DEBUG com.yizhaoqi.smartpai.service.ChatHandler - 发送响应块到会话 add1a313-6032-64c6-4d9e-03cc8b4754ae: {"chunk":"距离"}
+2025-11-04 00:15:59.526 [reactor-http-nio-3] DEBUG com.yizhaoqi.smartpai.service.ChatHandler - 发送响应块到会话 add1a313-6032-64c6-4d9e-03cc8b4754ae: {"chunk":"感"}
+2025-11-04 00:15:59.527 [reactor-http-nio-3] DEBUG com.yizhaoqi.smartpai.service.ChatHandler - 发送响应块到会话 add1a313-6032-64c6-4d9e-03cc8b4754ae: {"chunk":"。"}
+2025-11-04 00:15:59.588 [reactor-http-nio-3] DEBUG com.yizhaoqi.smartpai.service.ChatHandler - 发送响应块到会话 add1a313-6032-64c6-4d9e-03cc8b4754ae: {"chunk":"  \n\n"}
+2025-11-04 00:15:59.588 [reactor-http-nio-3] DEBUG com.yizhaoqi.smartpai.service.ChatHandler - 发送响应块到会话 add1a313-6032-64c6-4d9e-03cc8b4754ae: {"chunk":"3"}
+2025-11-04 00:15:59.647 [reactor-http-nio-3] DEBUG com.yizhaoqi.smartpai.service.ChatHandler - 发送响应块到会话 add1a313-6032-64c6-4d9e-03cc8b4754ae: {"chunk":"."}
+2025-11-04 00:15:59.647 [reactor-http-nio-3] DEBUG com.yizhaoqi.smartpai.service.ChatHandler - 发送响应块到会话 add1a313-6032-64c6-4d9e-03cc8b4754ae: {"chunk":" **"}
+2025-11-04 00:15:59.708 [reactor-http-nio-3] DEBUG com.yizhaoqi.smartpai.service.ChatHandler - 发送响应块到会话 add1a313-6032-64c6-4d9e-03cc8b4754ae: {"chunk":"品牌"}
+2025-11-04 00:15:59.767 [reactor-http-nio-3] DEBUG com.yizhaoqi.smartpai.service.ChatHandler - 发送响应块到会话 add1a313-6032-64c6-4d9e-03cc8b4754ae: {"chunk":"意图"}
+2025-11-04 00:15:59.829 [reactor-http-nio-3] DEBUG com.yizhaoqi.smartpai.service.ChatHandler - 发送响应块到会话 add1a313-6032-64c6-4d9e-03cc8b4754ae: {"chunk":"**"}
+2025-11-04 00:15:59.829 [reactor-http-nio-3] DEBUG com.yizhaoqi.smartpai.service.ChatHandler - 发送响应块到会话 add1a313-6032-64c6-4d9e-03cc8b4754ae: {"chunk":"："}
+2025-11-04 00:15:59.888 [reactor-http-nio-3] DEBUG com.yizhaoqi.smartpai.service.ChatHandler - 发送响应块到会话 add1a313-6032-64c6-4d9e-03cc8b4754ae: {"chunk":"  \n"}
+2025-11-04 00:15:59.888 [reactor-http-nio-3] DEBUG com.yizhaoqi.smartpai.service.ChatHandler - 发送响应块到会话 add1a313-6032-64c6-4d9e-03cc8b4754ae: {"chunk":"   "}
+2025-11-04 00:15:59.948 [reactor-http-nio-3] DEBUG com.yizhaoqi.smartpai.service.ChatHandler - 发送响应块到会话 add1a313-6032-64c6-4d9e-03cc8b4754ae: {"chunk":"名称"}
+2025-11-04 00:15:59.948 [reactor-http-nio-3] DEBUG com.yizhaoqi.smartpai.service.ChatHandler - 发送响应块到会话 add1a313-6032-64c6-4d9e-03cc8b4754ae: {"chunk":"整体"}
+2025-11-04 00:16:00.008 [reactor-http-nio-3] DEBUG com.yizhaoqi.smartpai.service.ChatHandler - 发送响应块到会话 add1a313-6032-64c6-4d9e-03cc8b4754ae: {"chunk":"设计"}
+2025-11-04 00:16:00.008 [reactor-http-nio-3] DEBUG com.yizhaoqi.smartpai.service.ChatHandler - 发送响应块到会话 add1a313-6032-64c6-4d9e-03cc8b4754ae: {"chunk":"兼顾"}
+2025-11-04 00:16:00.068 [reactor-http-nio-3] DEBUG com.yizhaoqi.smartpai.service.ChatHandler - 发送响应块到会话 add1a313-6032-64c6-4d9e-03cc8b4754ae: {"chunk":"专业"}
+2025-11-04 00:16:00.128 [reactor-http-nio-3] DEBUG com.yizhaoqi.smartpai.service.ChatHandler - 发送响应块到会话 add1a313-6032-64c6-4d9e-03cc8b4754ae: {"chunk":"性与"}
+2025-11-04 00:16:00.129 [reactor-http-nio-3] DEBUG com.yizhaoqi.smartpai.service.ChatHandler - 发送响应块到会话 add1a313-6032-64c6-4d9e-03cc8b4754ae: {"chunk":"亲和"}
+2025-11-04 00:16:00.188 [reactor-http-nio-3] DEBUG com.yizhaoqi.smartpai.service.ChatHandler - 发送响应块到会话 add1a313-6032-64c6-4d9e-03cc8b4754ae: {"chunk":"力"}
+2025-11-04 00:16:00.189 [reactor-http-nio-3] DEBUG com.yizhaoqi.smartpai.service.ChatHandler - 发送响应块到会话 add1a313-6032-64c6-4d9e-03cc8b4754ae: {"chunk":"，"}
+2025-11-04 00:16:00.247 [reactor-http-nio-3] DEBUG com.yizhaoqi.smartpai.service.ChatHandler - 发送响应块到会话 add1a313-6032-64c6-4d9e-03cc8b4754ae: {"chunk":"符合"}
+2025-11-04 00:16:00.248 [reactor-http-nio-3] DEBUG com.yizhaoqi.smartpai.service.ChatHandler - 发送响应块到会话 add1a313-6032-64c6-4d9e-03cc8b4754ae: {"chunk":"团队"}
+2025-11-04 00:16:00.307 [reactor-http-nio-3] DEBUG com.yizhaoqi.smartpai.service.ChatHandler - 发送响应块到会话 add1a313-6032-64c6-4d9e-03cc8b4754ae: {"chunk":"对"}
+2025-11-04 00:16:00.307 [reactor-http-nio-3] DEBUG com.yizhaoqi.smartpai.service.ChatHandler - 发送响应块到会话 add1a313-6032-64c6-4d9e-03cc8b4754ae: {"chunk":"“"}
+2025-11-04 00:16:00.366 [reactor-http-nio-3] DEBUG com.yizhaoqi.smartpai.service.ChatHandler - 发送响应块到会话 add1a313-6032-64c6-4d9e-03cc8b4754ae: {"chunk":"知识"}
+2025-11-04 00:16:00.425 [reactor-http-nio-3] DEBUG com.yizhaoqi.smartpai.service.ChatHandler - 发送响应块到会话 add1a313-6032-64c6-4d9e-03cc8b4754ae: {"chunk":"传递"}
+2025-11-04 00:16:00.485 [reactor-http-nio-3] DEBUG com.yizhaoqi.smartpai.service.ChatHandler - 发送响应块到会话 add1a313-6032-64c6-4d9e-03cc8b4754ae: {"chunk":"者"}
+2025-11-04 00:16:00.485 [reactor-http-nio-3] DEBUG com.yizhaoqi.smartpai.service.ChatHandler - 发送响应块到会话 add1a313-6032-64c6-4d9e-03cc8b4754ae: {"chunk":"”"}
+2025-11-04 00:16:00.545 [reactor-http-nio-3] DEBUG com.yizhaoqi.smartpai.service.ChatHandler - 发送响应块到会话 add1a313-6032-64c6-4d9e-03cc8b4754ae: {"chunk":"的"}
+2025-11-04 00:16:00.546 [reactor-http-nio-3] DEBUG com.yizhaoqi.smartpai.service.ChatHandler - 发送响应块到会话 add1a313-6032-64c6-4d9e-03cc8b4754ae: {"chunk":"定位"}
+2025-11-04 00:16:00.607 [reactor-http-nio-3] DEBUG com.yizhaoqi.smartpai.service.ChatHandler - 发送响应块到会话 add1a313-6032-64c6-4d9e-03cc8b4754ae: {"chunk":"，"}
+2025-11-04 00:16:00.607 [reactor-http-nio-3] DEBUG com.yizhaoqi.smartpai.service.ChatHandler - 发送响应块到会话 add1a313-6032-64c6-4d9e-03cc8b4754ae: {"chunk":"旨在"}
+2025-11-04 00:16:00.667 [reactor-http-nio-3] DEBUG com.yizhaoqi.smartpai.service.ChatHandler - 发送响应块到会话 add1a313-6032-64c6-4d9e-03cc8b4754ae: {"chunk":"成为"}
+2025-11-04 00:16:00.728 [reactor-http-nio-3] DEBUG com.yizhaoqi.smartpai.service.ChatHandler - 发送响应块到会话 add1a313-6032-64c6-4d9e-03cc8b4754ae: {"chunk":"用户"}
+2025-11-04 00:16:00.728 [reactor-http-nio-3] DEBUG com.yizhaoqi.smartpai.service.ChatHandler - 发送响应块到会话 add1a313-6032-64c6-4d9e-03cc8b4754ae: {"chunk":"身边"}
+2025-11-04 00:16:00.787 [reactor-http-nio-3] DEBUG com.yizhaoqi.smartpai.service.ChatHandler - 发送响应块到会话 add1a313-6032-64c6-4d9e-03cc8b4754ae: {"chunk":"触"}
+2025-11-04 00:16:00.846 [reactor-http-nio-3] DEBUG com.yizhaoqi.smartpai.service.ChatHandler - 发送响应块到会话 add1a313-6032-64c6-4d9e-03cc8b4754ae: {"chunk":"手"}
+2025-11-04 00:16:00.847 [reactor-http-nio-3] DEBUG com.yizhaoqi.smartpai.service.ChatHandler - 发送响应块到会话 add1a313-6032-64c6-4d9e-03cc8b4754ae: {"chunk":"可"}
+2025-11-04 00:16:00.908 [reactor-http-nio-3] DEBUG com.yizhaoqi.smartpai.service.ChatHandler - 发送响应块到会话 add1a313-6032-64c6-4d9e-03cc8b4754ae: {"chunk":"及的"}
+2025-11-04 00:16:00.908 [reactor-http-nio-3] DEBUG com.yizhaoqi.smartpai.service.ChatHandler - 发送响应块到会话 add1a313-6032-64c6-4d9e-03cc8b4754ae: {"chunk":"智能"}
+2025-11-04 00:16:00.970 [reactor-http-nio-3] DEBUG com.yizhaoqi.smartpai.service.ChatHandler - 发送响应块到会话 add1a313-6032-64c6-4d9e-03cc8b4754ae: {"chunk":"助手"}
+2025-11-04 00:16:00.973 [reactor-http-nio-3] DEBUG com.yizhaoqi.smartpai.service.ChatHandler - 发送响应块到会话 add1a313-6032-64c6-4d9e-03cc8b4754ae: {"chunk":"。"}
+2025-11-04 00:16:01.027 [reactor-http-nio-3] DEBUG com.yizhaoqi.smartpai.service.ChatHandler - 发送响应块到会话 add1a313-6032-64c6-4d9e-03cc8b4754ae: {"chunk":"  \n\n"}
+2025-11-04 00:16:01.086 [reactor-http-nio-3] DEBUG com.yizhaoqi.smartpai.service.ChatHandler - 发送响应块到会话 add1a313-6032-64c6-4d9e-03cc8b4754ae: {"chunk":"（"}
+2025-11-04 00:16:01.087 [reactor-http-nio-3] DEBUG com.yizhaoqi.smartpai.service.ChatHandler - 发送响应块到会话 add1a313-6032-64c6-4d9e-03cc8b4754ae: {"chunk":"注"}
+2025-11-04 00:16:01.146 [reactor-http-nio-3] DEBUG com.yizhaoqi.smartpai.service.ChatHandler - 发送响应块到会话 add1a313-6032-64c6-4d9e-03cc8b4754ae: {"chunk":"："}
+2025-11-04 00:16:01.147 [reactor-http-nio-3] DEBUG com.yizhaoqi.smartpai.service.ChatHandler - 发送响应块到会话 add1a313-6032-64c6-4d9e-03cc8b4754ae: {"chunk":"若无"}
+2025-11-04 00:16:01.206 [reactor-http-nio-3] DEBUG com.yizhaoqi.smartpai.service.ChatHandler - 发送响应块到会话 add1a313-6032-64c6-4d9e-03cc8b4754ae: {"chunk":"具体"}
+2025-11-04 00:16:01.206 [reactor-http-nio-3] DEBUG com.yizhaoqi.smartpai.service.ChatHandler - 发送响应块到会话 add1a313-6032-64c6-4d9e-03cc8b4754ae: {"chunk":"公开"}
+2025-11-04 00:16:01.265 [reactor-http-nio-3] DEBUG com.yizhaoqi.smartpai.service.ChatHandler - 发送响应块到会话 add1a313-6032-64c6-4d9e-03cc8b4754ae: {"chunk":"命名"}
+2025-11-04 00:16:01.324 [reactor-http-nio-3] DEBUG com.yizhaoqi.smartpai.service.ChatHandler - 发送响应块到会话 add1a313-6032-64c6-4d9e-03cc8b4754ae: {"chunk":"文档"}
+2025-11-04 00:16:01.325 [reactor-http-nio-3] DEBUG com.yizhaoqi.smartpai.service.ChatHandler - 发送响应块到会话 add1a313-6032-64c6-4d9e-03cc8b4754ae: {"chunk":"，"}
+2025-11-04 00:16:01.385 [reactor-http-nio-3] DEBUG com.yizhaoqi.smartpai.service.ChatHandler - 发送响应块到会话 add1a313-6032-64c6-4d9e-03cc8b4754ae: {"chunk":"此"}
+2025-11-04 00:16:01.447 [reactor-http-nio-3] DEBUG com.yizhaoqi.smartpai.service.ChatHandler - 发送响应块到会话 add1a313-6032-64c6-4d9e-03cc8b4754ae: {"chunk":"分析"}
+2025-11-04 00:16:01.447 [reactor-http-nio-3] DEBUG com.yizhaoqi.smartpai.service.ChatHandler - 发送响应块到会话 add1a313-6032-64c6-4d9e-03cc8b4754ae: {"chunk":"基于"}
+2025-11-04 00:16:01.505 [reactor-http-nio-3] DEBUG com.yizhaoqi.smartpai.service.ChatHandler - 发送响应块到会话 add1a313-6032-64c6-4d9e-03cc8b4754ae: {"chunk":"通用"}
+2025-11-04 00:16:01.566 [reactor-http-nio-3] DEBUG com.yizhaoqi.smartpai.service.ChatHandler - 发送响应块到会话 add1a313-6032-64c6-4d9e-03cc8b4754ae: {"chunk":"产品"}
+2025-11-04 00:16:01.652 [reactor-http-nio-3] DEBUG com.yizhaoqi.smartpai.service.ChatHandler - 发送响应块到会话 add1a313-6032-64c6-4d9e-03cc8b4754ae: {"chunk":"命名"}
+2025-11-04 00:16:01.653 [reactor-http-nio-3] DEBUG com.yizhaoqi.smartpai.service.ChatHandler - 发送响应块到会话 add1a313-6032-64c6-4d9e-03cc8b4754ae: {"chunk":"逻辑"}
+2025-11-04 00:16:01.684 [reactor-http-nio-3] DEBUG com.yizhaoqi.smartpai.service.ChatHandler - 发送响应块到会话 add1a313-6032-64c6-4d9e-03cc8b4754ae: {"chunk":"与"}
+2025-11-04 00:16:01.685 [reactor-http-nio-3] DEBUG com.yizhaoqi.smartpai.service.ChatHandler - 发送响应块到会话 add1a313-6032-64c6-4d9e-03cc8b4754ae: {"chunk":"语言"}
+2025-11-04 00:16:01.743 [reactor-http-nio-3] DEBUG com.yizhaoqi.smartpai.service.ChatHandler - 发送响应块到会话 add1a313-6032-64c6-4d9e-03cc8b4754ae: {"chunk":"文化"}
+2025-11-04 00:16:01.809 [reactor-http-nio-3] DEBUG com.yizhaoqi.smartpai.service.ChatHandler - 发送响应块到会话 add1a313-6032-64c6-4d9e-03cc8b4754ae: {"chunk":"背景"}
+2025-11-04 00:16:01.870 [reactor-http-nio-3] DEBUG com.yizhaoqi.smartpai.service.ChatHandler - 发送响应块到会话 add1a313-6032-64c6-4d9e-03cc8b4754ae: {"chunk":"。）"}
+2025-11-04 00:16:05.323 [Thread-10] INFO  com.yizhaoqi.smartpai.service.ChatHandler - 发送完成通知到会话 add1a313-6032-64c6-4d9e-03cc8b4754ae: {"date":"2025-11-04T00:16:05.323269","timestamp":1762186565323,"message":"响应已完成","status":"finished","type":"completion"}
+2025-11-04 00:16:05.324 [Thread-10] INFO  com.yizhaoqi.smartpai.service.ChatHandler - 已发送响应完成通知到会话: add1a313-6032-64c6-4d9e-03cc8b4754ae
+2025-11-04 00:16:05.330 [Thread-10] DEBUG com.yizhaoqi.smartpai.service.ChatHandler - 读取到会话 df066211-2766-4d79-9420-0fcb48a3b6b4 的 2 条历史记录
+2025-11-04 00:16:05.334 [Thread-10] DEBUG com.yizhaoqi.smartpai.service.ChatHandler - 更新会话历史，会话ID: df066211-2766-4d79-9420-0fcb48a3b6b4, 总消息数: 4
+2025-11-04 00:16:05.334 [Thread-10] INFO  com.yizhaoqi.smartpai.service.ChatHandler - 对话存储信息 - Redis键: user:admin:current_conversation, 值: df066211-2766-4d79-9420-0fcb48a3b6b4
+2025-11-04 00:16:05.334 [Thread-10] INFO  com.yizhaoqi.smartpai.service.ChatHandler - 消息处理完成，用户ID: admin
+2025-11-04 00:16:27.694 [http-nio-8081-exec-6] DEBUG org.springframework.security.web.FilterChainProxy - Securing GET /api/v1/users/me
+2025-11-04 00:16:27.745 [http-nio-8081-exec-6] DEBUG org.springframework.security.web.FilterChainProxy - Secured GET /api/v1/users/me
+2025-11-04 00:16:27.745 [http-nio-8081-exec-6] DEBUG org.springframework.web.servlet.DispatcherServlet - GET "/api/v1/users/me", parameters={}
+2025-11-04 00:16:27.746 [http-nio-8081-exec-6] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.yizhaoqi.smartpai.controller.UserController#getCurrentUser(String)
+2025-11-04 00:16:27.802 [http-nio-8081-exec-6] DEBUG o.s.w.s.m.m.annotation.HttpEntityMethodProcessor - Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
+2025-11-04 00:16:27.802 [http-nio-8081-exec-6] DEBUG o.s.w.s.m.m.annotation.HttpEntityMethodProcessor - Writing [{code=200, data={id=1, username=admin, role=ADMIN, orgTags=[default, admin], primaryOrg=default, cre (truncated)...]
+2025-11-04 00:16:27.803 [http-nio-8081-exec-6] DEBUG org.springframework.web.servlet.DispatcherServlet - Completed 200 OK
+2025-11-04 00:16:27.926 [http-nio-8081-exec-5] DEBUG org.springframework.security.web.FilterChainProxy - Securing GET /api/v1/users/org-tags
+2025-11-04 00:16:27.937 [http-nio-8081-exec-5] DEBUG org.springframework.security.web.FilterChainProxy - Secured GET /api/v1/users/org-tags
+2025-11-04 00:16:27.937 [http-nio-8081-exec-5] DEBUG org.springframework.web.servlet.DispatcherServlet - GET "/api/v1/users/org-tags", parameters={}
+2025-11-04 00:16:27.937 [http-nio-8081-exec-5] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.yizhaoqi.smartpai.controller.UserController#getUserOrgTags(String)
+2025-11-04 00:16:27.956 [http-nio-8081-exec-5] DEBUG o.s.w.s.m.m.annotation.HttpEntityMethodProcessor - Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
+2025-11-04 00:16:27.956 [http-nio-8081-exec-5] DEBUG o.s.w.s.m.m.annotation.HttpEntityMethodProcessor - Writing [{code=200, data={primaryOrg=default, orgTags=[default, admin], orgTagDetails=[{tagId=default, name=默 (truncated)...]
+2025-11-04 00:16:27.957 [http-nio-8081-exec-5] DEBUG org.springframework.web.servlet.DispatcherServlet - Completed 200 OK
+2025-11-04 00:16:47.277 [http-nio-8081-exec-7] DEBUG org.springframework.security.web.FilterChainProxy - Securing GET /api/v1/users/me
+2025-11-04 00:16:47.295 [http-nio-8081-exec-7] DEBUG org.springframework.security.web.FilterChainProxy - Secured GET /api/v1/users/me
+2025-11-04 00:16:47.295 [http-nio-8081-exec-7] DEBUG org.springframework.web.servlet.DispatcherServlet - GET "/api/v1/users/me", parameters={}
+2025-11-04 00:16:47.295 [http-nio-8081-exec-7] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.yizhaoqi.smartpai.controller.UserController#getCurrentUser(String)
+2025-11-04 00:16:47.301 [http-nio-8081-exec-7] DEBUG o.s.w.s.m.m.annotation.HttpEntityMethodProcessor - Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
+2025-11-04 00:16:47.301 [http-nio-8081-exec-7] DEBUG o.s.w.s.m.m.annotation.HttpEntityMethodProcessor - Writing [{code=200, data={id=1, username=admin, role=ADMIN, orgTags=[default, admin], primaryOrg=default, cre (truncated)...]
+2025-11-04 00:16:47.303 [http-nio-8081-exec-7] DEBUG org.springframework.web.servlet.DispatcherServlet - Completed 200 OK
+2025-11-04 00:16:47.605 [http-nio-8081-exec-10] DEBUG org.springframework.security.web.FilterChainProxy - Securing GET /api/v1/admin/users/list?page=1&size=20
+2025-11-04 00:16:47.608 [http-nio-8081-exec-8] DEBUG org.springframework.security.web.FilterChainProxy - Securing GET /api/v1/admin/org-tags/tree
+2025-11-04 00:16:47.614 [http-nio-8081-exec-10] DEBUG org.springframework.security.web.FilterChainProxy - Secured GET /api/v1/admin/users/list?page=1&size=20
+2025-11-04 00:16:47.615 [http-nio-8081-exec-10] DEBUG org.springframework.web.servlet.DispatcherServlet - GET "/api/v1/admin/users/list?page=1&size=20", parameters={masked}
+2025-11-04 00:16:47.615 [http-nio-8081-exec-10] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.yizhaoqi.smartpai.controller.AdminController#getUserList(String, String, String, Integer, int, int)
+2025-11-04 00:16:47.621 [http-nio-8081-exec-8] DEBUG org.springframework.security.web.FilterChainProxy - Secured GET /api/v1/admin/org-tags/tree
+2025-11-04 00:16:47.621 [http-nio-8081-exec-8] DEBUG org.springframework.web.servlet.DispatcherServlet - GET "/api/v1/admin/org-tags/tree", parameters={}
+2025-11-04 00:16:47.621 [http-nio-8081-exec-8] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.yizhaoqi.smartpai.controller.AdminController#getOrganizationTagTree(String)
+2025-11-04 00:16:47.633 [http-nio-8081-exec-8] DEBUG o.s.w.s.m.m.annotation.HttpEntityMethodProcessor - Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
+2025-11-04 00:16:47.633 [http-nio-8081-exec-10] DEBUG o.s.w.s.m.m.annotation.HttpEntityMethodProcessor - Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
+2025-11-04 00:16:47.633 [http-nio-8081-exec-8] DEBUG o.s.w.s.m.m.annotation.HttpEntityMethodProcessor - Writing [{code=200, data=[{tagId=admin, parentTag=null, name=管理员组织, description=管理员专用组织标签，具有管理权限}, {tagId=def (truncated)...]
+2025-11-04 00:16:47.633 [http-nio-8081-exec-10] DEBUG o.s.w.s.m.m.annotation.HttpEntityMethodProcessor - Writing [{code=200, data={number=1, size=20, totalPages=1, content=[{primaryOrg=default, createdAt=2025-11-02 (truncated)...]
+2025-11-04 00:16:47.634 [http-nio-8081-exec-10] DEBUG org.springframework.web.servlet.DispatcherServlet - Completed 200 OK
+2025-11-04 00:16:47.634 [http-nio-8081-exec-8] DEBUG org.springframework.web.servlet.DispatcherServlet - Completed 200 OK
+2025-11-04 00:16:47.638 [http-nio-8081-exec-9] DEBUG org.springframework.security.web.FilterChainProxy - Securing GET /api/v1/admin/users/list?page=1&size=20
+2025-11-04 00:16:47.645 [http-nio-8081-exec-9] DEBUG org.springframework.security.web.FilterChainProxy - Secured GET /api/v1/admin/users/list?page=1&size=20
+2025-11-04 00:16:47.645 [http-nio-8081-exec-9] DEBUG org.springframework.web.servlet.DispatcherServlet - GET "/api/v1/admin/users/list?page=1&size=20", parameters={masked}
+2025-11-04 00:16:47.645 [http-nio-8081-exec-9] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.yizhaoqi.smartpai.controller.AdminController#getUserList(String, String, String, Integer, int, int)
+2025-11-04 00:16:47.669 [http-nio-8081-exec-9] DEBUG o.s.w.s.m.m.annotation.HttpEntityMethodProcessor - Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
+2025-11-04 00:16:47.669 [http-nio-8081-exec-9] DEBUG o.s.w.s.m.m.annotation.HttpEntityMethodProcessor - Writing [{code=200, data={number=1, size=20, totalPages=1, content=[{primaryOrg=default, createdAt=2025-11-02 (truncated)...]
+2025-11-04 00:16:47.673 [http-nio-8081-exec-9] DEBUG org.springframework.web.servlet.DispatcherServlet - Completed 200 OK
+2025-11-04 00:16:57.563 [http-nio-8081-exec-1] DEBUG org.springframework.security.web.FilterChainProxy - Securing GET /api/v1/users/me
+2025-11-04 00:16:57.585 [http-nio-8081-exec-1] DEBUG org.springframework.security.web.FilterChainProxy - Secured GET /api/v1/users/me
+2025-11-04 00:16:57.585 [http-nio-8081-exec-1] DEBUG org.springframework.web.servlet.DispatcherServlet - GET "/api/v1/users/me", parameters={}
+2025-11-04 00:16:57.585 [http-nio-8081-exec-1] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.yizhaoqi.smartpai.controller.UserController#getCurrentUser(String)
+2025-11-04 00:16:57.589 [http-nio-8081-exec-1] DEBUG o.s.w.s.m.m.annotation.HttpEntityMethodProcessor - Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
+2025-11-04 00:16:57.589 [http-nio-8081-exec-1] DEBUG o.s.w.s.m.m.annotation.HttpEntityMethodProcessor - Writing [{code=200, data={id=1, username=admin, role=ADMIN, orgTags=[default, admin], primaryOrg=default, cre (truncated)...]
+2025-11-04 00:16:57.591 [http-nio-8081-exec-1] DEBUG org.springframework.web.servlet.DispatcherServlet - Completed 200 OK
+2025-11-04 00:16:57.867 [http-nio-8081-exec-2] DEBUG org.springframework.security.web.FilterChainProxy - Securing GET /api/v1/users/org-tags
+2025-11-04 00:16:57.875 [http-nio-8081-exec-2] DEBUG org.springframework.security.web.FilterChainProxy - Secured GET /api/v1/users/org-tags
+2025-11-04 00:16:57.875 [http-nio-8081-exec-2] DEBUG org.springframework.web.servlet.DispatcherServlet - GET "/api/v1/users/org-tags", parameters={}
+2025-11-04 00:16:57.876 [http-nio-8081-exec-2] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.yizhaoqi.smartpai.controller.UserController#getUserOrgTags(String)
+2025-11-04 00:16:57.883 [http-nio-8081-exec-2] DEBUG o.s.w.s.m.m.annotation.HttpEntityMethodProcessor - Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
+2025-11-04 00:16:57.883 [http-nio-8081-exec-2] DEBUG o.s.w.s.m.m.annotation.HttpEntityMethodProcessor - Writing [{code=200, data={primaryOrg=default, orgTags=[default, admin], orgTagDetails=[{tagId=default, name=默 (truncated)...]
+2025-11-04 00:16:57.884 [http-nio-8081-exec-2] DEBUG org.springframework.web.servlet.DispatcherServlet - Completed 200 OK
+2025-11-04 00:17:44.416 [http-nio-8081-exec-3] DEBUG org.springframework.security.web.FilterChainProxy - Securing GET /api/v1/users/me
+2025-11-04 00:17:44.443 [http-nio-8081-exec-3] DEBUG org.springframework.security.web.FilterChainProxy - Secured GET /api/v1/users/me
+2025-11-04 00:17:44.444 [http-nio-8081-exec-3] DEBUG org.springframework.web.servlet.DispatcherServlet - GET "/api/v1/users/me", parameters={}
+2025-11-04 00:17:44.445 [http-nio-8081-exec-3] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.yizhaoqi.smartpai.controller.UserController#getCurrentUser(String)
+2025-11-04 00:17:44.455 [http-nio-8081-exec-3] DEBUG o.s.w.s.m.m.annotation.HttpEntityMethodProcessor - Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
+2025-11-04 00:17:44.455 [http-nio-8081-exec-3] DEBUG o.s.w.s.m.m.annotation.HttpEntityMethodProcessor - Writing [{code=200, data={id=1, username=admin, role=ADMIN, orgTags=[default, admin], primaryOrg=default, cre (truncated)...]
+2025-11-04 00:17:44.456 [http-nio-8081-exec-3] DEBUG org.springframework.web.servlet.DispatcherServlet - Completed 200 OK
+2025-11-04 00:17:44.706 [http-nio-8081-exec-4] DEBUG org.springframework.security.web.FilterChainProxy - Securing GET /api/v1/admin/users/list?page=1&size=20
+2025-11-04 00:17:44.706 [http-nio-8081-exec-6] DEBUG org.springframework.security.web.FilterChainProxy - Securing GET /api/v1/admin/org-tags/tree
+2025-11-04 00:17:44.714 [http-nio-8081-exec-6] DEBUG org.springframework.security.web.FilterChainProxy - Secured GET /api/v1/admin/org-tags/tree
+2025-11-04 00:17:44.714 [http-nio-8081-exec-4] DEBUG org.springframework.security.web.FilterChainProxy - Secured GET /api/v1/admin/users/list?page=1&size=20
+2025-11-04 00:17:44.714 [http-nio-8081-exec-6] DEBUG org.springframework.web.servlet.DispatcherServlet - GET "/api/v1/admin/org-tags/tree", parameters={}
+2025-11-04 00:17:44.715 [http-nio-8081-exec-4] DEBUG org.springframework.web.servlet.DispatcherServlet - GET "/api/v1/admin/users/list?page=1&size=20", parameters={masked}
+2025-11-04 00:17:44.715 [http-nio-8081-exec-6] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.yizhaoqi.smartpai.controller.AdminController#getOrganizationTagTree(String)
+2025-11-04 00:17:44.715 [http-nio-8081-exec-4] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.yizhaoqi.smartpai.controller.AdminController#getUserList(String, String, String, Integer, int, int)
+2025-11-04 00:17:44.734 [http-nio-8081-exec-6] DEBUG o.s.w.s.m.m.annotation.HttpEntityMethodProcessor - Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
+2025-11-04 00:17:44.734 [http-nio-8081-exec-6] DEBUG o.s.w.s.m.m.annotation.HttpEntityMethodProcessor - Writing [{code=200, data=[{tagId=admin, parentTag=null, name=管理员组织, description=管理员专用组织标签，具有管理权限}, {tagId=def (truncated)...]
+2025-11-04 00:17:44.735 [http-nio-8081-exec-4] DEBUG o.s.w.s.m.m.annotation.HttpEntityMethodProcessor - Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
+2025-11-04 00:17:44.735 [http-nio-8081-exec-4] DEBUG o.s.w.s.m.m.annotation.HttpEntityMethodProcessor - Writing [{code=200, data={number=1, size=20, totalPages=1, content=[{primaryOrg=default, createdAt=2025-11-02 (truncated)...]
+2025-11-04 00:17:44.735 [http-nio-8081-exec-6] DEBUG org.springframework.web.servlet.DispatcherServlet - Completed 200 OK
+2025-11-04 00:17:44.736 [http-nio-8081-exec-4] DEBUG org.springframework.web.servlet.DispatcherServlet - Completed 200 OK
+2025-11-04 00:17:44.740 [http-nio-8081-exec-5] DEBUG org.springframework.security.web.FilterChainProxy - Securing GET /api/v1/admin/users/list?page=1&size=20
+2025-11-04 00:17:44.746 [http-nio-8081-exec-5] DEBUG org.springframework.security.web.FilterChainProxy - Secured GET /api/v1/admin/users/list?page=1&size=20
+2025-11-04 00:17:44.746 [http-nio-8081-exec-5] DEBUG org.springframework.web.servlet.DispatcherServlet - GET "/api/v1/admin/users/list?page=1&size=20", parameters={masked}
+2025-11-04 00:17:44.746 [http-nio-8081-exec-5] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.yizhaoqi.smartpai.controller.AdminController#getUserList(String, String, String, Integer, int, int)
+2025-11-04 00:17:44.758 [http-nio-8081-exec-5] DEBUG o.s.w.s.m.m.annotation.HttpEntityMethodProcessor - Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
+2025-11-04 00:17:44.758 [http-nio-8081-exec-5] DEBUG o.s.w.s.m.m.annotation.HttpEntityMethodProcessor - Writing [{code=200, data={number=1, size=20, totalPages=1, content=[{primaryOrg=default, createdAt=2025-11-02 (truncated)...]
+2025-11-04 00:17:44.760 [http-nio-8081-exec-5] DEBUG org.springframework.web.servlet.DispatcherServlet - Completed 200 OK
+2025-11-04 00:17:50.185 [http-nio-8081-exec-7] DEBUG org.springframework.security.web.FilterChainProxy - Securing GET /api/v1/users/me
+2025-11-04 00:17:50.198 [http-nio-8081-exec-7] DEBUG org.springframework.security.web.FilterChainProxy - Secured GET /api/v1/users/me
+2025-11-04 00:17:50.198 [http-nio-8081-exec-7] DEBUG org.springframework.web.servlet.DispatcherServlet - GET "/api/v1/users/me", parameters={}
+2025-11-04 00:17:50.198 [http-nio-8081-exec-7] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.yizhaoqi.smartpai.controller.UserController#getCurrentUser(String)
+2025-11-04 00:17:50.208 [http-nio-8081-exec-7] DEBUG o.s.w.s.m.m.annotation.HttpEntityMethodProcessor - Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
+2025-11-04 00:17:50.208 [http-nio-8081-exec-7] DEBUG o.s.w.s.m.m.annotation.HttpEntityMethodProcessor - Writing [{code=200, data={id=1, username=admin, role=ADMIN, orgTags=[default, admin], primaryOrg=default, cre (truncated)...]
+2025-11-04 00:17:50.210 [http-nio-8081-exec-7] DEBUG org.springframework.web.servlet.DispatcherServlet - Completed 200 OK
+2025-11-04 00:17:50.494 [http-nio-8081-exec-10] DEBUG org.springframework.security.web.FilterChainProxy - Securing GET /api/v1/users/org-tags
+2025-11-04 00:17:50.506 [http-nio-8081-exec-10] DEBUG org.springframework.security.web.FilterChainProxy - Secured GET /api/v1/users/org-tags
+2025-11-04 00:17:50.506 [http-nio-8081-exec-10] DEBUG org.springframework.web.servlet.DispatcherServlet - GET "/api/v1/users/org-tags", parameters={}
+2025-11-04 00:17:50.506 [http-nio-8081-exec-10] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.yizhaoqi.smartpai.controller.UserController#getUserOrgTags(String)
+2025-11-04 00:17:50.516 [http-nio-8081-exec-10] DEBUG o.s.w.s.m.m.annotation.HttpEntityMethodProcessor - Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
+2025-11-04 00:17:50.517 [http-nio-8081-exec-10] DEBUG o.s.w.s.m.m.annotation.HttpEntityMethodProcessor - Writing [{code=200, data={primaryOrg=default, orgTags=[default, admin], orgTagDetails=[{tagId=default, name=默 (truncated)...]
+2025-11-04 00:17:50.518 [http-nio-8081-exec-10] DEBUG org.springframework.web.servlet.DispatcherServlet - Completed 200 OK
+2025-11-04 00:17:55.433 [http-nio-8081-exec-8] DEBUG org.springframework.security.web.FilterChainProxy - Securing GET /api/v1/users/me
+2025-11-04 00:17:55.445 [http-nio-8081-exec-8] DEBUG org.springframework.security.web.FilterChainProxy - Secured GET /api/v1/users/me
+2025-11-04 00:17:55.446 [http-nio-8081-exec-8] DEBUG org.springframework.web.servlet.DispatcherServlet - GET "/api/v1/users/me", parameters={}
+2025-11-04 00:17:55.446 [http-nio-8081-exec-8] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.yizhaoqi.smartpai.controller.UserController#getCurrentUser(String)
+2025-11-04 00:17:55.450 [http-nio-8081-exec-8] DEBUG o.s.w.s.m.m.annotation.HttpEntityMethodProcessor - Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
+2025-11-04 00:17:55.450 [http-nio-8081-exec-8] DEBUG o.s.w.s.m.m.annotation.HttpEntityMethodProcessor - Writing [{code=200, data={id=1, username=admin, role=ADMIN, orgTags=[default, admin], primaryOrg=default, cre (truncated)...]
+2025-11-04 00:17:55.451 [http-nio-8081-exec-8] DEBUG org.springframework.web.servlet.DispatcherServlet - Completed 200 OK
+2025-11-04 00:17:55.746 [http-nio-8081-exec-9] DEBUG org.springframework.security.web.FilterChainProxy - Securing GET /api/v1/admin/users/list?page=1&size=20
+2025-11-04 00:17:55.751 [http-nio-8081-exec-1] DEBUG org.springframework.security.web.FilterChainProxy - Securing GET /api/v1/admin/org-tags/tree
+2025-11-04 00:17:55.756 [http-nio-8081-exec-1] DEBUG org.springframework.security.web.FilterChainProxy - Secured GET /api/v1/admin/org-tags/tree
+2025-11-04 00:17:55.756 [http-nio-8081-exec-9] DEBUG org.springframework.security.web.FilterChainProxy - Secured GET /api/v1/admin/users/list?page=1&size=20
+2025-11-04 00:17:55.756 [http-nio-8081-exec-1] DEBUG org.springframework.web.servlet.DispatcherServlet - GET "/api/v1/admin/org-tags/tree", parameters={}
+2025-11-04 00:17:55.756 [http-nio-8081-exec-1] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.yizhaoqi.smartpai.controller.AdminController#getOrganizationTagTree(String)
+2025-11-04 00:17:55.756 [http-nio-8081-exec-9] DEBUG org.springframework.web.servlet.DispatcherServlet - GET "/api/v1/admin/users/list?page=1&size=20", parameters={masked}
+2025-11-04 00:17:55.756 [http-nio-8081-exec-9] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.yizhaoqi.smartpai.controller.AdminController#getUserList(String, String, String, Integer, int, int)
+2025-11-04 00:17:55.765 [http-nio-8081-exec-1] DEBUG o.s.w.s.m.m.annotation.HttpEntityMethodProcessor - Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
+2025-11-04 00:17:55.765 [http-nio-8081-exec-1] DEBUG o.s.w.s.m.m.annotation.HttpEntityMethodProcessor - Writing [{code=200, data=[{tagId=admin, parentTag=null, name=管理员组织, description=管理员专用组织标签，具有管理权限}, {tagId=def (truncated)...]
+2025-11-04 00:17:55.766 [http-nio-8081-exec-1] DEBUG org.springframework.web.servlet.DispatcherServlet - Completed 200 OK
+2025-11-04 00:17:55.767 [http-nio-8081-exec-9] DEBUG o.s.w.s.m.m.annotation.HttpEntityMethodProcessor - Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
+2025-11-04 00:17:55.767 [http-nio-8081-exec-9] DEBUG o.s.w.s.m.m.annotation.HttpEntityMethodProcessor - Writing [{code=200, data={number=1, size=20, totalPages=1, content=[{primaryOrg=default, createdAt=2025-11-02 (truncated)...]
+2025-11-04 00:17:55.768 [http-nio-8081-exec-9] DEBUG org.springframework.web.servlet.DispatcherServlet - Completed 200 OK
+2025-11-04 00:17:55.771 [http-nio-8081-exec-2] DEBUG org.springframework.security.web.FilterChainProxy - Securing GET /api/v1/admin/users/list?page=1&size=20
+2025-11-04 00:17:55.777 [http-nio-8081-exec-2] DEBUG org.springframework.security.web.FilterChainProxy - Secured GET /api/v1/admin/users/list?page=1&size=20
+2025-11-04 00:17:55.777 [http-nio-8081-exec-2] DEBUG org.springframework.web.servlet.DispatcherServlet - GET "/api/v1/admin/users/list?page=1&size=20", parameters={masked}
+2025-11-04 00:17:55.777 [http-nio-8081-exec-2] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.yizhaoqi.smartpai.controller.AdminController#getUserList(String, String, String, Integer, int, int)
+2025-11-04 00:17:55.786 [http-nio-8081-exec-2] DEBUG o.s.w.s.m.m.annotation.HttpEntityMethodProcessor - Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
+2025-11-04 00:17:55.786 [http-nio-8081-exec-2] DEBUG o.s.w.s.m.m.annotation.HttpEntityMethodProcessor - Writing [{code=200, data={number=1, size=20, totalPages=1, content=[{primaryOrg=default, createdAt=2025-11-02 (truncated)...]
+2025-11-04 00:17:55.787 [http-nio-8081-exec-2] DEBUG org.springframework.web.servlet.DispatcherServlet - Completed 200 OK
+2025-11-04 00:22:39.541 [http-nio-8081-exec-3] DEBUG org.springframework.security.web.FilterChainProxy - Securing GET /api/v1/users/me
+2025-11-04 00:22:39.583 [http-nio-8081-exec-3] DEBUG org.springframework.security.web.FilterChainProxy - Secured GET /api/v1/users/me
+2025-11-04 00:22:39.583 [http-nio-8081-exec-3] DEBUG org.springframework.web.servlet.DispatcherServlet - GET "/api/v1/users/me", parameters={}
+2025-11-04 00:22:39.583 [http-nio-8081-exec-3] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.yizhaoqi.smartpai.controller.UserController#getCurrentUser(String)
+2025-11-04 00:22:39.592 [http-nio-8081-exec-3] DEBUG o.s.w.s.m.m.annotation.HttpEntityMethodProcessor - Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
+2025-11-04 00:22:39.592 [http-nio-8081-exec-3] DEBUG o.s.w.s.m.m.annotation.HttpEntityMethodProcessor - Writing [{code=200, data={id=1, username=admin, role=ADMIN, orgTags=[default, admin], primaryOrg=default, cre (truncated)...]
+2025-11-04 00:22:39.597 [http-nio-8081-exec-3] DEBUG org.springframework.web.servlet.DispatcherServlet - Completed 200 OK
+2025-11-04 00:22:39.787 [http-nio-8081-exec-6] DEBUG org.springframework.security.web.FilterChainProxy - Securing GET /api/v1/users/org-tags
+2025-11-04 00:22:39.792 [http-nio-8081-exec-6] DEBUG org.springframework.security.web.FilterChainProxy - Secured GET /api/v1/users/org-tags
+2025-11-04 00:22:39.792 [http-nio-8081-exec-6] DEBUG org.springframework.web.servlet.DispatcherServlet - GET "/api/v1/users/org-tags", parameters={}
+2025-11-04 00:22:39.792 [http-nio-8081-exec-6] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.yizhaoqi.smartpai.controller.UserController#getUserOrgTags(String)
+2025-11-04 00:22:39.799 [http-nio-8081-exec-6] DEBUG o.s.w.s.m.m.annotation.HttpEntityMethodProcessor - Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
+2025-11-04 00:22:39.800 [http-nio-8081-exec-6] DEBUG o.s.w.s.m.m.annotation.HttpEntityMethodProcessor - Writing [{code=200, data={primaryOrg=default, orgTags=[default, admin], orgTagDetails=[{tagId=default, name=默 (truncated)...]
+2025-11-04 00:22:39.801 [http-nio-8081-exec-6] DEBUG org.springframework.web.servlet.DispatcherServlet - Completed 200 OK
+2025-11-04 00:23:00.173 [http-nio-8081-exec-4] DEBUG org.springframework.security.web.FilterChainProxy - Securing GET /api/v1/users/me
+2025-11-04 00:23:00.203 [http-nio-8081-exec-4] DEBUG org.springframework.security.web.FilterChainProxy - Secured GET /api/v1/users/me
+2025-11-04 00:23:00.203 [http-nio-8081-exec-4] DEBUG org.springframework.web.servlet.DispatcherServlet - GET "/api/v1/users/me", parameters={}
+2025-11-04 00:23:00.203 [http-nio-8081-exec-4] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.yizhaoqi.smartpai.controller.UserController#getCurrentUser(String)
+2025-11-04 00:23:00.208 [http-nio-8081-exec-4] DEBUG o.s.w.s.m.m.annotation.HttpEntityMethodProcessor - Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
+2025-11-04 00:23:00.208 [http-nio-8081-exec-4] DEBUG o.s.w.s.m.m.annotation.HttpEntityMethodProcessor - Writing [{code=200, data={id=1, username=admin, role=ADMIN, orgTags=[default, admin], primaryOrg=default, cre (truncated)...]
+2025-11-04 00:23:00.209 [http-nio-8081-exec-4] DEBUG org.springframework.web.servlet.DispatcherServlet - Completed 200 OK
+2025-11-04 00:23:00.454 [http-nio-8081-exec-5] DEBUG org.springframework.security.web.FilterChainProxy - Securing GET /api/v1/admin/users/list?page=1&size=20
+2025-11-04 00:23:00.454 [http-nio-8081-exec-7] DEBUG org.springframework.security.web.FilterChainProxy - Securing GET /api/v1/admin/org-tags/tree
+2025-11-04 00:23:00.463 [http-nio-8081-exec-5] DEBUG org.springframework.security.web.FilterChainProxy - Secured GET /api/v1/admin/users/list?page=1&size=20
+2025-11-04 00:23:00.463 [http-nio-8081-exec-7] DEBUG org.springframework.security.web.FilterChainProxy - Secured GET /api/v1/admin/org-tags/tree
+2025-11-04 00:23:00.464 [http-nio-8081-exec-5] DEBUG org.springframework.web.servlet.DispatcherServlet - GET "/api/v1/admin/users/list?page=1&size=20", parameters={masked}
+2025-11-04 00:23:00.464 [http-nio-8081-exec-7] DEBUG org.springframework.web.servlet.DispatcherServlet - GET "/api/v1/admin/org-tags/tree", parameters={}
+2025-11-04 00:23:00.464 [http-nio-8081-exec-5] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.yizhaoqi.smartpai.controller.AdminController#getUserList(String, String, String, Integer, int, int)
+2025-11-04 00:23:00.464 [http-nio-8081-exec-7] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.yizhaoqi.smartpai.controller.AdminController#getOrganizationTagTree(String)
+2025-11-04 00:23:00.476 [http-nio-8081-exec-7] DEBUG o.s.w.s.m.m.annotation.HttpEntityMethodProcessor - Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
+2025-11-04 00:23:00.476 [http-nio-8081-exec-7] DEBUG o.s.w.s.m.m.annotation.HttpEntityMethodProcessor - Writing [{code=200, data=[{tagId=admin, parentTag=null, name=管理员组织, description=管理员专用组织标签，具有管理权限}, {tagId=def (truncated)...]
+2025-11-04 00:23:00.477 [http-nio-8081-exec-7] DEBUG org.springframework.web.servlet.DispatcherServlet - Completed 200 OK
+2025-11-04 00:23:00.480 [http-nio-8081-exec-5] DEBUG o.s.w.s.m.m.annotation.HttpEntityMethodProcessor - Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
+2025-11-04 00:23:00.480 [http-nio-8081-exec-5] DEBUG o.s.w.s.m.m.annotation.HttpEntityMethodProcessor - Writing [{code=200, data={number=1, size=20, totalPages=1, content=[{primaryOrg=default, createdAt=2025-11-02 (truncated)...]
+2025-11-04 00:23:00.482 [http-nio-8081-exec-5] DEBUG org.springframework.web.servlet.DispatcherServlet - Completed 200 OK
+2025-11-04 00:23:00.486 [http-nio-8081-exec-10] DEBUG org.springframework.security.web.FilterChainProxy - Securing GET /api/v1/admin/users/list?page=1&size=20
+2025-11-04 00:23:00.493 [http-nio-8081-exec-10] DEBUG org.springframework.security.web.FilterChainProxy - Secured GET /api/v1/admin/users/list?page=1&size=20
+2025-11-04 00:23:00.494 [http-nio-8081-exec-10] DEBUG org.springframework.web.servlet.DispatcherServlet - GET "/api/v1/admin/users/list?page=1&size=20", parameters={masked}
+2025-11-04 00:23:00.494 [http-nio-8081-exec-10] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.yizhaoqi.smartpai.controller.AdminController#getUserList(String, String, String, Integer, int, int)
+2025-11-04 00:23:00.532 [http-nio-8081-exec-10] DEBUG o.s.w.s.m.m.annotation.HttpEntityMethodProcessor - Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
+2025-11-04 00:23:00.532 [http-nio-8081-exec-10] DEBUG o.s.w.s.m.m.annotation.HttpEntityMethodProcessor - Writing [{code=200, data={number=1, size=20, totalPages=1, content=[{primaryOrg=default, createdAt=2025-11-02 (truncated)...]
+2025-11-04 00:23:00.534 [http-nio-8081-exec-10] DEBUG org.springframework.web.servlet.DispatcherServlet - Completed 200 OK
+2025-11-04 00:23:24.351 [http-nio-8081-exec-8] DEBUG org.springframework.security.web.FilterChainProxy - Securing GET /api/v1/admin/org-tags/tree
+2025-11-04 00:23:24.382 [http-nio-8081-exec-8] DEBUG org.springframework.security.web.FilterChainProxy - Secured GET /api/v1/admin/org-tags/tree
+2025-11-04 00:23:24.382 [http-nio-8081-exec-8] DEBUG org.springframework.web.servlet.DispatcherServlet - GET "/api/v1/admin/org-tags/tree", parameters={}
+2025-11-04 00:23:24.383 [http-nio-8081-exec-8] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.yizhaoqi.smartpai.controller.AdminController#getOrganizationTagTree(String)
+2025-11-04 00:23:24.395 [http-nio-8081-exec-8] DEBUG o.s.w.s.m.m.annotation.HttpEntityMethodProcessor - Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
+2025-11-04 00:23:24.395 [http-nio-8081-exec-8] DEBUG o.s.w.s.m.m.annotation.HttpEntityMethodProcessor - Writing [{code=200, data=[{tagId=admin, parentTag=null, name=管理员组织, description=管理员专用组织标签，具有管理权限}, {tagId=def (truncated)...]
+2025-11-04 00:23:24.397 [http-nio-8081-exec-8] DEBUG org.springframework.web.servlet.DispatcherServlet - Completed 200 OK
+2025-11-04 00:23:33.786 [http-nio-8081-exec-1] DEBUG org.springframework.security.web.FilterChainProxy - Securing PUT /api/v1/admin/users/1/org-tags
+2025-11-04 00:23:33.796 [http-nio-8081-exec-1] DEBUG org.springframework.security.web.FilterChainProxy - Secured PUT /api/v1/admin/users/1/org-tags
+2025-11-04 00:23:33.797 [http-nio-8081-exec-1] DEBUG org.springframework.web.servlet.DispatcherServlet - PUT "/api/v1/admin/users/1/org-tags", parameters={}
+2025-11-04 00:23:33.797 [http-nio-8081-exec-1] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.yizhaoqi.smartpai.controller.AdminController#assignOrgTagsToUser(String, Long, AssignOrgTagsRequest)
+2025-11-04 00:23:33.806 [http-nio-8081-exec-1] DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Read "application/json;charset=UTF-8" to [AssignOrgTagsRequest[orgTags=[admin]]]
+2025-11-04 00:23:33.838 [http-nio-8081-exec-1] DEBUG com.yizhaoqi.smartpai.service.OrgTagCacheService - Deleted organization tags cache for user: admin
+2025-11-04 00:23:33.839 [http-nio-8081-exec-1] DEBUG com.yizhaoqi.smartpai.service.OrgTagCacheService - Cached organization tags for user: admin
+2025-11-04 00:23:33.839 [http-nio-8081-exec-1] DEBUG com.yizhaoqi.smartpai.service.OrgTagCacheService - Deleted effective organization tags cache for user: admin
+2025-11-04 00:23:33.840 [http-nio-8081-exec-1] DEBUG com.yizhaoqi.smartpai.service.OrgTagCacheService - Cached primary organization for user: admin
+2025-11-04 00:23:33.892 [http-nio-8081-exec-1] DEBUG o.s.w.s.m.m.annotation.HttpEntityMethodProcessor - Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
+2025-11-04 00:23:33.892 [http-nio-8081-exec-1] DEBUG o.s.w.s.m.m.annotation.HttpEntityMethodProcessor - Writing [{code=200, message=组织标签分配成功}]
+2025-11-04 00:23:33.893 [http-nio-8081-exec-1] DEBUG org.springframework.web.servlet.DispatcherServlet - Completed 200 OK
+2025-11-04 00:23:33.914 [http-nio-8081-exec-9] DEBUG org.springframework.security.web.FilterChainProxy - Securing GET /api/v1/admin/users/list?page=1&size=20
+2025-11-04 00:23:33.920 [http-nio-8081-exec-9] DEBUG org.springframework.security.web.FilterChainProxy - Secured GET /api/v1/admin/users/list?page=1&size=20
+2025-11-04 00:23:33.920 [http-nio-8081-exec-9] DEBUG org.springframework.web.servlet.DispatcherServlet - GET "/api/v1/admin/users/list?page=1&size=20", parameters={masked}
+2025-11-04 00:23:33.921 [http-nio-8081-exec-9] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.yizhaoqi.smartpai.controller.AdminController#getUserList(String, String, String, Integer, int, int)
+2025-11-04 00:23:33.934 [http-nio-8081-exec-9] DEBUG o.s.w.s.m.m.annotation.HttpEntityMethodProcessor - Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
+2025-11-04 00:23:33.934 [http-nio-8081-exec-9] DEBUG o.s.w.s.m.m.annotation.HttpEntityMethodProcessor - Writing [{code=200, data={number=1, size=20, totalPages=1, content=[{primaryOrg=default, createdAt=2025-11-02 (truncated)...]
+2025-11-04 00:23:33.935 [http-nio-8081-exec-9] DEBUG org.springframework.web.servlet.DispatcherServlet - Completed 200 OK
+2025-11-04 00:24:41.889 [http-nio-8081-exec-2] DEBUG org.springframework.security.web.FilterChainProxy - Securing GET /api/v1/admin/org-tags/tree
+2025-11-04 00:24:41.914 [http-nio-8081-exec-2] DEBUG org.springframework.security.web.FilterChainProxy - Secured GET /api/v1/admin/org-tags/tree
+2025-11-04 00:24:41.914 [http-nio-8081-exec-2] DEBUG org.springframework.web.servlet.DispatcherServlet - GET "/api/v1/admin/org-tags/tree", parameters={}
+2025-11-04 00:24:41.914 [http-nio-8081-exec-2] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.yizhaoqi.smartpai.controller.AdminController#getOrganizationTagTree(String)
+2025-11-04 00:24:41.923 [http-nio-8081-exec-2] DEBUG o.s.w.s.m.m.annotation.HttpEntityMethodProcessor - Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
+2025-11-04 00:24:41.923 [http-nio-8081-exec-2] DEBUG o.s.w.s.m.m.annotation.HttpEntityMethodProcessor - Writing [{code=200, data=[{tagId=admin, parentTag=null, name=管理员组织, description=管理员专用组织标签，具有管理权限}, {tagId=def (truncated)...]
+2025-11-04 00:24:41.925 [http-nio-8081-exec-2] DEBUG org.springframework.web.servlet.DispatcherServlet - Completed 200 OK
+2025-11-04 00:24:45.825 [http-nio-8081-exec-3] DEBUG org.springframework.security.web.FilterChainProxy - Securing PUT /api/v1/admin/users/1/org-tags
+2025-11-04 00:24:45.845 [http-nio-8081-exec-3] DEBUG org.springframework.security.web.FilterChainProxy - Secured PUT /api/v1/admin/users/1/org-tags
+2025-11-04 00:24:45.845 [http-nio-8081-exec-3] DEBUG org.springframework.web.servlet.DispatcherServlet - PUT "/api/v1/admin/users/1/org-tags", parameters={}
+2025-11-04 00:24:45.845 [http-nio-8081-exec-3] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.yizhaoqi.smartpai.controller.AdminController#assignOrgTagsToUser(String, Long, AssignOrgTagsRequest)
+2025-11-04 00:24:45.850 [http-nio-8081-exec-3] DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Read "application/json;charset=UTF-8" to [AssignOrgTagsRequest[orgTags=[admin, default]]]
+2025-11-04 00:24:45.860 [http-nio-8081-exec-3] DEBUG com.yizhaoqi.smartpai.service.OrgTagCacheService - Deleted organization tags cache for user: admin
+2025-11-04 00:24:45.861 [http-nio-8081-exec-3] DEBUG com.yizhaoqi.smartpai.service.OrgTagCacheService - Cached organization tags for user: admin
+2025-11-04 00:24:45.861 [http-nio-8081-exec-3] DEBUG com.yizhaoqi.smartpai.service.OrgTagCacheService - Deleted effective organization tags cache for user: admin
+2025-11-04 00:24:45.862 [http-nio-8081-exec-3] DEBUG com.yizhaoqi.smartpai.service.OrgTagCacheService - Cached primary organization for user: admin
+2025-11-04 00:24:45.871 [http-nio-8081-exec-3] DEBUG o.s.w.s.m.m.annotation.HttpEntityMethodProcessor - Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
+2025-11-04 00:24:45.872 [http-nio-8081-exec-3] DEBUG o.s.w.s.m.m.annotation.HttpEntityMethodProcessor - Writing [{code=200, message=组织标签分配成功}]
+2025-11-04 00:24:45.884 [http-nio-8081-exec-3] DEBUG org.springframework.web.servlet.DispatcherServlet - Completed 200 OK
+2025-11-04 00:24:45.903 [http-nio-8081-exec-6] DEBUG org.springframework.security.web.FilterChainProxy - Securing GET /api/v1/admin/users/list?page=1&size=20
+2025-11-04 00:24:45.910 [http-nio-8081-exec-6] DEBUG org.springframework.security.web.FilterChainProxy - Secured GET /api/v1/admin/users/list?page=1&size=20
+2025-11-04 00:24:45.910 [http-nio-8081-exec-6] DEBUG org.springframework.web.servlet.DispatcherServlet - GET "/api/v1/admin/users/list?page=1&size=20", parameters={masked}
+2025-11-04 00:24:45.910 [http-nio-8081-exec-6] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.yizhaoqi.smartpai.controller.AdminController#getUserList(String, String, String, Integer, int, int)
+2025-11-04 00:24:45.921 [http-nio-8081-exec-6] DEBUG o.s.w.s.m.m.annotation.HttpEntityMethodProcessor - Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
+2025-11-04 00:24:45.921 [http-nio-8081-exec-6] DEBUG o.s.w.s.m.m.annotation.HttpEntityMethodProcessor - Writing [{code=200, data={number=1, size=20, totalPages=1, content=[{primaryOrg=default, createdAt=2025-11-02 (truncated)...]
+2025-11-04 00:24:45.922 [http-nio-8081-exec-6] DEBUG org.springframework.web.servlet.DispatcherServlet - Completed 200 OK
+2025-11-04 00:25:00.157 [http-nio-8081-exec-4] DEBUG org.springframework.security.web.FilterChainProxy - Securing GET /api/v1/admin/org-tags/tree
+2025-11-04 00:25:00.172 [http-nio-8081-exec-4] DEBUG org.springframework.security.web.FilterChainProxy - Secured GET /api/v1/admin/org-tags/tree
+2025-11-04 00:25:00.173 [http-nio-8081-exec-4] DEBUG org.springframework.web.servlet.DispatcherServlet - GET "/api/v1/admin/org-tags/tree", parameters={}
+2025-11-04 00:25:00.173 [http-nio-8081-exec-4] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.yizhaoqi.smartpai.controller.AdminController#getOrganizationTagTree(String)
+2025-11-04 00:25:00.179 [http-nio-8081-exec-4] DEBUG o.s.w.s.m.m.annotation.HttpEntityMethodProcessor - Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
+2025-11-04 00:25:00.179 [http-nio-8081-exec-4] DEBUG o.s.w.s.m.m.annotation.HttpEntityMethodProcessor - Writing [{code=200, data=[{tagId=admin, parentTag=null, name=管理员组织, description=管理员专用组织标签，具有管理权限}, {tagId=def (truncated)...]
+2025-11-04 00:25:00.180 [http-nio-8081-exec-4] DEBUG org.springframework.web.servlet.DispatcherServlet - Completed 200 OK
+2025-11-04 00:25:09.708 [http-nio-8081-exec-7] DEBUG org.springframework.security.web.FilterChainProxy - Securing PUT /api/v1/admin/users/1/org-tags
+2025-11-04 00:25:09.722 [http-nio-8081-exec-7] DEBUG org.springframework.security.web.FilterChainProxy - Secured PUT /api/v1/admin/users/1/org-tags
+2025-11-04 00:25:09.722 [http-nio-8081-exec-7] DEBUG org.springframework.web.servlet.DispatcherServlet - PUT "/api/v1/admin/users/1/org-tags", parameters={}
+2025-11-04 00:25:09.722 [http-nio-8081-exec-7] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.yizhaoqi.smartpai.controller.AdminController#assignOrgTagsToUser(String, Long, AssignOrgTagsRequest)
+2025-11-04 00:25:09.724 [http-nio-8081-exec-7] DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Read "application/json;charset=UTF-8" to [AssignOrgTagsRequest[orgTags=[default, admin]]]
+2025-11-04 00:25:09.731 [http-nio-8081-exec-7] DEBUG com.yizhaoqi.smartpai.service.OrgTagCacheService - Deleted organization tags cache for user: admin
+2025-11-04 00:25:09.732 [http-nio-8081-exec-7] DEBUG com.yizhaoqi.smartpai.service.OrgTagCacheService - Cached organization tags for user: admin
+2025-11-04 00:25:09.732 [http-nio-8081-exec-7] DEBUG com.yizhaoqi.smartpai.service.OrgTagCacheService - Deleted effective organization tags cache for user: admin
+2025-11-04 00:25:09.733 [http-nio-8081-exec-7] DEBUG com.yizhaoqi.smartpai.service.OrgTagCacheService - Cached primary organization for user: admin
+2025-11-04 00:25:09.734 [http-nio-8081-exec-7] DEBUG o.s.w.s.m.m.annotation.HttpEntityMethodProcessor - Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
+2025-11-04 00:25:09.734 [http-nio-8081-exec-7] DEBUG o.s.w.s.m.m.annotation.HttpEntityMethodProcessor - Writing [{code=200, message=组织标签分配成功}]
+2025-11-04 00:25:09.735 [http-nio-8081-exec-7] DEBUG org.springframework.web.servlet.DispatcherServlet - Completed 200 OK
+2025-11-04 00:25:09.756 [http-nio-8081-exec-5] DEBUG org.springframework.security.web.FilterChainProxy - Securing GET /api/v1/admin/users/list?page=1&size=20
+2025-11-04 00:25:09.790 [http-nio-8081-exec-5] DEBUG org.springframework.security.web.FilterChainProxy - Secured GET /api/v1/admin/users/list?page=1&size=20
+2025-11-04 00:25:09.790 [http-nio-8081-exec-5] DEBUG org.springframework.web.servlet.DispatcherServlet - GET "/api/v1/admin/users/list?page=1&size=20", parameters={masked}
+2025-11-04 00:25:09.790 [http-nio-8081-exec-5] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.yizhaoqi.smartpai.controller.AdminController#getUserList(String, String, String, Integer, int, int)
+2025-11-04 00:25:09.799 [http-nio-8081-exec-5] DEBUG o.s.w.s.m.m.annotation.HttpEntityMethodProcessor - Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
+2025-11-04 00:25:09.799 [http-nio-8081-exec-5] DEBUG o.s.w.s.m.m.annotation.HttpEntityMethodProcessor - Writing [{code=200, data={number=1, size=20, totalPages=1, content=[{primaryOrg=default, createdAt=2025-11-02 (truncated)...]
+2025-11-04 00:25:09.800 [http-nio-8081-exec-5] DEBUG org.springframework.web.servlet.DispatcherServlet - Completed 200 OK
+2025-11-04 00:25:46.036 [http-nio-8081-exec-10] DEBUG org.springframework.security.web.FilterChainProxy - Securing GET /api/v1/users/me
+2025-11-04 00:25:46.067 [http-nio-8081-exec-10] DEBUG org.springframework.security.web.FilterChainProxy - Secured GET /api/v1/users/me
+2025-11-04 00:25:46.067 [http-nio-8081-exec-10] DEBUG org.springframework.web.servlet.DispatcherServlet - GET "/api/v1/users/me", parameters={}
+2025-11-04 00:25:46.068 [http-nio-8081-exec-10] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.yizhaoqi.smartpai.controller.UserController#getCurrentUser(String)
+2025-11-04 00:25:46.085 [http-nio-8081-exec-10] DEBUG o.s.w.s.m.m.annotation.HttpEntityMethodProcessor - Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
+2025-11-04 00:25:46.085 [http-nio-8081-exec-10] DEBUG o.s.w.s.m.m.annotation.HttpEntityMethodProcessor - Writing [{code=200, data={id=1, username=admin, role=ADMIN, orgTags=[default, admin], primaryOrg=default, cre (truncated)...]
+2025-11-04 00:25:46.086 [http-nio-8081-exec-10] DEBUG org.springframework.web.servlet.DispatcherServlet - Completed 200 OK
+2025-11-04 00:25:46.344 [http-nio-8081-exec-8] DEBUG org.springframework.security.web.FilterChainProxy - Securing GET /api/v1/admin/org-tags/tree
+2025-11-04 00:25:46.352 [http-nio-8081-exec-8] DEBUG org.springframework.security.web.FilterChainProxy - Secured GET /api/v1/admin/org-tags/tree
+2025-11-04 00:25:46.352 [http-nio-8081-exec-8] DEBUG org.springframework.web.servlet.DispatcherServlet - GET "/api/v1/admin/org-tags/tree", parameters={}
+2025-11-04 00:25:46.353 [http-nio-8081-exec-8] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.yizhaoqi.smartpai.controller.AdminController#getOrganizationTagTree(String)
+2025-11-04 00:25:46.359 [http-nio-8081-exec-8] DEBUG o.s.w.s.m.m.annotation.HttpEntityMethodProcessor - Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
+2025-11-04 00:25:46.359 [http-nio-8081-exec-8] DEBUG o.s.w.s.m.m.annotation.HttpEntityMethodProcessor - Writing [{code=200, data=[{tagId=admin, parentTag=null, name=管理员组织, description=管理员专用组织标签，具有管理权限}, {tagId=def (truncated)...]
+2025-11-04 00:25:46.360 [http-nio-8081-exec-8] DEBUG org.springframework.web.servlet.DispatcherServlet - Completed 200 OK
+2025-11-04 00:26:37.642 [http-nio-8081-exec-1] DEBUG org.springframework.security.web.FilterChainProxy - Securing GET /api/v1/users/me
+2025-11-04 00:26:37.677 [http-nio-8081-exec-1] DEBUG org.springframework.security.web.FilterChainProxy - Secured GET /api/v1/users/me
+2025-11-04 00:26:37.677 [http-nio-8081-exec-1] DEBUG org.springframework.web.servlet.DispatcherServlet - GET "/api/v1/users/me", parameters={}
+2025-11-04 00:26:37.677 [http-nio-8081-exec-1] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.yizhaoqi.smartpai.controller.UserController#getCurrentUser(String)
+2025-11-04 00:26:37.694 [http-nio-8081-exec-1] DEBUG o.s.w.s.m.m.annotation.HttpEntityMethodProcessor - Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
+2025-11-04 00:26:37.694 [http-nio-8081-exec-1] DEBUG o.s.w.s.m.m.annotation.HttpEntityMethodProcessor - Writing [{code=200, data={id=1, username=admin, role=ADMIN, orgTags=[default, admin], primaryOrg=default, cre (truncated)...]
+2025-11-04 00:26:37.713 [http-nio-8081-exec-1] DEBUG org.springframework.web.servlet.DispatcherServlet - Completed 200 OK
+2025-11-04 00:26:37.898 [http-nio-8081-exec-9] DEBUG org.springframework.security.web.FilterChainProxy - Securing GET /api/v1/users/org-tags
+2025-11-04 00:26:37.903 [http-nio-8081-exec-9] DEBUG org.springframework.security.web.FilterChainProxy - Secured GET /api/v1/users/org-tags
+2025-11-04 00:26:37.903 [http-nio-8081-exec-9] DEBUG org.springframework.web.servlet.DispatcherServlet - GET "/api/v1/users/org-tags", parameters={}
+2025-11-04 00:26:37.903 [http-nio-8081-exec-9] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.yizhaoqi.smartpai.controller.UserController#getUserOrgTags(String)
+2025-11-04 00:26:37.911 [http-nio-8081-exec-9] DEBUG o.s.w.s.m.m.annotation.HttpEntityMethodProcessor - Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
+2025-11-04 00:26:37.911 [http-nio-8081-exec-9] DEBUG o.s.w.s.m.m.annotation.HttpEntityMethodProcessor - Writing [{code=200, data={primaryOrg=default, orgTags=[default, admin], orgTagDetails=[{tagId=default, name=默 (truncated)...]
+2025-11-04 00:26:37.912 [http-nio-8081-exec-9] DEBUG org.springframework.web.servlet.DispatcherServlet - Completed 200 OK
+2025-11-04 00:26:43.266 [http-nio-8081-exec-2] DEBUG org.springframework.security.web.FilterChainProxy - Securing PUT /api/v1/users/primary-org
+2025-11-04 00:26:43.273 [http-nio-8081-exec-2] DEBUG org.springframework.security.web.FilterChainProxy - Secured PUT /api/v1/users/primary-org
+2025-11-04 00:26:43.273 [http-nio-8081-exec-2] DEBUG org.springframework.web.servlet.DispatcherServlet - PUT "/api/v1/users/primary-org", parameters={}
+2025-11-04 00:26:43.273 [http-nio-8081-exec-2] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.yizhaoqi.smartpai.controller.UserController#setPrimaryOrg(String, PrimaryOrgRequest)
+2025-11-04 00:26:43.280 [http-nio-8081-exec-2] DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Read "application/json;charset=UTF-8" to [PrimaryOrgRequest[primaryOrg=admin]]
+2025-11-04 00:26:43.299 [http-nio-8081-exec-2] DEBUG com.yizhaoqi.smartpai.service.OrgTagCacheService - Cached primary organization for user: admin
+2025-11-04 00:26:43.300 [http-nio-8081-exec-2] DEBUG o.s.w.s.m.m.annotation.HttpEntityMethodProcessor - Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
+2025-11-04 00:26:43.300 [http-nio-8081-exec-2] DEBUG o.s.w.s.m.m.annotation.HttpEntityMethodProcessor - Writing [{code=200, message=Primary organization set successfully}]
+2025-11-04 00:26:43.301 [http-nio-8081-exec-2] DEBUG org.springframework.web.servlet.DispatcherServlet - Completed 200 OK
+2025-11-04 00:26:43.315 [http-nio-8081-exec-3] DEBUG org.springframework.security.web.FilterChainProxy - Securing GET /api/v1/users/org-tags
+2025-11-04 00:26:43.320 [http-nio-8081-exec-3] DEBUG org.springframework.security.web.FilterChainProxy - Secured GET /api/v1/users/org-tags
+2025-11-04 00:26:43.321 [http-nio-8081-exec-3] DEBUG org.springframework.web.servlet.DispatcherServlet - GET "/api/v1/users/org-tags", parameters={}
+2025-11-04 00:26:43.321 [http-nio-8081-exec-3] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.yizhaoqi.smartpai.controller.UserController#getUserOrgTags(String)
+2025-11-04 00:26:43.339 [http-nio-8081-exec-3] DEBUG o.s.w.s.m.m.annotation.HttpEntityMethodProcessor - Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
+2025-11-04 00:26:43.339 [http-nio-8081-exec-3] DEBUG o.s.w.s.m.m.annotation.HttpEntityMethodProcessor - Writing [{code=200, data={primaryOrg=admin, orgTags=[default, admin], orgTagDetails=[{tagId=default, name=默认组 (truncated)...]
+2025-11-04 00:26:43.341 [http-nio-8081-exec-3] DEBUG org.springframework.web.servlet.DispatcherServlet - Completed 200 OK
+2025-11-04 00:27:12.265 [http-nio-8081-exec-6] DEBUG org.springframework.security.web.FilterChainProxy - Securing PUT /api/v1/users/primary-org
+2025-11-04 00:27:12.290 [http-nio-8081-exec-6] DEBUG org.springframework.security.web.FilterChainProxy - Secured PUT /api/v1/users/primary-org
+2025-11-04 00:27:12.290 [http-nio-8081-exec-6] DEBUG org.springframework.web.servlet.DispatcherServlet - PUT "/api/v1/users/primary-org", parameters={}
+2025-11-04 00:27:12.291 [http-nio-8081-exec-6] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.yizhaoqi.smartpai.controller.UserController#setPrimaryOrg(String, PrimaryOrgRequest)
+2025-11-04 00:27:12.293 [http-nio-8081-exec-6] DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Read "application/json;charset=UTF-8" to [PrimaryOrgRequest[primaryOrg=default]]
+2025-11-04 00:27:12.300 [http-nio-8081-exec-6] DEBUG com.yizhaoqi.smartpai.service.OrgTagCacheService - Cached primary organization for user: admin
+2025-11-04 00:27:12.300 [http-nio-8081-exec-6] DEBUG o.s.w.s.m.m.annotation.HttpEntityMethodProcessor - Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
+2025-11-04 00:27:12.301 [http-nio-8081-exec-6] DEBUG o.s.w.s.m.m.annotation.HttpEntityMethodProcessor - Writing [{code=200, message=Primary organization set successfully}]
+2025-11-04 00:27:12.301 [http-nio-8081-exec-6] DEBUG org.springframework.web.servlet.DispatcherServlet - Completed 200 OK
+2025-11-04 00:27:12.314 [http-nio-8081-exec-4] DEBUG org.springframework.security.web.FilterChainProxy - Securing GET /api/v1/users/org-tags
+2025-11-04 00:27:12.318 [http-nio-8081-exec-4] DEBUG org.springframework.security.web.FilterChainProxy - Secured GET /api/v1/users/org-tags
+2025-11-04 00:27:12.318 [http-nio-8081-exec-4] DEBUG org.springframework.web.servlet.DispatcherServlet - GET "/api/v1/users/org-tags", parameters={}
+2025-11-04 00:27:12.319 [http-nio-8081-exec-4] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.yizhaoqi.smartpai.controller.UserController#getUserOrgTags(String)
+2025-11-04 00:27:12.331 [http-nio-8081-exec-4] DEBUG o.s.w.s.m.m.annotation.HttpEntityMethodProcessor - Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
+2025-11-04 00:27:12.331 [http-nio-8081-exec-4] DEBUG o.s.w.s.m.m.annotation.HttpEntityMethodProcessor - Writing [{code=200, data={primaryOrg=default, orgTags=[default, admin], orgTagDetails=[{tagId=default, name=默 (truncated)...]
+2025-11-04 00:27:12.332 [http-nio-8081-exec-4] DEBUG org.springframework.web.servlet.DispatcherServlet - Completed 200 OK
+2025-11-04 00:30:18.512 [http-nio-8081-exec-7] DEBUG org.springframework.security.web.FilterChainProxy - Securing PUT /api/v1/users/primary-org
+2025-11-04 00:30:18.542 [http-nio-8081-exec-7] DEBUG org.springframework.security.web.FilterChainProxy - Secured PUT /api/v1/users/primary-org
+2025-11-04 00:30:18.542 [http-nio-8081-exec-7] DEBUG org.springframework.web.servlet.DispatcherServlet - PUT "/api/v1/users/primary-org", parameters={}
+2025-11-04 00:30:18.543 [http-nio-8081-exec-7] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.yizhaoqi.smartpai.controller.UserController#setPrimaryOrg(String, PrimaryOrgRequest)
+2025-11-04 00:30:18.547 [http-nio-8081-exec-7] DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Read "application/json;charset=UTF-8" to [PrimaryOrgRequest[primaryOrg=admin]]
+2025-11-04 00:30:18.574 [http-nio-8081-exec-7] DEBUG com.yizhaoqi.smartpai.service.OrgTagCacheService - Cached primary organization for user: admin
+2025-11-04 00:30:18.575 [http-nio-8081-exec-7] DEBUG o.s.w.s.m.m.annotation.HttpEntityMethodProcessor - Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
+2025-11-04 00:30:18.576 [http-nio-8081-exec-7] DEBUG o.s.w.s.m.m.annotation.HttpEntityMethodProcessor - Writing [{code=200, message=Primary organization set successfully}]
+2025-11-04 00:30:18.577 [http-nio-8081-exec-7] DEBUG org.springframework.web.servlet.DispatcherServlet - Completed 200 OK
+2025-11-04 00:30:18.624 [http-nio-8081-exec-5] DEBUG org.springframework.security.web.FilterChainProxy - Securing GET /api/v1/users/org-tags
+2025-11-04 00:30:18.634 [http-nio-8081-exec-5] DEBUG org.springframework.security.web.FilterChainProxy - Secured GET /api/v1/users/org-tags
+2025-11-04 00:30:18.635 [http-nio-8081-exec-5] DEBUG org.springframework.web.servlet.DispatcherServlet - GET "/api/v1/users/org-tags", parameters={}
+2025-11-04 00:30:18.635 [http-nio-8081-exec-5] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.yizhaoqi.smartpai.controller.UserController#getUserOrgTags(String)
+2025-11-04 00:30:18.642 [http-nio-8081-exec-5] DEBUG o.s.w.s.m.m.annotation.HttpEntityMethodProcessor - Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
+2025-11-04 00:30:18.642 [http-nio-8081-exec-5] DEBUG o.s.w.s.m.m.annotation.HttpEntityMethodProcessor - Writing [{code=200, data={primaryOrg=admin, orgTags=[default, admin], orgTagDetails=[{tagId=default, name=默认组 (truncated)...]
+2025-11-04 00:30:18.643 [http-nio-8081-exec-5] DEBUG org.springframework.web.servlet.DispatcherServlet - Completed 200 OK
+2025-11-04 00:45:45.913 [http-nio-8081-exec-10] DEBUG org.springframework.security.web.FilterChainProxy - Securing POST /api/v1/users/logout
+2025-11-04 00:45:45.963 [http-nio-8081-exec-10] DEBUG org.springframework.security.web.FilterChainProxy - Secured POST /api/v1/users/logout
+2025-11-04 00:45:45.963 [http-nio-8081-exec-10] DEBUG org.springframework.web.servlet.DispatcherServlet - POST "/api/v1/users/logout", parameters={}
+2025-11-04 00:45:45.963 [http-nio-8081-exec-10] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.yizhaoqi.smartpai.controller.UserController#logout(String)
+2025-11-04 00:45:45.971 [http-nio-8081-exec-10] DEBUG com.yizhaoqi.smartpai.service.TokenCacheService - Token blacklisted: 2991f4769cfd4f58a8fb5c7d478e4913
+2025-11-04 00:45:45.975 [http-nio-8081-exec-10] DEBUG com.yizhaoqi.smartpai.service.TokenCacheService - Token removed from cache: 2991f4769cfd4f58a8fb5c7d478e4913
+2025-11-04 00:45:45.975 [http-nio-8081-exec-10] INFO  com.yizhaoqi.smartpai.utils.JwtUtils - Token invalidated: 2991f4769cfd4f58a8fb5c7d478e4913
+2025-11-04 00:45:45.978 [http-nio-8081-exec-10] DEBUG o.s.w.s.m.m.annotation.HttpEntityMethodProcessor - Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
+2025-11-04 00:45:45.979 [http-nio-8081-exec-10] DEBUG o.s.w.s.m.m.annotation.HttpEntityMethodProcessor - Writing [{code=200, message=Logout successful}]
+2025-11-04 00:45:45.984 [http-nio-8081-exec-10] DEBUG org.springframework.web.servlet.DispatcherServlet - Completed 200 OK
+2025-11-04 00:46:02.930 [http-nio-8081-exec-8] DEBUG org.springframework.security.web.FilterChainProxy - Securing POST /api/v1/users/login
+2025-11-04 00:46:02.935 [http-nio-8081-exec-8] DEBUG o.s.s.w.a.AnonymousAuthenticationFilter - Set SecurityContextHolder to anonymous SecurityContext
+2025-11-04 00:46:02.936 [http-nio-8081-exec-8] DEBUG o.s.security.web.session.SessionManagementFilter - Request requested invalid session id 3CF50EC045F0BCE188C8B6C21DC7B641
+2025-11-04 00:46:02.937 [http-nio-8081-exec-8] DEBUG org.springframework.security.web.FilterChainProxy - Secured POST /api/v1/users/login
+2025-11-04 00:46:02.937 [http-nio-8081-exec-8] DEBUG org.springframework.web.servlet.DispatcherServlet - POST "/api/v1/users/login", parameters={}
+2025-11-04 00:46:02.937 [http-nio-8081-exec-8] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.yizhaoqi.smartpai.controller.UserController#login(UserRequest)
+2025-11-04 00:46:02.941 [http-nio-8081-exec-8] DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Read "application/json;charset=UTF-8" to [UserRequest[username=admin, password=admin123]]
+2025-11-04 00:46:03.057 [http-nio-8081-exec-8] DEBUG com.yizhaoqi.smartpai.service.TokenCacheService - Token cached: 80aa90fbd3824c98bc9488f6902a7c02 for user: admin
+2025-11-04 00:46:03.057 [http-nio-8081-exec-8] INFO  com.yizhaoqi.smartpai.utils.JwtUtils - Token generated and cached for user: admin, tokenId: 80aa90fbd3824c98bc9488f6902a7c02
+2025-11-04 00:46:03.059 [http-nio-8081-exec-8] DEBUG com.yizhaoqi.smartpai.service.TokenCacheService - Refresh token cached: 8ff84ba7b8e24f94aaeebfe262a401a0 for user: 1
+2025-11-04 00:46:03.059 [http-nio-8081-exec-8] INFO  com.yizhaoqi.smartpai.utils.JwtUtils - Refresh token generated and cached for user: admin, refreshTokenId: 8ff84ba7b8e24f94aaeebfe262a401a0
+2025-11-04 00:46:03.062 [http-nio-8081-exec-8] DEBUG o.s.w.s.m.m.annotation.HttpEntityMethodProcessor - Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
+2025-11-04 00:46:03.062 [http-nio-8081-exec-8] DEBUG o.s.w.s.m.m.annotation.HttpEntityMethodProcessor - Writing [{code=200, data={refreshToken=eyJhbGciOiJIUzI1NiJ9.eyJyZWZyZXNoVG9rZW5JZCI6IjhmZjg0YmE3YjhlMjRmOTRhY (truncated)...]
+2025-11-04 00:46:03.062 [http-nio-8081-exec-8] DEBUG org.springframework.web.servlet.DispatcherServlet - Completed 200 OK
+2025-11-04 00:46:03.080 [http-nio-8081-exec-1] DEBUG org.springframework.security.web.FilterChainProxy - Securing GET /api/v1/users/me
+2025-11-04 00:46:03.088 [http-nio-8081-exec-1] DEBUG org.springframework.security.web.FilterChainProxy - Secured GET /api/v1/users/me
+2025-11-04 00:46:03.088 [http-nio-8081-exec-1] DEBUG org.springframework.web.servlet.DispatcherServlet - GET "/api/v1/users/me", parameters={}
+2025-11-04 00:46:03.088 [http-nio-8081-exec-1] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.yizhaoqi.smartpai.controller.UserController#getCurrentUser(String)
+2025-11-04 00:46:03.090 [http-nio-8081-exec-1] DEBUG o.s.w.s.m.m.annotation.HttpEntityMethodProcessor - Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
+2025-11-04 00:46:03.090 [http-nio-8081-exec-1] DEBUG o.s.w.s.m.m.annotation.HttpEntityMethodProcessor - Writing [{code=200, data={id=1, username=admin, role=ADMIN, orgTags=[default, admin], primaryOrg=admin, creat (truncated)...]
+2025-11-04 00:46:03.091 [http-nio-8081-exec-1] DEBUG org.springframework.web.servlet.DispatcherServlet - Completed 200 OK
+2025-11-04 00:46:03.102 [http-nio-8081-exec-9] DEBUG org.springframework.security.web.FilterChainProxy - Securing GET /api/v1/users/me
+2025-11-04 00:46:03.109 [http-nio-8081-exec-9] DEBUG org.springframework.security.web.FilterChainProxy - Secured GET /api/v1/users/me
+2025-11-04 00:46:03.109 [http-nio-8081-exec-9] DEBUG org.springframework.web.servlet.DispatcherServlet - GET "/api/v1/users/me", parameters={}
+2025-11-04 00:46:03.110 [http-nio-8081-exec-9] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.yizhaoqi.smartpai.controller.UserController#getCurrentUser(String)
+2025-11-04 00:46:03.119 [http-nio-8081-exec-9] DEBUG o.s.w.s.m.m.annotation.HttpEntityMethodProcessor - Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
+2025-11-04 00:46:03.119 [http-nio-8081-exec-9] DEBUG o.s.w.s.m.m.annotation.HttpEntityMethodProcessor - Writing [{code=200, data={id=1, username=admin, role=ADMIN, orgTags=[default, admin], primaryOrg=admin, creat (truncated)...]
+2025-11-04 00:46:03.127 [http-nio-8081-exec-9] DEBUG org.springframework.web.servlet.DispatcherServlet - Completed 200 OK
+2025-11-04 00:46:03.151 [http-nio-8081-exec-2] DEBUG org.springframework.security.web.FilterChainProxy - Securing GET /api/v1/users/org-tags
+2025-11-04 00:46:03.156 [http-nio-8081-exec-2] DEBUG org.springframework.security.web.FilterChainProxy - Secured GET /api/v1/users/org-tags
+2025-11-04 00:46:03.156 [http-nio-8081-exec-2] DEBUG org.springframework.web.servlet.DispatcherServlet - GET "/api/v1/users/org-tags", parameters={}
+2025-11-04 00:46:03.157 [http-nio-8081-exec-2] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.yizhaoqi.smartpai.controller.UserController#getUserOrgTags(String)
+2025-11-04 00:46:03.192 [http-nio-8081-exec-2] DEBUG o.s.w.s.m.m.annotation.HttpEntityMethodProcessor - Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
+2025-11-04 00:46:03.192 [http-nio-8081-exec-2] DEBUG o.s.w.s.m.m.annotation.HttpEntityMethodProcessor - Writing [{code=200, data={primaryOrg=admin, orgTags=[default, admin], orgTagDetails=[{tagId=default, name=默认组 (truncated)...]
+2025-11-04 00:46:03.193 [http-nio-8081-exec-2] DEBUG org.springframework.web.servlet.DispatcherServlet - Completed 200 OK
+2025-11-04 00:51:24.622 [SpringApplicationShutdownHook] INFO  o.s.boot.web.embedded.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2025-11-04 00:51:26.643 [tomcat-shutdown] INFO  o.s.boot.web.embedded.tomcat.GracefulShutdown - Graceful shutdown complete
+2025-11-04 00:51:28.788 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2025-11-04 00:51:28.790 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2025-11-04 00:51:28.795 [SpringApplicationShutdownHook] DEBUG o.s.w.s.handler.LoggingWebSocketHandlerDecorator - Transport error in StandardWebSocketSession[id=add1a313-6032-64c6-4d9e-03cc8b4754ae, uri=ws://localhost:8081/chat/eyJhbGciOiJIUzI1NiJ9.eyJwcmltYXJ5T3JnIjoiZGVmYXVsdCIsIm9yZ1RhZ3MiOiJkZWZhdWx0LGFkbWluIiwicm9sZSI6IkFETUlOIiwidG9rZW5JZCI6IjI5OTFmNDc2OWNmZDRmNThhOGZiNWM3ZDQ3OGU0OTEzIiwidXNlcklkIjoiMSIsInN1YiI6ImFkbWluIiwiZXhwIjoxNzYyMTkwMDE5fQ.ZPcmaN6jdwXtCEiKo_O0Uaxug58AfxZHKcQmGpe-oLM]
+java.io.IOException: java.nio.channels.ClosedChannelException
+	at org.apache.tomcat.websocket.WsRemoteEndpointImplBase.sendMessageBlockInternal(WsRemoteEndpointImplBase.java:326)
+	at org.apache.tomcat.websocket.WsRemoteEndpointImplBase.sendMessageBlock(WsRemoteEndpointImplBase.java:266)
+	at org.apache.tomcat.websocket.WsSession.sendCloseMessage(WsSession.java:792)
+	at org.apache.tomcat.websocket.WsSession.doClose(WsSession.java:589)
+	at org.apache.tomcat.websocket.WsSession.doClose(WsSession.java:556)
+	at org.apache.tomcat.websocket.WsSession.close(WsSession.java:544)
+	at org.apache.tomcat.websocket.WsWebSocketContainer.destroy(WsWebSocketContainer.java:1024)
+	at org.apache.tomcat.websocket.server.WsContextListener.contextDestroyed(WsContextListener.java:46)
+	at org.apache.catalina.core.StandardContext.listenerStop(StandardContext.java:4052)
+	at org.apache.catalina.core.StandardContext.stopInternal(StandardContext.java:4662)
+	at org.apache.catalina.util.LifecycleBase.stop(LifecycleBase.java:235)
+	at org.apache.catalina.core.ContainerBase$StopChild.call(ContainerBase.java:1219)
+	at org.apache.catalina.core.ContainerBase$StopChild.call(ContainerBase.java:1208)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at org.apache.tomcat.util.threads.InlineExecutorService.execute(InlineExecutorService.java:75)
+	at java.base/java.util.concurrent.AbstractExecutorService.submit(AbstractExecutorService.java:145)
+	at org.apache.catalina.core.ContainerBase.stopInternal(ContainerBase.java:814)
+	at org.apache.catalina.util.LifecycleBase.stop(LifecycleBase.java:235)
+	at org.apache.catalina.core.ContainerBase$StopChild.call(ContainerBase.java:1219)
+	at org.apache.catalina.core.ContainerBase$StopChild.call(ContainerBase.java:1208)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at org.apache.tomcat.util.threads.InlineExecutorService.execute(InlineExecutorService.java:75)
+	at java.base/java.util.concurrent.AbstractExecutorService.submit(AbstractExecutorService.java:145)
+	at org.apache.catalina.core.ContainerBase.stopInternal(ContainerBase.java:814)
+	at org.apache.catalina.util.LifecycleBase.stop(LifecycleBase.java:235)
+	at org.apache.catalina.core.StandardService.stopInternal(StandardService.java:471)
+	at org.apache.catalina.util.LifecycleBase.stop(LifecycleBase.java:235)
+	at org.apache.catalina.core.StandardServer.stopInternal(StandardServer.java:915)
+	at org.apache.catalina.util.LifecycleBase.stop(LifecycleBase.java:235)
+	at org.apache.catalina.startup.Tomcat.stop(Tomcat.java:447)
+	at org.springframework.boot.web.embedded.tomcat.TomcatWebServer.stopTomcat(TomcatWebServer.java:301)
+	at org.springframework.boot.web.embedded.tomcat.TomcatWebServer.destroy(TomcatWebServer.java:374)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.doClose(ServletWebServerApplicationContext.java:177)
+	at org.springframework.context.support.AbstractApplicationContext.close(AbstractApplicationContext.java:1126)
+	at org.springframework.boot.SpringApplicationShutdownHook.closeAndWait(SpringApplicationShutdownHook.java:147)
+	at java.base/java.lang.Iterable.forEach(Iterable.java:75)
+	at org.springframework.boot.SpringApplicationShutdownHook.run(SpringApplicationShutdownHook.java:116)
+	at java.base/java.lang.Thread.run(Thread.java:842)
+Caused by: java.nio.channels.ClosedChannelException: null
+	at org.apache.tomcat.util.net.NioChannel$1.write(NioChannel.java:273)
+	at org.apache.tomcat.util.net.NioEndpoint$NioSocketWrapper$NioOperationState.run(NioEndpoint.java:1632)
+	at org.apache.tomcat.util.net.SocketWrapperBase$OperationState.start(SocketWrapperBase.java:1051)
+	at org.apache.tomcat.util.net.SocketWrapperBase.vectoredOperation(SocketWrapperBase.java:1440)
+	at org.apache.tomcat.util.net.SocketWrapperBase.write(SocketWrapperBase.java:1366)
+	at org.apache.tomcat.util.net.SocketWrapperBase.write(SocketWrapperBase.java:1337)
+	at org.apache.tomcat.websocket.server.WsRemoteEndpointImplServer.doWrite(WsRemoteEndpointImplServer.java:171)
+	at org.apache.tomcat.websocket.WsRemoteEndpointImplBase.writeMessagePart(WsRemoteEndpointImplBase.java:521)
+	at org.apache.tomcat.websocket.WsRemoteEndpointImplBase.sendMessageBlockInternal(WsRemoteEndpointImplBase.java:313)
+	... 37 common frames omitted
+2025-11-04 00:51:28.806 [SpringApplicationShutdownHook] DEBUG o.s.w.s.handler.LoggingWebSocketHandlerDecorator - StandardWebSocketSession[id=add1a313-6032-64c6-4d9e-03cc8b4754ae, uri=ws://localhost:8081/chat/eyJhbGciOiJIUzI1NiJ9.eyJwcmltYXJ5T3JnIjoiZGVmYXVsdCIsIm9yZ1RhZ3MiOiJkZWZhdWx0LGFkbWluIiwicm9sZSI6IkFETUlOIiwidG9rZW5JZCI6IjI5OTFmNDc2OWNmZDRmNThhOGZiNWM3ZDQ3OGU0OTEzIiwidXNlcklkIjoiMSIsInN1YiI6ImFkbWluIiwiZXhwIjoxNzYyMTkwMDE5fQ.ZPcmaN6jdwXtCEiKo_O0Uaxug58AfxZHKcQmGpe-oLM] closed with CloseStatus[code=1001, reason=The web application is stopping]
+2025-11-04 00:51:28.808 [SpringApplicationShutdownHook] INFO  c.yizhaoqi.smartpai.handler.ChatWebSocketHandler - WebSocket连接已关闭，用户ID: admin，会话ID: add1a313-6032-64c6-4d9e-03cc8b4754ae，状态: CloseStatus[code=1001, reason=The web application is stopping]
+2025-11-04 12:07:17.982 [main] INFO  com.yizhaoqi.smartpai.SmartPaiApplication - Starting SmartPaiApplication using Java 17.0.15 with PID 40811 (/Volumes/LQ1000/a/PaiSmart/target/classes started by xustation in /Volumes/LQ1000/a/PaiSmart)
+2025-11-04 12:07:17.989 [main] INFO  com.yizhaoqi.smartpai.SmartPaiApplication - No active profile set, falling back to 1 default profile: "default"
+2025-11-04 12:07:18.936 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port 8081 (http)
+2025-11-04 12:07:18.944 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8081"]
+2025-11-04 12:07:18.945 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2025-11-04 12:07:18.945 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.34]
+2025-11-04 12:07:18.981 [main] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2025-11-04 12:07:18.982 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 973 ms
+2025-11-04 12:07:19.249 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2025-11-04 12:07:19.371 [main] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@759f45f1
+2025-11-04 12:07:19.372 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2025-11-04 12:07:19.417 [main] WARN  org.hibernate.orm.deprecation - HHH90000025: MySQL8Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-11-04 12:07:19.418 [main] WARN  org.hibernate.orm.deprecation - HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
+2025-11-04 12:07:20.150 [main] ERROR i.n.resolver.dns.DnsServerAddressStreamProviders - Unable to load io.netty.resolver.dns.macos.MacOSDnsServerAddressStreamProvider, fallback to system defaults. This may result in incorrect DNS resolutions on MacOS. Check whether you have a dependency on 'io.netty:netty-resolver-dns-native-macos'. Use DEBUG level to see the full stack: java.lang.UnsatisfiedLinkError: failed to load the required native library
+2025-11-04 12:07:21.104 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-11-04 12:07:21.119 [main] INFO  o.s.s.c.a.a.c.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer - Global AuthenticationManager configured with UserDetailsService bean with name customUserDetailsService
+2025-11-04 12:07:21.163 [main] DEBUG o.s.w.s.server.support.WebSocketHandlerMapping - Patterns [/chat/{token}] in 'webSocketHandlerMapping'
+2025-11-04 12:07:21.209 [main] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - 41 mappings in 'requestMappingHandlerMapping'
+2025-11-04 12:07:21.229 [main] DEBUG o.s.web.servlet.handler.SimpleUrlHandlerMapping - Patterns [/webjars/**, /**, /static/**] in 'resourceHandlerMapping'
+2025-11-04 12:07:21.247 [main] INFO  com.yizhaoqi.smartpai.config.SecurityConfig - Security configuration loaded successfully.
+2025-11-04 12:07:21.258 [main] DEBUG o.s.security.web.DefaultSecurityFilterChain - Will secure any request with filters: DisableEncodeUrlFilter, WebAsyncManagerIntegrationFilter, SecurityContextHolderFilter, HeaderWriterFilter, LogoutFilter, JwtAuthenticationFilter, OrgTagAuthorizationFilter, RequestCacheAwareFilter, SecurityContextHolderAwareRequestFilter, AnonymousAuthenticationFilter, SessionManagementFilter, ExceptionTranslationFilter, AuthorizationFilter
+2025-11-04 12:07:21.294 [main] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerAdapter - ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2025-11-04 12:07:21.319 [main] DEBUG o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+2025-11-04 12:07:21.485 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8081"]
+2025-11-04 12:07:21.496 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port 8081 (http) with context path '/'
+2025-11-04 12:07:21.627 [main] INFO  com.yizhaoqi.smartpai.SmartPaiApplication - Started SmartPaiApplication in 3.913 seconds (process running for 4.399)
+2025-11-04 12:07:21.628 [main] INFO  com.yizhaoqi.smartpai.config.AdminUserInitializer - 检查管理员账号是否存在: admin
+2025-11-04 12:07:21.694 [main] INFO  com.yizhaoqi.smartpai.config.AdminUserInitializer - 管理员账号 'admin' 已存在，跳过创建步骤
+2025-11-04 12:07:21.696 [main] INFO  com.yizhaoqi.smartpai.config.OrgTagInitializer - 检查组织标签是否存在: default
+2025-11-04 12:07:21.702 [main] INFO  com.yizhaoqi.smartpai.config.OrgTagInitializer - 组织标签 'default' 已存在，跳过创建步骤
+2025-11-04 12:07:21.702 [main] INFO  com.yizhaoqi.smartpai.config.OrgTagInitializer - 检查组织标签是否存在: admin
+2025-11-04 12:07:21.703 [main] INFO  com.yizhaoqi.smartpai.config.OrgTagInitializer - 组织标签 'admin' 已存在，跳过创建步骤
+2025-11-04 12:07:21.703 [main] INFO  com.yizhaoqi.smartpai.config.OrgTagInitializer - 组织标签初始化完成
+2025-11-04 12:07:22.130 [main] INFO  com.yizhaoqi.smartpai.config.EsIndexInitializer - 索引 'knowledge_base' 已存在
+2025-11-04 12:07:27.399 [http-nio-8081-exec-1] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-11-04 12:07:27.402 [http-nio-8081-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2025-11-04 12:07:27.402 [http-nio-8081-exec-1] DEBUG org.springframework.web.servlet.DispatcherServlet - Detected StandardServletMultipartResolver
+2025-11-04 12:07:27.402 [http-nio-8081-exec-1] DEBUG org.springframework.web.servlet.DispatcherServlet - Detected AcceptHeaderLocaleResolver
+2025-11-04 12:07:27.402 [http-nio-8081-exec-1] DEBUG org.springframework.web.servlet.DispatcherServlet - Detected FixedThemeResolver
+2025-11-04 12:07:27.403 [http-nio-8081-exec-1] DEBUG org.springframework.web.servlet.DispatcherServlet - Detected org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@3d02debf
+2025-11-04 12:07:27.404 [http-nio-8081-exec-1] DEBUG org.springframework.web.servlet.DispatcherServlet - Detected org.springframework.web.servlet.support.SessionFlashMapManager@3a6b8805
+2025-11-04 12:07:27.404 [http-nio-8081-exec-1] DEBUG org.springframework.web.servlet.DispatcherServlet - enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+2025-11-04 12:07:27.404 [http-nio-8081-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 2 ms
+2025-11-04 12:07:27.416 [http-nio-8081-exec-1] DEBUG org.springframework.security.web.FilterChainProxy - Securing POST /api/v1/users/login
+2025-11-04 12:07:27.422 [http-nio-8081-exec-1] DEBUG o.s.s.w.a.AnonymousAuthenticationFilter - Set SecurityContextHolder to anonymous SecurityContext
+2025-11-04 12:07:27.422 [http-nio-8081-exec-1] DEBUG o.s.security.web.session.SessionManagementFilter - Request requested invalid session id 3CF50EC045F0BCE188C8B6C21DC7B641
+2025-11-04 12:07:27.423 [http-nio-8081-exec-1] DEBUG org.springframework.security.web.FilterChainProxy - Secured POST /api/v1/users/login
+2025-11-04 12:07:27.424 [http-nio-8081-exec-1] DEBUG org.springframework.web.servlet.DispatcherServlet - POST "/api/v1/users/login", parameters={}
+2025-11-04 12:07:27.426 [http-nio-8081-exec-1] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.yizhaoqi.smartpai.controller.UserController#login(UserRequest)
+2025-11-04 12:07:27.491 [http-nio-8081-exec-1] DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Read "application/json;charset=UTF-8" to [UserRequest[username=admin, password=admin123]]
+2025-11-04 12:07:27.874 [http-nio-8081-exec-1] DEBUG com.yizhaoqi.smartpai.service.TokenCacheService - Token cached: 4e10d05ba54d429f9c77f8db357623a2 for user: admin
+2025-11-04 12:07:27.874 [http-nio-8081-exec-1] INFO  com.yizhaoqi.smartpai.utils.JwtUtils - Token generated and cached for user: admin, tokenId: 4e10d05ba54d429f9c77f8db357623a2
+2025-11-04 12:07:27.878 [http-nio-8081-exec-1] DEBUG com.yizhaoqi.smartpai.service.TokenCacheService - Refresh token cached: 46a3f4aee86842ab8c42228cef7c9ff3 for user: 1
+2025-11-04 12:07:27.879 [http-nio-8081-exec-1] INFO  com.yizhaoqi.smartpai.utils.JwtUtils - Refresh token generated and cached for user: admin, refreshTokenId: 46a3f4aee86842ab8c42228cef7c9ff3
+2025-11-04 12:07:27.888 [http-nio-8081-exec-1] DEBUG o.s.w.s.m.m.annotation.HttpEntityMethodProcessor - Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
+2025-11-04 12:07:27.888 [http-nio-8081-exec-1] DEBUG o.s.w.s.m.m.annotation.HttpEntityMethodProcessor - Writing [{code=200, message=Login successful, data={refreshToken=eyJhbGciOiJIUzI1NiJ9.eyJyZWZyZXNoVG9rZW5JZCI (truncated)...]
+2025-11-04 12:07:27.895 [http-nio-8081-exec-1] DEBUG org.springframework.web.servlet.DispatcherServlet - Completed 200 OK
+2025-11-04 12:07:27.918 [http-nio-8081-exec-2] DEBUG org.springframework.security.web.FilterChainProxy - Securing GET /api/v1/users/me
+2025-11-04 12:07:27.955 [http-nio-8081-exec-2] DEBUG org.springframework.security.web.FilterChainProxy - Secured GET /api/v1/users/me
+2025-11-04 12:07:27.955 [http-nio-8081-exec-2] DEBUG org.springframework.web.servlet.DispatcherServlet - GET "/api/v1/users/me", parameters={}
+2025-11-04 12:07:27.956 [http-nio-8081-exec-2] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.yizhaoqi.smartpai.controller.UserController#getCurrentUser(String)
+2025-11-04 12:07:27.964 [http-nio-8081-exec-2] DEBUG o.s.w.s.m.m.annotation.HttpEntityMethodProcessor - Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
+2025-11-04 12:07:27.964 [http-nio-8081-exec-2] DEBUG o.s.w.s.m.m.annotation.HttpEntityMethodProcessor - Writing [{code=200, message=Get user detail successful, data={id=1, username=admin, role=ADMIN, orgTags=[defa (truncated)...]
+2025-11-04 12:07:27.968 [http-nio-8081-exec-2] DEBUG org.springframework.web.servlet.DispatcherServlet - Completed 200 OK
+2025-11-04 12:07:27.991 [http-nio-8081-exec-3] DEBUG org.springframework.security.web.FilterChainProxy - Securing GET /api/v1/users/me
+2025-11-04 12:07:27.998 [http-nio-8081-exec-3] DEBUG org.springframework.security.web.FilterChainProxy - Secured GET /api/v1/users/me
+2025-11-04 12:07:27.998 [http-nio-8081-exec-3] DEBUG org.springframework.web.servlet.DispatcherServlet - GET "/api/v1/users/me", parameters={}
+2025-11-04 12:07:27.998 [http-nio-8081-exec-3] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.yizhaoqi.smartpai.controller.UserController#getCurrentUser(String)
+2025-11-04 12:07:28.005 [http-nio-8081-exec-3] DEBUG o.s.w.s.m.m.annotation.HttpEntityMethodProcessor - Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
+2025-11-04 12:07:28.005 [http-nio-8081-exec-3] DEBUG o.s.w.s.m.m.annotation.HttpEntityMethodProcessor - Writing [{code=200, message=Get user detail successful, data={id=1, username=admin, role=ADMIN, orgTags=[defa (truncated)...]
+2025-11-04 12:07:28.007 [http-nio-8081-exec-3] DEBUG org.springframework.web.servlet.DispatcherServlet - Completed 200 OK
+2025-11-04 12:07:28.146 [http-nio-8081-exec-4] DEBUG org.springframework.security.web.FilterChainProxy - Securing GET /chat/eyJhbGciOiJIUzI1NiJ9.eyJwcmltYXJ5T3JnIjoiYWRtaW4iLCJvcmdUYWdzIjoiZGVmYXVsdCxhZG1pbiIsInJvbGUiOiJBRE1JTiIsInRva2VuSWQiOiI0ZTEwZDA1YmE1NGQ0MjlmOWM3N2Y4ZGIzNTc2MjNhMiIsInVzZXJJZCI6IjEiLCJzdWIiOiJhZG1pbiIsImV4cCI6MTc2MjIzMjg0N30.tVgqywIqhYgFJaVfuFP66VfHWJCjWlv8v03CbOgA39E
+2025-11-04 12:07:28.146 [http-nio-8081-exec-4] DEBUG o.s.s.w.a.AnonymousAuthenticationFilter - Set SecurityContextHolder to anonymous SecurityContext
+2025-11-04 12:07:28.146 [http-nio-8081-exec-4] DEBUG o.s.security.web.session.SessionManagementFilter - Request requested invalid session id 3CF50EC045F0BCE188C8B6C21DC7B641
+2025-11-04 12:07:28.147 [http-nio-8081-exec-4] DEBUG org.springframework.security.web.FilterChainProxy - Secured GET /chat/eyJhbGciOiJIUzI1NiJ9.eyJwcmltYXJ5T3JnIjoiYWRtaW4iLCJvcmdUYWdzIjoiZGVmYXVsdCxhZG1pbiIsInJvbGUiOiJBRE1JTiIsInRva2VuSWQiOiI0ZTEwZDA1YmE1NGQ0MjlmOWM3N2Y4ZGIzNTc2MjNhMiIsInVzZXJJZCI6IjEiLCJzdWIiOiJhZG1pbiIsImV4cCI6MTc2MjIzMjg0N30.tVgqywIqhYgFJaVfuFP66VfHWJCjWlv8v03CbOgA39E
+2025-11-04 12:07:28.148 [http-nio-8081-exec-4] DEBUG org.springframework.web.servlet.DispatcherServlet - GET "/chat/eyJhbGciOiJIUzI1NiJ9.eyJwcmltYXJ5T3JnIjoiYWRtaW4iLCJvcmdUYWdzIjoiZGVmYXVsdCxhZG1pbiIsInJvbGUiOiJBRE1JTiIsInRva2VuSWQiOiI0ZTEwZDA1YmE1NGQ0MjlmOWM3N2Y4ZGIzNTc2MjNhMiIsInVzZXJJZCI6IjEiLCJzdWIiOiJhZG1pbiIsImV4cCI6MTc2MjIzMjg0N30.tVgqywIqhYgFJaVfuFP66VfHWJCjWlv8v03CbOgA39E", parameters={}
+2025-11-04 12:07:28.149 [http-nio-8081-exec-4] DEBUG o.s.w.s.server.support.WebSocketHandlerMapping - Mapped to org.springframework.web.socket.server.support.WebSocketHttpRequestHandler@4f3b5c60
+2025-11-04 12:07:28.152 [http-nio-8081-exec-4] DEBUG o.s.w.s.server.support.WebSocketHttpRequestHandler - GET /chat/eyJhbGciOiJIUzI1NiJ9.eyJwcmltYXJ5T3JnIjoiYWRtaW4iLCJvcmdUYWdzIjoiZGVmYXVsdCxhZG1pbiIsInJvbGUiOiJBRE1JTiIsInRva2VuSWQiOiI0ZTEwZDA1YmE1NGQ0MjlmOWM3N2Y4ZGIzNTc2MjNhMiIsInVzZXJJZCI6IjEiLCJzdWIiOiJhZG1pbiIsImV4cCI6MTc2MjIzMjg0N30.tVgqywIqhYgFJaVfuFP66VfHWJCjWlv8v03CbOgA39E
+2025-11-04 12:07:28.258 [http-nio-8081-exec-5] DEBUG org.springframework.security.web.FilterChainProxy - Securing GET /api/v1/users/conversation?start_date=2025-10-28&end_date=2025-11-05
+2025-11-04 12:07:28.267 [http-nio-8081-exec-4] DEBUG org.springframework.web.servlet.DispatcherServlet - Completed 101 SWITCHING_PROTOCOLS
+2025-11-04 12:07:28.283 [http-nio-8081-exec-5] DEBUG org.springframework.security.web.FilterChainProxy - Secured GET /api/v1/users/conversation?start_date=2025-10-28&end_date=2025-11-05
+2025-11-04 12:07:28.285 [http-nio-8081-exec-5] DEBUG org.springframework.web.servlet.DispatcherServlet - GET "/api/v1/users/conversation?start_date=2025-10-28&end_date=2025-11-05", parameters={masked}
+2025-11-04 12:07:28.286 [http-nio-8081-exec-5] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.yizhaoqi.smartpai.controller.ConversationController#getConversations(String, String, String)
+2025-11-04 12:07:28.288 [http-nio-8081-exec-4] DEBUG o.s.w.s.handler.LoggingWebSocketHandlerDecorator - New StandardWebSocketSession[id=5eec0fa5-10a1-1907-7e55-cb3e938f8e72, uri=ws://localhost:8081/chat/eyJhbGciOiJIUzI1NiJ9.eyJwcmltYXJ5T3JnIjoiYWRtaW4iLCJvcmdUYWdzIjoiZGVmYXVsdCxhZG1pbiIsInJvbGUiOiJBRE1JTiIsInRva2VuSWQiOiI0ZTEwZDA1YmE1NGQ0MjlmOWM3N2Y4ZGIzNTc2MjNhMiIsInVzZXJJZCI6IjEiLCJzdWIiOiJhZG1pbiIsImV4cCI6MTc2MjIzMjg0N30.tVgqywIqhYgFJaVfuFP66VfHWJCjWlv8v03CbOgA39E]
+2025-11-04 12:07:28.291 [http-nio-8081-exec-4] INFO  c.yizhaoqi.smartpai.handler.ChatWebSocketHandler - WebSocket连接已建立，用户ID: admin，会话ID: 5eec0fa5-10a1-1907-7e55-cb3e938f8e72，URI路径: /chat/eyJhbGciOiJIUzI1NiJ9.eyJwcmltYXJ5T3JnIjoiYWRtaW4iLCJvcmdUYWdzIjoiZGVmYXVsdCxhZG1pbiIsInJvbGUiOiJBRE1JTiIsInRva2VuSWQiOiI0ZTEwZDA1YmE1NGQ0MjlmOWM3N2Y4ZGIzNTc2MjNhMiIsInVzZXJJZCI6IjEiLCJzdWIiOiJhZG1pbiIsImV4cCI6MTc2MjIzMjg0N30.tVgqywIqhYgFJaVfuFP66VfHWJCjWlv8v03CbOgA39E
+2025-11-04 12:07:28.362 [http-nio-8081-exec-5] DEBUG o.s.w.s.m.m.annotation.HttpEntityMethodProcessor - Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
+2025-11-04 12:07:28.362 [http-nio-8081-exec-5] DEBUG o.s.w.s.m.m.annotation.HttpEntityMethodProcessor - Writing [{code=200, data=[{role=user, content=天上人间, timestamp=2025-11-03T20:21:58}, {role=assistant, content= (truncated)...]
+2025-11-04 12:07:28.364 [http-nio-8081-exec-5] DEBUG org.springframework.web.servlet.DispatcherServlet - Completed 200 OK
+2025-11-04 12:14:21.967 [SpringApplicationShutdownHook] INFO  o.s.boot.web.embedded.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2025-11-04 12:14:21.972 [tomcat-shutdown] INFO  o.s.boot.web.embedded.tomcat.GracefulShutdown - Graceful shutdown complete
+2025-11-04 12:14:22.047 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2025-11-04 12:14:22.056 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2025-11-04 12:14:22.063 [SpringApplicationShutdownHook] DEBUG o.s.w.s.handler.LoggingWebSocketHandlerDecorator - Transport error in StandardWebSocketSession[id=5eec0fa5-10a1-1907-7e55-cb3e938f8e72, uri=ws://localhost:8081/chat/eyJhbGciOiJIUzI1NiJ9.eyJwcmltYXJ5T3JnIjoiYWRtaW4iLCJvcmdUYWdzIjoiZGVmYXVsdCxhZG1pbiIsInJvbGUiOiJBRE1JTiIsInRva2VuSWQiOiI0ZTEwZDA1YmE1NGQ0MjlmOWM3N2Y4ZGIzNTc2MjNhMiIsInVzZXJJZCI6IjEiLCJzdWIiOiJhZG1pbiIsImV4cCI6MTc2MjIzMjg0N30.tVgqywIqhYgFJaVfuFP66VfHWJCjWlv8v03CbOgA39E]
+java.io.IOException: java.nio.channels.ClosedChannelException
+	at org.apache.tomcat.websocket.WsRemoteEndpointImplBase.sendMessageBlockInternal(WsRemoteEndpointImplBase.java:326)
+	at org.apache.tomcat.websocket.WsRemoteEndpointImplBase.sendMessageBlock(WsRemoteEndpointImplBase.java:266)
+	at org.apache.tomcat.websocket.WsSession.sendCloseMessage(WsSession.java:792)
+	at org.apache.tomcat.websocket.WsSession.doClose(WsSession.java:589)
+	at org.apache.tomcat.websocket.WsSession.doClose(WsSession.java:556)
+	at org.apache.tomcat.websocket.WsSession.close(WsSession.java:544)
+	at org.apache.tomcat.websocket.WsWebSocketContainer.destroy(WsWebSocketContainer.java:1024)
+	at org.apache.tomcat.websocket.server.WsContextListener.contextDestroyed(WsContextListener.java:46)
+	at org.apache.catalina.core.StandardContext.listenerStop(StandardContext.java:4052)
+	at org.apache.catalina.core.StandardContext.stopInternal(StandardContext.java:4662)
+	at org.apache.catalina.util.LifecycleBase.stop(LifecycleBase.java:235)
+	at org.apache.catalina.core.ContainerBase$StopChild.call(ContainerBase.java:1219)
+	at org.apache.catalina.core.ContainerBase$StopChild.call(ContainerBase.java:1208)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at org.apache.tomcat.util.threads.InlineExecutorService.execute(InlineExecutorService.java:75)
+	at java.base/java.util.concurrent.AbstractExecutorService.submit(AbstractExecutorService.java:145)
+	at org.apache.catalina.core.ContainerBase.stopInternal(ContainerBase.java:814)
+	at org.apache.catalina.util.LifecycleBase.stop(LifecycleBase.java:235)
+	at org.apache.catalina.core.ContainerBase$StopChild.call(ContainerBase.java:1219)
+	at org.apache.catalina.core.ContainerBase$StopChild.call(ContainerBase.java:1208)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at org.apache.tomcat.util.threads.InlineExecutorService.execute(InlineExecutorService.java:75)
+	at java.base/java.util.concurrent.AbstractExecutorService.submit(AbstractExecutorService.java:145)
+	at org.apache.catalina.core.ContainerBase.stopInternal(ContainerBase.java:814)
+	at org.apache.catalina.util.LifecycleBase.stop(LifecycleBase.java:235)
+	at org.apache.catalina.core.StandardService.stopInternal(StandardService.java:471)
+	at org.apache.catalina.util.LifecycleBase.stop(LifecycleBase.java:235)
+	at org.apache.catalina.core.StandardServer.stopInternal(StandardServer.java:915)
+	at org.apache.catalina.util.LifecycleBase.stop(LifecycleBase.java:235)
+	at org.apache.catalina.startup.Tomcat.stop(Tomcat.java:447)
+	at org.springframework.boot.web.embedded.tomcat.TomcatWebServer.stopTomcat(TomcatWebServer.java:301)
+	at org.springframework.boot.web.embedded.tomcat.TomcatWebServer.destroy(TomcatWebServer.java:374)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.doClose(ServletWebServerApplicationContext.java:177)
+	at org.springframework.context.support.AbstractApplicationContext.close(AbstractApplicationContext.java:1126)
+	at org.springframework.boot.SpringApplicationShutdownHook.closeAndWait(SpringApplicationShutdownHook.java:147)
+	at java.base/java.lang.Iterable.forEach(Iterable.java:75)
+	at org.springframework.boot.SpringApplicationShutdownHook.run(SpringApplicationShutdownHook.java:116)
+	at java.base/java.lang.Thread.run(Thread.java:842)
+Caused by: java.nio.channels.ClosedChannelException: null
+	at org.apache.tomcat.util.net.NioChannel$1.write(NioChannel.java:273)
+	at org.apache.tomcat.util.net.NioEndpoint$NioSocketWrapper$NioOperationState.run(NioEndpoint.java:1632)
+	at org.apache.tomcat.util.net.SocketWrapperBase$OperationState.start(SocketWrapperBase.java:1051)
+	at org.apache.tomcat.util.net.SocketWrapperBase.vectoredOperation(SocketWrapperBase.java:1440)
+	at org.apache.tomcat.util.net.SocketWrapperBase.write(SocketWrapperBase.java:1366)
+	at org.apache.tomcat.util.net.SocketWrapperBase.write(SocketWrapperBase.java:1337)
+	at org.apache.tomcat.websocket.server.WsRemoteEndpointImplServer.doWrite(WsRemoteEndpointImplServer.java:171)
+	at org.apache.tomcat.websocket.WsRemoteEndpointImplBase.writeMessagePart(WsRemoteEndpointImplBase.java:521)
+	at org.apache.tomcat.websocket.WsRemoteEndpointImplBase.sendMessageBlockInternal(WsRemoteEndpointImplBase.java:313)
+	... 37 common frames omitted
+2025-11-04 12:14:22.065 [SpringApplicationShutdownHook] DEBUG o.s.w.s.handler.LoggingWebSocketHandlerDecorator - StandardWebSocketSession[id=5eec0fa5-10a1-1907-7e55-cb3e938f8e72, uri=ws://localhost:8081/chat/eyJhbGciOiJIUzI1NiJ9.eyJwcmltYXJ5T3JnIjoiYWRtaW4iLCJvcmdUYWdzIjoiZGVmYXVsdCxhZG1pbiIsInJvbGUiOiJBRE1JTiIsInRva2VuSWQiOiI0ZTEwZDA1YmE1NGQ0MjlmOWM3N2Y4ZGIzNTc2MjNhMiIsInVzZXJJZCI6IjEiLCJzdWIiOiJhZG1pbiIsImV4cCI6MTc2MjIzMjg0N30.tVgqywIqhYgFJaVfuFP66VfHWJCjWlv8v03CbOgA39E] closed with CloseStatus[code=1001, reason=The web application is stopping]
+2025-11-04 12:14:22.068 [SpringApplicationShutdownHook] INFO  c.yizhaoqi.smartpai.handler.ChatWebSocketHandler - WebSocket连接已关闭，用户ID: admin，会话ID: 5eec0fa5-10a1-1907-7e55-cb3e938f8e72，状态: CloseStatus[code=1001, reason=The web application is stopping]

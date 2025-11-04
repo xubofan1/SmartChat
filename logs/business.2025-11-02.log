@@ -1,0 +1,1365 @@
+2025-11-02 20:11:05.106 [main] INFO  com.yizhaoqi.smartpai.SmartPaiApplication - Starting SmartPaiApplication using Java 17.0.15 with PID 44251 (/Volumes/LQ1000/a/PaiSmart/target/classes started by xustation in /Volumes/LQ1000/a/PaiSmart)
+2025-11-02 20:11:05.108 [main] INFO  com.yizhaoqi.smartpai.SmartPaiApplication - No active profile set, falling back to 1 default profile: "default"
+2025-11-02 20:30:34.386 [main] INFO  com.yizhaoqi.smartpai.SmartPaiApplication - Starting SmartPaiApplication using Java 17.0.15 with PID 45646 (/Volumes/LQ1000/a/PaiSmart/target/classes started by xustation in /Volumes/LQ1000/a/PaiSmart)
+2025-11-02 20:30:34.389 [main] INFO  com.yizhaoqi.smartpai.SmartPaiApplication - No active profile set, falling back to 1 default profile: "default"
+2025-11-02 20:32:31.952 [main] INFO  com.yizhaoqi.smartpai.SmartPaiApplication - Starting SmartPaiApplication using Java 17.0.15 with PID 45779 (/Volumes/LQ1000/a/PaiSmart/target/classes started by xustation in /Volumes/LQ1000/a/PaiSmart)
+2025-11-02 20:32:31.953 [main] INFO  com.yizhaoqi.smartpai.SmartPaiApplication - No active profile set, falling back to 1 default profile: "default"
+2025-11-02 20:32:35.445 [main] INFO  com.yizhaoqi.smartpai.config.SecurityConfig - Security configuration loaded successfully.
+2025-11-02 20:32:35.829 [main] INFO  com.yizhaoqi.smartpai.SmartPaiApplication - Started SmartPaiApplication in 4.16 seconds (process running for 4.846)
+2025-11-02 20:32:35.831 [main] INFO  com.yizhaoqi.smartpai.config.AdminUserInitializer - 检查管理员账号是否存在: admin
+2025-11-02 20:32:35.915 [main] INFO  com.yizhaoqi.smartpai.config.AdminUserInitializer - 开始创建管理员账号: admin
+2025-11-02 20:32:36.042 [main] INFO  com.yizhaoqi.smartpai.config.AdminUserInitializer - 管理员账号 'admin' 创建成功
+2025-11-02 20:32:36.045 [main] INFO  com.yizhaoqi.smartpai.config.OrgTagInitializer - 检查组织标签是否存在: default
+2025-11-02 20:32:36.048 [main] INFO  com.yizhaoqi.smartpai.config.OrgTagInitializer - 创建组织标签: default
+2025-11-02 20:32:36.063 [main] INFO  com.yizhaoqi.smartpai.config.OrgTagInitializer - 组织标签 'default' 创建成功
+2025-11-02 20:32:36.064 [main] INFO  com.yizhaoqi.smartpai.config.OrgTagInitializer - 检查组织标签是否存在: admin
+2025-11-02 20:32:36.066 [main] INFO  com.yizhaoqi.smartpai.config.OrgTagInitializer - 创建组织标签: admin
+2025-11-02 20:32:36.073 [main] INFO  com.yizhaoqi.smartpai.config.OrgTagInitializer - 组织标签 'admin' 创建成功
+2025-11-02 20:32:36.073 [main] INFO  com.yizhaoqi.smartpai.config.OrgTagInitializer - 组织标签初始化完成
+2025-11-02 20:32:37.667 [main] INFO  com.yizhaoqi.smartpai.config.EsIndexInitializer - 索引 'knowledge_base' 已创建
+2025-11-02 20:49:55.120 [http-nio-8081-exec-9] INFO  com.yizhaoqi.smartpai.business - [REQUEST_START] [用户:anonymous] 开始处理请求 [POST] /api/v1/users/login
+2025-11-02 20:49:56.070 [http-nio-8081-exec-9] DEBUG com.yizhaoqi.smartpai.service.TokenCacheService - Token cached: e3ef9a7d80f84cb7bb1ea2c72795ddc0 for user: admin
+2025-11-02 20:49:56.070 [http-nio-8081-exec-9] INFO  com.yizhaoqi.smartpai.utils.JwtUtils - Token generated and cached for user: admin, tokenId: e3ef9a7d80f84cb7bb1ea2c72795ddc0
+2025-11-02 20:49:56.073 [http-nio-8081-exec-9] DEBUG com.yizhaoqi.smartpai.service.TokenCacheService - Refresh token cached: 1a4d712e8bf84103a0904063b97dfe83 for user: 1
+2025-11-02 20:49:56.074 [http-nio-8081-exec-9] INFO  com.yizhaoqi.smartpai.utils.JwtUtils - Refresh token generated and cached for user: admin, refreshTokenId: 1a4d712e8bf84103a0904063b97dfe83
+2025-11-02 20:49:56.074 [http-nio-8081-exec-9] INFO  com.yizhaoqi.smartpai.business - [用户操作] [用户:admin] [操作:LOGIN] [资源:token_generation] [结果:SUCCESS]
+2025-11-02 20:49:56.092 [http-nio-8081-exec-9] INFO  com.yizhaoqi.smartpai.business - [API] [POST] /api/v1/users/login [用户:anonymous] [状态:200] [耗时:981ms]
+2025-11-02 20:49:56.156 [http-nio-8081-exec-10] INFO  com.yizhaoqi.smartpai.business - [REQUEST_START] [用户:1] 开始处理请求 [GET] /api/v1/users/me
+2025-11-02 20:49:56.165 [http-nio-8081-exec-10] INFO  com.yizhaoqi.smartpai.business - [用户操作] [用户:admin] [操作:GET_USER_INFO] [资源:user_profile] [结果:SUCCESS]
+2025-11-02 20:49:56.172 [http-nio-8081-exec-10] INFO  com.yizhaoqi.smartpai.business - [API] [GET] /api/v1/users/me [用户:1] [状态:200] [耗时:16ms]
+2025-11-02 20:49:56.285 [http-nio-8081-exec-1] INFO  com.yizhaoqi.smartpai.business - [REQUEST_START] [用户:1] 开始处理请求 [GET] /api/v1/users/upload-orgs
+2025-11-02 20:49:56.295 [http-nio-8081-exec-4] INFO  c.y.smartpai.config.OrgTagAuthorizationFilter - 处理获取用户文档请求: /api/v1/documents/uploads
+2025-11-02 20:49:56.297 [http-nio-8081-exec-1] INFO  com.yizhaoqi.smartpai.business - [API] [GET] /api/v1/users/upload-orgs [用户:1] [状态:400] [耗时:12ms]
+2025-11-02 20:49:56.306 [http-nio-8081-exec-4] INFO  com.yizhaoqi.smartpai.business - [REQUEST_START] [用户:1] 开始处理请求 [GET] /api/v1/documents/uploads
+2025-11-02 20:49:56.307 [http-nio-8081-exec-4] INFO  com.yizhaoqi.smartpai.business - [GET_USER_UPLOADED_FILES] [用户:1] 接收到获取用户上传文件请求
+2025-11-02 20:49:56.307 [http-nio-8081-exec-4] INFO  com.yizhaoqi.smartpai.service.DocumentService - 获取用户上传的文件列表: userId=1
+2025-11-02 20:49:56.339 [http-nio-8081-exec-4] INFO  com.yizhaoqi.smartpai.service.DocumentService - 成功获取用户上传的文件列表: userId=1, fileCount=0
+2025-11-02 20:49:56.340 [http-nio-8081-exec-4] INFO  com.yizhaoqi.smartpai.business - [用户操作] [用户:1] [操作:GET_USER_UPLOADED_FILES] [资源:file_list] [结果:SUCCESS]
+2025-11-02 20:49:56.340 [http-nio-8081-exec-2] INFO  c.yizhaoqi.smartpai.handler.ChatWebSocketHandler - WebSocket连接已建立，用户ID: admin，会话ID: 36c03b86-fb68-2f28-0156-856ef3e8cf8a，URI路径: /chat/eyJhbGciOiJIUzI1NiJ9.eyJwcmltYXJ5T3JnIjoiZGVmYXVsdCIsIm9yZ1RhZ3MiOiJkZWZhdWx0LGFkbWluIiwicm9sZSI6IkFETUlOIiwidG9rZW5JZCI6ImUzZWY5YTdkODBmODRjYjdiYjFlYTJjNzI3OTVkZGMwIiwidXNlcklkIjoiMSIsInN1YiI6ImFkbWluIiwiZXhwIjoxNzYyMDkxMzk1fQ.NVSWMyZEZEIrU9iwQAWhfKzm4_OlgPXwbHvLNG4H6IM
+2025-11-02 20:49:56.340 [http-nio-8081-exec-4] INFO  com.yizhaoqi.smartpai.business - [GET_USER_UPLOADED_FILES] [用户:1] 成功获取用户上传文件: fileCount=0
+2025-11-02 20:49:56.343 [http-nio-8081-exec-4] INFO  com.yizhaoqi.smartpai.business - [API] [GET] /api/v1/documents/uploads [用户:1] [状态:200] [耗时:39ms]
+2025-11-02 20:50:36.889 [http-nio-8081-exec-6] INFO  c.yizhaoqi.smartpai.handler.ChatWebSocketHandler - 接收到消息，用户ID: admin，会话ID: 36c03b86-fb68-2f28-0156-856ef3e8cf8a，消息长度: 7
+2025-11-02 20:50:36.896 [http-nio-8081-exec-6] INFO  com.yizhaoqi.smartpai.service.ChatHandler - 开始处理消息，用户ID: admin, 会话ID: 36c03b86-fb68-2f28-0156-856ef3e8cf8a
+2025-11-02 20:50:36.922 [http-nio-8081-exec-6] INFO  com.yizhaoqi.smartpai.service.ChatHandler - 为用户 admin 创建新的会话ID: df066211-2766-4d79-9420-0fcb48a3b6b4
+2025-11-02 20:50:36.922 [http-nio-8081-exec-6] INFO  com.yizhaoqi.smartpai.service.ChatHandler - 会话ID: df066211-2766-4d79-9420-0fcb48a3b6b4, 用户ID: admin
+2025-11-02 20:50:36.922 [http-nio-8081-exec-6] DEBUG com.yizhaoqi.smartpai.service.ChatHandler - 会话 df066211-2766-4d79-9420-0fcb48a3b6b4 没有历史记录
+2025-11-02 20:50:36.923 [http-nio-8081-exec-6] DEBUG com.yizhaoqi.smartpai.service.ChatHandler - 获取到 0 条历史对话
+2025-11-02 20:50:36.923 [http-nio-8081-exec-6] DEBUG com.yizhaoqi.smartpai.service.HybridSearchService - 开始带权限搜索，查询: 人工智能的发展, 用户ID: admin
+2025-11-02 20:50:36.923 [http-nio-8081-exec-6] DEBUG com.yizhaoqi.smartpai.service.HybridSearchService - 获取用户有效组织标签，用户ID: admin
+2025-11-02 20:50:36.923 [http-nio-8081-exec-6] DEBUG com.yizhaoqi.smartpai.service.HybridSearchService - 用户ID不是数字格式，作为用户名查找: admin
+2025-11-02 20:50:36.936 [http-nio-8081-exec-6] DEBUG com.yizhaoqi.smartpai.service.HybridSearchService - 通过用户名找到用户: admin
+2025-11-02 20:50:36.944 [http-nio-8081-exec-6] DEBUG com.yizhaoqi.smartpai.service.HybridSearchService - 用户 admin 的有效组织标签: [DEFAULT]
+2025-11-02 20:50:36.945 [http-nio-8081-exec-6] DEBUG com.yizhaoqi.smartpai.service.HybridSearchService - 用户 admin 的有效组织标签: [DEFAULT]
+2025-11-02 20:50:36.945 [http-nio-8081-exec-6] DEBUG com.yizhaoqi.smartpai.service.HybridSearchService - 获取用户数据库ID，用户ID: admin
+2025-11-02 20:50:36.945 [http-nio-8081-exec-6] DEBUG com.yizhaoqi.smartpai.service.HybridSearchService - 用户ID不是数字格式，作为用户名查找: admin
+2025-11-02 20:50:36.948 [http-nio-8081-exec-6] DEBUG com.yizhaoqi.smartpai.service.HybridSearchService - 通过用户名找到用户: admin, ID: 1
+2025-11-02 20:50:36.948 [http-nio-8081-exec-6] DEBUG com.yizhaoqi.smartpai.service.HybridSearchService - 用户 admin 的数据库ID: 1
+2025-11-02 20:50:36.948 [http-nio-8081-exec-6] INFO  com.yizhaoqi.smartpai.client.EmbeddingClient - 开始生成向量，文本数量: 1
+2025-11-02 20:50:40.607 [http-nio-8081-exec-6] ERROR com.yizhaoqi.smartpai.client.EmbeddingClient - 调用向量化 API 失败: Retries exhausted: 3/3
+reactor.core.Exceptions$RetryExhaustedException: Retries exhausted: 3/3
+	at reactor.core.Exceptions.retryExhausted(Exceptions.java:308)
+	at reactor.util.retry.RetryBackoffSpec.lambda$static$0(RetryBackoffSpec.java:68)
+	at reactor.util.retry.RetryBackoffSpec.lambda$null$4(RetryBackoffSpec.java:608)
+	at reactor.core.publisher.FluxConcatMapNoPrefetch$FluxConcatMapNoPrefetchSubscriber.onNext(FluxConcatMapNoPrefetch.java:183)
+	at reactor.core.publisher.FluxContextWrite$ContextWriteSubscriber.onNext(FluxContextWrite.java:107)
+	at reactor.core.publisher.SinkManyEmitterProcessor.drain(SinkManyEmitterProcessor.java:476)
+	at reactor.core.publisher.SinkManyEmitterProcessor.tryEmitNext(SinkManyEmitterProcessor.java:273)
+	at reactor.core.publisher.SinkManySerialized.tryEmitNext(SinkManySerialized.java:100)
+	at reactor.core.publisher.InternalManySink.emitNext(InternalManySink.java:27)
+	at reactor.core.publisher.FluxRetryWhen$RetryWhenMainSubscriber.onError(FluxRetryWhen.java:194)
+	at reactor.core.publisher.MonoFlatMap$FlatMapMain.secondError(MonoFlatMap.java:241)
+	at reactor.core.publisher.MonoFlatMap$FlatMapInner.onError(MonoFlatMap.java:315)
+	at reactor.core.publisher.Operators$MultiSubscriptionSubscriber.onError(Operators.java:2236)
+	at reactor.core.publisher.FluxOnAssembly$OnAssemblySubscriber.onError(FluxOnAssembly.java:544)
+	at reactor.core.publisher.MonoFlatMap$FlatMapMain.onError(MonoFlatMap.java:180)
+	at reactor.core.publisher.FluxOnErrorResume$ResumeSubscriber.onError(FluxOnErrorResume.java:106)
+	at reactor.core.publisher.MonoIgnoreThen$ThenIgnoreMain.onError(MonoIgnoreThen.java:280)
+	at reactor.core.publisher.MonoIgnoreThen$ThenIgnoreMain.subscribeNext(MonoIgnoreThen.java:232)
+	at reactor.core.publisher.MonoIgnoreThen$ThenIgnoreMain.onComplete(MonoIgnoreThen.java:204)
+	at reactor.core.publisher.FluxOnErrorReturn$ReturnSubscriber.onComplete(FluxOnErrorReturn.java:169)
+	at reactor.core.publisher.MonoIgnoreElements$IgnoreElementsSubscriber.onComplete(MonoIgnoreElements.java:89)
+	at reactor.core.publisher.FluxMapFuseable$MapFuseableSubscriber.onComplete(FluxMapFuseable.java:152)
+	at reactor.core.publisher.FluxOnAssembly$OnAssemblySubscriber.onComplete(FluxOnAssembly.java:549)
+	at reactor.core.publisher.FluxMap$MapSubscriber.onComplete(FluxMap.java:144)
+	at reactor.core.publisher.FluxPeek$PeekSubscriber.onComplete(FluxPeek.java:260)
+	at reactor.core.publisher.FluxMap$MapSubscriber.onComplete(FluxMap.java:144)
+	at reactor.core.publisher.Operators.complete(Operators.java:137)
+	at reactor.netty.channel.FluxReceive.startReceiver(FluxReceive.java:179)
+	at reactor.netty.channel.FluxReceive.subscribe(FluxReceive.java:145)
+	at reactor.core.publisher.InternalFluxOperator.subscribe(InternalFluxOperator.java:68)
+	at reactor.netty.ByteBufFlux.subscribe(ByteBufFlux.java:340)
+	at reactor.core.publisher.Mono.subscribe(Mono.java:4576)
+	at reactor.core.publisher.MonoIgnoreThen$ThenIgnoreMain.subscribeNext(MonoIgnoreThen.java:265)
+	at reactor.core.publisher.MonoIgnoreThen.subscribe(MonoIgnoreThen.java:51)
+	at reactor.core.publisher.Mono.subscribe(Mono.java:4576)
+	at reactor.core.publisher.FluxOnErrorResume$ResumeSubscriber.onError(FluxOnErrorResume.java:103)
+	at reactor.core.publisher.MonoFlatMap$FlatMapMain.secondError(MonoFlatMap.java:241)
+	at reactor.core.publisher.MonoFlatMap$FlatMapInner.onError(MonoFlatMap.java:315)
+	at reactor.core.publisher.MonoIgnoreThen$ThenIgnoreMain.onError(MonoIgnoreThen.java:280)
+	at reactor.core.publisher.MonoIgnoreThen$ThenIgnoreMain.subscribeNext(MonoIgnoreThen.java:232)
+	at reactor.core.publisher.MonoIgnoreThen$ThenIgnoreMain.onComplete(MonoIgnoreThen.java:204)
+	at reactor.core.publisher.FluxOnErrorReturn$ReturnSubscriber.onComplete(FluxOnErrorReturn.java:169)
+	at reactor.core.publisher.MonoIgnoreElements$IgnoreElementsSubscriber.onComplete(MonoIgnoreElements.java:89)
+	at reactor.core.publisher.FluxMapFuseable$MapFuseableSubscriber.onComplete(FluxMapFuseable.java:152)
+	at reactor.core.publisher.FluxOnAssembly$OnAssemblySubscriber.onComplete(FluxOnAssembly.java:549)
+	at reactor.core.publisher.FluxMap$MapSubscriber.onComplete(FluxMap.java:144)
+	at reactor.core.publisher.FluxPeek$PeekSubscriber.onComplete(FluxPeek.java:260)
+	at reactor.core.publisher.FluxMap$MapSubscriber.onComplete(FluxMap.java:144)
+	at reactor.core.publisher.Operators.complete(Operators.java:137)
+	at reactor.netty.channel.FluxReceive.startReceiver(FluxReceive.java:179)
+	at reactor.netty.channel.FluxReceive.subscribe(FluxReceive.java:145)
+	at reactor.core.publisher.InternalFluxOperator.subscribe(InternalFluxOperator.java:68)
+	at reactor.netty.ByteBufFlux.subscribe(ByteBufFlux.java:340)
+	at reactor.core.publisher.Mono.subscribe(Mono.java:4576)
+	at reactor.core.publisher.MonoIgnoreThen$ThenIgnoreMain.subscribeNext(MonoIgnoreThen.java:265)
+	at reactor.core.publisher.MonoIgnoreThen.subscribe(MonoIgnoreThen.java:51)
+	at reactor.core.publisher.MonoFlatMap$FlatMapMain.onNext(MonoFlatMap.java:165)
+	at reactor.core.publisher.FluxMap$MapSubscriber.onNext(FluxMap.java:122)
+	at reactor.core.publisher.FluxOnErrorReturn$ReturnSubscriber.onNext(FluxOnErrorReturn.java:162)
+	at reactor.core.publisher.FluxDefaultIfEmpty$DefaultIfEmptySubscriber.onNext(FluxDefaultIfEmpty.java:122)
+	at reactor.core.publisher.FluxOnAssembly$OnAssemblySubscriber.onNext(FluxOnAssembly.java:539)
+	at reactor.core.publisher.FluxMapFuseable$MapFuseableSubscriber.onNext(FluxMapFuseable.java:129)
+	at reactor.core.publisher.FluxContextWrite$ContextWriteSubscriber.onNext(FluxContextWrite.java:107)
+	at reactor.core.publisher.FluxMapFuseable$MapFuseableConditionalSubscriber.onNext(FluxMapFuseable.java:299)
+	at reactor.core.publisher.FluxFilterFuseable$FilterFuseableConditionalSubscriber.onNext(FluxFilterFuseable.java:337)
+	at reactor.core.publisher.Operators$BaseFluxToMonoOperator.completePossiblyEmpty(Operators.java:2097)
+	at reactor.core.publisher.MonoCollect$CollectSubscriber.onComplete(MonoCollect.java:145)
+	at reactor.core.publisher.FluxMap$MapSubscriber.onComplete(FluxMap.java:144)
+	at reactor.core.publisher.FluxPeek$PeekSubscriber.onComplete(FluxPeek.java:260)
+	at reactor.core.publisher.FluxMap$MapSubscriber.onComplete(FluxMap.java:144)
+	at reactor.netty.channel.FluxReceive.onInboundComplete(FluxReceive.java:413)
+	at reactor.netty.channel.ChannelOperations.onInboundComplete(ChannelOperations.java:455)
+	at reactor.netty.channel.ChannelOperations.terminate(ChannelOperations.java:509)
+	at reactor.netty.http.client.HttpClientOperations.onInboundNext(HttpClientOperations.java:819)
+	at reactor.netty.channel.ChannelOperationsHandler.channelRead(ChannelOperationsHandler.java:115)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:444)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:420)
+	at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:412)
+	at io.netty.handler.codec.MessageToMessageDecoder.channelRead(MessageToMessageDecoder.java:107)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:444)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:420)
+	at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:412)
+	at io.netty.channel.CombinedChannelDuplexHandler$DelegatingChannelHandlerContext.fireChannelRead(CombinedChannelDuplexHandler.java:436)
+	at io.netty.handler.codec.ByteToMessageDecoder.fireChannelRead(ByteToMessageDecoder.java:346)
+	at io.netty.handler.codec.ByteToMessageDecoder.channelRead(ByteToMessageDecoder.java:318)
+	at io.netty.channel.CombinedChannelDuplexHandler.channelRead(CombinedChannelDuplexHandler.java:251)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:442)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:420)
+	at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:412)
+	at io.netty.handler.ssl.SslHandler.unwrap(SslHandler.java:1515)
+	at io.netty.handler.ssl.SslHandler.decodeJdkCompatible(SslHandler.java:1378)
+	at io.netty.handler.ssl.SslHandler.decode(SslHandler.java:1427)
+	at io.netty.handler.codec.ByteToMessageDecoder.decodeRemovalReentryProtection(ByteToMessageDecoder.java:530)
+	at io.netty.handler.codec.ByteToMessageDecoder.callDecode(ByteToMessageDecoder.java:469)
+	at io.netty.handler.codec.ByteToMessageDecoder.channelRead(ByteToMessageDecoder.java:290)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:444)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:420)
+	at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:412)
+	at io.netty.channel.DefaultChannelPipeline$HeadContext.channelRead(DefaultChannelPipeline.java:1357)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:440)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:420)
+	at io.netty.channel.DefaultChannelPipeline.fireChannelRead(DefaultChannelPipeline.java:868)
+	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:166)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:788)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:724)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:650)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:562)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:997)
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	at java.base/java.lang.Thread.run(Thread.java:842)
+	Suppressed: java.lang.Exception: #block terminated with an error
+		at reactor.core.publisher.BlockingSingleSubscriber.blockingGet(BlockingSingleSubscriber.java:146)
+		at reactor.core.publisher.Mono.block(Mono.java:1807)
+		at com.yizhaoqi.smartpai.client.EmbeddingClient.callApiOnce(EmbeddingClient.java:80)
+		at com.yizhaoqi.smartpai.client.EmbeddingClient.embed(EmbeddingClient.java:55)
+		at com.yizhaoqi.smartpai.service.HybridSearchService.embedToVectorList(HybridSearchService.java:376)
+		at com.yizhaoqi.smartpai.service.HybridSearchService.searchWithPermission(HybridSearchService.java:76)
+		at com.yizhaoqi.smartpai.service.ChatHandler.processMessage(ChatHandler.java:73)
+		at com.yizhaoqi.smartpai.handler.ChatWebSocketHandler.handleTextMessage(ChatWebSocketHandler.java:73)
+		at org.springframework.web.socket.handler.AbstractWebSocketHandler.handleMessage(AbstractWebSocketHandler.java:43)
+		at org.springframework.web.socket.handler.WebSocketHandlerDecorator.handleMessage(WebSocketHandlerDecorator.java:75)
+		at org.springframework.web.socket.handler.LoggingWebSocketHandlerDecorator.handleMessage(LoggingWebSocketHandlerDecorator.java:56)
+		at org.springframework.web.socket.handler.ExceptionWebSocketHandlerDecorator.handleMessage(ExceptionWebSocketHandlerDecorator.java:58)
+		at org.springframework.web.socket.adapter.standard.StandardWebSocketHandlerAdapter.handleTextMessage(StandardWebSocketHandlerAdapter.java:113)
+		at org.springframework.web.socket.adapter.standard.StandardWebSocketHandlerAdapter$3.onMessage(StandardWebSocketHandlerAdapter.java:84)
+		at org.springframework.web.socket.adapter.standard.StandardWebSocketHandlerAdapter$3.onMessage(StandardWebSocketHandlerAdapter.java:81)
+		at org.apache.tomcat.websocket.WsFrameBase.sendMessageText(WsFrameBase.java:390)
+		at org.apache.tomcat.websocket.server.WsFrameServer.sendMessageText(WsFrameServer.java:130)
+		at org.apache.tomcat.websocket.WsFrameBase.processDataText(WsFrameBase.java:484)
+		at org.apache.tomcat.websocket.WsFrameBase.processData(WsFrameBase.java:284)
+		at org.apache.tomcat.websocket.WsFrameBase.processInputBuffer(WsFrameBase.java:130)
+		at org.apache.tomcat.websocket.server.WsFrameServer.onDataAvailable(WsFrameServer.java:85)
+		at org.apache.tomcat.websocket.server.WsFrameServer.doOnDataAvailable(WsFrameServer.java:184)
+		at org.apache.tomcat.websocket.server.WsFrameServer.notifyDataAvailable(WsFrameServer.java:164)
+		at org.apache.tomcat.websocket.server.WsHttpUpgradeHandler.upgradeDispatch(WsHttpUpgradeHandler.java:152)
+		at org.apache.coyote.http11.upgrade.UpgradeProcessorInternal.dispatch(UpgradeProcessorInternal.java:60)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:57)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:905)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1741)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1190)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
+		... 1 common frames omitted
+Caused by: org.springframework.web.reactive.function.client.WebClientResponseException$Unauthorized: 401 Unauthorized from POST https://dashscope.aliyuncs.com/compatible-mode/v1/embeddings
+	at org.springframework.web.reactive.function.client.WebClientResponseException.create(WebClientResponseException.java:322)
+	Suppressed: reactor.core.publisher.FluxOnAssembly$OnAssemblyException: 
+Error has been observed at the following site(s):
+	*__checkpoint ⇢ 401 UNAUTHORIZED from POST https://dashscope.aliyuncs.com/compatible-mode/v1/embeddings [DefaultWebClient]
+Original Stack Trace:
+		at org.springframework.web.reactive.function.client.WebClientResponseException.create(WebClientResponseException.java:322)
+		at org.springframework.web.reactive.function.client.DefaultClientResponse.lambda$createException$1(DefaultClientResponse.java:214)
+		at reactor.core.publisher.FluxMap$MapSubscriber.onNext(FluxMap.java:106)
+		at reactor.core.publisher.FluxOnErrorReturn$ReturnSubscriber.onNext(FluxOnErrorReturn.java:162)
+		at reactor.core.publisher.FluxDefaultIfEmpty$DefaultIfEmptySubscriber.onNext(FluxDefaultIfEmpty.java:122)
+		at reactor.core.publisher.FluxMapFuseable$MapFuseableSubscriber.onNext(FluxMapFuseable.java:129)
+		at reactor.core.publisher.FluxContextWrite$ContextWriteSubscriber.onNext(FluxContextWrite.java:107)
+		at reactor.core.publisher.FluxMapFuseable$MapFuseableConditionalSubscriber.onNext(FluxMapFuseable.java:299)
+		at reactor.core.publisher.FluxFilterFuseable$FilterFuseableConditionalSubscriber.onNext(FluxFilterFuseable.java:337)
+		at reactor.core.publisher.Operators$BaseFluxToMonoOperator.completePossiblyEmpty(Operators.java:2097)
+		at reactor.core.publisher.MonoCollect$CollectSubscriber.onComplete(MonoCollect.java:145)
+		at reactor.core.publisher.FluxMap$MapSubscriber.onComplete(FluxMap.java:144)
+		at reactor.core.publisher.FluxPeek$PeekSubscriber.onComplete(FluxPeek.java:260)
+		at reactor.core.publisher.FluxMap$MapSubscriber.onComplete(FluxMap.java:144)
+		at reactor.netty.channel.FluxReceive.onInboundComplete(FluxReceive.java:413)
+		at reactor.netty.channel.ChannelOperations.onInboundComplete(ChannelOperations.java:455)
+		at reactor.netty.channel.ChannelOperations.terminate(ChannelOperations.java:509)
+		at reactor.netty.http.client.HttpClientOperations.onInboundNext(HttpClientOperations.java:819)
+		at reactor.netty.channel.ChannelOperationsHandler.channelRead(ChannelOperationsHandler.java:115)
+		at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:444)
+		at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:420)
+		at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:412)
+		at io.netty.handler.codec.MessageToMessageDecoder.channelRead(MessageToMessageDecoder.java:107)
+		at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:444)
+		at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:420)
+		at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:412)
+		at io.netty.channel.CombinedChannelDuplexHandler$DelegatingChannelHandlerContext.fireChannelRead(CombinedChannelDuplexHandler.java:436)
+		at io.netty.handler.codec.ByteToMessageDecoder.fireChannelRead(ByteToMessageDecoder.java:346)
+		at io.netty.handler.codec.ByteToMessageDecoder.channelRead(ByteToMessageDecoder.java:318)
+		at io.netty.channel.CombinedChannelDuplexHandler.channelRead(CombinedChannelDuplexHandler.java:251)
+		at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:442)
+		at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:420)
+		at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:412)
+		at io.netty.handler.ssl.SslHandler.unwrap(SslHandler.java:1515)
+		at io.netty.handler.ssl.SslHandler.decodeJdkCompatible(SslHandler.java:1378)
+		at io.netty.handler.ssl.SslHandler.decode(SslHandler.java:1427)
+		at io.netty.handler.codec.ByteToMessageDecoder.decodeRemovalReentryProtection(ByteToMessageDecoder.java:530)
+		at io.netty.handler.codec.ByteToMessageDecoder.callDecode(ByteToMessageDecoder.java:469)
+		at io.netty.handler.codec.ByteToMessageDecoder.channelRead(ByteToMessageDecoder.java:290)
+		at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:444)
+		at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:420)
+		at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:412)
+		at io.netty.channel.DefaultChannelPipeline$HeadContext.channelRead(DefaultChannelPipeline.java:1357)
+		at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:440)
+		at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:420)
+		at io.netty.channel.DefaultChannelPipeline.fireChannelRead(DefaultChannelPipeline.java:868)
+		at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:166)
+		at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:788)
+		at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:724)
+		at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:650)
+		at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:562)
+		at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:997)
+		at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+		at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+		at java.base/java.lang.Thread.run(Thread.java:842)
+2025-11-02 20:50:40.619 [http-nio-8081-exec-6] ERROR com.yizhaoqi.smartpai.service.HybridSearchService - 生成向量失败
+java.lang.RuntimeException: 向量生成失败
+	at com.yizhaoqi.smartpai.client.EmbeddingClient.embed(EmbeddingClient.java:62)
+	at com.yizhaoqi.smartpai.service.HybridSearchService.embedToVectorList(HybridSearchService.java:376)
+	at com.yizhaoqi.smartpai.service.HybridSearchService.searchWithPermission(HybridSearchService.java:76)
+	at com.yizhaoqi.smartpai.service.ChatHandler.processMessage(ChatHandler.java:73)
+	at com.yizhaoqi.smartpai.handler.ChatWebSocketHandler.handleTextMessage(ChatWebSocketHandler.java:73)
+	at org.springframework.web.socket.handler.AbstractWebSocketHandler.handleMessage(AbstractWebSocketHandler.java:43)
+	at org.springframework.web.socket.handler.WebSocketHandlerDecorator.handleMessage(WebSocketHandlerDecorator.java:75)
+	at org.springframework.web.socket.handler.LoggingWebSocketHandlerDecorator.handleMessage(LoggingWebSocketHandlerDecorator.java:56)
+	at org.springframework.web.socket.handler.ExceptionWebSocketHandlerDecorator.handleMessage(ExceptionWebSocketHandlerDecorator.java:58)
+	at org.springframework.web.socket.adapter.standard.StandardWebSocketHandlerAdapter.handleTextMessage(StandardWebSocketHandlerAdapter.java:113)
+	at org.springframework.web.socket.adapter.standard.StandardWebSocketHandlerAdapter$3.onMessage(StandardWebSocketHandlerAdapter.java:84)
+	at org.springframework.web.socket.adapter.standard.StandardWebSocketHandlerAdapter$3.onMessage(StandardWebSocketHandlerAdapter.java:81)
+	at org.apache.tomcat.websocket.WsFrameBase.sendMessageText(WsFrameBase.java:390)
+	at org.apache.tomcat.websocket.server.WsFrameServer.sendMessageText(WsFrameServer.java:130)
+	at org.apache.tomcat.websocket.WsFrameBase.processDataText(WsFrameBase.java:484)
+	at org.apache.tomcat.websocket.WsFrameBase.processData(WsFrameBase.java:284)
+	at org.apache.tomcat.websocket.WsFrameBase.processInputBuffer(WsFrameBase.java:130)
+	at org.apache.tomcat.websocket.server.WsFrameServer.onDataAvailable(WsFrameServer.java:85)
+	at org.apache.tomcat.websocket.server.WsFrameServer.doOnDataAvailable(WsFrameServer.java:184)
+	at org.apache.tomcat.websocket.server.WsFrameServer.notifyDataAvailable(WsFrameServer.java:164)
+	at org.apache.tomcat.websocket.server.WsHttpUpgradeHandler.upgradeDispatch(WsHttpUpgradeHandler.java:152)
+	at org.apache.coyote.http11.upgrade.UpgradeProcessorInternal.dispatch(UpgradeProcessorInternal.java:60)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:57)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:905)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1741)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1190)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
+	at java.base/java.lang.Thread.run(Thread.java:842)
+Caused by: reactor.core.Exceptions$RetryExhaustedException: Retries exhausted: 3/3
+	at reactor.core.Exceptions.retryExhausted(Exceptions.java:308)
+	at reactor.util.retry.RetryBackoffSpec.lambda$static$0(RetryBackoffSpec.java:68)
+	at reactor.util.retry.RetryBackoffSpec.lambda$null$4(RetryBackoffSpec.java:608)
+	at reactor.core.publisher.FluxConcatMapNoPrefetch$FluxConcatMapNoPrefetchSubscriber.onNext(FluxConcatMapNoPrefetch.java:183)
+	at reactor.core.publisher.FluxContextWrite$ContextWriteSubscriber.onNext(FluxContextWrite.java:107)
+	at reactor.core.publisher.SinkManyEmitterProcessor.drain(SinkManyEmitterProcessor.java:476)
+	at reactor.core.publisher.SinkManyEmitterProcessor.tryEmitNext(SinkManyEmitterProcessor.java:273)
+	at reactor.core.publisher.SinkManySerialized.tryEmitNext(SinkManySerialized.java:100)
+	at reactor.core.publisher.InternalManySink.emitNext(InternalManySink.java:27)
+	at reactor.core.publisher.FluxRetryWhen$RetryWhenMainSubscriber.onError(FluxRetryWhen.java:194)
+	at reactor.core.publisher.MonoFlatMap$FlatMapMain.secondError(MonoFlatMap.java:241)
+	at reactor.core.publisher.MonoFlatMap$FlatMapInner.onError(MonoFlatMap.java:315)
+	at reactor.core.publisher.Operators$MultiSubscriptionSubscriber.onError(Operators.java:2236)
+	at reactor.core.publisher.FluxOnAssembly$OnAssemblySubscriber.onError(FluxOnAssembly.java:544)
+	at reactor.core.publisher.MonoFlatMap$FlatMapMain.onError(MonoFlatMap.java:180)
+	at reactor.core.publisher.FluxOnErrorResume$ResumeSubscriber.onError(FluxOnErrorResume.java:106)
+	at reactor.core.publisher.MonoIgnoreThen$ThenIgnoreMain.onError(MonoIgnoreThen.java:280)
+	at reactor.core.publisher.MonoIgnoreThen$ThenIgnoreMain.subscribeNext(MonoIgnoreThen.java:232)
+	at reactor.core.publisher.MonoIgnoreThen$ThenIgnoreMain.onComplete(MonoIgnoreThen.java:204)
+	at reactor.core.publisher.FluxOnErrorReturn$ReturnSubscriber.onComplete(FluxOnErrorReturn.java:169)
+	at reactor.core.publisher.MonoIgnoreElements$IgnoreElementsSubscriber.onComplete(MonoIgnoreElements.java:89)
+	at reactor.core.publisher.FluxMapFuseable$MapFuseableSubscriber.onComplete(FluxMapFuseable.java:152)
+	at reactor.core.publisher.FluxOnAssembly$OnAssemblySubscriber.onComplete(FluxOnAssembly.java:549)
+	at reactor.core.publisher.FluxMap$MapSubscriber.onComplete(FluxMap.java:144)
+	at reactor.core.publisher.FluxPeek$PeekSubscriber.onComplete(FluxPeek.java:260)
+	at reactor.core.publisher.FluxMap$MapSubscriber.onComplete(FluxMap.java:144)
+	at reactor.core.publisher.Operators.complete(Operators.java:137)
+	at reactor.netty.channel.FluxReceive.startReceiver(FluxReceive.java:179)
+	at reactor.netty.channel.FluxReceive.subscribe(FluxReceive.java:145)
+	at reactor.core.publisher.InternalFluxOperator.subscribe(InternalFluxOperator.java:68)
+	at reactor.netty.ByteBufFlux.subscribe(ByteBufFlux.java:340)
+	at reactor.core.publisher.Mono.subscribe(Mono.java:4576)
+	at reactor.core.publisher.MonoIgnoreThen$ThenIgnoreMain.subscribeNext(MonoIgnoreThen.java:265)
+	at reactor.core.publisher.MonoIgnoreThen.subscribe(MonoIgnoreThen.java:51)
+	at reactor.core.publisher.Mono.subscribe(Mono.java:4576)
+	at reactor.core.publisher.FluxOnErrorResume$ResumeSubscriber.onError(FluxOnErrorResume.java:103)
+	at reactor.core.publisher.MonoFlatMap$FlatMapMain.secondError(MonoFlatMap.java:241)
+	at reactor.core.publisher.MonoFlatMap$FlatMapInner.onError(MonoFlatMap.java:315)
+	at reactor.core.publisher.MonoIgnoreThen$ThenIgnoreMain.onError(MonoIgnoreThen.java:280)
+	at reactor.core.publisher.MonoIgnoreThen$ThenIgnoreMain.subscribeNext(MonoIgnoreThen.java:232)
+	at reactor.core.publisher.MonoIgnoreThen$ThenIgnoreMain.onComplete(MonoIgnoreThen.java:204)
+	at reactor.core.publisher.FluxOnErrorReturn$ReturnSubscriber.onComplete(FluxOnErrorReturn.java:169)
+	at reactor.core.publisher.MonoIgnoreElements$IgnoreElementsSubscriber.onComplete(MonoIgnoreElements.java:89)
+	at reactor.core.publisher.FluxMapFuseable$MapFuseableSubscriber.onComplete(FluxMapFuseable.java:152)
+	at reactor.core.publisher.FluxOnAssembly$OnAssemblySubscriber.onComplete(FluxOnAssembly.java:549)
+	at reactor.core.publisher.FluxMap$MapSubscriber.onComplete(FluxMap.java:144)
+	at reactor.core.publisher.FluxPeek$PeekSubscriber.onComplete(FluxPeek.java:260)
+	at reactor.core.publisher.FluxMap$MapSubscriber.onComplete(FluxMap.java:144)
+	at reactor.core.publisher.Operators.complete(Operators.java:137)
+	at reactor.netty.channel.FluxReceive.startReceiver(FluxReceive.java:179)
+	at reactor.netty.channel.FluxReceive.subscribe(FluxReceive.java:145)
+	at reactor.core.publisher.InternalFluxOperator.subscribe(InternalFluxOperator.java:68)
+	at reactor.netty.ByteBufFlux.subscribe(ByteBufFlux.java:340)
+	at reactor.core.publisher.Mono.subscribe(Mono.java:4576)
+	at reactor.core.publisher.MonoIgnoreThen$ThenIgnoreMain.subscribeNext(MonoIgnoreThen.java:265)
+	at reactor.core.publisher.MonoIgnoreThen.subscribe(MonoIgnoreThen.java:51)
+	at reactor.core.publisher.MonoFlatMap$FlatMapMain.onNext(MonoFlatMap.java:165)
+	at reactor.core.publisher.FluxMap$MapSubscriber.onNext(FluxMap.java:122)
+	at reactor.core.publisher.FluxOnErrorReturn$ReturnSubscriber.onNext(FluxOnErrorReturn.java:162)
+	at reactor.core.publisher.FluxDefaultIfEmpty$DefaultIfEmptySubscriber.onNext(FluxDefaultIfEmpty.java:122)
+	at reactor.core.publisher.FluxOnAssembly$OnAssemblySubscriber.onNext(FluxOnAssembly.java:539)
+	at reactor.core.publisher.FluxMapFuseable$MapFuseableSubscriber.onNext(FluxMapFuseable.java:129)
+	at reactor.core.publisher.FluxContextWrite$ContextWriteSubscriber.onNext(FluxContextWrite.java:107)
+	at reactor.core.publisher.FluxMapFuseable$MapFuseableConditionalSubscriber.onNext(FluxMapFuseable.java:299)
+	at reactor.core.publisher.FluxFilterFuseable$FilterFuseableConditionalSubscriber.onNext(FluxFilterFuseable.java:337)
+	at reactor.core.publisher.Operators$BaseFluxToMonoOperator.completePossiblyEmpty(Operators.java:2097)
+	at reactor.core.publisher.MonoCollect$CollectSubscriber.onComplete(MonoCollect.java:145)
+	at reactor.core.publisher.FluxMap$MapSubscriber.onComplete(FluxMap.java:144)
+	at reactor.core.publisher.FluxPeek$PeekSubscriber.onComplete(FluxPeek.java:260)
+	at reactor.core.publisher.FluxMap$MapSubscriber.onComplete(FluxMap.java:144)
+	at reactor.netty.channel.FluxReceive.onInboundComplete(FluxReceive.java:413)
+	at reactor.netty.channel.ChannelOperations.onInboundComplete(ChannelOperations.java:455)
+	at reactor.netty.channel.ChannelOperations.terminate(ChannelOperations.java:509)
+	at reactor.netty.http.client.HttpClientOperations.onInboundNext(HttpClientOperations.java:819)
+	at reactor.netty.channel.ChannelOperationsHandler.channelRead(ChannelOperationsHandler.java:115)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:444)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:420)
+	at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:412)
+	at io.netty.handler.codec.MessageToMessageDecoder.channelRead(MessageToMessageDecoder.java:107)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:444)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:420)
+	at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:412)
+	at io.netty.channel.CombinedChannelDuplexHandler$DelegatingChannelHandlerContext.fireChannelRead(CombinedChannelDuplexHandler.java:436)
+	at io.netty.handler.codec.ByteToMessageDecoder.fireChannelRead(ByteToMessageDecoder.java:346)
+	at io.netty.handler.codec.ByteToMessageDecoder.channelRead(ByteToMessageDecoder.java:318)
+	at io.netty.channel.CombinedChannelDuplexHandler.channelRead(CombinedChannelDuplexHandler.java:251)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:442)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:420)
+	at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:412)
+	at io.netty.handler.ssl.SslHandler.unwrap(SslHandler.java:1515)
+	at io.netty.handler.ssl.SslHandler.decodeJdkCompatible(SslHandler.java:1378)
+	at io.netty.handler.ssl.SslHandler.decode(SslHandler.java:1427)
+	at io.netty.handler.codec.ByteToMessageDecoder.decodeRemovalReentryProtection(ByteToMessageDecoder.java:530)
+	at io.netty.handler.codec.ByteToMessageDecoder.callDecode(ByteToMessageDecoder.java:469)
+	at io.netty.handler.codec.ByteToMessageDecoder.channelRead(ByteToMessageDecoder.java:290)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:444)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:420)
+	at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:412)
+	at io.netty.channel.DefaultChannelPipeline$HeadContext.channelRead(DefaultChannelPipeline.java:1357)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:440)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:420)
+	at io.netty.channel.DefaultChannelPipeline.fireChannelRead(DefaultChannelPipeline.java:868)
+	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:166)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:788)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:724)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:650)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:562)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:997)
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	... 1 common frames omitted
+	Suppressed: java.lang.Exception: #block terminated with an error
+		at reactor.core.publisher.BlockingSingleSubscriber.blockingGet(BlockingSingleSubscriber.java:146)
+		at reactor.core.publisher.Mono.block(Mono.java:1807)
+		at com.yizhaoqi.smartpai.client.EmbeddingClient.callApiOnce(EmbeddingClient.java:80)
+		at com.yizhaoqi.smartpai.client.EmbeddingClient.embed(EmbeddingClient.java:55)
+		at com.yizhaoqi.smartpai.service.HybridSearchService.embedToVectorList(HybridSearchService.java:376)
+		at com.yizhaoqi.smartpai.service.HybridSearchService.searchWithPermission(HybridSearchService.java:76)
+		at com.yizhaoqi.smartpai.service.ChatHandler.processMessage(ChatHandler.java:73)
+		at com.yizhaoqi.smartpai.handler.ChatWebSocketHandler.handleTextMessage(ChatWebSocketHandler.java:73)
+		at org.springframework.web.socket.handler.AbstractWebSocketHandler.handleMessage(AbstractWebSocketHandler.java:43)
+		at org.springframework.web.socket.handler.WebSocketHandlerDecorator.handleMessage(WebSocketHandlerDecorator.java:75)
+		at org.springframework.web.socket.handler.LoggingWebSocketHandlerDecorator.handleMessage(LoggingWebSocketHandlerDecorator.java:56)
+		at org.springframework.web.socket.handler.ExceptionWebSocketHandlerDecorator.handleMessage(ExceptionWebSocketHandlerDecorator.java:58)
+		at org.springframework.web.socket.adapter.standard.StandardWebSocketHandlerAdapter.handleTextMessage(StandardWebSocketHandlerAdapter.java:113)
+		at org.springframework.web.socket.adapter.standard.StandardWebSocketHandlerAdapter$3.onMessage(StandardWebSocketHandlerAdapter.java:84)
+		at org.springframework.web.socket.adapter.standard.StandardWebSocketHandlerAdapter$3.onMessage(StandardWebSocketHandlerAdapter.java:81)
+		at org.apache.tomcat.websocket.WsFrameBase.sendMessageText(WsFrameBase.java:390)
+		at org.apache.tomcat.websocket.server.WsFrameServer.sendMessageText(WsFrameServer.java:130)
+		at org.apache.tomcat.websocket.WsFrameBase.processDataText(WsFrameBase.java:484)
+		at org.apache.tomcat.websocket.WsFrameBase.processData(WsFrameBase.java:284)
+		at org.apache.tomcat.websocket.WsFrameBase.processInputBuffer(WsFrameBase.java:130)
+		at org.apache.tomcat.websocket.server.WsFrameServer.onDataAvailable(WsFrameServer.java:85)
+		at org.apache.tomcat.websocket.server.WsFrameServer.doOnDataAvailable(WsFrameServer.java:184)
+		at org.apache.tomcat.websocket.server.WsFrameServer.notifyDataAvailable(WsFrameServer.java:164)
+		at org.apache.tomcat.websocket.server.WsHttpUpgradeHandler.upgradeDispatch(WsHttpUpgradeHandler.java:152)
+		at org.apache.coyote.http11.upgrade.UpgradeProcessorInternal.dispatch(UpgradeProcessorInternal.java:60)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:57)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:905)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1741)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1190)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
+		... 1 common frames omitted
+Caused by: org.springframework.web.reactive.function.client.WebClientResponseException$Unauthorized: 401 Unauthorized from POST https://dashscope.aliyuncs.com/compatible-mode/v1/embeddings
+	at org.springframework.web.reactive.function.client.WebClientResponseException.create(WebClientResponseException.java:322)
+	Suppressed: reactor.core.publisher.FluxOnAssembly$OnAssemblyException: 
+Error has been observed at the following site(s):
+	*__checkpoint ⇢ 401 UNAUTHORIZED from POST https://dashscope.aliyuncs.com/compatible-mode/v1/embeddings [DefaultWebClient]
+Original Stack Trace:
+		at org.springframework.web.reactive.function.client.WebClientResponseException.create(WebClientResponseException.java:322)
+		at org.springframework.web.reactive.function.client.DefaultClientResponse.lambda$createException$1(DefaultClientResponse.java:214)
+		at reactor.core.publisher.FluxMap$MapSubscriber.onNext(FluxMap.java:106)
+		at reactor.core.publisher.FluxOnErrorReturn$ReturnSubscriber.onNext(FluxOnErrorReturn.java:162)
+		at reactor.core.publisher.FluxDefaultIfEmpty$DefaultIfEmptySubscriber.onNext(FluxDefaultIfEmpty.java:122)
+		at reactor.core.publisher.FluxMapFuseable$MapFuseableSubscriber.onNext(FluxMapFuseable.java:129)
+		at reactor.core.publisher.FluxContextWrite$ContextWriteSubscriber.onNext(FluxContextWrite.java:107)
+		at reactor.core.publisher.FluxMapFuseable$MapFuseableConditionalSubscriber.onNext(FluxMapFuseable.java:299)
+		at reactor.core.publisher.FluxFilterFuseable$FilterFuseableConditionalSubscriber.onNext(FluxFilterFuseable.java:337)
+		at reactor.core.publisher.Operators$BaseFluxToMonoOperator.completePossiblyEmpty(Operators.java:2097)
+		at reactor.core.publisher.MonoCollect$CollectSubscriber.onComplete(MonoCollect.java:145)
+		at reactor.core.publisher.FluxMap$MapSubscriber.onComplete(FluxMap.java:144)
+		at reactor.core.publisher.FluxPeek$PeekSubscriber.onComplete(FluxPeek.java:260)
+		at reactor.core.publisher.FluxMap$MapSubscriber.onComplete(FluxMap.java:144)
+		at reactor.netty.channel.FluxReceive.onInboundComplete(FluxReceive.java:413)
+		at reactor.netty.channel.ChannelOperations.onInboundComplete(ChannelOperations.java:455)
+		at reactor.netty.channel.ChannelOperations.terminate(ChannelOperations.java:509)
+		at reactor.netty.http.client.HttpClientOperations.onInboundNext(HttpClientOperations.java:819)
+		at reactor.netty.channel.ChannelOperationsHandler.channelRead(ChannelOperationsHandler.java:115)
+		at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:444)
+		at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:420)
+		at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:412)
+		at io.netty.handler.codec.MessageToMessageDecoder.channelRead(MessageToMessageDecoder.java:107)
+		at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:444)
+		at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:420)
+		at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:412)
+		at io.netty.channel.CombinedChannelDuplexHandler$DelegatingChannelHandlerContext.fireChannelRead(CombinedChannelDuplexHandler.java:436)
+		at io.netty.handler.codec.ByteToMessageDecoder.fireChannelRead(ByteToMessageDecoder.java:346)
+		at io.netty.handler.codec.ByteToMessageDecoder.channelRead(ByteToMessageDecoder.java:318)
+		at io.netty.channel.CombinedChannelDuplexHandler.channelRead(CombinedChannelDuplexHandler.java:251)
+		at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:442)
+		at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:420)
+		at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:412)
+		at io.netty.handler.ssl.SslHandler.unwrap(SslHandler.java:1515)
+		at io.netty.handler.ssl.SslHandler.decodeJdkCompatible(SslHandler.java:1378)
+		at io.netty.handler.ssl.SslHandler.decode(SslHandler.java:1427)
+		at io.netty.handler.codec.ByteToMessageDecoder.decodeRemovalReentryProtection(ByteToMessageDecoder.java:530)
+		at io.netty.handler.codec.ByteToMessageDecoder.callDecode(ByteToMessageDecoder.java:469)
+		at io.netty.handler.codec.ByteToMessageDecoder.channelRead(ByteToMessageDecoder.java:290)
+		at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:444)
+		at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:420)
+		at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:412)
+		at io.netty.channel.DefaultChannelPipeline$HeadContext.channelRead(DefaultChannelPipeline.java:1357)
+		at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:440)
+		at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:420)
+		at io.netty.channel.DefaultChannelPipeline.fireChannelRead(DefaultChannelPipeline.java:868)
+		at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:166)
+		at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:788)
+		at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:724)
+		at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:650)
+		at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:562)
+		at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:997)
+		at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+		at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+		at java.base/java.lang.Thread.run(Thread.java:842)
+2025-11-02 20:50:40.621 [http-nio-8081-exec-6] WARN  com.yizhaoqi.smartpai.service.HybridSearchService - 向量生成失败，仅使用文本匹配进行搜索
+2025-11-02 20:50:40.621 [http-nio-8081-exec-6] DEBUG com.yizhaoqi.smartpai.service.HybridSearchService - 开始执行纯文本搜索，用户数据库ID: 1, 标签: [DEFAULT]
+2025-11-02 20:50:41.111 [http-nio-8081-exec-6] DEBUG com.yizhaoqi.smartpai.service.HybridSearchService - 纯文本查询执行完成，命中数量: 0, 最大分数: NaN
+2025-11-02 20:50:41.112 [http-nio-8081-exec-6] DEBUG com.yizhaoqi.smartpai.service.HybridSearchService - 返回纯文本搜索结果数量: 0
+2025-11-02 20:50:41.112 [http-nio-8081-exec-6] DEBUG com.yizhaoqi.smartpai.service.ChatHandler - 搜索结果数量: 0
+2025-11-02 20:50:41.112 [http-nio-8081-exec-6] INFO  com.yizhaoqi.smartpai.service.ChatHandler - 调用DeepSeek API生成回复
+2025-11-02 20:50:41.112 [http-nio-8081-exec-6] INFO  com.yizhaoqi.smartpai.client.DeepSeekClient - 构建请求，用户消息：人工智能的发展，上下文长度：0，历史消息数：0
+2025-11-02 20:50:42.020 [reactor-http-nio-3] ERROR com.yizhaoqi.smartpai.service.ChatHandler - AI服务错误: 401 Unauthorized from POST https://api.deepseek.com/v1/chat/completions
+org.springframework.web.reactive.function.client.WebClientResponseException$Unauthorized: 401 Unauthorized from POST https://api.deepseek.com/v1/chat/completions
+	at org.springframework.web.reactive.function.client.WebClientResponseException.create(WebClientResponseException.java:322)
+	Suppressed: reactor.core.publisher.FluxOnAssembly$OnAssemblyException: 
+Error has been observed at the following site(s):
+	*__checkpoint ⇢ 401 UNAUTHORIZED from POST https://api.deepseek.com/v1/chat/completions [DefaultWebClient]
+Original Stack Trace:
+		at org.springframework.web.reactive.function.client.WebClientResponseException.create(WebClientResponseException.java:322)
+		at org.springframework.web.reactive.function.client.DefaultClientResponse.lambda$createException$1(DefaultClientResponse.java:214)
+		at reactor.core.publisher.FluxMap$MapSubscriber.onNext(FluxMap.java:106)
+		at reactor.core.publisher.FluxOnErrorReturn$ReturnSubscriber.onNext(FluxOnErrorReturn.java:162)
+		at reactor.core.publisher.FluxDefaultIfEmpty$DefaultIfEmptySubscriber.onNext(FluxDefaultIfEmpty.java:122)
+		at reactor.core.publisher.FluxMapFuseable$MapFuseableSubscriber.onNext(FluxMapFuseable.java:129)
+		at reactor.core.publisher.FluxContextWrite$ContextWriteSubscriber.onNext(FluxContextWrite.java:107)
+		at reactor.core.publisher.FluxMapFuseable$MapFuseableConditionalSubscriber.onNext(FluxMapFuseable.java:299)
+		at reactor.core.publisher.FluxFilterFuseable$FilterFuseableConditionalSubscriber.onNext(FluxFilterFuseable.java:337)
+		at reactor.core.publisher.Operators$BaseFluxToMonoOperator.completePossiblyEmpty(Operators.java:2097)
+		at reactor.core.publisher.MonoCollect$CollectSubscriber.onComplete(MonoCollect.java:145)
+		at reactor.core.publisher.FluxMap$MapSubscriber.onComplete(FluxMap.java:144)
+		at reactor.core.publisher.FluxPeek$PeekSubscriber.onComplete(FluxPeek.java:260)
+		at reactor.core.publisher.FluxMap$MapSubscriber.onComplete(FluxMap.java:144)
+		at reactor.netty.channel.FluxReceive.onInboundComplete(FluxReceive.java:413)
+		at reactor.netty.channel.ChannelOperations.onInboundComplete(ChannelOperations.java:455)
+		at reactor.netty.channel.ChannelOperations.terminate(ChannelOperations.java:509)
+		at reactor.netty.http.client.HttpClientOperations.onInboundNext(HttpClientOperations.java:819)
+		at reactor.netty.channel.ChannelOperationsHandler.channelRead(ChannelOperationsHandler.java:115)
+		at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:444)
+		at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:420)
+		at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:412)
+		at io.netty.handler.codec.MessageToMessageDecoder.channelRead(MessageToMessageDecoder.java:107)
+		at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:444)
+		at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:420)
+		at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:412)
+		at io.netty.channel.CombinedChannelDuplexHandler$DelegatingChannelHandlerContext.fireChannelRead(CombinedChannelDuplexHandler.java:436)
+		at io.netty.handler.codec.ByteToMessageDecoder.fireChannelRead(ByteToMessageDecoder.java:346)
+		at io.netty.handler.codec.ByteToMessageDecoder.channelRead(ByteToMessageDecoder.java:318)
+		at io.netty.channel.CombinedChannelDuplexHandler.channelRead(CombinedChannelDuplexHandler.java:251)
+		at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:442)
+		at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:420)
+		at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:412)
+		at io.netty.handler.ssl.SslHandler.unwrap(SslHandler.java:1515)
+		at io.netty.handler.ssl.SslHandler.decodeJdkCompatible(SslHandler.java:1378)
+		at io.netty.handler.ssl.SslHandler.decode(SslHandler.java:1427)
+		at io.netty.handler.codec.ByteToMessageDecoder.decodeRemovalReentryProtection(ByteToMessageDecoder.java:530)
+		at io.netty.handler.codec.ByteToMessageDecoder.callDecode(ByteToMessageDecoder.java:469)
+		at io.netty.handler.codec.ByteToMessageDecoder.channelRead(ByteToMessageDecoder.java:290)
+		at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:444)
+		at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:420)
+		at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:412)
+		at io.netty.channel.DefaultChannelPipeline$HeadContext.channelRead(DefaultChannelPipeline.java:1357)
+		at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:440)
+		at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:420)
+		at io.netty.channel.DefaultChannelPipeline.fireChannelRead(DefaultChannelPipeline.java:868)
+		at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:166)
+		at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:788)
+		at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:724)
+		at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:650)
+		at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:562)
+		at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:997)
+		at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+		at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+		at java.base/java.lang.Thread.run(Thread.java:842)
+2025-11-02 20:50:42.022 [reactor-http-nio-3] ERROR com.yizhaoqi.smartpai.service.ChatHandler - 发送错误消息到会话 36c03b86-fb68-2f28-0156-856ef3e8cf8a: {"error":"AI服务暂时不可用，请稍后重试"}
+2025-11-02 20:50:42.025 [reactor-http-nio-3] ERROR com.yizhaoqi.smartpai.service.ChatHandler - 已发送错误消息到会话: 36c03b86-fb68-2f28-0156-856ef3e8cf8a
+2025-11-02 20:50:42.026 [reactor-http-nio-3] INFO  com.yizhaoqi.smartpai.service.ChatHandler - 发送完成通知到会话 36c03b86-fb68-2f28-0156-856ef3e8cf8a: {"type":"completion","date":"2025-11-02T20:50:42.025869","timestamp":1762087842025,"message":"响应已完成","status":"finished"}
+2025-11-02 20:50:42.026 [reactor-http-nio-3] INFO  com.yizhaoqi.smartpai.service.ChatHandler - 已发送响应完成通知到会话: 36c03b86-fb68-2f28-0156-856ef3e8cf8a
+2025-11-02 20:50:44.122 [Thread-10] WARN  com.yizhaoqi.smartpai.service.ChatHandler - 响应构建器为空，可能出现了错误，会话ID: 36c03b86-fb68-2f28-0156-856ef3e8cf8a
+2025-11-02 20:50:44.122 [Thread-10] ERROR com.yizhaoqi.smartpai.service.ChatHandler - AI服务错误: 响应构建器为空
+java.lang.RuntimeException: 响应构建器为空
+	at com.yizhaoqi.smartpai.service.ChatHandler.lambda$processMessage$2(ChatHandler.java:196)
+	at java.base/java.lang.Thread.run(Thread.java:842)
+2025-11-02 20:50:44.122 [Thread-10] ERROR com.yizhaoqi.smartpai.service.ChatHandler - 发送错误消息到会话 36c03b86-fb68-2f28-0156-856ef3e8cf8a: {"error":"AI服务暂时不可用，请稍后重试"}
+2025-11-02 20:50:44.126 [Thread-10] ERROR com.yizhaoqi.smartpai.service.ChatHandler - 已发送错误消息到会话: 36c03b86-fb68-2f28-0156-856ef3e8cf8a
+2025-11-02 21:05:52.749 [http-nio-8081-exec-7] INFO  com.yizhaoqi.smartpai.business - [REQUEST_START] [用户:anonymous] 开始处理请求 [POST] /api/v1/users/login
+2025-11-02 21:05:52.934 [http-nio-8081-exec-7] DEBUG com.yizhaoqi.smartpai.service.TokenCacheService - Token cached: ee3754a7720845ab85b4cb9d36e445a5 for user: admin
+2025-11-02 21:05:52.934 [http-nio-8081-exec-7] INFO  com.yizhaoqi.smartpai.utils.JwtUtils - Token generated and cached for user: admin, tokenId: ee3754a7720845ab85b4cb9d36e445a5
+2025-11-02 21:05:52.941 [http-nio-8081-exec-7] DEBUG com.yizhaoqi.smartpai.service.TokenCacheService - Refresh token cached: 807dbc5124a94e7f91b9c09565ad76f7 for user: 1
+2025-11-02 21:05:52.941 [http-nio-8081-exec-7] INFO  com.yizhaoqi.smartpai.utils.JwtUtils - Refresh token generated and cached for user: admin, refreshTokenId: 807dbc5124a94e7f91b9c09565ad76f7
+2025-11-02 21:05:52.941 [http-nio-8081-exec-7] INFO  com.yizhaoqi.smartpai.business - [用户操作] [用户:admin] [操作:LOGIN] [资源:token_generation] [结果:SUCCESS]
+2025-11-02 21:05:52.950 [http-nio-8081-exec-7] INFO  com.yizhaoqi.smartpai.business - [API] [POST] /api/v1/users/login [用户:anonymous] [状态:200] [耗时:201ms]
+2025-11-02 21:05:52.990 [http-nio-8081-exec-8] INFO  com.yizhaoqi.smartpai.business - [REQUEST_START] [用户:1] 开始处理请求 [GET] /api/v1/users/me
+2025-11-02 21:05:52.994 [http-nio-8081-exec-8] INFO  com.yizhaoqi.smartpai.business - [用户操作] [用户:admin] [操作:GET_USER_INFO] [资源:user_profile] [结果:SUCCESS]
+2025-11-02 21:05:52.998 [http-nio-8081-exec-8] INFO  com.yizhaoqi.smartpai.business - [API] [GET] /api/v1/users/me [用户:1] [状态:200] [耗时:8ms]
+2025-11-02 21:05:53.103 [http-nio-8081-exec-9] INFO  com.yizhaoqi.smartpai.business - [REQUEST_START] [用户:1] 开始处理请求 [GET] /api/v1/users/me
+2025-11-02 21:05:53.125 [http-nio-8081-exec-9] INFO  com.yizhaoqi.smartpai.business - [用户操作] [用户:admin] [操作:GET_USER_INFO] [资源:user_profile] [结果:SUCCESS]
+2025-11-02 21:05:53.132 [http-nio-8081-exec-9] INFO  com.yizhaoqi.smartpai.business - [API] [GET] /api/v1/users/me [用户:1] [状态:200] [耗时:51ms]
+2025-11-02 21:05:54.118 [http-nio-8081-exec-10] INFO  c.yizhaoqi.smartpai.handler.ChatWebSocketHandler - WebSocket连接已建立，用户ID: admin，会话ID: ab2f9857-dcb2-2f3c-b2c7-00dd2ecdc947，URI路径: /chat/eyJhbGciOiJIUzI1NiJ9.eyJwcmltYXJ5T3JnIjoiZGVmYXVsdCIsIm9yZ1RhZ3MiOiJkZWZhdWx0LGFkbWluIiwicm9sZSI6IkFETUlOIiwidG9rZW5JZCI6ImVlMzc1NGE3NzIwODQ1YWI4NWI0Y2I5ZDM2ZTQ0NWE1IiwidXNlcklkIjoiMSIsInN1YiI6ImFkbWluIiwiZXhwIjoxNzYyMDkyMzUyfQ.Qr57b4qU9XmUGeBqNba3E7cq3m6wcvf2u1uD_iYHNoc
+2025-11-02 21:05:54.229 [http-nio-8081-exec-1] INFO  com.yizhaoqi.smartpai.business - [REQUEST_START] [用户:1] 开始处理请求 [GET] /api/v1/users/conversation
+2025-11-02 21:05:54.240 [http-nio-8081-exec-1] INFO  com.yizhaoqi.smartpai.business - [GET_CONVERSATIONS] [用户:admin] 开始查询用户对话历史
+2025-11-02 21:05:54.270 [http-nio-8081-exec-1] INFO  com.yizhaoqi.smartpai.business - [GET_CONVERSATIONS] [用户:admin] 尝试查找Redis键: user:1:current_conversation, 结果: 未找到
+2025-11-02 21:05:54.285 [http-nio-8081-exec-1] INFO  com.yizhaoqi.smartpai.business - [GET_CONVERSATIONS] [用户:admin] 找到对话会话ID: df066211-2766-4d79-9420-0fcb48a3b6b4
+2025-11-02 21:05:54.296 [http-nio-8081-exec-1] INFO  com.yizhaoqi.smartpai.business - [GET_CONVERSATIONS] [用户:admin] 会话ID df066211-2766-4d79-9420-0fcb48a3b6b4 在Redis中找不到对应的历史记录
+2025-11-02 21:05:54.297 [http-nio-8081-exec-1] INFO  com.yizhaoqi.smartpai.business - [用户操作] [用户:admin] [操作:GET_CONVERSATIONS] [资源:conversation_history] [结果:SUCCESS_EMPTY]
+2025-11-02 21:05:54.302 [http-nio-8081-exec-1] INFO  com.yizhaoqi.smartpai.business - [API] [GET] /api/v1/users/conversation [用户:1] [状态:200] [耗时:73ms]
+2025-11-02 21:05:58.638 [http-nio-8081-exec-2] INFO  com.yizhaoqi.smartpai.business - [REQUEST_START] [用户:1] 开始处理请求 [GET] /api/v1/users/me
+2025-11-02 21:05:58.653 [http-nio-8081-exec-2] INFO  com.yizhaoqi.smartpai.business - [用户操作] [用户:admin] [操作:GET_USER_INFO] [资源:user_profile] [结果:SUCCESS]
+2025-11-02 21:05:58.690 [http-nio-8081-exec-2] INFO  com.yizhaoqi.smartpai.business - [API] [GET] /api/v1/users/me [用户:1] [状态:200] [耗时:55ms]
+2025-11-02 21:06:01.601 [http-nio-8081-exec-4] INFO  c.yizhaoqi.smartpai.handler.ChatWebSocketHandler - WebSocket连接已关闭，用户ID: admin，会话ID: ab2f9857-dcb2-2f3c-b2c7-00dd2ecdc947，状态: CloseStatus[code=1000, reason=null]
+2025-11-02 21:06:04.103 [http-nio-8081-exec-5] INFO  com.yizhaoqi.smartpai.business - [REQUEST_START] [用户:1] 开始处理请求 [GET] /api/v1/users/me
+2025-11-02 21:06:04.205 [http-nio-8081-exec-5] INFO  com.yizhaoqi.smartpai.business - [用户操作] [用户:admin] [操作:GET_USER_INFO] [资源:user_profile] [结果:SUCCESS]
+2025-11-02 21:06:04.223 [http-nio-8081-exec-5] INFO  com.yizhaoqi.smartpai.business - [API] [GET] /api/v1/users/me [用户:1] [状态:200] [耗时:116ms]
+2025-11-02 21:06:04.320 [http-nio-8081-exec-3] INFO  com.yizhaoqi.smartpai.business - [REQUEST_START] [用户:1] 开始处理请求 [GET] /api/v1/users/me
+2025-11-02 21:06:04.324 [http-nio-8081-exec-3] INFO  com.yizhaoqi.smartpai.business - [用户操作] [用户:admin] [操作:GET_USER_INFO] [资源:user_profile] [结果:SUCCESS]
+2025-11-02 21:06:04.325 [http-nio-8081-exec-3] INFO  com.yizhaoqi.smartpai.business - [API] [GET] /api/v1/users/me [用户:1] [状态:200] [耗时:9ms]
+2025-11-02 21:06:04.413 [http-nio-8081-exec-6] INFO  c.yizhaoqi.smartpai.handler.ChatWebSocketHandler - WebSocket连接已建立，用户ID: admin，会话ID: dcedd433-e78c-d5bc-1bd2-aa79b1139943，URI路径: /chat/eyJhbGciOiJIUzI1NiJ9.eyJwcmltYXJ5T3JnIjoiZGVmYXVsdCIsIm9yZ1RhZ3MiOiJkZWZhdWx0LGFkbWluIiwicm9sZSI6IkFETUlOIiwidG9rZW5JZCI6ImVlMzc1NGE3NzIwODQ1YWI4NWI0Y2I5ZDM2ZTQ0NWE1IiwidXNlcklkIjoiMSIsInN1YiI6ImFkbWluIiwiZXhwIjoxNzYyMDkyMzUyfQ.Qr57b4qU9XmUGeBqNba3E7cq3m6wcvf2u1uD_iYHNoc
+2025-11-02 21:06:04.542 [http-nio-8081-exec-7] INFO  com.yizhaoqi.smartpai.business - [REQUEST_START] [用户:1] 开始处理请求 [GET] /api/v1/users/conversation
+2025-11-02 21:06:04.546 [http-nio-8081-exec-7] INFO  com.yizhaoqi.smartpai.business - [GET_CONVERSATIONS] [用户:admin] 开始查询用户对话历史
+2025-11-02 21:06:04.562 [http-nio-8081-exec-7] INFO  com.yizhaoqi.smartpai.business - [GET_CONVERSATIONS] [用户:admin] 尝试查找Redis键: user:1:current_conversation, 结果: 未找到
+2025-11-02 21:06:04.573 [http-nio-8081-exec-7] INFO  com.yizhaoqi.smartpai.business - [GET_CONVERSATIONS] [用户:admin] 找到对话会话ID: df066211-2766-4d79-9420-0fcb48a3b6b4
+2025-11-02 21:06:04.574 [http-nio-8081-exec-7] INFO  com.yizhaoqi.smartpai.business - [GET_CONVERSATIONS] [用户:admin] 会话ID df066211-2766-4d79-9420-0fcb48a3b6b4 在Redis中找不到对应的历史记录
+2025-11-02 21:06:04.574 [http-nio-8081-exec-7] INFO  com.yizhaoqi.smartpai.business - [用户操作] [用户:admin] [操作:GET_CONVERSATIONS] [资源:conversation_history] [结果:SUCCESS_EMPTY]
+2025-11-02 21:06:04.576 [http-nio-8081-exec-7] INFO  com.yizhaoqi.smartpai.business - [API] [GET] /api/v1/users/conversation [用户:1] [状态:200] [耗时:35ms]
+2025-11-02 21:06:11.242 [http-nio-8081-exec-8] INFO  c.yizhaoqi.smartpai.handler.ChatWebSocketHandler - 接收到消息，用户ID: admin，会话ID: dcedd433-e78c-d5bc-1bd2-aa79b1139943，消息长度: 2
+2025-11-02 21:06:11.243 [http-nio-8081-exec-8] INFO  com.yizhaoqi.smartpai.service.ChatHandler - 开始处理消息，用户ID: admin, 会话ID: dcedd433-e78c-d5bc-1bd2-aa79b1139943
+2025-11-02 21:06:11.248 [http-nio-8081-exec-8] INFO  com.yizhaoqi.smartpai.service.ChatHandler - 获取到用户 admin 的现有会话ID: df066211-2766-4d79-9420-0fcb48a3b6b4
+2025-11-02 21:06:11.248 [http-nio-8081-exec-8] INFO  com.yizhaoqi.smartpai.service.ChatHandler - 会话ID: df066211-2766-4d79-9420-0fcb48a3b6b4, 用户ID: admin
+2025-11-02 21:06:11.250 [http-nio-8081-exec-8] DEBUG com.yizhaoqi.smartpai.service.ChatHandler - 会话 df066211-2766-4d79-9420-0fcb48a3b6b4 没有历史记录
+2025-11-02 21:06:11.250 [http-nio-8081-exec-8] DEBUG com.yizhaoqi.smartpai.service.ChatHandler - 获取到 0 条历史对话
+2025-11-02 21:06:11.251 [http-nio-8081-exec-8] DEBUG com.yizhaoqi.smartpai.service.HybridSearchService - 开始带权限搜索，查询: 你好, 用户ID: admin
+2025-11-02 21:06:11.251 [http-nio-8081-exec-8] DEBUG com.yizhaoqi.smartpai.service.HybridSearchService - 获取用户有效组织标签，用户ID: admin
+2025-11-02 21:06:11.252 [http-nio-8081-exec-8] DEBUG com.yizhaoqi.smartpai.service.HybridSearchService - 用户ID不是数字格式，作为用户名查找: admin
+2025-11-02 21:06:11.279 [http-nio-8081-exec-8] DEBUG com.yizhaoqi.smartpai.service.HybridSearchService - 通过用户名找到用户: admin
+2025-11-02 21:06:11.313 [http-nio-8081-exec-8] DEBUG com.yizhaoqi.smartpai.service.HybridSearchService - 用户 admin 的有效组织标签: [DEFAULT]
+2025-11-02 21:06:11.314 [http-nio-8081-exec-8] DEBUG com.yizhaoqi.smartpai.service.HybridSearchService - 用户 admin 的有效组织标签: [DEFAULT]
+2025-11-02 21:06:11.314 [http-nio-8081-exec-8] DEBUG com.yizhaoqi.smartpai.service.HybridSearchService - 获取用户数据库ID，用户ID: admin
+2025-11-02 21:06:11.314 [http-nio-8081-exec-8] DEBUG com.yizhaoqi.smartpai.service.HybridSearchService - 用户ID不是数字格式，作为用户名查找: admin
+2025-11-02 21:06:11.318 [http-nio-8081-exec-8] DEBUG com.yizhaoqi.smartpai.service.HybridSearchService - 通过用户名找到用户: admin, ID: 1
+2025-11-02 21:06:11.318 [http-nio-8081-exec-8] DEBUG com.yizhaoqi.smartpai.service.HybridSearchService - 用户 admin 的数据库ID: 1
+2025-11-02 21:06:11.318 [http-nio-8081-exec-8] INFO  com.yizhaoqi.smartpai.client.EmbeddingClient - 开始生成向量，文本数量: 1
+2025-11-02 21:06:14.810 [http-nio-8081-exec-8] ERROR com.yizhaoqi.smartpai.client.EmbeddingClient - 调用向量化 API 失败: Retries exhausted: 3/3
+reactor.core.Exceptions$RetryExhaustedException: Retries exhausted: 3/3
+	at reactor.core.Exceptions.retryExhausted(Exceptions.java:308)
+	at reactor.util.retry.RetryBackoffSpec.lambda$static$0(RetryBackoffSpec.java:68)
+	at reactor.util.retry.RetryBackoffSpec.lambda$null$4(RetryBackoffSpec.java:608)
+	at reactor.core.publisher.FluxConcatMapNoPrefetch$FluxConcatMapNoPrefetchSubscriber.onNext(FluxConcatMapNoPrefetch.java:183)
+	at reactor.core.publisher.FluxContextWrite$ContextWriteSubscriber.onNext(FluxContextWrite.java:107)
+	at reactor.core.publisher.SinkManyEmitterProcessor.drain(SinkManyEmitterProcessor.java:476)
+	at reactor.core.publisher.SinkManyEmitterProcessor.tryEmitNext(SinkManyEmitterProcessor.java:273)
+	at reactor.core.publisher.SinkManySerialized.tryEmitNext(SinkManySerialized.java:100)
+	at reactor.core.publisher.InternalManySink.emitNext(InternalManySink.java:27)
+	at reactor.core.publisher.FluxRetryWhen$RetryWhenMainSubscriber.onError(FluxRetryWhen.java:194)
+	at reactor.core.publisher.MonoFlatMap$FlatMapMain.secondError(MonoFlatMap.java:241)
+	at reactor.core.publisher.MonoFlatMap$FlatMapInner.onError(MonoFlatMap.java:315)
+	at reactor.core.publisher.Operators$MultiSubscriptionSubscriber.onError(Operators.java:2236)
+	at reactor.core.publisher.FluxOnAssembly$OnAssemblySubscriber.onError(FluxOnAssembly.java:544)
+	at reactor.core.publisher.MonoFlatMap$FlatMapMain.onError(MonoFlatMap.java:180)
+	at reactor.core.publisher.FluxOnErrorResume$ResumeSubscriber.onError(FluxOnErrorResume.java:106)
+	at reactor.core.publisher.MonoIgnoreThen$ThenIgnoreMain.onError(MonoIgnoreThen.java:280)
+	at reactor.core.publisher.MonoIgnoreThen$ThenIgnoreMain.subscribeNext(MonoIgnoreThen.java:232)
+	at reactor.core.publisher.MonoIgnoreThen$ThenIgnoreMain.onComplete(MonoIgnoreThen.java:204)
+	at reactor.core.publisher.FluxOnErrorReturn$ReturnSubscriber.onComplete(FluxOnErrorReturn.java:169)
+	at reactor.core.publisher.MonoIgnoreElements$IgnoreElementsSubscriber.onComplete(MonoIgnoreElements.java:89)
+	at reactor.core.publisher.FluxMapFuseable$MapFuseableSubscriber.onComplete(FluxMapFuseable.java:152)
+	at reactor.core.publisher.FluxOnAssembly$OnAssemblySubscriber.onComplete(FluxOnAssembly.java:549)
+	at reactor.core.publisher.FluxMap$MapSubscriber.onComplete(FluxMap.java:144)
+	at reactor.core.publisher.FluxPeek$PeekSubscriber.onComplete(FluxPeek.java:260)
+	at reactor.core.publisher.FluxMap$MapSubscriber.onComplete(FluxMap.java:144)
+	at reactor.core.publisher.Operators.complete(Operators.java:137)
+	at reactor.netty.channel.FluxReceive.startReceiver(FluxReceive.java:179)
+	at reactor.netty.channel.FluxReceive.subscribe(FluxReceive.java:145)
+	at reactor.core.publisher.InternalFluxOperator.subscribe(InternalFluxOperator.java:68)
+	at reactor.netty.ByteBufFlux.subscribe(ByteBufFlux.java:340)
+	at reactor.core.publisher.Mono.subscribe(Mono.java:4576)
+	at reactor.core.publisher.MonoIgnoreThen$ThenIgnoreMain.subscribeNext(MonoIgnoreThen.java:265)
+	at reactor.core.publisher.MonoIgnoreThen.subscribe(MonoIgnoreThen.java:51)
+	at reactor.core.publisher.Mono.subscribe(Mono.java:4576)
+	at reactor.core.publisher.FluxOnErrorResume$ResumeSubscriber.onError(FluxOnErrorResume.java:103)
+	at reactor.core.publisher.MonoFlatMap$FlatMapMain.secondError(MonoFlatMap.java:241)
+	at reactor.core.publisher.MonoFlatMap$FlatMapInner.onError(MonoFlatMap.java:315)
+	at reactor.core.publisher.MonoIgnoreThen$ThenIgnoreMain.onError(MonoIgnoreThen.java:280)
+	at reactor.core.publisher.MonoIgnoreThen$ThenIgnoreMain.subscribeNext(MonoIgnoreThen.java:232)
+	at reactor.core.publisher.MonoIgnoreThen$ThenIgnoreMain.onComplete(MonoIgnoreThen.java:204)
+	at reactor.core.publisher.FluxOnErrorReturn$ReturnSubscriber.onComplete(FluxOnErrorReturn.java:169)
+	at reactor.core.publisher.MonoIgnoreElements$IgnoreElementsSubscriber.onComplete(MonoIgnoreElements.java:89)
+	at reactor.core.publisher.FluxMapFuseable$MapFuseableSubscriber.onComplete(FluxMapFuseable.java:152)
+	at reactor.core.publisher.FluxOnAssembly$OnAssemblySubscriber.onComplete(FluxOnAssembly.java:549)
+	at reactor.core.publisher.FluxMap$MapSubscriber.onComplete(FluxMap.java:144)
+	at reactor.core.publisher.FluxPeek$PeekSubscriber.onComplete(FluxPeek.java:260)
+	at reactor.core.publisher.FluxMap$MapSubscriber.onComplete(FluxMap.java:144)
+	at reactor.core.publisher.Operators.complete(Operators.java:137)
+	at reactor.netty.channel.FluxReceive.startReceiver(FluxReceive.java:179)
+	at reactor.netty.channel.FluxReceive.subscribe(FluxReceive.java:145)
+	at reactor.core.publisher.InternalFluxOperator.subscribe(InternalFluxOperator.java:68)
+	at reactor.netty.ByteBufFlux.subscribe(ByteBufFlux.java:340)
+	at reactor.core.publisher.Mono.subscribe(Mono.java:4576)
+	at reactor.core.publisher.MonoIgnoreThen$ThenIgnoreMain.subscribeNext(MonoIgnoreThen.java:265)
+	at reactor.core.publisher.MonoIgnoreThen.subscribe(MonoIgnoreThen.java:51)
+	at reactor.core.publisher.MonoFlatMap$FlatMapMain.onNext(MonoFlatMap.java:165)
+	at reactor.core.publisher.FluxMap$MapSubscriber.onNext(FluxMap.java:122)
+	at reactor.core.publisher.FluxOnErrorReturn$ReturnSubscriber.onNext(FluxOnErrorReturn.java:162)
+	at reactor.core.publisher.FluxDefaultIfEmpty$DefaultIfEmptySubscriber.onNext(FluxDefaultIfEmpty.java:122)
+	at reactor.core.publisher.FluxOnAssembly$OnAssemblySubscriber.onNext(FluxOnAssembly.java:539)
+	at reactor.core.publisher.FluxMapFuseable$MapFuseableSubscriber.onNext(FluxMapFuseable.java:129)
+	at reactor.core.publisher.FluxContextWrite$ContextWriteSubscriber.onNext(FluxContextWrite.java:107)
+	at reactor.core.publisher.FluxMapFuseable$MapFuseableConditionalSubscriber.onNext(FluxMapFuseable.java:299)
+	at reactor.core.publisher.FluxFilterFuseable$FilterFuseableConditionalSubscriber.onNext(FluxFilterFuseable.java:337)
+	at reactor.core.publisher.Operators$BaseFluxToMonoOperator.completePossiblyEmpty(Operators.java:2097)
+	at reactor.core.publisher.MonoCollect$CollectSubscriber.onComplete(MonoCollect.java:145)
+	at reactor.core.publisher.FluxMap$MapSubscriber.onComplete(FluxMap.java:144)
+	at reactor.core.publisher.FluxPeek$PeekSubscriber.onComplete(FluxPeek.java:260)
+	at reactor.core.publisher.FluxMap$MapSubscriber.onComplete(FluxMap.java:144)
+	at reactor.netty.channel.FluxReceive.onInboundComplete(FluxReceive.java:413)
+	at reactor.netty.channel.ChannelOperations.onInboundComplete(ChannelOperations.java:455)
+	at reactor.netty.channel.ChannelOperations.terminate(ChannelOperations.java:509)
+	at reactor.netty.http.client.HttpClientOperations.onInboundNext(HttpClientOperations.java:819)
+	at reactor.netty.channel.ChannelOperationsHandler.channelRead(ChannelOperationsHandler.java:115)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:444)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:420)
+	at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:412)
+	at io.netty.handler.codec.MessageToMessageDecoder.channelRead(MessageToMessageDecoder.java:107)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:444)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:420)
+	at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:412)
+	at io.netty.channel.CombinedChannelDuplexHandler$DelegatingChannelHandlerContext.fireChannelRead(CombinedChannelDuplexHandler.java:436)
+	at io.netty.handler.codec.ByteToMessageDecoder.fireChannelRead(ByteToMessageDecoder.java:346)
+	at io.netty.handler.codec.ByteToMessageDecoder.channelRead(ByteToMessageDecoder.java:318)
+	at io.netty.channel.CombinedChannelDuplexHandler.channelRead(CombinedChannelDuplexHandler.java:251)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:442)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:420)
+	at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:412)
+	at io.netty.handler.ssl.SslHandler.unwrap(SslHandler.java:1515)
+	at io.netty.handler.ssl.SslHandler.decodeJdkCompatible(SslHandler.java:1378)
+	at io.netty.handler.ssl.SslHandler.decode(SslHandler.java:1427)
+	at io.netty.handler.codec.ByteToMessageDecoder.decodeRemovalReentryProtection(ByteToMessageDecoder.java:530)
+	at io.netty.handler.codec.ByteToMessageDecoder.callDecode(ByteToMessageDecoder.java:469)
+	at io.netty.handler.codec.ByteToMessageDecoder.channelRead(ByteToMessageDecoder.java:290)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:444)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:420)
+	at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:412)
+	at io.netty.channel.DefaultChannelPipeline$HeadContext.channelRead(DefaultChannelPipeline.java:1357)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:440)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:420)
+	at io.netty.channel.DefaultChannelPipeline.fireChannelRead(DefaultChannelPipeline.java:868)
+	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:166)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:788)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:724)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:650)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:562)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:997)
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	at java.base/java.lang.Thread.run(Thread.java:842)
+	Suppressed: java.lang.Exception: #block terminated with an error
+		at reactor.core.publisher.BlockingSingleSubscriber.blockingGet(BlockingSingleSubscriber.java:146)
+		at reactor.core.publisher.Mono.block(Mono.java:1807)
+		at com.yizhaoqi.smartpai.client.EmbeddingClient.callApiOnce(EmbeddingClient.java:80)
+		at com.yizhaoqi.smartpai.client.EmbeddingClient.embed(EmbeddingClient.java:55)
+		at com.yizhaoqi.smartpai.service.HybridSearchService.embedToVectorList(HybridSearchService.java:376)
+		at com.yizhaoqi.smartpai.service.HybridSearchService.searchWithPermission(HybridSearchService.java:76)
+		at com.yizhaoqi.smartpai.service.ChatHandler.processMessage(ChatHandler.java:73)
+		at com.yizhaoqi.smartpai.handler.ChatWebSocketHandler.handleTextMessage(ChatWebSocketHandler.java:73)
+		at org.springframework.web.socket.handler.AbstractWebSocketHandler.handleMessage(AbstractWebSocketHandler.java:43)
+		at org.springframework.web.socket.handler.WebSocketHandlerDecorator.handleMessage(WebSocketHandlerDecorator.java:75)
+		at org.springframework.web.socket.handler.LoggingWebSocketHandlerDecorator.handleMessage(LoggingWebSocketHandlerDecorator.java:56)
+		at org.springframework.web.socket.handler.ExceptionWebSocketHandlerDecorator.handleMessage(ExceptionWebSocketHandlerDecorator.java:58)
+		at org.springframework.web.socket.adapter.standard.StandardWebSocketHandlerAdapter.handleTextMessage(StandardWebSocketHandlerAdapter.java:113)
+		at org.springframework.web.socket.adapter.standard.StandardWebSocketHandlerAdapter$3.onMessage(StandardWebSocketHandlerAdapter.java:84)
+		at org.springframework.web.socket.adapter.standard.StandardWebSocketHandlerAdapter$3.onMessage(StandardWebSocketHandlerAdapter.java:81)
+		at org.apache.tomcat.websocket.WsFrameBase.sendMessageText(WsFrameBase.java:390)
+		at org.apache.tomcat.websocket.server.WsFrameServer.sendMessageText(WsFrameServer.java:130)
+		at org.apache.tomcat.websocket.WsFrameBase.processDataText(WsFrameBase.java:484)
+		at org.apache.tomcat.websocket.WsFrameBase.processData(WsFrameBase.java:284)
+		at org.apache.tomcat.websocket.WsFrameBase.processInputBuffer(WsFrameBase.java:130)
+		at org.apache.tomcat.websocket.server.WsFrameServer.onDataAvailable(WsFrameServer.java:85)
+		at org.apache.tomcat.websocket.server.WsFrameServer.doOnDataAvailable(WsFrameServer.java:184)
+		at org.apache.tomcat.websocket.server.WsFrameServer.notifyDataAvailable(WsFrameServer.java:164)
+		at org.apache.tomcat.websocket.server.WsHttpUpgradeHandler.upgradeDispatch(WsHttpUpgradeHandler.java:152)
+		at org.apache.coyote.http11.upgrade.UpgradeProcessorInternal.dispatch(UpgradeProcessorInternal.java:60)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:57)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:905)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1741)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1190)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
+		... 1 common frames omitted
+Caused by: org.springframework.web.reactive.function.client.WebClientResponseException$Unauthorized: 401 Unauthorized from POST https://dashscope.aliyuncs.com/compatible-mode/v1/embeddings
+	at org.springframework.web.reactive.function.client.WebClientResponseException.create(WebClientResponseException.java:322)
+	Suppressed: reactor.core.publisher.FluxOnAssembly$OnAssemblyException: 
+Error has been observed at the following site(s):
+	*__checkpoint ⇢ 401 UNAUTHORIZED from POST https://dashscope.aliyuncs.com/compatible-mode/v1/embeddings [DefaultWebClient]
+Original Stack Trace:
+		at org.springframework.web.reactive.function.client.WebClientResponseException.create(WebClientResponseException.java:322)
+		at org.springframework.web.reactive.function.client.DefaultClientResponse.lambda$createException$1(DefaultClientResponse.java:214)
+		at reactor.core.publisher.FluxMap$MapSubscriber.onNext(FluxMap.java:106)
+		at reactor.core.publisher.FluxOnErrorReturn$ReturnSubscriber.onNext(FluxOnErrorReturn.java:162)
+		at reactor.core.publisher.FluxDefaultIfEmpty$DefaultIfEmptySubscriber.onNext(FluxDefaultIfEmpty.java:122)
+		at reactor.core.publisher.FluxMapFuseable$MapFuseableSubscriber.onNext(FluxMapFuseable.java:129)
+		at reactor.core.publisher.FluxContextWrite$ContextWriteSubscriber.onNext(FluxContextWrite.java:107)
+		at reactor.core.publisher.FluxMapFuseable$MapFuseableConditionalSubscriber.onNext(FluxMapFuseable.java:299)
+		at reactor.core.publisher.FluxFilterFuseable$FilterFuseableConditionalSubscriber.onNext(FluxFilterFuseable.java:337)
+		at reactor.core.publisher.Operators$BaseFluxToMonoOperator.completePossiblyEmpty(Operators.java:2097)
+		at reactor.core.publisher.MonoCollect$CollectSubscriber.onComplete(MonoCollect.java:145)
+		at reactor.core.publisher.FluxMap$MapSubscriber.onComplete(FluxMap.java:144)
+		at reactor.core.publisher.FluxPeek$PeekSubscriber.onComplete(FluxPeek.java:260)
+		at reactor.core.publisher.FluxMap$MapSubscriber.onComplete(FluxMap.java:144)
+		at reactor.netty.channel.FluxReceive.onInboundComplete(FluxReceive.java:413)
+		at reactor.netty.channel.ChannelOperations.onInboundComplete(ChannelOperations.java:455)
+		at reactor.netty.channel.ChannelOperations.terminate(ChannelOperations.java:509)
+		at reactor.netty.http.client.HttpClientOperations.onInboundNext(HttpClientOperations.java:819)
+		at reactor.netty.channel.ChannelOperationsHandler.channelRead(ChannelOperationsHandler.java:115)
+		at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:444)
+		at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:420)
+		at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:412)
+		at io.netty.handler.codec.MessageToMessageDecoder.channelRead(MessageToMessageDecoder.java:107)
+		at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:444)
+		at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:420)
+		at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:412)
+		at io.netty.channel.CombinedChannelDuplexHandler$DelegatingChannelHandlerContext.fireChannelRead(CombinedChannelDuplexHandler.java:436)
+		at io.netty.handler.codec.ByteToMessageDecoder.fireChannelRead(ByteToMessageDecoder.java:346)
+		at io.netty.handler.codec.ByteToMessageDecoder.channelRead(ByteToMessageDecoder.java:318)
+		at io.netty.channel.CombinedChannelDuplexHandler.channelRead(CombinedChannelDuplexHandler.java:251)
+		at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:442)
+		at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:420)
+		at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:412)
+		at io.netty.handler.ssl.SslHandler.unwrap(SslHandler.java:1515)
+		at io.netty.handler.ssl.SslHandler.decodeJdkCompatible(SslHandler.java:1378)
+		at io.netty.handler.ssl.SslHandler.decode(SslHandler.java:1427)
+		at io.netty.handler.codec.ByteToMessageDecoder.decodeRemovalReentryProtection(ByteToMessageDecoder.java:530)
+		at io.netty.handler.codec.ByteToMessageDecoder.callDecode(ByteToMessageDecoder.java:469)
+		at io.netty.handler.codec.ByteToMessageDecoder.channelRead(ByteToMessageDecoder.java:290)
+		at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:444)
+		at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:420)
+		at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:412)
+		at io.netty.channel.DefaultChannelPipeline$HeadContext.channelRead(DefaultChannelPipeline.java:1357)
+		at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:440)
+		at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:420)
+		at io.netty.channel.DefaultChannelPipeline.fireChannelRead(DefaultChannelPipeline.java:868)
+		at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:166)
+		at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:788)
+		at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:724)
+		at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:650)
+		at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:562)
+		at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:997)
+		at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+		at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+		at java.base/java.lang.Thread.run(Thread.java:842)
+2025-11-02 21:06:14.818 [http-nio-8081-exec-8] ERROR com.yizhaoqi.smartpai.service.HybridSearchService - 生成向量失败
+java.lang.RuntimeException: 向量生成失败
+	at com.yizhaoqi.smartpai.client.EmbeddingClient.embed(EmbeddingClient.java:62)
+	at com.yizhaoqi.smartpai.service.HybridSearchService.embedToVectorList(HybridSearchService.java:376)
+	at com.yizhaoqi.smartpai.service.HybridSearchService.searchWithPermission(HybridSearchService.java:76)
+	at com.yizhaoqi.smartpai.service.ChatHandler.processMessage(ChatHandler.java:73)
+	at com.yizhaoqi.smartpai.handler.ChatWebSocketHandler.handleTextMessage(ChatWebSocketHandler.java:73)
+	at org.springframework.web.socket.handler.AbstractWebSocketHandler.handleMessage(AbstractWebSocketHandler.java:43)
+	at org.springframework.web.socket.handler.WebSocketHandlerDecorator.handleMessage(WebSocketHandlerDecorator.java:75)
+	at org.springframework.web.socket.handler.LoggingWebSocketHandlerDecorator.handleMessage(LoggingWebSocketHandlerDecorator.java:56)
+	at org.springframework.web.socket.handler.ExceptionWebSocketHandlerDecorator.handleMessage(ExceptionWebSocketHandlerDecorator.java:58)
+	at org.springframework.web.socket.adapter.standard.StandardWebSocketHandlerAdapter.handleTextMessage(StandardWebSocketHandlerAdapter.java:113)
+	at org.springframework.web.socket.adapter.standard.StandardWebSocketHandlerAdapter$3.onMessage(StandardWebSocketHandlerAdapter.java:84)
+	at org.springframework.web.socket.adapter.standard.StandardWebSocketHandlerAdapter$3.onMessage(StandardWebSocketHandlerAdapter.java:81)
+	at org.apache.tomcat.websocket.WsFrameBase.sendMessageText(WsFrameBase.java:390)
+	at org.apache.tomcat.websocket.server.WsFrameServer.sendMessageText(WsFrameServer.java:130)
+	at org.apache.tomcat.websocket.WsFrameBase.processDataText(WsFrameBase.java:484)
+	at org.apache.tomcat.websocket.WsFrameBase.processData(WsFrameBase.java:284)
+	at org.apache.tomcat.websocket.WsFrameBase.processInputBuffer(WsFrameBase.java:130)
+	at org.apache.tomcat.websocket.server.WsFrameServer.onDataAvailable(WsFrameServer.java:85)
+	at org.apache.tomcat.websocket.server.WsFrameServer.doOnDataAvailable(WsFrameServer.java:184)
+	at org.apache.tomcat.websocket.server.WsFrameServer.notifyDataAvailable(WsFrameServer.java:164)
+	at org.apache.tomcat.websocket.server.WsHttpUpgradeHandler.upgradeDispatch(WsHttpUpgradeHandler.java:152)
+	at org.apache.coyote.http11.upgrade.UpgradeProcessorInternal.dispatch(UpgradeProcessorInternal.java:60)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:57)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:905)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1741)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1190)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
+	at java.base/java.lang.Thread.run(Thread.java:842)
+Caused by: reactor.core.Exceptions$RetryExhaustedException: Retries exhausted: 3/3
+	at reactor.core.Exceptions.retryExhausted(Exceptions.java:308)
+	at reactor.util.retry.RetryBackoffSpec.lambda$static$0(RetryBackoffSpec.java:68)
+	at reactor.util.retry.RetryBackoffSpec.lambda$null$4(RetryBackoffSpec.java:608)
+	at reactor.core.publisher.FluxConcatMapNoPrefetch$FluxConcatMapNoPrefetchSubscriber.onNext(FluxConcatMapNoPrefetch.java:183)
+	at reactor.core.publisher.FluxContextWrite$ContextWriteSubscriber.onNext(FluxContextWrite.java:107)
+	at reactor.core.publisher.SinkManyEmitterProcessor.drain(SinkManyEmitterProcessor.java:476)
+	at reactor.core.publisher.SinkManyEmitterProcessor.tryEmitNext(SinkManyEmitterProcessor.java:273)
+	at reactor.core.publisher.SinkManySerialized.tryEmitNext(SinkManySerialized.java:100)
+	at reactor.core.publisher.InternalManySink.emitNext(InternalManySink.java:27)
+	at reactor.core.publisher.FluxRetryWhen$RetryWhenMainSubscriber.onError(FluxRetryWhen.java:194)
+	at reactor.core.publisher.MonoFlatMap$FlatMapMain.secondError(MonoFlatMap.java:241)
+	at reactor.core.publisher.MonoFlatMap$FlatMapInner.onError(MonoFlatMap.java:315)
+	at reactor.core.publisher.Operators$MultiSubscriptionSubscriber.onError(Operators.java:2236)
+	at reactor.core.publisher.FluxOnAssembly$OnAssemblySubscriber.onError(FluxOnAssembly.java:544)
+	at reactor.core.publisher.MonoFlatMap$FlatMapMain.onError(MonoFlatMap.java:180)
+	at reactor.core.publisher.FluxOnErrorResume$ResumeSubscriber.onError(FluxOnErrorResume.java:106)
+	at reactor.core.publisher.MonoIgnoreThen$ThenIgnoreMain.onError(MonoIgnoreThen.java:280)
+	at reactor.core.publisher.MonoIgnoreThen$ThenIgnoreMain.subscribeNext(MonoIgnoreThen.java:232)
+	at reactor.core.publisher.MonoIgnoreThen$ThenIgnoreMain.onComplete(MonoIgnoreThen.java:204)
+	at reactor.core.publisher.FluxOnErrorReturn$ReturnSubscriber.onComplete(FluxOnErrorReturn.java:169)
+	at reactor.core.publisher.MonoIgnoreElements$IgnoreElementsSubscriber.onComplete(MonoIgnoreElements.java:89)
+	at reactor.core.publisher.FluxMapFuseable$MapFuseableSubscriber.onComplete(FluxMapFuseable.java:152)
+	at reactor.core.publisher.FluxOnAssembly$OnAssemblySubscriber.onComplete(FluxOnAssembly.java:549)
+	at reactor.core.publisher.FluxMap$MapSubscriber.onComplete(FluxMap.java:144)
+	at reactor.core.publisher.FluxPeek$PeekSubscriber.onComplete(FluxPeek.java:260)
+	at reactor.core.publisher.FluxMap$MapSubscriber.onComplete(FluxMap.java:144)
+	at reactor.core.publisher.Operators.complete(Operators.java:137)
+	at reactor.netty.channel.FluxReceive.startReceiver(FluxReceive.java:179)
+	at reactor.netty.channel.FluxReceive.subscribe(FluxReceive.java:145)
+	at reactor.core.publisher.InternalFluxOperator.subscribe(InternalFluxOperator.java:68)
+	at reactor.netty.ByteBufFlux.subscribe(ByteBufFlux.java:340)
+	at reactor.core.publisher.Mono.subscribe(Mono.java:4576)
+	at reactor.core.publisher.MonoIgnoreThen$ThenIgnoreMain.subscribeNext(MonoIgnoreThen.java:265)
+	at reactor.core.publisher.MonoIgnoreThen.subscribe(MonoIgnoreThen.java:51)
+	at reactor.core.publisher.Mono.subscribe(Mono.java:4576)
+	at reactor.core.publisher.FluxOnErrorResume$ResumeSubscriber.onError(FluxOnErrorResume.java:103)
+	at reactor.core.publisher.MonoFlatMap$FlatMapMain.secondError(MonoFlatMap.java:241)
+	at reactor.core.publisher.MonoFlatMap$FlatMapInner.onError(MonoFlatMap.java:315)
+	at reactor.core.publisher.MonoIgnoreThen$ThenIgnoreMain.onError(MonoIgnoreThen.java:280)
+	at reactor.core.publisher.MonoIgnoreThen$ThenIgnoreMain.subscribeNext(MonoIgnoreThen.java:232)
+	at reactor.core.publisher.MonoIgnoreThen$ThenIgnoreMain.onComplete(MonoIgnoreThen.java:204)
+	at reactor.core.publisher.FluxOnErrorReturn$ReturnSubscriber.onComplete(FluxOnErrorReturn.java:169)
+	at reactor.core.publisher.MonoIgnoreElements$IgnoreElementsSubscriber.onComplete(MonoIgnoreElements.java:89)
+	at reactor.core.publisher.FluxMapFuseable$MapFuseableSubscriber.onComplete(FluxMapFuseable.java:152)
+	at reactor.core.publisher.FluxOnAssembly$OnAssemblySubscriber.onComplete(FluxOnAssembly.java:549)
+	at reactor.core.publisher.FluxMap$MapSubscriber.onComplete(FluxMap.java:144)
+	at reactor.core.publisher.FluxPeek$PeekSubscriber.onComplete(FluxPeek.java:260)
+	at reactor.core.publisher.FluxMap$MapSubscriber.onComplete(FluxMap.java:144)
+	at reactor.core.publisher.Operators.complete(Operators.java:137)
+	at reactor.netty.channel.FluxReceive.startReceiver(FluxReceive.java:179)
+	at reactor.netty.channel.FluxReceive.subscribe(FluxReceive.java:145)
+	at reactor.core.publisher.InternalFluxOperator.subscribe(InternalFluxOperator.java:68)
+	at reactor.netty.ByteBufFlux.subscribe(ByteBufFlux.java:340)
+	at reactor.core.publisher.Mono.subscribe(Mono.java:4576)
+	at reactor.core.publisher.MonoIgnoreThen$ThenIgnoreMain.subscribeNext(MonoIgnoreThen.java:265)
+	at reactor.core.publisher.MonoIgnoreThen.subscribe(MonoIgnoreThen.java:51)
+	at reactor.core.publisher.MonoFlatMap$FlatMapMain.onNext(MonoFlatMap.java:165)
+	at reactor.core.publisher.FluxMap$MapSubscriber.onNext(FluxMap.java:122)
+	at reactor.core.publisher.FluxOnErrorReturn$ReturnSubscriber.onNext(FluxOnErrorReturn.java:162)
+	at reactor.core.publisher.FluxDefaultIfEmpty$DefaultIfEmptySubscriber.onNext(FluxDefaultIfEmpty.java:122)
+	at reactor.core.publisher.FluxOnAssembly$OnAssemblySubscriber.onNext(FluxOnAssembly.java:539)
+	at reactor.core.publisher.FluxMapFuseable$MapFuseableSubscriber.onNext(FluxMapFuseable.java:129)
+	at reactor.core.publisher.FluxContextWrite$ContextWriteSubscriber.onNext(FluxContextWrite.java:107)
+	at reactor.core.publisher.FluxMapFuseable$MapFuseableConditionalSubscriber.onNext(FluxMapFuseable.java:299)
+	at reactor.core.publisher.FluxFilterFuseable$FilterFuseableConditionalSubscriber.onNext(FluxFilterFuseable.java:337)
+	at reactor.core.publisher.Operators$BaseFluxToMonoOperator.completePossiblyEmpty(Operators.java:2097)
+	at reactor.core.publisher.MonoCollect$CollectSubscriber.onComplete(MonoCollect.java:145)
+	at reactor.core.publisher.FluxMap$MapSubscriber.onComplete(FluxMap.java:144)
+	at reactor.core.publisher.FluxPeek$PeekSubscriber.onComplete(FluxPeek.java:260)
+	at reactor.core.publisher.FluxMap$MapSubscriber.onComplete(FluxMap.java:144)
+	at reactor.netty.channel.FluxReceive.onInboundComplete(FluxReceive.java:413)
+	at reactor.netty.channel.ChannelOperations.onInboundComplete(ChannelOperations.java:455)
+	at reactor.netty.channel.ChannelOperations.terminate(ChannelOperations.java:509)
+	at reactor.netty.http.client.HttpClientOperations.onInboundNext(HttpClientOperations.java:819)
+	at reactor.netty.channel.ChannelOperationsHandler.channelRead(ChannelOperationsHandler.java:115)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:444)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:420)
+	at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:412)
+	at io.netty.handler.codec.MessageToMessageDecoder.channelRead(MessageToMessageDecoder.java:107)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:444)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:420)
+	at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:412)
+	at io.netty.channel.CombinedChannelDuplexHandler$DelegatingChannelHandlerContext.fireChannelRead(CombinedChannelDuplexHandler.java:436)
+	at io.netty.handler.codec.ByteToMessageDecoder.fireChannelRead(ByteToMessageDecoder.java:346)
+	at io.netty.handler.codec.ByteToMessageDecoder.channelRead(ByteToMessageDecoder.java:318)
+	at io.netty.channel.CombinedChannelDuplexHandler.channelRead(CombinedChannelDuplexHandler.java:251)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:442)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:420)
+	at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:412)
+	at io.netty.handler.ssl.SslHandler.unwrap(SslHandler.java:1515)
+	at io.netty.handler.ssl.SslHandler.decodeJdkCompatible(SslHandler.java:1378)
+	at io.netty.handler.ssl.SslHandler.decode(SslHandler.java:1427)
+	at io.netty.handler.codec.ByteToMessageDecoder.decodeRemovalReentryProtection(ByteToMessageDecoder.java:530)
+	at io.netty.handler.codec.ByteToMessageDecoder.callDecode(ByteToMessageDecoder.java:469)
+	at io.netty.handler.codec.ByteToMessageDecoder.channelRead(ByteToMessageDecoder.java:290)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:444)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:420)
+	at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:412)
+	at io.netty.channel.DefaultChannelPipeline$HeadContext.channelRead(DefaultChannelPipeline.java:1357)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:440)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:420)
+	at io.netty.channel.DefaultChannelPipeline.fireChannelRead(DefaultChannelPipeline.java:868)
+	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:166)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:788)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:724)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:650)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:562)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:997)
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	... 1 common frames omitted
+	Suppressed: java.lang.Exception: #block terminated with an error
+		at reactor.core.publisher.BlockingSingleSubscriber.blockingGet(BlockingSingleSubscriber.java:146)
+		at reactor.core.publisher.Mono.block(Mono.java:1807)
+		at com.yizhaoqi.smartpai.client.EmbeddingClient.callApiOnce(EmbeddingClient.java:80)
+		at com.yizhaoqi.smartpai.client.EmbeddingClient.embed(EmbeddingClient.java:55)
+		at com.yizhaoqi.smartpai.service.HybridSearchService.embedToVectorList(HybridSearchService.java:376)
+		at com.yizhaoqi.smartpai.service.HybridSearchService.searchWithPermission(HybridSearchService.java:76)
+		at com.yizhaoqi.smartpai.service.ChatHandler.processMessage(ChatHandler.java:73)
+		at com.yizhaoqi.smartpai.handler.ChatWebSocketHandler.handleTextMessage(ChatWebSocketHandler.java:73)
+		at org.springframework.web.socket.handler.AbstractWebSocketHandler.handleMessage(AbstractWebSocketHandler.java:43)
+		at org.springframework.web.socket.handler.WebSocketHandlerDecorator.handleMessage(WebSocketHandlerDecorator.java:75)
+		at org.springframework.web.socket.handler.LoggingWebSocketHandlerDecorator.handleMessage(LoggingWebSocketHandlerDecorator.java:56)
+		at org.springframework.web.socket.handler.ExceptionWebSocketHandlerDecorator.handleMessage(ExceptionWebSocketHandlerDecorator.java:58)
+		at org.springframework.web.socket.adapter.standard.StandardWebSocketHandlerAdapter.handleTextMessage(StandardWebSocketHandlerAdapter.java:113)
+		at org.springframework.web.socket.adapter.standard.StandardWebSocketHandlerAdapter$3.onMessage(StandardWebSocketHandlerAdapter.java:84)
+		at org.springframework.web.socket.adapter.standard.StandardWebSocketHandlerAdapter$3.onMessage(StandardWebSocketHandlerAdapter.java:81)
+		at org.apache.tomcat.websocket.WsFrameBase.sendMessageText(WsFrameBase.java:390)
+		at org.apache.tomcat.websocket.server.WsFrameServer.sendMessageText(WsFrameServer.java:130)
+		at org.apache.tomcat.websocket.WsFrameBase.processDataText(WsFrameBase.java:484)
+		at org.apache.tomcat.websocket.WsFrameBase.processData(WsFrameBase.java:284)
+		at org.apache.tomcat.websocket.WsFrameBase.processInputBuffer(WsFrameBase.java:130)
+		at org.apache.tomcat.websocket.server.WsFrameServer.onDataAvailable(WsFrameServer.java:85)
+		at org.apache.tomcat.websocket.server.WsFrameServer.doOnDataAvailable(WsFrameServer.java:184)
+		at org.apache.tomcat.websocket.server.WsFrameServer.notifyDataAvailable(WsFrameServer.java:164)
+		at org.apache.tomcat.websocket.server.WsHttpUpgradeHandler.upgradeDispatch(WsHttpUpgradeHandler.java:152)
+		at org.apache.coyote.http11.upgrade.UpgradeProcessorInternal.dispatch(UpgradeProcessorInternal.java:60)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:57)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:905)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1741)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1190)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
+		... 1 common frames omitted
+Caused by: org.springframework.web.reactive.function.client.WebClientResponseException$Unauthorized: 401 Unauthorized from POST https://dashscope.aliyuncs.com/compatible-mode/v1/embeddings
+	at org.springframework.web.reactive.function.client.WebClientResponseException.create(WebClientResponseException.java:322)
+	Suppressed: reactor.core.publisher.FluxOnAssembly$OnAssemblyException: 
+Error has been observed at the following site(s):
+	*__checkpoint ⇢ 401 UNAUTHORIZED from POST https://dashscope.aliyuncs.com/compatible-mode/v1/embeddings [DefaultWebClient]
+Original Stack Trace:
+		at org.springframework.web.reactive.function.client.WebClientResponseException.create(WebClientResponseException.java:322)
+		at org.springframework.web.reactive.function.client.DefaultClientResponse.lambda$createException$1(DefaultClientResponse.java:214)
+		at reactor.core.publisher.FluxMap$MapSubscriber.onNext(FluxMap.java:106)
+		at reactor.core.publisher.FluxOnErrorReturn$ReturnSubscriber.onNext(FluxOnErrorReturn.java:162)
+		at reactor.core.publisher.FluxDefaultIfEmpty$DefaultIfEmptySubscriber.onNext(FluxDefaultIfEmpty.java:122)
+		at reactor.core.publisher.FluxMapFuseable$MapFuseableSubscriber.onNext(FluxMapFuseable.java:129)
+		at reactor.core.publisher.FluxContextWrite$ContextWriteSubscriber.onNext(FluxContextWrite.java:107)
+		at reactor.core.publisher.FluxMapFuseable$MapFuseableConditionalSubscriber.onNext(FluxMapFuseable.java:299)
+		at reactor.core.publisher.FluxFilterFuseable$FilterFuseableConditionalSubscriber.onNext(FluxFilterFuseable.java:337)
+		at reactor.core.publisher.Operators$BaseFluxToMonoOperator.completePossiblyEmpty(Operators.java:2097)
+		at reactor.core.publisher.MonoCollect$CollectSubscriber.onComplete(MonoCollect.java:145)
+		at reactor.core.publisher.FluxMap$MapSubscriber.onComplete(FluxMap.java:144)
+		at reactor.core.publisher.FluxPeek$PeekSubscriber.onComplete(FluxPeek.java:260)
+		at reactor.core.publisher.FluxMap$MapSubscriber.onComplete(FluxMap.java:144)
+		at reactor.netty.channel.FluxReceive.onInboundComplete(FluxReceive.java:413)
+		at reactor.netty.channel.ChannelOperations.onInboundComplete(ChannelOperations.java:455)
+		at reactor.netty.channel.ChannelOperations.terminate(ChannelOperations.java:509)
+		at reactor.netty.http.client.HttpClientOperations.onInboundNext(HttpClientOperations.java:819)
+		at reactor.netty.channel.ChannelOperationsHandler.channelRead(ChannelOperationsHandler.java:115)
+		at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:444)
+		at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:420)
+		at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:412)
+		at io.netty.handler.codec.MessageToMessageDecoder.channelRead(MessageToMessageDecoder.java:107)
+		at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:444)
+		at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:420)
+		at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:412)
+		at io.netty.channel.CombinedChannelDuplexHandler$DelegatingChannelHandlerContext.fireChannelRead(CombinedChannelDuplexHandler.java:436)
+		at io.netty.handler.codec.ByteToMessageDecoder.fireChannelRead(ByteToMessageDecoder.java:346)
+		at io.netty.handler.codec.ByteToMessageDecoder.channelRead(ByteToMessageDecoder.java:318)
+		at io.netty.channel.CombinedChannelDuplexHandler.channelRead(CombinedChannelDuplexHandler.java:251)
+		at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:442)
+		at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:420)
+		at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:412)
+		at io.netty.handler.ssl.SslHandler.unwrap(SslHandler.java:1515)
+		at io.netty.handler.ssl.SslHandler.decodeJdkCompatible(SslHandler.java:1378)
+		at io.netty.handler.ssl.SslHandler.decode(SslHandler.java:1427)
+		at io.netty.handler.codec.ByteToMessageDecoder.decodeRemovalReentryProtection(ByteToMessageDecoder.java:530)
+		at io.netty.handler.codec.ByteToMessageDecoder.callDecode(ByteToMessageDecoder.java:469)
+		at io.netty.handler.codec.ByteToMessageDecoder.channelRead(ByteToMessageDecoder.java:290)
+		at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:444)
+		at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:420)
+		at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:412)
+		at io.netty.channel.DefaultChannelPipeline$HeadContext.channelRead(DefaultChannelPipeline.java:1357)
+		at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:440)
+		at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:420)
+		at io.netty.channel.DefaultChannelPipeline.fireChannelRead(DefaultChannelPipeline.java:868)
+		at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:166)
+		at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:788)
+		at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:724)
+		at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:650)
+		at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:562)
+		at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:997)
+		at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+		at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+		at java.base/java.lang.Thread.run(Thread.java:842)
+2025-11-02 21:06:14.819 [http-nio-8081-exec-8] WARN  com.yizhaoqi.smartpai.service.HybridSearchService - 向量生成失败，仅使用文本匹配进行搜索
+2025-11-02 21:06:14.819 [http-nio-8081-exec-8] DEBUG com.yizhaoqi.smartpai.service.HybridSearchService - 开始执行纯文本搜索，用户数据库ID: 1, 标签: [DEFAULT]
+2025-11-02 21:06:14.965 [http-nio-8081-exec-8] DEBUG com.yizhaoqi.smartpai.service.HybridSearchService - 纯文本查询执行完成，命中数量: 0, 最大分数: NaN
+2025-11-02 21:06:14.965 [http-nio-8081-exec-8] DEBUG com.yizhaoqi.smartpai.service.HybridSearchService - 返回纯文本搜索结果数量: 0
+2025-11-02 21:06:14.965 [http-nio-8081-exec-8] DEBUG com.yizhaoqi.smartpai.service.ChatHandler - 搜索结果数量: 0
+2025-11-02 21:06:14.965 [http-nio-8081-exec-8] INFO  com.yizhaoqi.smartpai.service.ChatHandler - 调用DeepSeek API生成回复
+2025-11-02 21:06:14.965 [http-nio-8081-exec-8] INFO  com.yizhaoqi.smartpai.client.DeepSeekClient - 构建请求，用户消息：你好，上下文长度：0，历史消息数：0
+2025-11-02 21:06:15.314 [reactor-http-nio-5] ERROR com.yizhaoqi.smartpai.service.ChatHandler - AI服务错误: 401 Unauthorized from POST https://api.deepseek.com/v1/chat/completions
+org.springframework.web.reactive.function.client.WebClientResponseException$Unauthorized: 401 Unauthorized from POST https://api.deepseek.com/v1/chat/completions
+	at org.springframework.web.reactive.function.client.WebClientResponseException.create(WebClientResponseException.java:322)
+	Suppressed: reactor.core.publisher.FluxOnAssembly$OnAssemblyException: 
+Error has been observed at the following site(s):
+	*__checkpoint ⇢ 401 UNAUTHORIZED from POST https://api.deepseek.com/v1/chat/completions [DefaultWebClient]
+Original Stack Trace:
+		at org.springframework.web.reactive.function.client.WebClientResponseException.create(WebClientResponseException.java:322)
+		at org.springframework.web.reactive.function.client.DefaultClientResponse.lambda$createException$1(DefaultClientResponse.java:214)
+		at reactor.core.publisher.FluxMap$MapSubscriber.onNext(FluxMap.java:106)
+		at reactor.core.publisher.FluxOnErrorReturn$ReturnSubscriber.onNext(FluxOnErrorReturn.java:162)
+		at reactor.core.publisher.FluxDefaultIfEmpty$DefaultIfEmptySubscriber.onNext(FluxDefaultIfEmpty.java:122)
+		at reactor.core.publisher.FluxMapFuseable$MapFuseableSubscriber.onNext(FluxMapFuseable.java:129)
+		at reactor.core.publisher.FluxContextWrite$ContextWriteSubscriber.onNext(FluxContextWrite.java:107)
+		at reactor.core.publisher.FluxMapFuseable$MapFuseableConditionalSubscriber.onNext(FluxMapFuseable.java:299)
+		at reactor.core.publisher.FluxFilterFuseable$FilterFuseableConditionalSubscriber.onNext(FluxFilterFuseable.java:337)
+		at reactor.core.publisher.Operators$BaseFluxToMonoOperator.completePossiblyEmpty(Operators.java:2097)
+		at reactor.core.publisher.MonoCollect$CollectSubscriber.onComplete(MonoCollect.java:145)
+		at reactor.core.publisher.FluxMap$MapSubscriber.onComplete(FluxMap.java:144)
+		at reactor.core.publisher.FluxPeek$PeekSubscriber.onComplete(FluxPeek.java:260)
+		at reactor.core.publisher.FluxMap$MapSubscriber.onComplete(FluxMap.java:144)
+		at reactor.netty.channel.FluxReceive.onInboundComplete(FluxReceive.java:413)
+		at reactor.netty.channel.ChannelOperations.onInboundComplete(ChannelOperations.java:455)
+		at reactor.netty.channel.ChannelOperations.terminate(ChannelOperations.java:509)
+		at reactor.netty.http.client.HttpClientOperations.onInboundNext(HttpClientOperations.java:819)
+		at reactor.netty.channel.ChannelOperationsHandler.channelRead(ChannelOperationsHandler.java:115)
+		at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:444)
+		at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:420)
+		at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:412)
+		at io.netty.handler.codec.MessageToMessageDecoder.channelRead(MessageToMessageDecoder.java:107)
+		at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:444)
+		at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:420)
+		at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:412)
+		at io.netty.channel.CombinedChannelDuplexHandler$DelegatingChannelHandlerContext.fireChannelRead(CombinedChannelDuplexHandler.java:436)
+		at io.netty.handler.codec.ByteToMessageDecoder.fireChannelRead(ByteToMessageDecoder.java:346)
+		at io.netty.handler.codec.ByteToMessageDecoder.channelRead(ByteToMessageDecoder.java:318)
+		at io.netty.channel.CombinedChannelDuplexHandler.channelRead(CombinedChannelDuplexHandler.java:251)
+		at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:442)
+		at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:420)
+		at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:412)
+		at io.netty.handler.ssl.SslHandler.unwrap(SslHandler.java:1515)
+		at io.netty.handler.ssl.SslHandler.decodeJdkCompatible(SslHandler.java:1378)
+		at io.netty.handler.ssl.SslHandler.decode(SslHandler.java:1427)
+		at io.netty.handler.codec.ByteToMessageDecoder.decodeRemovalReentryProtection(ByteToMessageDecoder.java:530)
+		at io.netty.handler.codec.ByteToMessageDecoder.callDecode(ByteToMessageDecoder.java:469)
+		at io.netty.handler.codec.ByteToMessageDecoder.channelRead(ByteToMessageDecoder.java:290)
+		at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:444)
+		at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:420)
+		at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:412)
+		at io.netty.channel.DefaultChannelPipeline$HeadContext.channelRead(DefaultChannelPipeline.java:1357)
+		at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:440)
+		at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:420)
+		at io.netty.channel.DefaultChannelPipeline.fireChannelRead(DefaultChannelPipeline.java:868)
+		at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:166)
+		at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:788)
+		at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:724)
+		at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:650)
+		at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:562)
+		at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:997)
+		at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+		at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+		at java.base/java.lang.Thread.run(Thread.java:842)
+2025-11-02 21:06:15.315 [reactor-http-nio-5] ERROR com.yizhaoqi.smartpai.service.ChatHandler - 发送错误消息到会话 dcedd433-e78c-d5bc-1bd2-aa79b1139943: {"error":"AI服务暂时不可用，请稍后重试"}
+2025-11-02 21:06:15.316 [reactor-http-nio-5] ERROR com.yizhaoqi.smartpai.service.ChatHandler - 已发送错误消息到会话: dcedd433-e78c-d5bc-1bd2-aa79b1139943
+2025-11-02 21:06:15.316 [reactor-http-nio-5] INFO  com.yizhaoqi.smartpai.service.ChatHandler - 发送完成通知到会话 dcedd433-e78c-d5bc-1bd2-aa79b1139943: {"type":"completion","date":"2025-11-02T21:06:15.316191","timestamp":1762088775316,"message":"响应已完成","status":"finished"}
+2025-11-02 21:06:15.316 [reactor-http-nio-5] INFO  com.yizhaoqi.smartpai.service.ChatHandler - 已发送响应完成通知到会话: dcedd433-e78c-d5bc-1bd2-aa79b1139943
+2025-11-02 21:06:17.974 [Thread-11] WARN  com.yizhaoqi.smartpai.service.ChatHandler - 响应构建器为空，可能出现了错误，会话ID: dcedd433-e78c-d5bc-1bd2-aa79b1139943
+2025-11-02 21:06:17.980 [Thread-11] ERROR com.yizhaoqi.smartpai.service.ChatHandler - AI服务错误: 响应构建器为空
+java.lang.RuntimeException: 响应构建器为空
+	at com.yizhaoqi.smartpai.service.ChatHandler.lambda$processMessage$2(ChatHandler.java:196)
+	at java.base/java.lang.Thread.run(Thread.java:842)
+2025-11-02 21:06:17.980 [Thread-11] ERROR com.yizhaoqi.smartpai.service.ChatHandler - 发送错误消息到会话 dcedd433-e78c-d5bc-1bd2-aa79b1139943: {"error":"AI服务暂时不可用，请稍后重试"}
+2025-11-02 21:06:17.981 [Thread-11] ERROR com.yizhaoqi.smartpai.service.ChatHandler - 已发送错误消息到会话: dcedd433-e78c-d5bc-1bd2-aa79b1139943
+2025-11-02 21:18:31.261 [SpringApplicationShutdownHook] INFO  c.yizhaoqi.smartpai.handler.ChatWebSocketHandler - WebSocket连接已关闭，用户ID: admin，会话ID: 36c03b86-fb68-2f28-0156-856ef3e8cf8a，状态: CloseStatus[code=1001, reason=The web application is stopping]
+2025-11-02 21:18:31.262 [SpringApplicationShutdownHook] INFO  c.yizhaoqi.smartpai.handler.ChatWebSocketHandler - WebSocket连接已关闭，用户ID: admin，会话ID: dcedd433-e78c-d5bc-1bd2-aa79b1139943，状态: CloseStatus[code=1001, reason=The web application is stopping]
+2025-11-02 21:18:33.993 [main] INFO  com.yizhaoqi.smartpai.SmartPaiApplication - Starting SmartPaiApplication using Java 17.0.15 with PID 48104 (/Volumes/LQ1000/a/PaiSmart/target/classes started by xustation in /Volumes/LQ1000/a/PaiSmart)
+2025-11-02 21:18:33.994 [main] INFO  com.yizhaoqi.smartpai.SmartPaiApplication - No active profile set, falling back to 1 default profile: "default"
+2025-11-02 21:18:37.357 [main] INFO  com.yizhaoqi.smartpai.config.SecurityConfig - Security configuration loaded successfully.
+2025-11-02 21:18:37.765 [main] INFO  com.yizhaoqi.smartpai.SmartPaiApplication - Started SmartPaiApplication in 4.098 seconds (process running for 4.569)
+2025-11-02 21:18:37.767 [main] INFO  com.yizhaoqi.smartpai.config.AdminUserInitializer - 检查管理员账号是否存在: admin
+2025-11-02 21:18:37.848 [main] INFO  com.yizhaoqi.smartpai.config.AdminUserInitializer - 管理员账号 'admin' 已存在，跳过创建步骤
+2025-11-02 21:18:37.852 [main] INFO  com.yizhaoqi.smartpai.config.OrgTagInitializer - 检查组织标签是否存在: default
+2025-11-02 21:18:37.859 [main] INFO  com.yizhaoqi.smartpai.config.OrgTagInitializer - 组织标签 'default' 已存在，跳过创建步骤
+2025-11-02 21:18:37.859 [main] INFO  com.yizhaoqi.smartpai.config.OrgTagInitializer - 检查组织标签是否存在: admin
+2025-11-02 21:18:37.861 [main] INFO  com.yizhaoqi.smartpai.config.OrgTagInitializer - 组织标签 'admin' 已存在，跳过创建步骤
+2025-11-02 21:18:37.861 [main] INFO  com.yizhaoqi.smartpai.config.OrgTagInitializer - 组织标签初始化完成
+2025-11-02 21:18:38.138 [main] INFO  com.yizhaoqi.smartpai.config.EsIndexInitializer - 索引 'knowledge_base' 已存在
+2025-11-02 21:18:38.406 [http-nio-8081-exec-1] INFO  c.yizhaoqi.smartpai.handler.ChatWebSocketHandler - WebSocket连接已建立，用户ID: admin，会话ID: eb63732e-8170-4111-dc8e-21d7fed9cac8，URI路径: /chat/eyJhbGciOiJIUzI1NiJ9.eyJwcmltYXJ5T3JnIjoiZGVmYXVsdCIsIm9yZ1RhZ3MiOiJkZWZhdWx0LGFkbWluIiwicm9sZSI6IkFETUlOIiwidG9rZW5JZCI6ImVlMzc1NGE3NzIwODQ1YWI4NWI0Y2I5ZDM2ZTQ0NWE1IiwidXNlcklkIjoiMSIsInN1YiI6ImFkbWluIiwiZXhwIjoxNzYyMDkyMzUyfQ.Qr57b4qU9XmUGeBqNba3E7cq3m6wcvf2u1uD_iYHNoc
+2025-11-02 21:18:44.142 [http-nio-8081-exec-2] INFO  c.yizhaoqi.smartpai.handler.ChatWebSocketHandler - WebSocket连接已建立，用户ID: admin，会话ID: b8305a4e-a01b-5c9b-b6e4-257c19a4b1c8，URI路径: /chat/eyJhbGciOiJIUzI1NiJ9.eyJwcmltYXJ5T3JnIjoiZGVmYXVsdCIsIm9yZ1RhZ3MiOiJkZWZhdWx0LGFkbWluIiwicm9sZSI6IkFETUlOIiwidG9rZW5JZCI6ImUzZWY5YTdkODBmODRjYjdiYjFlYTJjNzI3OTVkZGMwIiwidXNlcklkIjoiMSIsInN1YiI6ImFkbWluIiwiZXhwIjoxNzYyMDkxMzk1fQ.NVSWMyZEZEIrU9iwQAWhfKzm4_OlgPXwbHvLNG4H6IM
+2025-11-02 21:34:48.915 [SpringApplicationShutdownHook] INFO  c.yizhaoqi.smartpai.handler.ChatWebSocketHandler - WebSocket连接已关闭，用户ID: admin，会话ID: b8305a4e-a01b-5c9b-b6e4-257c19a4b1c8，状态: CloseStatus[code=1001, reason=The web application is stopping]
+2025-11-02 21:34:48.920 [SpringApplicationShutdownHook] INFO  c.yizhaoqi.smartpai.handler.ChatWebSocketHandler - WebSocket连接已关闭，用户ID: admin，会话ID: eb63732e-8170-4111-dc8e-21d7fed9cac8，状态: CloseStatus[code=1001, reason=The web application is stopping]
+2025-11-02 21:34:51.389 [main] INFO  com.yizhaoqi.smartpai.SmartPaiApplication - Starting SmartPaiApplication using Java 17.0.15 with PID 48787 (/Volumes/LQ1000/a/PaiSmart/target/classes started by xustation in /Volumes/LQ1000/a/PaiSmart)
+2025-11-02 21:34:51.390 [main] INFO  com.yizhaoqi.smartpai.SmartPaiApplication - No active profile set, falling back to 1 default profile: "default"
+2025-11-02 21:34:54.932 [main] INFO  com.yizhaoqi.smartpai.config.SecurityConfig - Security configuration loaded successfully.
+2025-11-02 21:34:55.339 [main] INFO  com.yizhaoqi.smartpai.SmartPaiApplication - Started SmartPaiApplication in 4.359 seconds (process running for 4.926)
+2025-11-02 21:34:55.340 [main] INFO  com.yizhaoqi.smartpai.config.AdminUserInitializer - 检查管理员账号是否存在: admin
+2025-11-02 21:34:55.422 [main] INFO  com.yizhaoqi.smartpai.config.AdminUserInitializer - 管理员账号 'admin' 已存在，跳过创建步骤
+2025-11-02 21:34:55.426 [main] INFO  com.yizhaoqi.smartpai.config.OrgTagInitializer - 检查组织标签是否存在: default
+2025-11-02 21:34:55.433 [main] INFO  com.yizhaoqi.smartpai.config.OrgTagInitializer - 组织标签 'default' 已存在，跳过创建步骤
+2025-11-02 21:34:55.433 [main] INFO  com.yizhaoqi.smartpai.config.OrgTagInitializer - 检查组织标签是否存在: admin
+2025-11-02 21:34:55.435 [main] INFO  com.yizhaoqi.smartpai.config.OrgTagInitializer - 组织标签 'admin' 已存在，跳过创建步骤
+2025-11-02 21:34:55.436 [main] INFO  com.yizhaoqi.smartpai.config.OrgTagInitializer - 组织标签初始化完成
+2025-11-02 21:34:55.601 [main] INFO  com.yizhaoqi.smartpai.config.EsIndexInitializer - 索引 'knowledge_base' 已存在
+2025-11-02 21:34:55.989 [http-nio-8081-exec-1] INFO  c.yizhaoqi.smartpai.handler.ChatWebSocketHandler - WebSocket连接已建立，用户ID: admin，会话ID: 4036f57c-1c03-9991-5c51-345d963e2001，URI路径: /chat/eyJhbGciOiJIUzI1NiJ9.eyJwcmltYXJ5T3JnIjoiZGVmYXVsdCIsIm9yZ1RhZ3MiOiJkZWZhdWx0LGFkbWluIiwicm9sZSI6IkFETUlOIiwidG9rZW5JZCI6ImUzZWY5YTdkODBmODRjYjdiYjFlYTJjNzI3OTVkZGMwIiwidXNlcklkIjoiMSIsInN1YiI6ImFkbWluIiwiZXhwIjoxNzYyMDkxMzk1fQ.NVSWMyZEZEIrU9iwQAWhfKzm4_OlgPXwbHvLNG4H6IM
+2025-11-02 21:34:56.223 [http-nio-8081-exec-2] INFO  c.yizhaoqi.smartpai.handler.ChatWebSocketHandler - WebSocket连接已建立，用户ID: admin，会话ID: 5812339d-8222-8aea-85a5-1e8c6c85a4a2，URI路径: /chat/eyJhbGciOiJIUzI1NiJ9.eyJwcmltYXJ5T3JnIjoiZGVmYXVsdCIsIm9yZ1RhZ3MiOiJkZWZhdWx0LGFkbWluIiwicm9sZSI6IkFETUlOIiwidG9rZW5JZCI6ImVlMzc1NGE3NzIwODQ1YWI4NWI0Y2I5ZDM2ZTQ0NWE1IiwidXNlcklkIjoiMSIsInN1YiI6ImFkbWluIiwiZXhwIjoxNzYyMDkyMzUyfQ.Qr57b4qU9XmUGeBqNba3E7cq3m6wcvf2u1uD_iYHNoc
+2025-11-02 21:35:35.113 [http-nio-8081-exec-3] INFO  c.yizhaoqi.smartpai.handler.ChatWebSocketHandler - WebSocket连接已关闭，用户ID: admin，会话ID: 5812339d-8222-8aea-85a5-1e8c6c85a4a2，状态: CloseStatus[code=1000, reason=null]
+2025-11-02 21:35:36.122 [http-nio-8081-exec-4] INFO  com.yizhaoqi.smartpai.business - [REQUEST_START] [用户:1] 开始处理请求 [GET] /api/v1/users/me
+2025-11-02 21:35:36.156 [http-nio-8081-exec-4] INFO  com.yizhaoqi.smartpai.business - [用户操作] [用户:admin] [操作:GET_USER_INFO] [资源:user_profile] [结果:SUCCESS]
+2025-11-02 21:35:36.199 [http-nio-8081-exec-4] INFO  com.yizhaoqi.smartpai.business - [API] [GET] /api/v1/users/me [用户:1] [状态:200] [耗时:84ms]
+2025-11-02 21:35:36.242 [http-nio-8081-exec-5] INFO  com.yizhaoqi.smartpai.business - [REQUEST_START] [用户:1] 开始处理请求 [GET] /api/v1/users/me
+2025-11-02 21:35:36.245 [http-nio-8081-exec-5] INFO  com.yizhaoqi.smartpai.business - [用户操作] [用户:admin] [操作:GET_USER_INFO] [资源:user_profile] [结果:SUCCESS]
+2025-11-02 21:35:36.248 [http-nio-8081-exec-5] INFO  com.yizhaoqi.smartpai.business - [API] [GET] /api/v1/users/me [用户:1] [状态:200] [耗时:6ms]
+2025-11-02 21:35:36.329 [http-nio-8081-exec-6] INFO  c.yizhaoqi.smartpai.handler.ChatWebSocketHandler - WebSocket连接已建立，用户ID: admin，会话ID: 8b152345-86ce-ddac-2d88-74cb12bd7ff2，URI路径: /chat/eyJhbGciOiJIUzI1NiJ9.eyJwcmltYXJ5T3JnIjoiZGVmYXVsdCIsIm9yZ1RhZ3MiOiJkZWZhdWx0LGFkbWluIiwicm9sZSI6IkFETUlOIiwidG9rZW5JZCI6ImVlMzc1NGE3NzIwODQ1YWI4NWI0Y2I5ZDM2ZTQ0NWE1IiwidXNlcklkIjoiMSIsInN1YiI6ImFkbWluIiwiZXhwIjoxNzYyMDkyMzUyfQ.Qr57b4qU9XmUGeBqNba3E7cq3m6wcvf2u1uD_iYHNoc
+2025-11-02 21:35:36.383 [http-nio-8081-exec-7] INFO  com.yizhaoqi.smartpai.business - [REQUEST_START] [用户:1] 开始处理请求 [GET] /api/v1/users/conversation
+2025-11-02 21:35:36.385 [http-nio-8081-exec-7] INFO  com.yizhaoqi.smartpai.business - [GET_CONVERSATIONS] [用户:admin] 开始查询用户对话历史
+2025-11-02 21:35:36.419 [http-nio-8081-exec-7] INFO  com.yizhaoqi.smartpai.business - [GET_CONVERSATIONS] [用户:admin] 尝试查找Redis键: user:1:current_conversation, 结果: 未找到
+2025-11-02 21:35:36.421 [http-nio-8081-exec-7] INFO  com.yizhaoqi.smartpai.business - [GET_CONVERSATIONS] [用户:admin] 找到对话会话ID: df066211-2766-4d79-9420-0fcb48a3b6b4
+2025-11-02 21:35:36.423 [http-nio-8081-exec-7] INFO  com.yizhaoqi.smartpai.business - [GET_CONVERSATIONS] [用户:admin] 会话ID df066211-2766-4d79-9420-0fcb48a3b6b4 在Redis中找不到对应的历史记录
+2025-11-02 21:35:36.423 [http-nio-8081-exec-7] INFO  com.yizhaoqi.smartpai.business - [用户操作] [用户:admin] [操作:GET_CONVERSATIONS] [资源:conversation_history] [结果:SUCCESS_EMPTY]
+2025-11-02 21:35:36.427 [http-nio-8081-exec-7] INFO  com.yizhaoqi.smartpai.business - [API] [GET] /api/v1/users/conversation [用户:1] [状态:200] [耗时:43ms]
+2025-11-02 21:35:42.357 [http-nio-8081-exec-8] INFO  c.yizhaoqi.smartpai.handler.ChatWebSocketHandler - 接收到消息，用户ID: admin，会话ID: 8b152345-86ce-ddac-2d88-74cb12bd7ff2，消息长度: 2
+2025-11-02 21:35:42.363 [http-nio-8081-exec-8] INFO  com.yizhaoqi.smartpai.service.ChatHandler - 开始处理消息，用户ID: admin, 会话ID: 8b152345-86ce-ddac-2d88-74cb12bd7ff2
+2025-11-02 21:35:42.365 [http-nio-8081-exec-8] INFO  com.yizhaoqi.smartpai.service.ChatHandler - 获取到用户 admin 的现有会话ID: df066211-2766-4d79-9420-0fcb48a3b6b4
+2025-11-02 21:35:42.366 [http-nio-8081-exec-8] INFO  com.yizhaoqi.smartpai.service.ChatHandler - 会话ID: df066211-2766-4d79-9420-0fcb48a3b6b4, 用户ID: admin
+2025-11-02 21:35:42.376 [http-nio-8081-exec-8] DEBUG com.yizhaoqi.smartpai.service.ChatHandler - 会话 df066211-2766-4d79-9420-0fcb48a3b6b4 没有历史记录
+2025-11-02 21:35:42.376 [http-nio-8081-exec-8] DEBUG com.yizhaoqi.smartpai.service.ChatHandler - 获取到 0 条历史对话
+2025-11-02 21:35:42.376 [http-nio-8081-exec-8] DEBUG com.yizhaoqi.smartpai.service.HybridSearchService - 开始带权限搜索，查询: 你好, 用户ID: admin
+2025-11-02 21:35:42.376 [http-nio-8081-exec-8] DEBUG com.yizhaoqi.smartpai.service.HybridSearchService - 获取用户有效组织标签，用户ID: admin
+2025-11-02 21:35:42.376 [http-nio-8081-exec-8] DEBUG com.yizhaoqi.smartpai.service.HybridSearchService - 用户ID不是数字格式，作为用户名查找: admin
+2025-11-02 21:35:42.381 [http-nio-8081-exec-8] DEBUG com.yizhaoqi.smartpai.service.HybridSearchService - 通过用户名找到用户: admin
+2025-11-02 21:35:42.394 [http-nio-8081-exec-8] DEBUG com.yizhaoqi.smartpai.service.HybridSearchService - 用户 admin 的有效组织标签: [DEFAULT]
+2025-11-02 21:35:42.394 [http-nio-8081-exec-8] DEBUG com.yizhaoqi.smartpai.service.HybridSearchService - 用户 admin 的有效组织标签: [DEFAULT]
+2025-11-02 21:35:42.394 [http-nio-8081-exec-8] DEBUG com.yizhaoqi.smartpai.service.HybridSearchService - 获取用户数据库ID，用户ID: admin
+2025-11-02 21:35:42.394 [http-nio-8081-exec-8] DEBUG com.yizhaoqi.smartpai.service.HybridSearchService - 用户ID不是数字格式，作为用户名查找: admin
+2025-11-02 21:35:42.398 [http-nio-8081-exec-8] DEBUG com.yizhaoqi.smartpai.service.HybridSearchService - 通过用户名找到用户: admin, ID: 1
+2025-11-02 21:35:42.398 [http-nio-8081-exec-8] DEBUG com.yizhaoqi.smartpai.service.HybridSearchService - 用户 admin 的数据库ID: 1
+2025-11-02 21:35:42.398 [http-nio-8081-exec-8] INFO  com.yizhaoqi.smartpai.client.EmbeddingClient - 开始生成向量，文本数量: 1
+2025-11-02 21:35:43.035 [http-nio-8081-exec-8] INFO  com.yizhaoqi.smartpai.client.EmbeddingClient - 成功生成向量，总数量: 1
+2025-11-02 21:35:43.035 [http-nio-8081-exec-8] DEBUG com.yizhaoqi.smartpai.service.HybridSearchService - 向量生成成功，开始执行混合搜索 KNN
+2025-11-02 21:35:43.790 [http-nio-8081-exec-8] DEBUG com.yizhaoqi.smartpai.service.HybridSearchService - Elasticsearch查询执行完成，命中数量: 0, 最大分数: NaN
+2025-11-02 21:35:43.790 [http-nio-8081-exec-8] DEBUG com.yizhaoqi.smartpai.service.HybridSearchService - 返回搜索结果数量: 0
+2025-11-02 21:35:43.790 [http-nio-8081-exec-8] DEBUG com.yizhaoqi.smartpai.service.ChatHandler - 搜索结果数量: 0
+2025-11-02 21:35:43.790 [http-nio-8081-exec-8] INFO  com.yizhaoqi.smartpai.service.ChatHandler - 调用DeepSeek API生成回复
+2025-11-02 21:35:43.791 [http-nio-8081-exec-8] INFO  com.yizhaoqi.smartpai.client.DeepSeekClient - 构建请求，用户消息：你好，上下文长度：0，历史消息数：0
+2025-11-02 21:35:44.912 [reactor-http-nio-3] ERROR com.yizhaoqi.smartpai.service.ChatHandler - AI服务错误: 401 Unauthorized from POST https://api.deepseek.com/v1/chat/completions
+org.springframework.web.reactive.function.client.WebClientResponseException$Unauthorized: 401 Unauthorized from POST https://api.deepseek.com/v1/chat/completions
+	at org.springframework.web.reactive.function.client.WebClientResponseException.create(WebClientResponseException.java:322)
+	Suppressed: reactor.core.publisher.FluxOnAssembly$OnAssemblyException: 
+Error has been observed at the following site(s):
+	*__checkpoint ⇢ 401 UNAUTHORIZED from POST https://api.deepseek.com/v1/chat/completions [DefaultWebClient]
+Original Stack Trace:
+		at org.springframework.web.reactive.function.client.WebClientResponseException.create(WebClientResponseException.java:322)
+		at org.springframework.web.reactive.function.client.DefaultClientResponse.lambda$createException$1(DefaultClientResponse.java:214)
+		at reactor.core.publisher.FluxMap$MapSubscriber.onNext(FluxMap.java:106)
+		at reactor.core.publisher.FluxOnErrorReturn$ReturnSubscriber.onNext(FluxOnErrorReturn.java:162)
+		at reactor.core.publisher.FluxDefaultIfEmpty$DefaultIfEmptySubscriber.onNext(FluxDefaultIfEmpty.java:122)
+		at reactor.core.publisher.FluxMapFuseable$MapFuseableSubscriber.onNext(FluxMapFuseable.java:129)
+		at reactor.core.publisher.FluxContextWrite$ContextWriteSubscriber.onNext(FluxContextWrite.java:107)
+		at reactor.core.publisher.FluxMapFuseable$MapFuseableConditionalSubscriber.onNext(FluxMapFuseable.java:299)
+		at reactor.core.publisher.FluxFilterFuseable$FilterFuseableConditionalSubscriber.onNext(FluxFilterFuseable.java:337)
+		at reactor.core.publisher.Operators$BaseFluxToMonoOperator.completePossiblyEmpty(Operators.java:2097)
+		at reactor.core.publisher.MonoCollect$CollectSubscriber.onComplete(MonoCollect.java:145)
+		at reactor.core.publisher.FluxMap$MapSubscriber.onComplete(FluxMap.java:144)
+		at reactor.core.publisher.FluxPeek$PeekSubscriber.onComplete(FluxPeek.java:260)
+		at reactor.core.publisher.FluxMap$MapSubscriber.onComplete(FluxMap.java:144)
+		at reactor.netty.channel.FluxReceive.onInboundComplete(FluxReceive.java:413)
+		at reactor.netty.channel.ChannelOperations.onInboundComplete(ChannelOperations.java:455)
+		at reactor.netty.channel.ChannelOperations.terminate(ChannelOperations.java:509)
+		at reactor.netty.http.client.HttpClientOperations.onInboundNext(HttpClientOperations.java:819)
+		at reactor.netty.channel.ChannelOperationsHandler.channelRead(ChannelOperationsHandler.java:115)
+		at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:444)
+		at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:420)
+		at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:412)
+		at io.netty.handler.codec.MessageToMessageDecoder.channelRead(MessageToMessageDecoder.java:107)
+		at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:444)
+		at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:420)
+		at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:412)
+		at io.netty.channel.CombinedChannelDuplexHandler$DelegatingChannelHandlerContext.fireChannelRead(CombinedChannelDuplexHandler.java:436)
+		at io.netty.handler.codec.ByteToMessageDecoder.fireChannelRead(ByteToMessageDecoder.java:346)
+		at io.netty.handler.codec.ByteToMessageDecoder.channelRead(ByteToMessageDecoder.java:318)
+		at io.netty.channel.CombinedChannelDuplexHandler.channelRead(CombinedChannelDuplexHandler.java:251)
+		at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:442)
+		at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:420)
+		at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:412)
+		at io.netty.handler.ssl.SslHandler.unwrap(SslHandler.java:1515)
+		at io.netty.handler.ssl.SslHandler.decodeJdkCompatible(SslHandler.java:1378)
+		at io.netty.handler.ssl.SslHandler.decode(SslHandler.java:1427)
+		at io.netty.handler.codec.ByteToMessageDecoder.decodeRemovalReentryProtection(ByteToMessageDecoder.java:530)
+		at io.netty.handler.codec.ByteToMessageDecoder.callDecode(ByteToMessageDecoder.java:469)
+		at io.netty.handler.codec.ByteToMessageDecoder.channelRead(ByteToMessageDecoder.java:290)
+		at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:444)
+		at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:420)
+		at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:412)
+		at io.netty.channel.DefaultChannelPipeline$HeadContext.channelRead(DefaultChannelPipeline.java:1357)
+		at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:440)
+		at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:420)
+		at io.netty.channel.DefaultChannelPipeline.fireChannelRead(DefaultChannelPipeline.java:868)
+		at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:166)
+		at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:788)
+		at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:724)
+		at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:650)
+		at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:562)
+		at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:997)
+		at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+		at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+		at java.base/java.lang.Thread.run(Thread.java:842)
+2025-11-02 21:35:44.921 [reactor-http-nio-3] ERROR com.yizhaoqi.smartpai.service.ChatHandler - 发送错误消息到会话 8b152345-86ce-ddac-2d88-74cb12bd7ff2: {"error":"AI服务暂时不可用，请稍后重试"}
+2025-11-02 21:35:44.922 [reactor-http-nio-3] ERROR com.yizhaoqi.smartpai.service.ChatHandler - 已发送错误消息到会话: 8b152345-86ce-ddac-2d88-74cb12bd7ff2
+2025-11-02 21:35:44.923 [reactor-http-nio-3] INFO  com.yizhaoqi.smartpai.service.ChatHandler - 发送完成通知到会话 8b152345-86ce-ddac-2d88-74cb12bd7ff2: {"date":"2025-11-02T21:35:44.922709","timestamp":1762090544922,"message":"响应已完成","status":"finished","type":"completion"}
+2025-11-02 21:35:44.923 [reactor-http-nio-3] INFO  com.yizhaoqi.smartpai.service.ChatHandler - 已发送响应完成通知到会话: 8b152345-86ce-ddac-2d88-74cb12bd7ff2
+2025-11-02 21:35:46.798 [Thread-10] WARN  com.yizhaoqi.smartpai.service.ChatHandler - 响应构建器为空，可能出现了错误，会话ID: 8b152345-86ce-ddac-2d88-74cb12bd7ff2
+2025-11-02 21:35:46.798 [Thread-10] ERROR com.yizhaoqi.smartpai.service.ChatHandler - AI服务错误: 响应构建器为空
+java.lang.RuntimeException: 响应构建器为空
+	at com.yizhaoqi.smartpai.service.ChatHandler.lambda$processMessage$2(ChatHandler.java:196)
+	at java.base/java.lang.Thread.run(Thread.java:842)
+2025-11-02 21:35:46.799 [Thread-10] ERROR com.yizhaoqi.smartpai.service.ChatHandler - 发送错误消息到会话 8b152345-86ce-ddac-2d88-74cb12bd7ff2: {"error":"AI服务暂时不可用，请稍后重试"}
+2025-11-02 21:35:46.799 [Thread-10] ERROR com.yizhaoqi.smartpai.service.ChatHandler - 已发送错误消息到会话: 8b152345-86ce-ddac-2d88-74cb12bd7ff2
+2025-11-02 21:38:38.942 [SpringApplicationShutdownHook] INFO  c.yizhaoqi.smartpai.handler.ChatWebSocketHandler - WebSocket连接已关闭，用户ID: admin，会话ID: 8b152345-86ce-ddac-2d88-74cb12bd7ff2，状态: CloseStatus[code=1001, reason=The web application is stopping]
+2025-11-02 21:38:38.943 [SpringApplicationShutdownHook] INFO  c.yizhaoqi.smartpai.handler.ChatWebSocketHandler - WebSocket连接已关闭，用户ID: admin，会话ID: 4036f57c-1c03-9991-5c51-345d963e2001，状态: CloseStatus[code=1001, reason=The web application is stopping]
+2025-11-02 21:38:40.909 [main] INFO  com.yizhaoqi.smartpai.SmartPaiApplication - Starting SmartPaiApplication using Java 17.0.15 with PID 48975 (/Volumes/LQ1000/a/PaiSmart/target/classes started by xustation in /Volumes/LQ1000/a/PaiSmart)
+2025-11-02 21:38:40.910 [main] INFO  com.yizhaoqi.smartpai.SmartPaiApplication - No active profile set, falling back to 1 default profile: "default"
+2025-11-02 21:38:44.423 [main] INFO  com.yizhaoqi.smartpai.config.SecurityConfig - Security configuration loaded successfully.
+2025-11-02 21:38:44.827 [main] INFO  com.yizhaoqi.smartpai.SmartPaiApplication - Started SmartPaiApplication in 4.404 seconds (process running for 5.009)
+2025-11-02 21:38:44.829 [main] INFO  com.yizhaoqi.smartpai.config.AdminUserInitializer - 检查管理员账号是否存在: admin
+2025-11-02 21:38:44.909 [main] INFO  com.yizhaoqi.smartpai.config.AdminUserInitializer - 管理员账号 'admin' 已存在，跳过创建步骤
+2025-11-02 21:38:44.912 [main] INFO  com.yizhaoqi.smartpai.config.OrgTagInitializer - 检查组织标签是否存在: default
+2025-11-02 21:38:44.917 [main] INFO  com.yizhaoqi.smartpai.config.OrgTagInitializer - 组织标签 'default' 已存在，跳过创建步骤
+2025-11-02 21:38:44.918 [main] INFO  com.yizhaoqi.smartpai.config.OrgTagInitializer - 检查组织标签是否存在: admin
+2025-11-02 21:38:44.919 [main] INFO  com.yizhaoqi.smartpai.config.OrgTagInitializer - 组织标签 'admin' 已存在，跳过创建步骤
+2025-11-02 21:38:44.919 [main] INFO  com.yizhaoqi.smartpai.config.OrgTagInitializer - 组织标签初始化完成
+2025-11-02 21:38:45.006 [http-nio-8081-exec-1] INFO  c.yizhaoqi.smartpai.handler.ChatWebSocketHandler - WebSocket连接已建立，用户ID: admin，会话ID: 33b976d9-8179-5dae-5805-b6e083f08583，URI路径: /chat/eyJhbGciOiJIUzI1NiJ9.eyJwcmltYXJ5T3JnIjoiZGVmYXVsdCIsIm9yZ1RhZ3MiOiJkZWZhdWx0LGFkbWluIiwicm9sZSI6IkFETUlOIiwidG9rZW5JZCI6ImVlMzc1NGE3NzIwODQ1YWI4NWI0Y2I5ZDM2ZTQ0NWE1IiwidXNlcklkIjoiMSIsInN1YiI6ImFkbWluIiwiZXhwIjoxNzYyMDkyMzUyfQ.Qr57b4qU9XmUGeBqNba3E7cq3m6wcvf2u1uD_iYHNoc
+2025-11-02 21:38:45.093 [main] INFO  com.yizhaoqi.smartpai.config.EsIndexInitializer - 索引 'knowledge_base' 已存在
+2025-11-02 21:38:46.210 [http-nio-8081-exec-2] INFO  c.yizhaoqi.smartpai.handler.ChatWebSocketHandler - WebSocket连接已建立，用户ID: admin，会话ID: 54dc18ad-bcac-6990-c915-dc3e06e94a35，URI路径: /chat/eyJhbGciOiJIUzI1NiJ9.eyJwcmltYXJ5T3JnIjoiZGVmYXVsdCIsIm9yZ1RhZ3MiOiJkZWZhdWx0LGFkbWluIiwicm9sZSI6IkFETUlOIiwidG9rZW5JZCI6ImUzZWY5YTdkODBmODRjYjdiYjFlYTJjNzI3OTVkZGMwIiwidXNlcklkIjoiMSIsInN1YiI6ImFkbWluIiwiZXhwIjoxNzYyMDkxMzk1fQ.NVSWMyZEZEIrU9iwQAWhfKzm4_OlgPXwbHvLNG4H6IM
+2025-11-02 22:11:12.077 [http-nio-8081-exec-4] INFO  c.yizhaoqi.smartpai.handler.ChatWebSocketHandler - WebSocket连接已关闭，用户ID: admin，会话ID: 33b976d9-8179-5dae-5805-b6e083f08583，状态: CloseStatus[code=1006, reason=null]
+2025-11-02 22:11:12.077 [http-nio-8081-exec-3] INFO  c.yizhaoqi.smartpai.handler.ChatWebSocketHandler - WebSocket连接已关闭，用户ID: admin，会话ID: 54dc18ad-bcac-6990-c915-dc3e06e94a35，状态: CloseStatus[code=1006, reason=null]
+2025-11-02 22:11:13.269 [http-nio-8081-exec-5] INFO  c.yizhaoqi.smartpai.handler.ChatWebSocketHandler - WebSocket连接已建立，用户ID: admin，会话ID: 6932f2a6-6244-c830-a20e-7a2d8c60e878，URI路径: /chat/eyJhbGciOiJIUzI1NiJ9.eyJwcmltYXJ5T3JnIjoiZGVmYXVsdCIsIm9yZ1RhZ3MiOiJkZWZhdWx0LGFkbWluIiwicm9sZSI6IkFETUlOIiwidG9rZW5JZCI6ImUzZWY5YTdkODBmODRjYjdiYjFlYTJjNzI3OTVkZGMwIiwidXNlcklkIjoiMSIsInN1YiI6ImFkbWluIiwiZXhwIjoxNzYyMDkxMzk1fQ.NVSWMyZEZEIrU9iwQAWhfKzm4_OlgPXwbHvLNG4H6IM
+2025-11-02 22:11:13.594 [http-nio-8081-exec-6] DEBUG com.yizhaoqi.smartpai.service.TokenCacheService - Token cached: 4d0c4b5239c045509b11c61f2f948fde for user: admin
+2025-11-02 22:11:13.594 [http-nio-8081-exec-6] INFO  com.yizhaoqi.smartpai.utils.JwtUtils - Token generated and cached for user: admin, tokenId: 4d0c4b5239c045509b11c61f2f948fde
+2025-11-02 22:11:13.594 [http-nio-8081-exec-6] INFO  com.yizhaoqi.smartpai.utils.JwtUtils - Token refreshed successfully for user: admin
+2025-11-02 22:11:13.594 [http-nio-8081-exec-6] INFO  c.yizhaoqi.smartpai.config.JwtAuthenticationFilter - Expired token refreshed within grace period
+2025-11-02 22:11:13.601 [http-nio-8081-exec-6] INFO  com.yizhaoqi.smartpai.business - [REQUEST_START] [用户:1] 开始处理请求 [GET] /api/v1/users/me
+2025-11-02 22:11:13.634 [http-nio-8081-exec-6] INFO  com.yizhaoqi.smartpai.business - [用户操作] [用户:admin] [操作:GET_USER_INFO] [资源:user_profile] [结果:SUCCESS]
+2025-11-02 22:11:13.656 [http-nio-8081-exec-6] INFO  com.yizhaoqi.smartpai.business - [API] [GET] /api/v1/users/me [用户:1] [状态:200] [耗时:56ms]
+2025-11-02 22:11:13.684 [http-nio-8081-exec-7] INFO  com.yizhaoqi.smartpai.business - [REQUEST_START] [用户:1] 开始处理请求 [GET] /api/v1/users/me
+2025-11-02 22:11:13.688 [http-nio-8081-exec-7] INFO  com.yizhaoqi.smartpai.business - [用户操作] [用户:admin] [操作:GET_USER_INFO] [资源:user_profile] [结果:SUCCESS]
+2025-11-02 22:11:13.690 [http-nio-8081-exec-7] INFO  com.yizhaoqi.smartpai.business - [API] [GET] /api/v1/users/me [用户:1] [状态:200] [耗时:7ms]
+2025-11-02 22:11:13.766 [http-nio-8081-exec-8] INFO  c.yizhaoqi.smartpai.handler.ChatWebSocketHandler - WebSocket连接已建立，用户ID: admin，会话ID: f422b5fc-6bda-6bca-a0fb-b69e8896dcff，URI路径: /chat/eyJhbGciOiJIUzI1NiJ9.eyJwcmltYXJ5T3JnIjoiZGVmYXVsdCIsIm9yZ1RhZ3MiOiJkZWZhdWx0LGFkbWluIiwicm9sZSI6IkFETUlOIiwidG9rZW5JZCI6IjRkMGM0YjUyMzljMDQ1NTA5YjExYzYxZjJmOTQ4ZmRlIiwidXNlcklkIjoiMSIsInN1YiI6ImFkbWluIiwiZXhwIjoxNzYyMDk2MjczfQ.v-965cYMAWosIad39hF19c0D_LzxYd1X_G-ZKWauVAg
+2025-11-02 22:11:13.825 [http-nio-8081-exec-9] INFO  com.yizhaoqi.smartpai.business - [REQUEST_START] [用户:1] 开始处理请求 [GET] /api/v1/users/conversation
+2025-11-02 22:11:13.827 [http-nio-8081-exec-9] INFO  com.yizhaoqi.smartpai.business - [GET_CONVERSATIONS] [用户:admin] 开始查询用户对话历史
+2025-11-02 22:11:13.841 [http-nio-8081-exec-9] INFO  com.yizhaoqi.smartpai.business - [GET_CONVERSATIONS] [用户:admin] 尝试查找Redis键: user:1:current_conversation, 结果: 未找到
+2025-11-02 22:11:13.841 [http-nio-8081-exec-9] INFO  com.yizhaoqi.smartpai.business - [GET_CONVERSATIONS] [用户:admin] 找到对话会话ID: df066211-2766-4d79-9420-0fcb48a3b6b4
+2025-11-02 22:11:13.841 [http-nio-8081-exec-9] INFO  com.yizhaoqi.smartpai.business - [GET_CONVERSATIONS] [用户:admin] 会话ID df066211-2766-4d79-9420-0fcb48a3b6b4 在Redis中找不到对应的历史记录
+2025-11-02 22:11:13.841 [http-nio-8081-exec-9] INFO  com.yizhaoqi.smartpai.business - [用户操作] [用户:admin] [操作:GET_CONVERSATIONS] [资源:conversation_history] [结果:SUCCESS_EMPTY]
+2025-11-02 22:11:13.844 [http-nio-8081-exec-9] INFO  com.yizhaoqi.smartpai.business - [API] [GET] /api/v1/users/conversation [用户:1] [状态:200] [耗时:19ms]
+2025-11-02 22:22:51.087 [http-nio-8081-exec-1] INFO  c.yizhaoqi.smartpai.handler.ChatWebSocketHandler - WebSocket连接已关闭，用户ID: admin，会话ID: f422b5fc-6bda-6bca-a0fb-b69e8896dcff，状态: CloseStatus[code=1006, reason=null]
+2025-11-02 22:22:51.088 [http-nio-8081-exec-10] INFO  c.yizhaoqi.smartpai.handler.ChatWebSocketHandler - WebSocket连接已关闭，用户ID: admin，会话ID: 6932f2a6-6244-c830-a20e-7a2d8c60e878，状态: CloseStatus[code=1006, reason=null]
+2025-11-02 22:22:52.616 [http-nio-8081-exec-2] INFO  c.yizhaoqi.smartpai.handler.ChatWebSocketHandler - WebSocket连接已建立，用户ID: admin，会话ID: ca5a16ef-e38b-ecee-5283-d53ee281bfb2，URI路径: /chat/eyJhbGciOiJIUzI1NiJ9.eyJwcmltYXJ5T3JnIjoiZGVmYXVsdCIsIm9yZ1RhZ3MiOiJkZWZhdWx0LGFkbWluIiwicm9sZSI6IkFETUlOIiwidG9rZW5JZCI6ImUzZWY5YTdkODBmODRjYjdiYjFlYTJjNzI3OTVkZGMwIiwidXNlcklkIjoiMSIsInN1YiI6ImFkbWluIiwiZXhwIjoxNzYyMDkxMzk1fQ.NVSWMyZEZEIrU9iwQAWhfKzm4_OlgPXwbHvLNG4H6IM
+2025-11-02 22:22:52.733 [http-nio-8081-exec-3] INFO  com.yizhaoqi.smartpai.business - [REQUEST_START] [用户:1] 开始处理请求 [GET] /api/v1/users/me
+2025-11-02 22:22:52.741 [http-nio-8081-exec-3] INFO  com.yizhaoqi.smartpai.business - [用户操作] [用户:admin] [操作:GET_USER_INFO] [资源:user_profile] [结果:SUCCESS]
+2025-11-02 22:22:52.755 [http-nio-8081-exec-3] INFO  com.yizhaoqi.smartpai.business - [API] [GET] /api/v1/users/me [用户:1] [状态:200] [耗时:22ms]
+2025-11-02 22:22:52.772 [http-nio-8081-exec-4] INFO  com.yizhaoqi.smartpai.business - [REQUEST_START] [用户:1] 开始处理请求 [GET] /api/v1/users/me
+2025-11-02 22:22:52.775 [http-nio-8081-exec-4] INFO  com.yizhaoqi.smartpai.business - [用户操作] [用户:admin] [操作:GET_USER_INFO] [资源:user_profile] [结果:SUCCESS]
+2025-11-02 22:22:52.777 [http-nio-8081-exec-4] INFO  com.yizhaoqi.smartpai.business - [API] [GET] /api/v1/users/me [用户:1] [状态:200] [耗时:6ms]
+2025-11-02 22:22:52.907 [http-nio-8081-exec-5] INFO  c.yizhaoqi.smartpai.handler.ChatWebSocketHandler - WebSocket连接已建立，用户ID: admin，会话ID: e34761c0-352a-71ea-0ff9-70e3d9ad5411，URI路径: /chat/eyJhbGciOiJIUzI1NiJ9.eyJwcmltYXJ5T3JnIjoiZGVmYXVsdCIsIm9yZ1RhZ3MiOiJkZWZhdWx0LGFkbWluIiwicm9sZSI6IkFETUlOIiwidG9rZW5JZCI6IjRkMGM0YjUyMzljMDQ1NTA5YjExYzYxZjJmOTQ4ZmRlIiwidXNlcklkIjoiMSIsInN1YiI6ImFkbWluIiwiZXhwIjoxNzYyMDk2MjczfQ.v-965cYMAWosIad39hF19c0D_LzxYd1X_G-ZKWauVAg
+2025-11-02 22:22:52.952 [http-nio-8081-exec-6] INFO  com.yizhaoqi.smartpai.business - [REQUEST_START] [用户:1] 开始处理请求 [GET] /api/v1/users/conversation
+2025-11-02 22:22:52.955 [http-nio-8081-exec-6] INFO  com.yizhaoqi.smartpai.business - [GET_CONVERSATIONS] [用户:admin] 开始查询用户对话历史
+2025-11-02 22:22:52.969 [http-nio-8081-exec-6] INFO  com.yizhaoqi.smartpai.business - [GET_CONVERSATIONS] [用户:admin] 尝试查找Redis键: user:1:current_conversation, 结果: 未找到
+2025-11-02 22:22:52.972 [http-nio-8081-exec-6] INFO  com.yizhaoqi.smartpai.business - [GET_CONVERSATIONS] [用户:admin] 找到对话会话ID: df066211-2766-4d79-9420-0fcb48a3b6b4
+2025-11-02 22:22:52.972 [http-nio-8081-exec-6] INFO  com.yizhaoqi.smartpai.business - [GET_CONVERSATIONS] [用户:admin] 会话ID df066211-2766-4d79-9420-0fcb48a3b6b4 在Redis中找不到对应的历史记录
+2025-11-02 22:22:52.972 [http-nio-8081-exec-6] INFO  com.yizhaoqi.smartpai.business - [用户操作] [用户:admin] [操作:GET_CONVERSATIONS] [资源:conversation_history] [结果:SUCCESS_EMPTY]
+2025-11-02 22:22:52.974 [http-nio-8081-exec-6] INFO  com.yizhaoqi.smartpai.business - [API] [GET] /api/v1/users/conversation [用户:1] [状态:200] [耗时:22ms]

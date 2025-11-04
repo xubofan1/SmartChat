@@ -1,0 +1,6 @@
+2025-11-01 21:52:48.541 [main] INFO  com.yizhaoqi.smartpai.SmartPaiApplication - Starting SmartPaiApplication using Java 23.0.2 with PID 76274 (/Volumes/LQ1000/a/PaiSmart/target/classes started by xustation in /Volumes/LQ1000/a/PaiSmart)
+2025-11-01 21:52:48.542 [main] INFO  com.yizhaoqi.smartpai.SmartPaiApplication - No active profile set, falling back to 1 default profile: "default"
+2025-11-01 21:56:46.369 [main] INFO  com.yizhaoqi.smartpai.SmartPaiApplication - Starting SmartPaiApplication using Java 23.0.2 with PID 76473 (/Volumes/LQ1000/a/PaiSmart/target/classes started by xustation in /Volumes/LQ1000/a/PaiSmart)
+2025-11-01 21:56:46.370 [main] INFO  com.yizhaoqi.smartpai.SmartPaiApplication - No active profile set, falling back to 1 default profile: "default"
+2025-11-01 21:59:32.352 [main] INFO  com.yizhaoqi.smartpai.SmartPaiApplication - Starting SmartPaiApplication using Java 17.0.15 with PID 76587 (/Volumes/LQ1000/a/PaiSmart/target/classes started by xustation in /Volumes/LQ1000/a/PaiSmart)
+2025-11-01 21:59:32.353 [main] INFO  com.yizhaoqi.smartpai.SmartPaiApplication - No active profile set, falling back to 1 default profile: "default"
