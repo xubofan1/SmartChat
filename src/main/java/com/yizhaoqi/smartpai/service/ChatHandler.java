@@ -4,6 +4,7 @@ import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.core.type.TypeReference;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.yizhaoqi.smartpai.client.DeepSeekClient;
+import com.yizhaoqi.smartpai.config.AiProperties;
 import com.yizhaoqi.smartpai.entity.SearchResult;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -31,9 +32,11 @@ import java.util.concurrent.ConcurrentHashMap;
 public class ChatHandler {
     
     private static final Logger logger = LoggerFactory.getLogger(ChatHandler.class);
+    private static final int HISTORY_MAX_MESSAGES = 60;
     private final RedisTemplate<String, String> redisTemplate;
     private final HybridSearchService searchService;
     private final DeepSeekClient deepSeekClient;
+    private final AiProperties aiProperties;
     private final ObjectMapper objectMapper;
     
     // 用于存储每个会话的完整响应
@@ -45,10 +48,12 @@ public class ChatHandler {
 
     public ChatHandler(RedisTemplate<String, String> redisTemplate,
                       HybridSearchService searchService,
-                      DeepSeekClient deepSeekClient) {
+                      DeepSeekClient deepSeekClient,
+                      AiProperties aiProperties) {
         this.redisTemplate = redisTemplate;
         this.searchService = searchService;
         this.deepSeekClient = deepSeekClient;
+        this.aiProperties = aiProperties;
         this.objectMapper = new ObjectMapper();
     }
 
@@ -68,6 +73,9 @@ public class ChatHandler {
             // 2. 获取对话历史
             List<Map<String, String>> history = getConversationHistory(conversationId);
             logger.debug("获取到 {} 条历史对话", history.size());
+            SummaryContext summaryContext = buildSummaryContext(conversationId, history);
+            logger.debug("历史摘要长度: {}, 输入历史条数: {}", 
+                    summaryContext.summary().length(), summaryContext.modelHistory().size());
             
             // 3. 执行带权限过滤的混合搜索
             List<SearchResult> searchResults = searchService.searchWithPermission(userMessage, userId, 5);
@@ -78,7 +86,7 @@ public class ChatHandler {
             
             // 5. 调用 DeepSeek API 并处理流式响应
             logger.info("调用DeepSeek API生成回复");
-            deepSeekClient.streamResponse(userMessage, context, history, 
+            deepSeekClient.streamResponse(userMessage, context, summaryContext.modelHistory(), summaryContext.summary(),
                 chunk -> {
                     // 累积响应内容
                     StringBuilder responseBuilder = responseBuilders.get(session.getId());
@@ -254,6 +262,111 @@ public class ChatHandler {
         }
     }
 
+    private SummaryContext buildSummaryContext(String conversationId, List<Map<String, String>> history) {
+        List<Map<String, String>> normalizedHistory = normalizeHistoryMessages(history);
+        String summary = getConversationSummary(conversationId);
+
+        AiProperties.Summary summaryCfg = aiProperties.getSummary();
+        if (summaryCfg == null || !summaryCfg.isEnabled()) {
+            return new SummaryContext(summary, normalizedHistory);
+        }
+
+        int triggerMessageCount = Math.max(2, summaryCfg.getTriggerMessageCount());
+        int recentMessageCount = Math.max(2, summaryCfg.getRecentMessageCount());
+        if (normalizedHistory.size() <= triggerMessageCount) {
+            return new SummaryContext(summary, normalizedHistory);
+        }
+
+        int splitIndex = Math.max(0, normalizedHistory.size() - recentMessageCount);
+        List<Map<String, String>> oldHistory = new ArrayList<>(normalizedHistory.subList(0, splitIndex));
+        List<Map<String, String>> recentHistory = new ArrayList<>(normalizedHistory.subList(splitIndex, normalizedHistory.size()));
+
+        String newSummary = summary;
+        if (!oldHistory.isEmpty()) {
+            String summarizePrompt = buildSummaryPrompt(newSummary, oldHistory, summaryCfg);
+            String generatedSummary = deepSeekClient.summarizeConversation(summarizePrompt);
+            if (!generatedSummary.isBlank()) {
+                int maxChars = Math.max(200, summaryCfg.getMaxSummaryChars());
+                newSummary = truncateText(generatedSummary, maxChars);
+                saveConversationSummary(conversationId, newSummary);
+                logger.info("历史摘要已更新: conversationId={}, oldHistorySize={}, summaryLength={}",
+                        conversationId, oldHistory.size(), newSummary.length());
+            } else {
+                logger.warn("历史摘要生成失败，降级为仅使用最近原文消息: conversationId={}", conversationId);
+            }
+        }
+        return new SummaryContext(newSummary, recentHistory);
+    }
+
+    private List<Map<String, String>> normalizeHistoryMessages(List<Map<String, String>> history) {
+        List<Map<String, String>> normalized = new ArrayList<>();
+        if (history == null) {
+            return normalized;
+        }
+        for (Map<String, String> item : history) {
+            if (item == null) {
+                continue;
+            }
+            String role = item.get("role");
+            String content = item.get("content");
+            if (role == null || content == null || content.isBlank()) {
+                continue;
+            }
+            normalized.add(Map.of(
+                    "role", role,
+                    "content", content
+            ));
+        }
+        return normalized;
+    }
+
+    private String buildSummaryPrompt(String existingSummary, List<Map<String, String>> oldHistory, AiProperties.Summary cfg) {
+        String template = cfg.getPromptTemplate();
+        if (template == null || template.isBlank()) {
+            template = "请基于以下历史生成摘要：\n已有摘要:\n{existingSummary}\n历史:\n{history}";
+        }
+        String historyText = renderHistoryForSummary(oldHistory);
+        return template
+                .replace("{existingSummary}", existingSummary == null || existingSummary.isBlank() ? "无" : existingSummary)
+                .replace("{history}", historyText)
+                .replace("{maxChars}", String.valueOf(Math.max(200, cfg.getMaxSummaryChars())));
+    }
+
+    private String renderHistoryForSummary(List<Map<String, String>> history) {
+        StringBuilder builder = new StringBuilder();
+        for (Map<String, String> item : history) {
+            builder.append(item.getOrDefault("role", "unknown"))
+                    .append(": ")
+                    .append(item.getOrDefault("content", ""))
+                    .append("\n");
+        }
+        return builder.toString();
+    }
+
+    private String truncateText(String content, int maxChars) {
+        if (content == null) {
+            return "";
+        }
+        if (content.length() <= maxChars) {
+            return content;
+        }
+        return content.substring(0, maxChars);
+    }
+
+    private String getConversationSummary(String conversationId) {
+        String key = getConversationSummaryKey(conversationId);
+        String summary = redisTemplate.opsForValue().get(key);
+        return summary == null ? "" : summary;
+    }
+
+    private void saveConversationSummary(String conversationId, String summary) {
+        redisTemplate.opsForValue().set(getConversationSummaryKey(conversationId), summary, Duration.ofDays(7));
+    }
+
+    private String getConversationSummaryKey(String conversationId) {
+        return "conversation_summary:" + conversationId;
+    }
+
     private void updateConversationHistory(String conversationId, String userMessage, String response) {
         String key = "conversation:" + conversationId;
         List<Map<String, String>> history = getConversationHistory(conversationId);
@@ -275,9 +388,9 @@ public class ChatHandler {
         assistantMsgMap.put("timestamp", currentTimestamp);
         history.add(assistantMsgMap);
         
-        // 限制历史记录长度，保留最近的20条消息
-        if (history.size() > 20) {
-            history = history.subList(history.size() - 20, history.size());
+        // 限制历史记录长度，避免无限增长
+        if (history.size() > HISTORY_MAX_MESSAGES) {
+            history = new ArrayList<>(history.subList(history.size() - HISTORY_MAX_MESSAGES, history.size()));
         }
         
         try {
@@ -396,5 +509,8 @@ public class ChatHandler {
                 Thread.currentThread().interrupt();
             }
         }).start();
+    }
+
+    private record SummaryContext(String summary, List<Map<String, String>> modelHistory) {
     }
 }

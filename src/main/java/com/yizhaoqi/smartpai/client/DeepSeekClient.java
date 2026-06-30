@@ -8,6 +8,7 @@ import org.springframework.web.reactive.function.client.WebClient;
 import java.util.List;
 import java.util.Map;
 import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.function.Consumer;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.fasterxml.jackson.databind.JsonNode;
@@ -44,10 +45,11 @@ public class DeepSeekClient {
     public void streamResponse(String userMessage, 
                              String context,
                              List<Map<String, String>> history,
+                             String historySummary,
                              Consumer<String> onChunk,
                              Consumer<Throwable> onError) {
         
-        Map<String, Object> request = buildRequest(userMessage, context, history);
+        Map<String, Object> request = buildRequest(userMessage, context, history, historySummary);
         
         webClient.post()
                 .uri("/chat/completions")
@@ -63,7 +65,8 @@ public class DeepSeekClient {
     
     private Map<String, Object> buildRequest(String userMessage, 
                                            String context,
-                                           List<Map<String, String>> history) {
+                                           List<Map<String, String>> history,
+                                           String historySummary) {
         logger.info("构建请求，用户消息：{}，上下文长度：{}，历史消息数：{}", 
                    userMessage, 
                    context != null ? context.length() : 0, 
@@ -71,7 +74,7 @@ public class DeepSeekClient {
         
         Map<String, Object> request = new java.util.HashMap<>();
         request.put("model", model);
-        request.put("messages", buildMessages(userMessage, context, history));
+        request.put("messages", buildMessages(userMessage, context, history, historySummary));
         request.put("stream", true);
         // 生成参数
         AiProperties.Generation gen = aiProperties.getGeneration();
@@ -89,7 +92,8 @@ public class DeepSeekClient {
     
     private List<Map<String, String>> buildMessages(String userMessage,
                                                   String context,
-                                                  List<Map<String, String>> history) {
+                                                  List<Map<String, String>> history,
+                                                  String historySummary) {
         List<Map<String, String>> messages = new ArrayList<>();
 
         AiProperties.Prompt promptCfg = aiProperties.getPrompt();
@@ -121,18 +125,68 @@ public class DeepSeekClient {
         ));
         logger.debug("添加了系统消息，长度: {}", systemContent.length());
 
-        // 2. 追加历史消息（若有）
-        if (history != null && !history.isEmpty()) {
-            messages.addAll(history);
+        // 2. 历史摘要（若有）
+        if (historySummary != null && !historySummary.isBlank()) {
+            messages.add(Map.of(
+                    "role", "system",
+                    "content", "历史对话摘要（供延续上下文）：\n" + historySummary
+            ));
         }
 
-        // 3. 当前用户问题
+        // 3. 追加历史消息（若有）
+        if (history != null && !history.isEmpty()) {
+            for (Map<String, String> item : history) {
+                String role = item.get("role");
+                String content = item.get("content");
+                if (role == null || content == null || content.isBlank()) {
+                    continue;
+                }
+                messages.add(Map.of(
+                        "role", role,
+                        "content", content
+                ));
+            }
+        }
+
+        // 4. 当前用户问题
         messages.add(Map.of(
             "role", "user",
             "content", userMessage
         ));
 
         return messages;
+    }
+
+    public String summarizeConversation(String summarizePrompt) {
+        try {
+            if (summarizePrompt == null || summarizePrompt.isBlank()) {
+                return "";
+            }
+            Map<String, Object> request = new HashMap<>();
+            request.put("model", model);
+            request.put("stream", false);
+            request.put("messages", List.of(
+                    Map.of("role", "system", "content", "你是对话摘要助手，请输出简洁摘要。"),
+                    Map.of("role", "user", "content", summarizePrompt)
+            ));
+
+            String responseBody = webClient.post()
+                    .uri("/chat/completions")
+                    .contentType(MediaType.APPLICATION_JSON)
+                    .bodyValue(request)
+                    .retrieve()
+                    .bodyToMono(String.class)
+                    .block();
+            if (responseBody == null || responseBody.isBlank()) {
+                return "";
+            }
+            ObjectMapper mapper = new ObjectMapper();
+            JsonNode root = mapper.readTree(responseBody);
+            return root.path("choices").path(0).path("message").path("content").asText("");
+        } catch (Exception e) {
+            logger.error("生成历史摘要失败: {}", e.getMessage(), e);
+            return "";
+        }
     }
     
     private void processChunk(String chunk, Consumer<String> onChunk) {

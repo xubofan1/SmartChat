@@ -128,3 +128,20 @@ ai:
     temperature: 0.3
     max-tokens: 2000
     top-p: 0.9
+  summary:
+    enabled: true
+    trigger-message-count: 12
+    recent-message-count: 6
+    max-summary-chars: 1200
+    prompt-template: |
+      你将接收一段多轮对话历史，请输出用于后续问答的精炼摘要。
+      要求：
+      1) 保留用户目标、关键事实、约束条件、已确认结论；
+      2) 删除寒暄、重复、无关内容；
+      3) 使用简体中文，条目化输出，控制在 {maxChars} 字以内。
+      
+      已有摘要：
+      {existingSummary}
+      
+      新增历史：
+      {history}
