@@ -132,7 +132,7 @@ public class UploadService {
                     // 构建存储路径
                     storagePath = "chunks/" + fileMd5 + "/" + chunkIndex;
                     
-                    // 检查MinIO中是否存在该分片
+                    // 检 查MinIO中是否存在该分片
                     try {
                         StatObjectResponse stat = minioClient.statObject(
                             StatObjectArgs.builder()

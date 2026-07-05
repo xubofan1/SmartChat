@@ -20,7 +20,7 @@ import java.util.Map;
 @Component
 public class EmbeddingClient {
 
-    @Value("${embedding.api.model}")
+    @Value("${embedding.api.model}" )
     private String modelId;
     
     @Value("${embedding.api.batch-size:100}")

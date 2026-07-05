@@ -10,6 +10,7 @@ import io.minio.GetPresignedObjectUrlArgs;
 import io.minio.MinioClient;
 import io.minio.RemoveObjectArgs;
 import io.minio.http.Method;
+import org.mozilla.universalchardet.UniversalDetector;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -19,6 +20,8 @@ import org.springframework.transaction.annotation.Transactional;
 import java.io.BufferedReader;
 import java.io.InputStream;
 import java.io.InputStreamReader;
+import java.nio.charset.Charset;
+import java.nio.charset.StandardCharsets;
 import java.util.Arrays;
 import java.util.List;
 import java.util.stream.Collectors;
@@ -233,7 +236,7 @@ public class DocumentService {
                                 .object(objectName)
                                 .build())) {
                     
-                    BufferedReader reader = new BufferedReader(new InputStreamReader(inputStream, "UTF-8"));
+                    BufferedReader reader = new BufferedReader(new InputStreamReader(inputStream, StandardCharsets.UTF_8));
                     StringBuilder content = new StringBuilder();
                     String line;
                     int bytesRead = 0;
@@ -241,7 +244,7 @@ public class DocumentService {
                     
                     while ((line = reader.readLine()) != null && bytesRead < maxBytes) {
                         content.append(line).append("\n");
-                        bytesRead += line.getBytes("UTF-8").length + 1;
+                        bytesRead += line.getBytes(StandardCharsets.UTF_8).length + 1;
                     }
                     
                     String result = content.toString();
@@ -250,6 +253,8 @@ public class DocumentService {
                     }
                     
                     logger.info("成功获取文本文件预览内容: fileMd5={}, contentLength={}", fileMd5, result.length());
+                    logger.info("文件内容预览（前200字符）: {}",
+                            result.length() > 200 ? result.substring(0, 200) : result);
                     return result;
                 }
             } else {
@@ -278,6 +283,89 @@ public class DocumentService {
             return "预览失败: " + e.getMessage();
         }
     }
+
+    /**
+     * 文件预览内容
+     * @param fileMd5
+     * @param fileName
+     * @return
+     */
+    public String getFilePreviewContent1(String fileMd5, String fileName) {
+        logger.info("获取文件预览内容: fileMd5={}, fileName={}", fileMd5, fileName);
+        try {
+            String objectName = "merged/" + fileName;
+            String fileExtension = getFileExtension(fileName).toLowerCase();
+
+            // 检查是否为文本文件
+            boolean isTextFile = isTextFile(fileExtension);
+            if (isTextFile) {
+                // --- 检测文件编码 ---
+                String detectedEncoding = detectEncodingFromMinio("uploads", objectName);
+                if (detectedEncoding == null) {
+                    detectedEncoding = "UTF-8";
+                }
+
+                StringBuilder content = new StringBuilder();
+                int bytesRead = 0;
+                int maxBytes = 1000 * 1024; // 10KB
+
+                try (InputStream inputStream = minioClient.getObject(
+                        GetObjectArgs.builder().bucket("uploads").object(objectName).build());
+                     InputStreamReader isr = new InputStreamReader(inputStream, Charset.forName(detectedEncoding));
+                     BufferedReader reader = new BufferedReader(isr)) {
+
+                    String line;
+                    while ((line = reader.readLine()) != null && bytesRead < maxBytes) {
+                        content.append(line).append("\n");
+                        bytesRead += line.getBytes(detectedEncoding).length + 1;
+                    }
+
+                    if (bytesRead >= maxBytes) {
+                        content.append("\n... (内容已截断，仅显示前10KB)");
+                    }
+                    logger.info("文件内容预览（前200字符）: {}",
+                            content.length() > 200 ? content.substring(0, 200) : content);
+                }
+
+                return content.toString();
+            } else {
+                // 非文本文件维持原来的逻辑
+                FileUpload fileUpload = fileUploadRepository.findByFileMd5(fileMd5)
+                        .orElseThrow(() -> new RuntimeException("文件不存在: " + fileMd5));
+                return String.format(
+                        "文件名: %s\n文件大小: %s\n文件类型: %s\n上传时间: %s\n\n此文件类型不支持预览，请下载后查看。",
+                        fileName,
+                        formatFileSize(fileUpload.getTotalSize()),
+                        fileExtension.toUpperCase(),
+                        fileUpload.getCreatedAt()
+                );
+            }
+        } catch (Exception e) {
+            logger.error("获取文件预览内容失败: {}", e.getMessage(), e);
+            return "预览失败: " + e.getMessage();
+        }
+    }
+
+
+    private String detectEncodingFromMinio(String bucket, String objectName) {
+        try (InputStream detectStream = minioClient.getObject(
+                GetObjectArgs.builder().bucket(bucket).object(objectName).build())) {
+            UniversalDetector detector = new UniversalDetector(null);
+            byte[] buf = new byte[4096];
+            int n;
+            while ((n = detectStream.read(buf)) > 0 && !detector.isDone()) {
+                detector.handleData(buf, 0, n);
+            }
+            detector.dataEnd();
+            String encoding = detector.getDetectedCharset();
+            detector.reset();
+            return encoding;
+        } catch (Exception e) {
+            logger.warn("编码检测失败: {}", e.getMessage());
+            return null;
+        }
+    }
+
     
     /**
      * 获取文件扩展名

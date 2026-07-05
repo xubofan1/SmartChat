@@ -335,7 +335,7 @@ public class DocumentController {
             @RequestParam String fileName,
             @RequestParam(required = false) String token) {
         
-        LogUtils.PerformanceMonitor monitor = LogUtils.startPerformanceMonitor("PREVIEW_FILE_BY_NAME");
+             LogUtils.PerformanceMonitor monitor = LogUtils.startPerformanceMonitor("PREVIEW_FILE_BY_NAME");
         try {
             // 验证token并获取用户信息
             String userId = null;
@@ -398,7 +398,7 @@ public class DocumentController {
                     "content", previewContent,
                     "fileSize", file.getTotalSize()
                 ));
-                return ResponseEntity.ok(response);
+                return ResponseEntity.ok().contentType(MediaType.parseMediaType("application/json;charset=UTF-8")).body(response);
             }
             
             // 有token的情况，查找用户可访问的文件
@@ -444,7 +444,7 @@ public class DocumentController {
                 "content", previewContent,
                 "fileSize", file.getTotalSize()
             ));
-            return ResponseEntity.ok(response);
+            return ResponseEntity.ok().contentType(MediaType.parseMediaType("application/json;charset=UTF-8")).body(response);
             
         } catch (Exception e) {
             String userId = "unknown";

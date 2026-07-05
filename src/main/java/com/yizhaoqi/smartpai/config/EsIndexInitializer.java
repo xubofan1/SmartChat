@@ -30,7 +30,7 @@ public class EsIndexInitializer implements CommandLineRunner {
     @Override
     public void run(String... args) throws Exception {
         try {
-            initializeIndex();
+             initializeIndex();
         } catch (Exception exception) {
             // 特别处理连接关闭异常，尝试重新连接
             if (exception instanceof ConnectionClosedException || (exception.getCause() != null && exception.getCause() instanceof ConnectionClosedException)) {

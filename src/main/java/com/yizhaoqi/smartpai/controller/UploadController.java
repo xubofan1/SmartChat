@@ -76,13 +76,13 @@ public class UploadController {
             @RequestParam("file") MultipartFile file,
             @RequestAttribute("userId") String userId) throws IOException {
         
-        LogUtils.PerformanceMonitor monitor = LogUtils.startPerformanceMonitor("UPLOAD_CHUNK");
+        LogUtils.PerformanceMonitor monitor =  LogUtils.startPerformanceMonitor("UPLOAD_CHUNK");
         try {
             // 文件类型验证（仅在第一个分片时进行验证）
             if (chunkIndex == 0) {
                 FileTypeValidationService.FileTypeValidationResult validationResult = 
                     fileTypeValidationService.validateFileType(fileName);
-                
+
                 LogUtils.logBusiness("UPLOAD_CHUNK", userId, "文件类型验证结果: fileName=%s, valid=%s, fileType=%s, message=%s", 
                         fileName, validationResult.isValid(), validationResult.getFileType(), validationResult.getMessage());
                 
@@ -124,11 +124,15 @@ public class UploadController {
         }
         
             LogUtils.logFileOperation(userId, "UPLOAD_CHUNK", fileName, fileMd5, "PROCESSING");
-        
+
+            //上传目前的文件分片
             uploadService.uploadChunk(fileMd5, chunkIndex, totalSize, fileName, file, orgTag, isPublic, userId);
-            
+            //获取之前已经上传文件分片
             List<Integer> uploadedChunks = uploadService.getUploadedChunks(fileMd5, userId);
+            //获取已经上传文件分片数量
             int actualTotalChunks = uploadService.getTotalChunks(fileMd5, userId);
+
+            //上传当前的进度
             double progress = calculateProgress(uploadedChunks, actualTotalChunks);
             
             LogUtils.logBusiness("UPLOAD_CHUNK", userId, "分片上传成功: fileMd5=%s, fileName=%s, fileType=%s, chunkIndex=%d, 进度=%.2f%%", 
